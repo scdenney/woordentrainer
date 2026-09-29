@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="Vocabulary practice and pronunciation for Nederlands in gang (A1).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232b7a4b'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='17' font-weight='700' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Woordentrainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one centred column (40rem). The drill card is the only boxed object; its header strip echoes the green vocab blocks in the course book. */
+:root {
+  --paper: #f1f4ef;
+  --surface: #ffffff;
+  --ink: #16221b;
+  --muted: #56655c;
+  --line: #d3dbd2;
+  --delft: #1d4d8c;
+  --delft-soft: #e2e9f4;
+  --block: #2b7a4b;
+  --block-soft: #e0efe5;
+  --bad: #b0382c;
+  --bad-soft: #f6e3df;
+  --warn: #8a5d00;
+  --warn-soft: #f6ecd4;
+  --on-accent: #ffffff;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", "Verdana", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #111814; --surface: #19221d; --ink: #e6ede8; --muted: #98a79e; --line: #2d3a32;
+    --delft: #93b4e8; --delft-soft: #1b2940; --block: #72c496; --block-soft: #1a2e22;
+    --bad: #f0897c; --bad-soft: #3a1f1b; --warn: #e3b75c; --warn-soft: #33290f; --on-accent: #0f1712;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #111814; --surface: #19221d; --ink: #e6ede8; --muted: #98a79e; --line: #2d3a32;
+  --delft: #93b4e8; --delft-soft: #1b2940; --block: #72c496; --block-soft: #1a2e22;
+  --bad: #f0897c; --bad-soft: #3a1f1b; --warn: #e3b75c; --warn-soft: #33290f; --on-accent: #0f1712;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font: 16px/1.5 var(--body); }
+.wrap { max-width: 40rem; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; display: flex; flex-direction: column; gap: 28px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+h1 { font: 700 1.9rem/1.1 var(--display); letter-spacing: -0.01em; margin: 0; }
+h2 { font: 700 1.25rem/1.2 var(--display); margin: 0; text-wrap: balance; }
+.kicker { font: 600 0.72rem/1.4 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.small { font-size: 0.875rem; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--delft); outline-offset: 2px; }
+
+/* overview */
+.overview { display: flex; flex-direction: column; gap: 10px; }
+.counts { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 0.9rem; }
+.counts b { font-family: var(--mono); font-variant-numeric: tabular-nums; font-weight: 600; }
+.dot { display: inline-block; width: 0.6em; height: 0.6em; border-radius: 50%; margin-right: 0.35em; vertical-align: 0.05em; }
+.dot.known { background: var(--block); } .dot.learning { background: var(--delft); } .dot.new { background: var(--line); }
+.bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; background: var(--line); }
+.bar span { display: block; height: 100%; }
+.bar .known { background: var(--block); } .bar .learning { background: var(--delft); }
+
+/* controls */
+.controls { display: flex; flex-direction: column; gap: 20px; }
+fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+legend { padding: 0; margin-bottom: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.chip label { display: inline-flex; align-items: baseline; gap: 6px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); cursor: pointer; font-size: 0.925rem; }
+.chip label .num { font-size: 0.75rem; color: var(--muted); }
+.chip input:checked + label { background: var(--delft); border-color: var(--delft); color: var(--on-accent); }
+.chip input:checked + label .num { color: inherit; opacity: 0.8; }
+.chip input:focus-visible + label { outline: 2px solid var(--delft); outline-offset: 2px; }
+.chip input:disabled + label { opacity: 0.45; cursor: default; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.btn { border: 1px solid var(--line); background: var(--surface); padding: 10px 18px; border-radius: 8px; font-weight: 700; }
+.btn.primary { background: var(--delft); border-color: var(--delft); color: var(--on-accent); }
+.btn:disabled { opacity: 0.45; cursor: default; }
+.link { border: 0; background: none; padding: 0; color: var(--delft); text-decoration: underline; text-underline-offset: 3px; }
+.note { font-size: 0.875rem; color: var(--muted); max-width: 60ch; margin: 0; }
+
+/* quiz */
+.quizbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.quizbar .stats { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.875rem; color: var(--muted); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.card-head { background: var(--block-soft); color: var(--block); padding: 8px 18px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.card-body { padding: 24px 18px 20px; display: flex; flex-direction: column; gap: 16px; }
+.prompt { font: 700 clamp(1.7rem, 6vw, 2.4rem)/1.15 var(--display); letter-spacing: -0.01em; overflow-wrap: anywhere; text-wrap: balance; }
+.prompt small { font: 400 1rem var(--mono); color: var(--muted); margin-left: 0.4em; }
+.hint { font-size: 0.875rem; color: var(--muted); margin-top: -8px; }
+form.answer { display: flex; gap: 8px; flex-wrap: wrap; }
+form.answer input { flex: 1 1 14rem; min-width: 0; font: 1.25rem var(--body); padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); }
+form.answer input:focus { outline: 2px solid var(--delft); outline-offset: 0; border-color: var(--delft); }
+.accents { display: flex; gap: 6px; flex-wrap: wrap; }
+.accents button { border: 1px solid var(--line); background: var(--paper); border-radius: 6px; min-width: 2.2rem; padding: 2px 8px; font-size: 1rem; }
+.fb { border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+.fb.ok { background: var(--block-soft); }
+.fb.bad { background: var(--bad-soft); }
+.fb.near { background: var(--warn-soft); }
+.fb .verdict { font-weight: 700; }
+.fb.ok .verdict { color: var(--block); } .fb.bad .verdict { color: var(--bad); } .fb.near .verdict { color: var(--warn); }
+.fb .answer-line { font-size: 1.15rem; }
+.fb .extra { font-size: 0.875rem; color: var(--muted); }
+.kbd { font: 0.75rem var(--mono); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; color: var(--muted); }
+
+/* lists */
+.missed { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.missed li { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.missed li > * { min-width: 0; overflow-wrap: anywhere; }
+.big-score { font: 700 3rem/1 var(--display); }
+.search { font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); width: 100%; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.925rem; }
+th { text-align: left; font: 600 0.72rem var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--line); }
+td { padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.r { text-align: right; white-space: nowrap; }
+.state { display: flex; flex-direction: column; gap: 8px; padding: 32px 0; }
+
+/* tabs + audio */
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 4px; overflow-x: auto; }
+.tabs button { border: 0; background: none; padding: 8px 12px; font-weight: 700; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+.tabs button[aria-current="page"] { color: var(--ink); border-bottom-color: var(--delft); }
+.say { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; flex: none; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--delft); padding: 0; vertical-align: middle; }
+.say:hover { background: var(--delft-soft); }
+.say svg { width: 1rem; height: 1rem; }
+.prompt-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.prompt-row .prompt { min-width: 0; }
+.with-say { display: inline-flex; align-items: center; gap: 8px; }
+
+/* pronunciation guide */
+.guide-sec { display: flex; flex-direction: column; gap: 12px; }
+.guide-sec > p { margin: 0; max-width: 62ch; }
+.sound { display: grid; grid-template-columns: 4.5rem 1fr; gap: 4px 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.sound .letters { font: 700 1.5rem/1.1 var(--display); color: var(--block); }
+.sound .desc { margin: 0; min-width: 0; }
+.sound .ex { grid-column: 2; display: flex; flex-wrap: wrap; gap: 6px; }
+.ex-chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 10px 3px 8px; font-size: 0.95rem; }
+.ex-chip:hover { background: var(--delft-soft); }
+.ex-chip svg { width: 0.85rem; height: 0.85rem; color: var(--delft); flex: none; }
+.ex-chip .gloss { color: var(--muted); font-size: 0.8rem; }
+@media (max-width: 30rem) { .sound { grid-template-columns: 1fr; } .sound .ex { grid-column: 1; } }
+@media (prefers-reduced-motion: no-preference) {
+  .fb { animation: rise 160ms ease-out; }
+  @keyframes rise { from { transform: translateY(4px); opacity: 0.6; } to { transform: none; opacity: 1; } }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Woordentrainer</h1>
+    <span class="kicker">Nederlands in gang · A1 · Groep 2</span>
+  </header>
+  <main id="app" aria-live="polite">
+    <div class="state">
+      <h2>Woordenlijsten laden…</h2>
+      <p class="note">Loading the chapter word lists saved with this page.</p>
+    </div>
+  </main>
+</div>
+
+<script>
+(() => {
+  const app = document.getElementById("app");
+  const ROUND = 10;
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+  // ---------- state ----------
+  const S = {
+    status: "loading", decks: [], words: [], prog: {}, local: false,
+    view: "setup", session: null, listQuery: "",
+    prefs: Object.assign({ decks: null, secs: null, dir: "en-nl", mode: "type", focus: "all", auto: true, slow: false }, readLS("wt-prefs") || {}),
+  };
+  function readLS(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }
+  function writeLS(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+  const savePrefs = () => writeLS("wt-prefs", S.prefs);
+
+  // ---------- audio (the device's own Dutch text-to-speech voice) ----------
+  const tts = { ok: "speechSynthesis" in window && "SpeechSynthesisUtterance" in window, voice: null, listed: false };
+  function pickVoice() {
+    if (!tts.ok) return;
+    const vs = speechSynthesis.getVoices();
+    tts.listed = vs.length > 0;
+    tts.voice = vs.find(v => /^nl[-_]NL/i.test(v.lang) && v.localService) || vs.find(v => /^nl[-_]NL/i.test(v.lang)) || vs.find(v => /^nl/i.test(v.lang)) || null;
+  }
+  if (tts.ok) {
+    pickVoice();
+    speechSynthesis.addEventListener?.("voiceschanged", () => { const had = tts.voice; pickVoice(); if (had !== tts.voice && ["setup", "guide"].includes(S.view)) render(); });
+  }
+  // Recorded clips (audio/manifest.json, built by tools/build_audio.py) come first; the device voice is only a fallback.
+  const clips = { map: null, voice: "" };
+  const player = new Audio();
+  player.preload = "auto";
+  fetch("audio/manifest.json").then(r => r.ok ? r.json() : null).then(m => {
+    if (!m?.clips) return;
+    clips.map = m.clips; clips.voice = m.voice || "";
+    if (["setup", "guide", "list"].includes(S.view)) render();
+  }).catch(() => {});
+  const canSpeak = () => !!clips.map || tts.ok;
+  let playId = 0;
+  function speak(text) {
+    if (!text) return;
+    const id = ++playId;
+    const file = clips.map?.[text];
+    if (file) {
+      try { if (tts.ok) speechSynthesis.cancel(); } catch {}
+      player.pause();
+      player.src = file;
+      player.preservesPitch = true;
+      player.playbackRate = S.prefs.slow ? 0.75 : 1;
+      // an interrupted clip rejects with AbortError: that is a newer click, not a failure
+      player.play().catch(e => { if (id === playId && e?.name !== "AbortError") speakDevice(text); });
+      return;
+    }
+    speakDevice(text);
+  }
+  function speakDevice(text) {
+    if (!tts.ok) return;
+    try {
+      player.pause();
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(String(text).replace(/\s*\/\s*/g, ", ").replace(/…|\.\.\.+/g, " "));
+      u.lang = tts.voice?.lang || "nl-NL";
+      if (tts.voice) u.voice = tts.voice;
+      u.rate = S.prefs.slow ? 0.6 : 0.9;
+      speechSynthesis.speak(u);
+    } catch {}
+  }
+  const ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>`;
+  const sayBtn = (nl, id) => canSpeak() ? `<button type="button" class="say"${id ? ` id="${id}"` : ""} data-say="${esc(nl)}" aria-label="Luister: ${esc(nl)}" title="Luister">${ICON}</button>` : "";
+  document.addEventListener("click", e => { const b = e.target.closest("[data-say]"); if (b) { e.preventDefault(); speak(b.dataset.say); } });
+  function voiceNote() {
+    if (clips.map) return "";
+    if (!tts.ok) return "This browser can't read text aloud, so the listen buttons are hidden.";
+    if (tts.listed && !tts.voice) return "No Dutch voice is installed on this device, so words are read with a default voice. On a Mac: System Settings → Accessibility → Spoken Content → System voice → Manage Voices → Nederlands. On an iPhone: Settings → Accessibility → Spoken Content → Voices → Dutch.";
+    return "";
+  }
+
+  // ---------- answer checking ----------
+  const fold = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const norm = s => String(s).toLowerCase().replace(/[’‘`']/g, "").replace(/\(\?\)/g, "")
+    .replace(/…|\.\.\./g, " ").replace(/[.,!?¿;:"“”]/g, " ").replace(/-/g, " ").replace(/\s+/g, " ").trim();
+  const flat = s => fold(norm(s)).replace(/ /g, "");
+  const nlAlts = w => w.nl.split("/").map(s => s.trim()).filter(Boolean);
+  function enAlts(w) {
+    const out = [w.en];
+    for (const p of w.en.split(/[;,]/).map(s => s.trim()).filter(Boolean)) {
+      out.push(p);
+      const bare = p.replace(/\s*\([^)]*\)/g, "").trim();
+      if (bare) out.push(bare);
+      if (/^to /i.test(bare)) out.push(bare.slice(3));
+    }
+    if (w.num != null) out.push(String(w.num));
+    return [...new Set(out)];
+  }
+  const keyOf = str => str.split(/[;,/]/).map(s => flat(s)).filter(Boolean).sort().join("|");
+  let byEn = new Map(), byNl = new Map();
+  function indexWords() {
+    byEn = new Map(); byNl = new Map();
+    for (const w of S.words) {
+      const ke = keyOf(w.en), kn = keyOf(w.nl);
+      byEn.set(ke, [...(byEn.get(ke) || []), w]);
+      byNl.set(kn, [...(byNl.get(kn) || []), w]);
+    }
+  }
+  function lev(a, b) {
+    const m = a.length, n = b.length; if (Math.abs(m - n) > 2) return 3;
+    let prev = Array.from({ length: n + 1 }, (_, j) => j);
+    for (let i = 1; i <= m; i++) {
+      const cur = [i];
+      for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      prev = cur;
+    }
+    return prev[n];
+  }
+  // dir "en-nl": answer is Dutch. Returns {ok, kind}
+  function grade(w, dir, input) {
+    const a = norm(input);
+    if (!a) return { ok: false, kind: "empty" };
+    const toNl = dir === "en-nl";
+    const own = toNl ? nlAlts(w) : enAlts(w);
+    const peers = toNl ? (byEn.get(keyOf(w.en)) || [w]) : (byNl.get(keyOf(w.nl)) || [w]);
+    const all = [...new Set(peers.flatMap(p => toNl ? nlAlts(p) : enAlts(p)))];
+    const aFlatExact = a.replace(/ /g, "");
+    for (const alt of all) {
+      if (norm(alt).replace(/ /g, "") === aFlatExact) return { ok: true, kind: own.includes(alt) ? "exact" : "synonym", matched: alt };
+    }
+    for (const alt of all) if (flat(alt) === flat(a)) return { ok: true, kind: "accent", matched: alt };
+    if (toNl) {
+      for (const alt of own) {
+        const m = norm(alt).match(/^(de|het) (.+)$/);
+        if (!m) continue;
+        if (flat(a) === flat(m[2])) return { ok: false, kind: "article-missing" };
+        const g = a.match(/^(de|het) (.+)$/);
+        if (g && g[1] !== m[1] && flat(g[2]) === flat(m[2])) return { ok: false, kind: "article-wrong" };
+      }
+    }
+    const fa = flat(a);
+    for (const alt of all) {
+      const fb = flat(alt), d = lev(fa, fb);
+      if ((fb.length >= 4 && d <= 1) || (fb.length >= 9 && d <= 2)) return { ok: false, kind: "typo" };
+    }
+    return { ok: false, kind: "wrong" };
+  }
+
+  // ---------- progress ----------
+  const rec = w => (S.prog[w.deck] ||= {})[w.id];
+  const statusOf = w => { const r = rec(w); if (!r || (!r.c && !r.w)) return "new"; return r.b >= 3 ? "known" : "learning"; };
+  function record(w, ok) {
+    const deck = (S.prog[w.deck] ||= {});
+    const r = deck[w.id] ? { ...deck[w.id] } : { b: 0, c: 0, w: 0, t: 0 };
+    if (ok) { r.b = Math.min(5, r.b + 1); r.c++; } else { r.b = 1; r.w++; }
+    r.t = Date.now();
+    deck[w.id] = r;
+    markDirty(w.deck);
+  }
+  function unrecordWrong(w) { // "Toch goed": turn the last wrong into a correct
+    const r = rec(w); if (!r) return;
+    r.w = Math.max(0, r.w - 1); r.c++; r.b = Math.min(5, (r.b || 0) + 1);
+    markDirty(w.deck);
+  }
+
+  // ---------- storage ----------
+  let db = null;
+  const dirty = new Set(), busy = new Map(), chain = new Map();
+  let flushTimer = null;
+  function markDirty(id) { dirty.add(id); clearTimeout(flushTimer); flushTimer = setTimeout(flush, 2500); }
+  function useLocal() {
+    if (S.local) return;
+    S.local = true;
+    const saved = readLS("wt-progress") || {};
+    for (const [d, words] of Object.entries(saved)) S.prog[d] = Object.assign({}, S.prog[d] || {}, words);
+  }
+  function flush() {
+    clearTimeout(flushTimer);
+    const ids = [...dirty]; dirty.clear();
+    if (!ids.length) return;
+    if (S.local || !db) { writeLS("wt-progress", S.prog); return; }
+    for (const id of ids) {
+      busy.set(id, (busy.get(id) || 0) + 1);
+      const body = { words: JSON.parse(JSON.stringify(S.prog[id] || {})), updated: new Date().toISOString() };
+      const p = (chain.get(id) || Promise.resolve())
+        .then(() => db.doc("progress/" + id).set(body))
+        .catch(e => {
+          if (["invalid_argument", "not_granted", "revoked", "capability_disabled"].includes(e?.code)) { useLocal(); writeLS("wt-progress", S.prog); if (S.view === "setup") render(); }
+          else dirty.add(id);
+        })
+        .finally(() => busy.set(id, busy.get(id) - 1));
+      chain.set(id, p);
+    }
+  }
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") flush(); });
+
+  function setDecks(docs) {
+    S.decks = docs.map(d => ({ id: d.id, ...d.data() })).sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+    S.words = S.decks.flatMap(d => (d.words || []).map(w => ({ ...w, deck: d.id, deckTitle: d.title })));
+    indexWords();
+    S.status = "ready";
+    if (S.view === "setup" || S.view === "list") render();
+  }
+
+  // Outside claude.ai (the public site) chapters come from data/*.json and progress stays in this browser.
+  async function bootStatic() {
+    useLocal();
+    try {
+      const idx = await (await fetch("data/decks.json", { cache: "no-cache" })).json();
+      const decks = await Promise.all(idx.decks.map(async id => {
+        const body = await (await fetch(`data/${id}.json`, { cache: "no-cache" })).json();
+        return { id, data: () => body };
+      }));
+      setDecks(decks);
+    } catch { S.status = "nodb"; render(); }
+  }
+
+  async function boot() {
+    render();
+    const use = window.claude && window.claude.use;
+    db = use ? await window.claude.use("db") : null;
+    if (!db) { await bootStatic(); return; }
+    db.collection("decks").onSnapshot(snap => setDecks(snap.docs), () => { S.status = "error"; render(); });
+    db.collection("progress").onSnapshot(snap => {
+      if (S.local) return;
+      for (const d of snap.docs) {
+        if (dirty.has(d.id) || busy.get(d.id)) continue;
+        S.prog[d.id] = JSON.parse(JSON.stringify(d.data()?.words || {}));
+      }
+      if (S.view === "setup" || S.view === "list") render();
+    }, () => {});
+    const user = await window.claude.use("user");
+    const can = user ? await user.can("data.write") : null;
+    if (can === false) { useLocal(); if (S.view === "setup") render(); }
+  }
+
+  // ---------- selection ----------
+  const selectedDecks = () => S.prefs.decks?.length ? S.decks.filter(d => S.prefs.decks.includes(d.id)) : S.decks;
+  function sectionsFor(decks) {
+    const m = new Map();
+    for (const d of decks) for (const s of d.sections || []) if (!m.has(s.id)) m.set(s.id, s.name);
+    return [...m].map(([id, name]) => ({ id, name }));
+  }
+  function inScope() {
+    const deckIds = new Set(selectedDecks().map(d => d.id));
+    const secs = S.prefs.secs;
+    return S.words.filter(w => deckIds.has(w.deck) && (!secs?.length || secs.includes(w.sec)));
+  }
+  function pool() {
+    const ws = inScope();
+    if (S.prefs.focus === "unknown") return ws.filter(w => statusOf(w) !== "known");
+    if (S.prefs.focus === "mistakes") return ws.filter(w => (rec(w)?.w || 0) > 0 && statusOf(w) !== "known");
+    return ws;
+  }
+
+  // ---------- views ----------
+  function render() {
+    if (S.status === "loading") return;
+    if (S.status === "nodb" || S.status === "error") {
+      app.innerHTML = `<div class="state"><h2>The word lists didn't load</h2>
+        <p class="note">Check your internet connection and reload the page.</p></div>`;
+      return;
+    }
+    if (!S.decks.length) {
+      app.innerHTML = `<div class="state"><h2>No word lists yet</h2>
+        <p class="note">Chapters appear here once they are added.</p></div>`;
+      return;
+    }
+    ({ setup: renderSetup, quiz: renderQuiz, round: renderRound, done: renderDone, list: renderList, guide: renderGuide })[S.view]();
+    if (["setup", "list", "guide"].includes(S.view)) {
+      const tabs = [["setup", "Oefenen"], ["list", "Woordenlijst"], ["guide", "Uitspraak"]];
+      app.insertAdjacentHTML("afterbegin", `<nav class="tabs" aria-label="Sections">${tabs.map(([v, l]) => `<button type="button" data-view="${v}"${S.view === v ? ' aria-current="page"' : ""}>${l}</button>`).join("")}</nav>`);
+      app.querySelectorAll("[data-view]").forEach(b => b.onclick = () => { S.view = b.dataset.view; render(); window.scrollTo(0, 0); });
+    }
+  }
+
+  function chip(type, name, id, value, label, checked, count, disabled) {
+    return `<span class="chip"><input type="${type}" name="${name}" id="${id}" value="${esc(value)}"${checked ? " checked" : ""}${disabled ? " disabled" : ""}>
+      <label for="${id}">${esc(label)}${count != null ? ` <span class="num">${count}</span>` : ""}</label></span>`;
+  }
+
+  function renderSetup() {
+    const decks = selectedDecks();
+    const secs = sectionsFor(decks);
+    const scope = inScope();
+    const n = { known: 0, learning: 0, new: 0 };
+    for (const w of scope) n[statusOf(w)]++;
+    const tot = scope.length || 1;
+    const nUnknown = scope.filter(w => statusOf(w) !== "known").length;
+    const nMistakes = scope.filter(w => (rec(w)?.w || 0) > 0 && statusOf(w) !== "known").length;
+    const p = pool().length;
+    const secCounts = id => S.words.filter(w => decks.some(d => d.id === w.deck) && w.sec === id).length;
+    const P = S.prefs;
+    app.innerHTML = `
+      <div class="controls">
+        <section class="overview" aria-label="Progress">
+          <div class="counts">
+            <span><span class="dot known"></span>Gekend <b>${n.known}</b></span>
+            <span><span class="dot learning"></span>Bezig <b>${n.learning}</b></span>
+            <span><span class="dot new"></span>Nieuw <b>${n.new}</b></span>
+            <span class="muted">of <b>${scope.length}</b> words selected</span>
+          </div>
+          <div class="bar" role="img" aria-label="${n.known} known, ${n.learning} learning, ${n.new} new">
+            <span class="known" style="width:${n.known / tot * 100}%"></span><span class="learning" style="width:${n.learning / tot * 100}%"></span>
+          </div>
+          <p class="note">A word counts as <em>gekend</em> after three correct answers in a row.</p>
+        </section>
+
+        <fieldset><legend class="kicker">Hoofdstukken</legend><div class="chips">
+          ${S.decks.map(d => chip("checkbox", "deck", "deck-" + d.id, d.id, d.title, !P.decks?.length || P.decks.includes(d.id), (d.words || []).length)).join("")}
+        </div></fieldset>
+
+        <fieldset><legend class="kicker">Onderdelen</legend><div class="chips">
+          ${secs.map(s => chip("checkbox", "sec", "sec-" + s.id, s.id, s.name, !P.secs?.length || P.secs.includes(s.id), secCounts(s.id))).join("")}
+        </div></fieldset>
+
+        <fieldset><legend class="kicker">Richting</legend><div class="chips">
+          ${chip("radio", "dir", "dir-en-nl", "en-nl", "Engels → Nederlands", P.dir === "en-nl")}
+          ${chip("radio", "dir", "dir-nl-en", "nl-en", "Nederlands → Engels", P.dir === "nl-en")}
+          ${chip("radio", "dir", "dir-mix", "mix", "Gemengd", P.dir === "mix")}
+        </div></fieldset>
+
+        <fieldset><legend class="kicker">Manier</legend><div class="chips">
+          ${chip("radio", "mode", "mode-type", "type", "Typen", P.mode === "type")}
+          ${chip("radio", "mode", "mode-flip", "flip", "Kaarten (flip and self-check)", P.mode === "flip")}
+        </div></fieldset>
+
+        <fieldset><legend class="kicker">Focus</legend><div class="chips">
+          ${chip("radio", "focus", "focus-all", "all", "Alles", P.focus === "all", scope.length)}
+          ${chip("radio", "focus", "focus-unknown", "unknown", "Nog niet gekend", P.focus === "unknown", nUnknown)}
+          ${chip("radio", "focus", "focus-mistakes", "mistakes", "Fouten", P.focus === "mistakes", nMistakes)}
+        </div></fieldset>
+
+        ${canSpeak() ? `<fieldset><legend class="kicker">Audio</legend><div class="chips">
+          ${chip("checkbox", "auto", "audio-auto", "auto", "Nederlands automatisch voorlezen", P.auto)}
+          ${chip("checkbox", "slow", "audio-slow", "slow", "Langzaam", P.slow)}
+        </div>${voiceNote() ? `<p class="note">${esc(voiceNote())}</p>` : ""}</fieldset>` : ""}
+
+        <div class="actions">
+          <button class="btn primary" id="start"${p ? "" : " disabled"}>Start · ${p} woorden</button>
+        </div>
+        <p class="note">Rounds of ${ROUND}. Words you miss come back at the start of the next round, until you've had every word. ${S.local ? "Progress is saved in this browser only." : "Progress is saved with this page."}</p>
+      </div>`;
+    app.querySelectorAll("input[name=deck]").forEach(el => el.onchange = () => {
+      const on = [...app.querySelectorAll("input[name=deck]:checked")].map(i => i.value);
+      P.decks = on.length === S.decks.length ? null : on; if (!on.length) P.decks = null;
+      savePrefs(); renderSetup();
+    });
+    app.querySelectorAll("input[name=sec]").forEach(el => el.onchange = () => {
+      const all = [...app.querySelectorAll("input[name=sec]")];
+      const on = all.filter(i => i.checked).map(i => i.value);
+      P.secs = on.length === all.length || !on.length ? null : on;
+      savePrefs(); renderSetup();
+    });
+    for (const k of ["dir", "mode", "focus"]) app.querySelectorAll(`input[name=${k}]`).forEach(el => el.onchange = () => { P[k] = el.value; savePrefs(); renderSetup(); });
+    for (const k of ["auto", "slow"]) { const el = app.querySelector(`input[name=${k}]`); if (el) el.onchange = () => { P[k] = el.checked; savePrefs(); }; }
+    app.querySelector("#start").onclick = startSession;
+  }
+
+  // ---------- session ----------
+  function startSession() {
+    const words = shuffle(pool().slice());
+    S.session = { queue: words, total: words.length, seen: new Set(), retry: [], roundNo: 0, round: [], i: 0, missed: [], answered: null, firstTry: 0 };
+    nextRound();
+  }
+  function nextRound() {
+    const s = S.session;
+    const fromRetry = s.retry.splice(0, ROUND);
+    const fill = s.queue.splice(0, ROUND - fromRetry.length);
+    s.round = [...fromRetry, ...fill].map(w => ({ w, dir: S.prefs.dir === "mix" ? (Math.random() < 0.5 ? "en-nl" : "nl-en") : S.prefs.dir }));
+    if (!s.round.length) { S.view = "done"; flush(); render(); return; }
+    s.roundNo++; s.i = 0; s.missed = []; s.answered = null; s.revealed = false;
+    S.view = "quiz"; render();
+  }
+  function answer(ok, result) {
+    const s = S.session, item = s.round[s.i];
+    if (s.answered) return;
+    s.answered = { ok, result };
+    if (!s.seen.has(item.w)) { s.seen.add(item.w); if (ok) s.firstTry++; }
+    record(item.w, ok);
+    if (!ok) s.missed.push(item.w);
+    renderQuiz();
+  }
+  function overrideCorrect() {
+    const s = S.session, item = s.round[s.i];
+    if (!s.answered || s.answered.ok) return;
+    unrecordWrong(item.w);
+    s.missed = s.missed.filter(w => w !== item.w);
+    if (s.seen.has(item.w) && !s.retriedOnce?.has(item.w)) s.firstTry++;
+    s.answered = { ok: true, result: { kind: "override" } };
+    renderQuiz();
+  }
+  function advance() {
+    const s = S.session;
+    s.i++; s.answered = null; s.revealed = false;
+    if (s.i >= s.round.length) {
+      s.retry.push(...s.missed);
+      (s.retriedOnce ||= new Set()); s.missed.forEach(w => s.retriedOnce.add(w));
+      flush();
+      S.view = "round"; render(); return;
+    }
+    renderQuiz();
+  }
+  function stopSession() { flush(); S.session = null; S.view = "setup"; render(); }
+
+  const secName = w => (S.decks.find(d => d.id === w.deck)?.sections || []).find(x => x.id === w.sec)?.name || "";
+  function promptHtml(w, dir) {
+    if (dir === "nl-en") return `<div class="prompt-row"><div class="prompt" lang="nl">${esc(w.nl)}</div>${sayBtn(w.nl, "say-prompt")}</div>`;
+    return `<div class="prompt" lang="en">${esc(w.en)}${w.num != null ? `<small>${w.num}</small>` : ""}</div>`;
+  }
+  const expected = (w, dir) => dir === "en-nl" ? w.nl : w.en;
+  const verdicts = {
+    exact: ["ok", "Goed!"], synonym: ["ok", "Goed! That's another word on the list for this."], accent: ["ok", "Goed! Mind the accents."],
+    override: ["ok", "Counted as correct."], "article-missing": ["near", "Bijna: you left out the article."],
+    "article-wrong": ["near", "Bijna: wrong article (de/het)."], typo: ["near", "Bijna: check the spelling."],
+    wrong: ["bad", "Niet goed."], empty: ["bad", "No answer."], shown: ["bad", "Niet goed."], selfok: ["ok", "Goed!"],
+  };
+
+  function renderQuiz() {
+    const s = S.session, item = s.round[s.i], w = item.w, dir = item.dir;
+    const typeMode = S.prefs.mode === "type";
+    const nounHint = dir === "en-nl" && /^(de|het) /i.test(w.nl) ? "Include de or het." : "";
+    const multi = dir === "en-nl" && w.nl.includes("/") ? "More than one form is right; one is enough." : "";
+    let fbHtml = "", bodyHtml = "";
+    if (s.answered) {
+      const kind = s.answered.result?.kind || (s.answered.ok ? "selfok" : "shown");
+      const [cls, text] = verdicts[kind] || verdicts.wrong;
+      const exp = expected(w, dir);
+      const canOverride = typeMode && !s.answered.ok;
+      fbHtml = `<div class="fb ${cls}">
+        <span class="verdict">${esc(text)}</span>
+        ${dir === "en-nl"
+          ? `<span class="with-say"><span class="answer-line" lang="nl">${esc(exp)}</span>${sayBtn(w.nl)}</span>
+             <span class="extra">${esc(w.en)}${w.note ? " · " + esc(w.note) : ""}</span>`
+          : `<span class="answer-line" lang="en">${esc(exp)}</span>
+             <span class="extra">${esc(w.nl)}${w.note ? " · " + esc(w.note) : ""}</span>`}
+        <div class="actions">
+          <button class="btn primary" id="next">Volgende <span class="kbd">↵</span></button>
+          ${canOverride ? `<button class="link" id="override">I was right, count it</button>` : ""}
+        </div></div>`;
+    }
+    if (typeMode) {
+      bodyHtml = `<form class="answer" id="answer-form" autocomplete="off">
+          <input id="answer" name="answer" lang="${dir === "en-nl" ? "nl" : "en"}" autocapitalize="off" autocorrect="off" spellcheck="false"
+            placeholder="${dir === "en-nl" ? "In het Nederlands…" : "In English…"}" aria-label="Your answer"${s.answered ? " disabled" : ""}>
+          <button class="btn primary" type="submit"${s.answered ? " disabled" : ""}>Controleer</button>
+        </form>
+        ${dir === "en-nl" && !s.answered ? `<div class="accents" aria-label="Insert a letter">${["é", "ë", "è", "ï", "ó"].map(c => `<button type="button" data-ch="${c}">${c}</button>`).join("")}</div>` : ""}`;
+    } else if (!s.answered) {
+      bodyHtml = s.revealed
+        ? `<div class="fb"><span class="with-say"><span class="answer-line">${esc(expected(w, dir))}</span>${dir === "en-nl" ? sayBtn(w.nl) : ""}</span>${w.note ? `<span class="extra">${esc(w.note)}</span>` : ""}</div>
+           <div class="actions"><button class="btn" id="self-bad">Fout <span class="kbd">1</span></button><button class="btn primary" id="self-ok">Goed <span class="kbd">2</span></button></div>`
+        : `<div class="actions"><button class="btn primary" id="reveal">Toon antwoord <span class="kbd">spatie</span></button></div>`;
+    }
+    app.innerHTML = `
+      <div class="controls">
+        <div class="quizbar">
+          <div class="stats num">
+            <span>Ronde ${s.roundNo} · ${s.i + 1}/${s.round.length}</span>
+            <span>${s.seen.size}/${s.total} gehad</span>
+            ${s.retry.length ? `<span>${s.retry.length} to redo</span>` : ""}
+          </div>
+          <button class="link" id="stop">Stoppen</button>
+        </div>
+        <article class="card">
+          <div class="card-head kicker"><span>${esc(w.deckTitle)} · ${esc(secName(w))}</span><span>${dir === "en-nl" ? "EN → NL" : "NL → EN"}</span></div>
+          <div class="card-body">
+            ${promptHtml(w, dir)}
+            ${nounHint || multi ? `<div class="hint">${esc([nounHint, multi].filter(Boolean).join(" "))}</div>` : ""}
+            ${bodyHtml}
+            ${fbHtml}
+          </div>
+        </article>
+      </div>`;
+    app.querySelector("#stop").onclick = stopSession;
+    if (S.prefs.auto) { // read the Dutch aloud once per card: the prompt for NL→EN, the answer for EN→NL
+      const key = `${s.roundNo}:${s.i}:${dir === "nl-en" ? "q" : (s.answered || s.revealed) ? "a" : ""}`;
+      if (!key.endsWith(":") && s.spoke !== key) { s.spoke = key; speak(w.nl); }
+    }
+    const input = app.querySelector("#answer");
+    const form = app.querySelector("#answer-form");
+    if (form) form.onsubmit = e => { e.preventDefault(); if (s.answered) return; const r = grade(w, dir, input.value); answer(r.ok, r); };
+    if (input && !s.answered) input.focus();
+    app.querySelectorAll(".accents button").forEach(b => b.onclick = () => {
+      const st = input.selectionStart ?? input.value.length, en = input.selectionEnd ?? st;
+      input.value = input.value.slice(0, st) + b.dataset.ch + input.value.slice(en);
+      input.focus(); input.setSelectionRange(st + 1, st + 1);
+    });
+    const next = app.querySelector("#next"); if (next) { next.onclick = advance; next.focus(); }
+    const ov = app.querySelector("#override"); if (ov) ov.onclick = overrideCorrect;
+    const rv = app.querySelector("#reveal"); if (rv) { rv.onclick = () => { s.revealed = true; renderQuiz(); }; rv.focus(); }
+    const sb = app.querySelector("#self-bad"); if (sb) sb.onclick = () => answer(false, { kind: "shown" });
+    const so = app.querySelector("#self-ok"); if (so) { so.onclick = () => answer(true, { kind: "selfok" }); }
+  }
+
+  document.addEventListener("keydown", e => {
+    if (S.view !== "quiz" || !S.session || e.metaKey || e.ctrlKey || e.altKey) return;
+    const s = S.session;
+    if ((e.key === "p" || e.key === "P") && e.target.tagName !== "INPUT") { speak(s.round[s.i]?.w.nl); return; }
+    if (S.prefs.mode === "flip" && !s.answered) {
+      if (!s.revealed && e.key === " ") { e.preventDefault(); s.revealed = true; renderQuiz(); }
+      else if (s.revealed && e.key === "1") answer(false, { kind: "shown" });
+      else if (s.revealed && e.key === "2") answer(true, { kind: "selfok" });
+    }
+  });
+
+  function missedList(words) {
+    return `<ul class="missed">${words.map(w => `<li><span lang="nl">${esc(w.nl)}</span><span class="muted" lang="en">${esc(w.en)}</span></li>`).join("")}</ul>`;
+  }
+  function renderRound() {
+    const s = S.session, right = s.round.length - s.missed.length, left = s.queue.length + s.retry.length;
+    app.innerHTML = `
+      <div class="controls">
+        <div><span class="kicker">Ronde ${s.roundNo} klaar</span><div class="big-score num">${right}/${s.round.length}</div></div>
+        ${s.missed.length ? `<div class="overview"><h2>Fout in deze ronde</h2><p class="note">These come back at the start of the next round.</p>${missedList(s.missed)}</div>` : `<p>Alles goed. Mooi zo!</p>`}
+        <p class="note num">${s.seen.size} of ${s.total} words covered · ${left} still to go</p>
+        <div class="actions">
+          ${left ? `<button class="btn primary" id="go">Volgende ronde <span class="kbd">↵</span></button>` : `<button class="btn primary" id="go">Afronden <span class="kbd">↵</span></button>`}
+          <button class="link" id="stop">Stoppen</button>
+        </div>
+      </div>`;
+    const go = app.querySelector("#go"); go.onclick = nextRound; go.focus();
+    app.querySelector("#stop").onclick = stopSession;
+  }
+  function renderDone() {
+    const s = S.session;
+    const hard = [...(s.retriedOnce || [])];
+    app.innerHTML = `
+      <div class="controls">
+        <div><span class="kicker">Klaar</span><h2>Je hebt alle ${s.total} woorden gehad.</h2></div>
+        <p class="num">${s.firstTry} of ${s.total} right the first time (${Math.round(s.firstTry / Math.max(1, s.total) * 100)}%).</p>
+        ${hard.length ? `<div class="overview"><h2>Needed a second try</h2>${missedList(hard)}</div>` : ""}
+        <div class="actions">
+          <button class="btn primary" id="again">Terug naar start</button>
+        </div>
+      </div>`;
+    const b = app.querySelector("#again"); b.onclick = () => { S.session = null; S.view = "setup"; render(); }; b.focus();
+  }
+
+  function renderList() {
+    const q = flat(S.listQuery || "");
+    const ws = inScope().filter(w => !q || flat(w.nl).includes(q) || flat(w.en).includes(q));
+    const label = { known: "gekend", learning: "bezig", new: "nieuw" };
+    app.innerHTML = `
+      <div class="controls">
+        <p class="note">${ws.length} words in the chapters and parts selected under Oefenen.</p>
+        <input class="search" id="list-search" type="search" placeholder="Zoek in het Nederlands of Engels" value="${esc(S.listQuery)}" aria-label="Search words">
+        <div class="tablewrap"><table>
+          <thead><tr><th>Nederlands</th><th>Engels</th><th class="r">Goed · fout</th></tr></thead>
+          <tbody>${ws.map(w => { const r = rec(w), st = statusOf(w); return `<tr>
+            <td lang="nl"><span class="with-say">${sayBtn(w.nl)}<span><span class="dot ${st}" title="${label[st]}"></span>${esc(w.nl)}</span></span></td>
+            <td lang="en">${esc(w.en)}${w.note ? `<div class="muted small">${esc(w.note)}</div>` : ""}</td>
+            <td class="r num">${r ? `${r.c || 0} · ${r.w || 0}` : "–"}</td></tr>`; }).join("")}</tbody>
+        </table></div>
+        ${selectedDecks().map(d => d.source ? `<p class="note">${esc(d.title)}: ${esc(d.source)}</p>` : "").join("")}
+      </div>`;
+    const s = app.querySelector("#list-search");
+    s.oninput = () => {
+      S.listQuery = s.value;
+      const pos = s.selectionStart;
+      render();
+      const n = app.querySelector("#list-search"); n.focus(); n.setSelectionRange(pos, pos);
+    };
+  }
+
+  // ---------- pronunciation guide ----------
+  // Guide content lives in data/guide.json; examples are "dutch|English gloss".
+  let GUIDE = null;
+
+  function renderGuide() {
+    if (!GUIDE) { app.innerHTML = `<div class="state"><h2>Uitspraak laden…</h2></div>`; return; }
+    const chipHtml = e => { const [nl, gl] = e.split("|"); return canSpeak()
+      ? `<button type="button" class="ex-chip" data-say="${esc(nl)}" aria-label="Luister: ${esc(nl)}">${ICON}<span lang="nl">${esc(nl)}</span>${gl ? `<span class="gloss">${esc(gl)}</span>` : ""}</button>`
+      : `<span class="ex-chip"><span lang="nl">${esc(nl)}</span>${gl ? `<span class="gloss">${esc(gl)}</span>` : ""}</span>`; };
+    app.innerHTML = `
+      <div class="controls">
+        <div class="guide-sec">
+          <h2>Uitspraak</h2>
+          <p class="note">${clips.map ? "Tap any example to hear it. The recordings are made with an AI voice speaking Netherlands Dutch: good for single words and sounds, but not a real person." : "Tap any example to hear it, read by your device's own voice."} For the course's own recordings by real speakers, use “Luister naar de woorden” on the 1.2 Woordenlijst page of the Nederlands in gang website.</p>
+          ${canSpeak() ? `<div class="chips">${chip("checkbox", "slow", "guide-slow", "slow", "Langzaam", S.prefs.slow)}</div>` : ""}
+          ${voiceNote() ? `<p class="note">${esc(voiceNote())}</p>` : ""}
+        </div>
+        ${GUIDE.map(sec => `
+          <section class="guide-sec">
+            <div><span class="kicker">${esc(sec.en)}</span><h2>${esc(sec.title)}</h2></div>
+            ${sec.intro ? `<p>${esc(sec.intro)}</p>` : ""}
+            <div>${sec.rows.map(r => r.s
+              ? `<div class="sound"><div class="letters" lang="nl">${esc(r.s)}</div><p class="desc">${esc(r.d)}</p><div class="ex">${r.ex.map(chipHtml).join("")}</div></div>`
+              : `<div class="ex">${r.ex.map(chipHtml).join("")}</div>`).join("")}</div>
+          </section>`).join("")}
+      </div>`;
+    const slow = app.querySelector("#guide-slow");
+    if (slow) slow.onchange = () => { S.prefs.slow = slow.checked; savePrefs(); };
+  }
+
+  fetch("data/guide.json").then(r => r.ok ? r.json() : null).then(g => { if (g) { GUIDE = g; if (S.view === "guide") render(); } }).catch(() => {});
+  boot();
+})();
+</script>
+
+</body>
+</html>

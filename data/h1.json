@@ -1,0 +1,1395 @@
+{
+ "title": "Hoofdstuk 1",
+ "subtitle": "In de cursus Nederlands",
+ "order": 1,
+ "source": "Hoofdstuk 1 nieuw EN-NL AI.xlsx (F. Fabbricotti, 22 Sept 2026)",
+ "sections": [
+  {
+   "id": "woorden",
+   "name": "Woorden"
+  },
+  {
+   "id": "grammatica",
+   "name": "hebben, zijn & pronomen"
+  },
+  {
+   "id": "getallen",
+   "name": "Getallen"
+  }
+ ],
+ "words": [
+  {
+   "id": "goed-gedaan",
+   "nl": "Goed gedaan.",
+   "en": "nice work, well done",
+   "sec": "woorden"
+  },
+  {
+   "id": "dat-klopt",
+   "nl": "Dat klopt.",
+   "en": "that's right",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-voornaam",
+   "nl": "de voornaam",
+   "en": "first name",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-achternaam",
+   "nl": "de achternaam",
+   "en": "surname",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-adres",
+   "nl": "het adres",
+   "en": "address",
+   "sec": "woorden"
+  },
+  {
+   "id": "afscheid-nemen",
+   "nl": "afscheid nemen",
+   "en": "to say goodbye",
+   "sec": "woorden"
+  },
+  {
+   "id": "al",
+   "nl": "al",
+   "en": "already",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-alfabet",
+   "nl": "het alfabet",
+   "en": "alphabet",
+   "sec": "woorden"
+  },
+  {
+   "id": "allemaal",
+   "nl": "allemaal",
+   "en": "everyone",
+   "sec": "woorden"
+  },
+  {
+   "id": "alles",
+   "nl": "alles",
+   "en": "everything",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-antwoord",
+   "nl": "het antwoord",
+   "en": "answer",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-audio",
+   "nl": "de audio",
+   "en": "audio",
+   "sec": "woorden"
+  },
+  {
+   "id": "bedankt",
+   "nl": "bedankt",
+   "en": "thanks",
+   "sec": "woorden"
+  },
+  {
+   "id": "beginnen",
+   "nl": "beginnen",
+   "en": "to begin, to start",
+   "sec": "woorden"
+  },
+  {
+   "id": "begrijpen",
+   "nl": "begrijpen",
+   "en": "to understand",
+   "sec": "woorden"
+  },
+  {
+   "id": "begroeten",
+   "nl": "begroeten",
+   "en": "to greet",
+   "sec": "woorden"
+  },
+  {
+   "id": "bestuderen",
+   "nl": "bestuderen",
+   "en": "to study",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-bijlage",
+   "nl": "de bijlage",
+   "en": "appendix, annex",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-bladzijde",
+   "nl": "de bladzijde",
+   "en": "page",
+   "sec": "woorden"
+  },
+  {
+   "id": "blauw",
+   "nl": "blauw",
+   "en": "blue",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-blok",
+   "nl": "het blok",
+   "en": "block",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-boek",
+   "nl": "het boek",
+   "en": "book",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-buurman",
+   "nl": "de buurman",
+   "en": "neighbour (m)",
+   "sec": "woorden"
+  },
+  {
+   "id": "controleren",
+   "nl": "controleren",
+   "en": "to check, to verify",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-cursus",
+   "nl": "de cursus",
+   "en": "course",
+   "sec": "woorden"
+  },
+  {
+   "id": "dag",
+   "nl": "dag",
+   "en": "hello (greeting)",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-dag",
+   "nl": "de dag",
+   "en": "day",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-stoel-deze-stoel",
+   "nl": "de stoel, deze stoel",
+   "en": "the chair, this chair",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-boek-dat-boek",
+   "nl": "het boek, dat boek",
+   "en": "the book, that book",
+   "sec": "woorden"
+  },
+  {
+   "id": "de",
+   "nl": "de",
+   "en": "the (de-words)",
+   "sec": "woorden"
+  },
+  {
+   "id": "het",
+   "nl": "het",
+   "en": "it; the (het-words)",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-dialoog",
+   "nl": "de dialoog",
+   "en": "dialogue",
+   "sec": "woorden"
+  },
+  {
+   "id": "die",
+   "nl": "die",
+   "en": "that, those; them (non-binary)",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-docent",
+   "nl": "de docent",
+   "en": "teacher",
+   "sec": "woorden"
+  },
+  {
+   "id": "doedoei-doeidoei",
+   "nl": "doedoei / doeidoei",
+   "en": "bye-bye",
+   "sec": "woorden"
+  },
+  {
+   "id": "doeg",
+   "nl": "doeg",
+   "en": "bye",
+   "sec": "woorden"
+  },
+  {
+   "id": "doei",
+   "nl": "doei",
+   "en": "bye",
+   "sec": "woorden"
+  },
+  {
+   "id": "dubbel",
+   "nl": "dubbel",
+   "en": "double",
+   "sec": "woorden"
+  },
+  {
+   "id": "duidelijk",
+   "nl": "duidelijk",
+   "en": "clear, obvious",
+   "sec": "woorden"
+  },
+  {
+   "id": "een",
+   "nl": "een",
+   "en": "a, an",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-einde",
+   "nl": "het einde",
+   "en": "end",
+   "sec": "woorden"
+  },
+  {
+   "id": "en",
+   "nl": "en",
+   "en": "and",
+   "sec": "woorden"
+  },
+  {
+   "id": "engeland",
+   "nl": "Engeland",
+   "en": "England",
+   "sec": "woorden"
+  },
+  {
+   "id": "engels",
+   "nl": "Engels",
+   "en": "English",
+   "sec": "woorden"
+  },
+  {
+   "id": "even",
+   "nl": "even",
+   "en": "for a moment",
+   "sec": "woorden"
+  },
+  {
+   "id": "fijn",
+   "nl": "fijn",
+   "en": "nice, good",
+   "sec": "woorden"
+  },
+  {
+   "id": "gaan",
+   "nl": "gaan",
+   "en": "to go",
+   "sec": "woorden"
+  },
+  {
+   "id": "geven",
+   "nl": "geven",
+   "en": "to give",
+   "sec": "woorden"
+  },
+  {
+   "id": "goed",
+   "nl": "goed",
+   "en": "good",
+   "sec": "woorden"
+  },
+  {
+   "id": "goedemiddag",
+   "nl": "goedemiddag",
+   "en": "good afternoon",
+   "sec": "woorden"
+  },
+  {
+   "id": "goedemorgen",
+   "nl": "goedemorgen",
+   "en": "good morning",
+   "sec": "woorden"
+  },
+  {
+   "id": "goedenavond",
+   "nl": "goedenavond",
+   "en": "good evening",
+   "sec": "woorden"
+  },
+  {
+   "id": "goedendag",
+   "nl": "goedendag",
+   "en": "good day",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-grammatica",
+   "nl": "de grammatica",
+   "en": "grammar",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-grammaticavideo",
+   "nl": "de grammaticavideo",
+   "en": "grammar video",
+   "sec": "woorden"
+  },
+  {
+   "id": "grieks",
+   "nl": "Grieks",
+   "en": "Greek",
+   "sec": "woorden"
+  },
+  {
+   "id": "groen",
+   "nl": "groen",
+   "en": "green",
+   "sec": "woorden"
+  },
+  {
+   "id": "hai",
+   "nl": "hai",
+   "en": "hi",
+   "sec": "woorden"
+  },
+  {
+   "id": "hallo",
+   "nl": "hallo",
+   "en": "hello",
+   "sec": "woorden"
+  },
+  {
+   "id": "he",
+   "nl": "hé",
+   "en": "hey",
+   "sec": "woorden"
+  },
+  {
+   "id": "hebben",
+   "nl": "hebben",
+   "en": "to have",
+   "sec": "woorden"
+  },
+  {
+   "id": "hen",
+   "nl": "hen",
+   "en": "them (also non-binary)",
+   "sec": "woorden"
+  },
+  {
+   "id": "herhalen",
+   "nl": "herhalen",
+   "en": "to repeat",
+   "sec": "woorden"
+  },
+  {
+   "id": "heten",
+   "nl": "heten",
+   "en": "to be called",
+   "sec": "woorden"
+  },
+  {
+   "id": "hier",
+   "nl": "hier",
+   "en": "here",
+   "sec": "woorden"
+  },
+  {
+   "id": "hij",
+   "nl": "hij",
+   "en": "he",
+   "sec": "woorden"
+  },
+  {
+   "id": "hoe",
+   "nl": "hoe",
+   "en": "how, what",
+   "sec": "woorden"
+  },
+  {
+   "id": "hoi",
+   "nl": "hoi",
+   "en": "hi, hello",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-hoofdstuk",
+   "nl": "het hoofdstuk",
+   "en": "chapter",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-huiswerk",
+   "nl": "het huiswerk",
+   "en": "homework",
+   "sec": "woorden"
+  },
+  {
+   "id": "iedereen",
+   "nl": "iedereen",
+   "en": "everyone",
+   "sec": "woorden"
+  },
+  {
+   "id": "ik",
+   "nl": "ik",
+   "en": "I",
+   "sec": "woorden"
+  },
+  {
+   "id": "in",
+   "nl": "in",
+   "en": "in, to",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-informatie",
+   "nl": "de informatie",
+   "en": "information",
+   "sec": "woorden"
+  },
+  {
+   "id": "ja",
+   "nl": "ja",
+   "en": "yes",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-jaar",
+   "nl": "het jaar",
+   "en": "year",
+   "sec": "woorden"
+  },
+  {
+   "id": "je",
+   "nl": "je",
+   "en": "you (singular); your (singular)",
+   "sec": "woorden"
+  },
+  {
+   "id": "jezelf",
+   "nl": "jezelf",
+   "en": "yourself",
+   "sec": "woorden"
+  },
+  {
+   "id": "jij",
+   "nl": "jij",
+   "en": "you (singular)",
+   "sec": "woorden"
+  },
+  {
+   "id": "jouw",
+   "nl": "jouw",
+   "en": "your (singular)",
+   "sec": "woorden"
+  },
+  {
+   "id": "jullie",
+   "nl": "jullie",
+   "en": "you (plural); your (plural)",
+   "sec": "woorden"
+  },
+  {
+   "id": "kennismaken",
+   "nl": "kennismaken",
+   "en": "to get to know",
+   "sec": "woorden"
+  },
+  {
+   "id": "kijken",
+   "nl": "kijken",
+   "en": "to look, to see, to watch",
+   "sec": "woorden"
+  },
+  {
+   "id": "kijken-naar",
+   "nl": "kijken naar",
+   "en": "to watch, to look at",
+   "sec": "woorden"
+  },
+  {
+   "id": "kloppen",
+   "nl": "kloppen",
+   "en": "to be correct",
+   "sec": "woorden"
+  },
+  {
+   "id": "komen",
+   "nl": "komen",
+   "en": "to come",
+   "sec": "woorden"
+  },
+  {
+   "id": "kort",
+   "nl": "kort",
+   "en": "short",
+   "sec": "woorden"
+  },
+  {
+   "id": "krijgen",
+   "nl": "krijgen",
+   "en": "to get",
+   "sec": "woorden"
+  },
+  {
+   "id": "kunnen",
+   "nl": "kunnen",
+   "en": "can, to be able to",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-land",
+   "nl": "het land",
+   "en": "country",
+   "sec": "woorden"
+  },
+  {
+   "id": "lang",
+   "nl": "lang",
+   "en": "long, tall",
+   "sec": "woorden"
+  },
+  {
+   "id": "leren",
+   "nl": "leren",
+   "en": "to learn",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-les",
+   "nl": "de les",
+   "en": "class, lesson",
+   "sec": "woorden"
+  },
+  {
+   "id": "lezen",
+   "nl": "lezen",
+   "en": "to read",
+   "sec": "woorden"
+  },
+  {
+   "id": "luisteren",
+   "nl": "luisteren",
+   "en": "to listen",
+   "sec": "woorden"
+  },
+  {
+   "id": "maar",
+   "nl": "maar",
+   "en": "but (also a friendly softener)",
+   "sec": "woorden"
+  },
+  {
+   "id": "maken",
+   "nl": "maken",
+   "en": "to make, to do",
+   "sec": "woorden"
+  },
+  {
+   "id": "met",
+   "nl": "met",
+   "en": "with",
+   "sec": "woorden"
+  },
+  {
+   "id": "mevrouw",
+   "nl": "mevrouw",
+   "en": "Ms, Mrs",
+   "sec": "woorden"
+  },
+  {
+   "id": "mijn",
+   "nl": "mijn",
+   "en": "my",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-moedertaal",
+   "nl": "de moedertaal",
+   "en": "mother tongue",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-naam",
+   "nl": "de naam",
+   "en": "name",
+   "sec": "woorden"
+  },
+  {
+   "id": "naar",
+   "nl": "naar",
+   "en": "to",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-nationaliteit",
+   "nl": "de nationaliteit",
+   "en": "nationality",
+   "sec": "woorden"
+  },
+  {
+   "id": "nederland",
+   "nl": "Nederland",
+   "en": "the Netherlands",
+   "sec": "woorden"
+  },
+  {
+   "id": "nederlands",
+   "nl": "Nederlands",
+   "en": "Dutch",
+   "sec": "woorden"
+  },
+  {
+   "id": "nee",
+   "nl": "nee",
+   "en": "no",
+   "sec": "woorden"
+  },
+  {
+   "id": "niet",
+   "nl": "niet",
+   "en": "not",
+   "sec": "woorden"
+  },
+  {
+   "id": "nu",
+   "nl": "nu",
+   "en": "now",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-nummer",
+   "nl": "het nummer",
+   "en": "number",
+   "sec": "woorden"
+  },
+  {
+   "id": "oke",
+   "nl": "oké",
+   "en": "okay",
+   "sec": "woorden"
+  },
+  {
+   "id": "ook",
+   "nl": "ook",
+   "en": "also, too",
+   "sec": "woorden"
+  },
+  {
+   "id": "op",
+   "nl": "op",
+   "en": "on",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-opdracht",
+   "nl": "de opdracht",
+   "en": "assignment",
+   "sec": "woorden"
+  },
+  {
+   "id": "over",
+   "nl": "over",
+   "en": "about",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-partner",
+   "nl": "de partner",
+   "en": "partner",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-pauze",
+   "nl": "de pauze",
+   "en": "break",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-postcode",
+   "nl": "de postcode",
+   "en": "postal code",
+   "sec": "woorden"
+  },
+  {
+   "id": "schrijven",
+   "nl": "schrijven",
+   "en": "to write",
+   "sec": "woorden"
+  },
+  {
+   "id": "sorry",
+   "nl": "sorry",
+   "en": "sorry",
+   "sec": "woorden"
+  },
+  {
+   "id": "spellen",
+   "nl": "spellen",
+   "en": "to spell",
+   "sec": "woorden"
+  },
+  {
+   "id": "spreken",
+   "nl": "spreken",
+   "en": "to speak",
+   "sec": "woorden"
+  },
+  {
+   "id": "staan",
+   "nl": "staan",
+   "en": "to stand, to be",
+   "sec": "woorden"
+  },
+  {
+   "id": "stoppen",
+   "nl": "stoppen",
+   "en": "to stop",
+   "sec": "woorden"
+  },
+  {
+   "id": "straks",
+   "nl": "straks",
+   "en": "soon, later",
+   "sec": "woorden"
+  },
+  {
+   "id": "succes",
+   "nl": "succes",
+   "en": "good luck, success",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-taal",
+   "nl": "de taal",
+   "en": "language",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-tekst",
+   "nl": "de tekst",
+   "en": "text",
+   "sec": "woorden"
+  },
+  {
+   "id": "tot",
+   "nl": "tot",
+   "en": "until",
+   "sec": "woorden"
+  },
+  {
+   "id": "tot-de-volgende-les",
+   "nl": "tot de volgende les",
+   "en": "see you next class",
+   "sec": "woorden"
+  },
+  {
+   "id": "tot-gauw-tot-snel",
+   "nl": "tot gauw / tot snel",
+   "en": "see you soon",
+   "sec": "woorden"
+  },
+  {
+   "id": "tot-later",
+   "nl": "tot later",
+   "en": "see you later",
+   "sec": "woorden"
+  },
+  {
+   "id": "tot-morgen",
+   "nl": "tot morgen",
+   "en": "see you tomorrow",
+   "sec": "woorden"
+  },
+  {
+   "id": "tot-straks",
+   "nl": "tot straks",
+   "en": "see you later (today)",
+   "sec": "woorden"
+  },
+  {
+   "id": "tot-ziens",
+   "nl": "tot ziens",
+   "en": "goodbye, see you (another time)",
+   "sec": "woorden"
+  },
+  {
+   "id": "tot-zo",
+   "nl": "tot zo",
+   "en": "see you in a bit",
+   "sec": "woorden"
+  },
+  {
+   "id": "uit",
+   "nl": "uit",
+   "en": "from, out",
+   "sec": "woorden"
+  },
+  {
+   "id": "van",
+   "nl": "van",
+   "en": "of",
+   "sec": "woorden"
+  },
+  {
+   "id": "vandaan",
+   "nl": "vandaan",
+   "en": "from",
+   "sec": "woorden"
+  },
+  {
+   "id": "veel",
+   "nl": "veel",
+   "en": "a lot of, much, many",
+   "sec": "woorden"
+  },
+  {
+   "id": "verder",
+   "nl": "verder",
+   "en": "further",
+   "sec": "woorden"
+  },
+  {
+   "id": "verdergaan",
+   "nl": "verdergaan",
+   "en": "to go on, to continue",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-video",
+   "nl": "de video",
+   "en": "video",
+   "sec": "woorden"
+  },
+  {
+   "id": "vinden",
+   "nl": "vinden",
+   "en": "to find",
+   "sec": "woorden"
+  },
+  {
+   "id": "volgend",
+   "nl": "volgend",
+   "en": "next",
+   "sec": "woorden"
+  },
+  {
+   "id": "voor",
+   "nl": "voor",
+   "en": "for",
+   "sec": "woorden"
+  },
+  {
+   "id": "zich-voorstellen",
+   "nl": "zich voorstellen",
+   "en": "to introduce oneself",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-vraag",
+   "nl": "de vraag",
+   "en": "question",
+   "sec": "woorden"
+  },
+  {
+   "id": "vragen",
+   "nl": "vragen",
+   "en": "to ask",
+   "sec": "woorden"
+  },
+  {
+   "id": "waar",
+   "nl": "waar",
+   "en": "where; true",
+   "sec": "woorden"
+  },
+  {
+   "id": "waar-vandaan",
+   "nl": "waar … vandaan",
+   "en": "where … from",
+   "sec": "woorden"
+  },
+  {
+   "id": "waar-naartoe",
+   "nl": "waar … naartoe",
+   "en": "where … to",
+   "sec": "woorden"
+  },
+  {
+   "id": "wat",
+   "nl": "wat",
+   "en": "what, how",
+   "sec": "woorden"
+  },
+  {
+   "id": "welk-welke",
+   "nl": "welk / welke",
+   "en": "which",
+   "sec": "woorden"
+  },
+  {
+   "id": "welkom",
+   "nl": "welkom",
+   "en": "welcome",
+   "sec": "woorden"
+  },
+  {
+   "id": "wie",
+   "nl": "wie",
+   "en": "who",
+   "sec": "woorden"
+  },
+  {
+   "id": "wij",
+   "nl": "wij",
+   "en": "we",
+   "sec": "woorden"
+  },
+  {
+   "id": "wonen",
+   "nl": "wonen",
+   "en": "to live",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-woord",
+   "nl": "het woord",
+   "en": "word",
+   "sec": "woorden"
+  },
+  {
+   "id": "zeggen",
+   "nl": "zeggen",
+   "en": "to say",
+   "sec": "woorden"
+  },
+  {
+   "id": "u",
+   "nl": "u",
+   "en": "you (polite)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "zij-ze-she",
+   "nl": "zij / ze",
+   "en": "she",
+   "sec": "grammatica"
+  },
+  {
+   "id": "wij-we",
+   "nl": "wij / we",
+   "en": "we",
+   "sec": "grammatica"
+  },
+  {
+   "id": "zij-ze-they",
+   "nl": "zij / ze",
+   "en": "they",
+   "sec": "grammatica"
+  },
+  {
+   "id": "ik-heb",
+   "nl": "ik heb",
+   "en": "I have",
+   "sec": "grammatica"
+  },
+  {
+   "id": "jij-hebt-je-hebt",
+   "nl": "jij hebt / je hebt",
+   "en": "you have (singular)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "heb-jij-heb-je",
+   "nl": "heb jij? / heb je?",
+   "en": "do you have? (singular)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "u-hebt-u-heeft",
+   "nl": "u hebt / u heeft",
+   "en": "you have (polite)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "hebt-u-heeft-u",
+   "nl": "hebt u? / heeft u?",
+   "en": "do you have? (polite)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "anna-heeft",
+   "nl": "Anna heeft",
+   "en": "Anna has",
+   "sec": "grammatica"
+  },
+  {
+   "id": "wij-hebben-we-hebben",
+   "nl": "wij hebben / we hebben",
+   "en": "we have",
+   "sec": "grammatica"
+  },
+  {
+   "id": "jullie-hebben",
+   "nl": "jullie hebben",
+   "en": "you (plural) have",
+   "sec": "grammatica"
+  },
+  {
+   "id": "zij-hebben-ze-hebben",
+   "nl": "zij hebben / ze hebben",
+   "en": "they have",
+   "sec": "grammatica"
+  },
+  {
+   "id": "ik-ben",
+   "nl": "ik ben",
+   "en": "I am",
+   "sec": "grammatica"
+  },
+  {
+   "id": "jij-bent-je-bent",
+   "nl": "jij bent / je bent",
+   "en": "you are (singular)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "ben-jij-ben-je",
+   "nl": "ben jij? / ben je?",
+   "en": "are you? (singular)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "u-bent",
+   "nl": "u bent",
+   "en": "you are (polite)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "bent-u",
+   "nl": "bent u?",
+   "en": "are you? (polite)",
+   "sec": "grammatica"
+  },
+  {
+   "id": "het-is",
+   "nl": "het is",
+   "en": "it is, it's",
+   "sec": "grammatica"
+  },
+  {
+   "id": "wij-zijn-we-zijn",
+   "nl": "wij zijn / we zijn",
+   "en": "we are",
+   "sec": "grammatica"
+  },
+  {
+   "id": "jullie-zijn",
+   "nl": "jullie zijn",
+   "en": "you (plural) are",
+   "sec": "grammatica"
+  },
+  {
+   "id": "zij-zijn-ze-zijn",
+   "nl": "zij zijn / ze zijn",
+   "en": "they are",
+   "sec": "grammatica"
+  },
+  {
+   "id": "nul",
+   "nl": "nul",
+   "en": "zero",
+   "sec": "getallen",
+   "num": 0
+  },
+  {
+   "id": "een-2",
+   "nl": "één",
+   "en": "one",
+   "sec": "getallen",
+   "num": 1
+  },
+  {
+   "id": "twee",
+   "nl": "twee",
+   "en": "two",
+   "sec": "getallen",
+   "num": 2
+  },
+  {
+   "id": "drie",
+   "nl": "drie",
+   "en": "three",
+   "sec": "getallen",
+   "num": 3
+  },
+  {
+   "id": "vier",
+   "nl": "vier",
+   "en": "four",
+   "sec": "getallen",
+   "num": 4
+  },
+  {
+   "id": "vijf",
+   "nl": "vijf",
+   "en": "five",
+   "sec": "getallen",
+   "num": 5
+  },
+  {
+   "id": "zes",
+   "nl": "zes",
+   "en": "six",
+   "sec": "getallen",
+   "num": 6
+  },
+  {
+   "id": "zeven",
+   "nl": "zeven",
+   "en": "seven",
+   "sec": "getallen",
+   "num": 7
+  },
+  {
+   "id": "acht",
+   "nl": "acht",
+   "en": "eight",
+   "sec": "getallen",
+   "num": 8
+  },
+  {
+   "id": "negen",
+   "nl": "negen",
+   "en": "nine",
+   "sec": "getallen",
+   "num": 9
+  },
+  {
+   "id": "tien",
+   "nl": "tien",
+   "en": "ten",
+   "sec": "getallen",
+   "num": 10
+  },
+  {
+   "id": "elf",
+   "nl": "elf",
+   "en": "eleven",
+   "sec": "getallen",
+   "num": 11
+  },
+  {
+   "id": "twaalf",
+   "nl": "twaalf",
+   "en": "twelve",
+   "sec": "getallen",
+   "num": 12
+  },
+  {
+   "id": "dertien",
+   "nl": "dertien",
+   "en": "thirteen",
+   "sec": "getallen",
+   "num": 13
+  },
+  {
+   "id": "veertien",
+   "nl": "veertien",
+   "en": "fourteen",
+   "sec": "getallen",
+   "num": 14
+  },
+  {
+   "id": "vijftien",
+   "nl": "vijftien",
+   "en": "fifteen",
+   "sec": "getallen",
+   "num": 15
+  },
+  {
+   "id": "zestien",
+   "nl": "zestien",
+   "en": "sixteen",
+   "sec": "getallen",
+   "num": 16
+  },
+  {
+   "id": "zeventien",
+   "nl": "zeventien",
+   "en": "seventeen",
+   "sec": "getallen",
+   "num": 17
+  },
+  {
+   "id": "achttien",
+   "nl": "achttien",
+   "en": "eighteen",
+   "sec": "getallen",
+   "num": 18
+  },
+  {
+   "id": "negentien",
+   "nl": "negentien",
+   "en": "nineteen",
+   "sec": "getallen",
+   "num": 19
+  },
+  {
+   "id": "twintig",
+   "nl": "twintig",
+   "en": "twenty",
+   "sec": "getallen",
+   "num": 20
+  },
+  {
+   "id": "eenentwintig",
+   "nl": "eenentwintig",
+   "en": "twenty-one",
+   "sec": "getallen",
+   "num": 21
+  },
+  {
+   "id": "tweeentwintig",
+   "nl": "tweeëntwintig",
+   "en": "twenty-two",
+   "sec": "getallen",
+   "num": 22
+  },
+  {
+   "id": "vierentwintig",
+   "nl": "vierentwintig",
+   "en": "twenty-four",
+   "sec": "getallen",
+   "num": 24
+  },
+  {
+   "id": "dertig",
+   "nl": "dertig",
+   "en": "thirty",
+   "sec": "getallen",
+   "num": 30
+  },
+  {
+   "id": "zevenendertig",
+   "nl": "zevenendertig",
+   "en": "thirty-seven",
+   "sec": "getallen",
+   "num": 37
+  },
+  {
+   "id": "veertig",
+   "nl": "veertig",
+   "en": "forty",
+   "sec": "getallen",
+   "num": 40
+  },
+  {
+   "id": "eenenveertig",
+   "nl": "eenenveertig",
+   "en": "forty-one",
+   "sec": "getallen",
+   "num": 41
+  },
+  {
+   "id": "vijftig",
+   "nl": "vijftig",
+   "en": "fifty",
+   "sec": "getallen",
+   "num": 50
+  },
+  {
+   "id": "tweeenvijftig",
+   "nl": "tweeënvijftig",
+   "en": "fifty-two",
+   "sec": "getallen",
+   "num": 52
+  },
+  {
+   "id": "zestig",
+   "nl": "zestig",
+   "en": "sixty",
+   "sec": "getallen",
+   "num": 60
+  },
+  {
+   "id": "drieenzestig",
+   "nl": "drieënzestig",
+   "en": "sixty-three",
+   "sec": "getallen",
+   "num": 63
+  },
+  {
+   "id": "zeventig",
+   "nl": "zeventig",
+   "en": "seventy",
+   "sec": "getallen",
+   "num": 70
+  },
+  {
+   "id": "zesenzeventig",
+   "nl": "zesenzeventig",
+   "en": "seventy-six",
+   "sec": "getallen",
+   "num": 76
+  },
+  {
+   "id": "tachtig",
+   "nl": "tachtig",
+   "en": "eighty",
+   "sec": "getallen",
+   "num": 80
+  },
+  {
+   "id": "negentig",
+   "nl": "negentig",
+   "en": "ninety",
+   "sec": "getallen",
+   "num": 90
+  },
+  {
+   "id": "negenennegentig",
+   "nl": "negenennegentig",
+   "en": "ninety-nine",
+   "sec": "getallen",
+   "num": 99
+  },
+  {
+   "id": "honderd",
+   "nl": "honderd",
+   "en": "one hundred",
+   "sec": "getallen",
+   "num": 100,
+   "note": "Just honderd, never éénhonderd."
+  },
+  {
+   "id": "honderdvierentwintig",
+   "nl": "honderdvierentwintig",
+   "en": "one hundred and twenty-four",
+   "sec": "getallen",
+   "num": 124
+  },
+  {
+   "id": "duizend",
+   "nl": "duizend",
+   "en": "one thousand",
+   "sec": "getallen",
+   "num": 1000
+  }
+ ]
+}

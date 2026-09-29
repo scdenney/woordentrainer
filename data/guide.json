@@ -1,0 +1,342 @@
+[
+ {
+  "title": "Korte en lange klinkers",
+  "en": "Short and long vowels",
+  "intro": "Dutch vowels come in short and long pairs. A doubled letter (aa, ee, oo, uu) is long. A single vowel is also long when it ends a syllable: ja, nu, zo, ze-ven. Before a double consonant it is short: hebben, stoppen.",
+  "rows": [
+   {
+    "s": "a",
+    "d": "Short and clipped, made at the back of the mouth. Shorter and darker than the a in “father”.",
+    "ex": [
+     "dag|hello",
+     "al|already",
+     "land|country",
+     "bedankt|thanks"
+    ]
+   },
+   {
+    "s": "aa",
+    "d": "Long, like the a in “father”.",
+    "ex": [
+     "naam|name",
+     "jaar|year",
+     "gaan|to go",
+     "ja|yes",
+     "maken|to make"
+    ]
+   },
+   {
+    "s": "e",
+    "d": "Short, like the e in “bed”.",
+    "ex": [
+     "les|class",
+     "met|with",
+     "ik ben|I am",
+     "hebben|to have"
+    ]
+   },
+   {
+    "s": "ee",
+    "d": "Long, like “ay” in “day” but held steady, without sliding into an “ee” at the end.",
+    "ex": [
+     "twee|two",
+     "nee|no",
+     "veel|a lot",
+     "één|one"
+    ]
+   },
+   {
+    "s": "e (zwak)",
+    "d": "An unstressed e, and the word een (“a”), sound like the a in “about”.",
+    "ex": [
+     "de|the",
+     "je|you",
+     "een boek|a book",
+     "goedemorgen|good morning"
+    ]
+   },
+   {
+    "s": "i",
+    "d": "Short, like the i in “bit”.",
+    "ex": [
+     "ik|I",
+     "in|in",
+     "is|is",
+     "twintig|twenty"
+    ]
+   },
+   {
+    "s": "ie",
+    "d": "Like the ee in “see”, but shorter.",
+    "ex": [
+     "hier|here",
+     "wie|who",
+     "drie|three",
+     "niet|not",
+     "jullie|you (pl.)"
+    ]
+   },
+   {
+    "s": "o",
+    "d": "Short, like the o in British “hot”.",
+    "ex": [
+     "op|on",
+     "kort|short",
+     "stoppen|to stop",
+     "morgen|tomorrow"
+    ]
+   },
+   {
+    "s": "oo",
+    "d": "Long, like the o in “go” but held steady, without the “w” glide at the end.",
+    "ex": [
+     "zo|so",
+     "oké|okay",
+     "woord|word",
+     "docent|teacher"
+    ]
+   },
+   {
+    "s": "u",
+    "d": "Short, with no English match: say the i in “bit” with slightly rounded lips.",
+    "ex": [
+     "jullie|you (pl.)",
+     "succes|good luck"
+    ]
+   },
+   {
+    "s": "uu",
+    "d": "Long: round your lips as for “oo” and say “ee”. Like French tu.",
+    "ex": [
+     "u|you (polite)",
+     "nu|now",
+     "buurman|neighbour"
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Klinkercombinaties",
+  "en": "Vowel combinations",
+  "intro": "These letter pairs each make one sound. ij and ei sound exactly the same.",
+  "rows": [
+   {
+    "s": "oe",
+    "d": "Like the oo in “food”.",
+    "ex": [
+     "goed|good",
+     "boek|book",
+     "doei|bye",
+     "begroeten|to greet"
+    ]
+   },
+   {
+    "s": "ij / ei",
+    "d": "Start with the e of “bed” and glide towards “ee”. Close to “ay” in “day”, but opening wider.",
+    "ex": [
+     "mijn|my",
+     "wij|we",
+     "vijf|five",
+     "fijn|nice",
+     "zij|she"
+    ]
+   },
+   {
+    "s": "ui",
+    "d": "No English match. Round your lips and say the “ow” of “house” with your tongue forward. Practise this one slowly.",
+    "ex": [
+     "uit|from",
+     "huiswerk|homework",
+     "duidelijk|clear",
+     "duizend|thousand"
+    ]
+   },
+   {
+    "s": "ou / au",
+    "d": "Like the “ow” in “how”.",
+    "ex": [
+     "jouw|your",
+     "blauw|blue",
+     "mevrouw|Mrs"
+    ]
+   },
+   {
+    "s": "eu",
+    "d": "Say the “ay” of “day” with your lips rounded, and hold it. Like French deux.",
+    "ex": [
+     "leuk|nice, fun",
+     "Europa|Europe"
+    ]
+   },
+   {
+    "s": "oi / oei",
+    "d": "The vowel plus a short “y” glide at the end.",
+    "ex": [
+     "hoi|hi",
+     "doei|bye",
+     "mooi|beautiful"
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Medeklinkers",
+  "en": "Consonants",
+  "rows": [
+   {
+    "s": "g / ch",
+    "d": "From the back of the throat, like the ch in Scottish “loch”. In the Netherlands g and ch sound the same.",
+    "ex": [
+     "goed|good",
+     "dag|hello",
+     "gaan|to go",
+     "negen|nine",
+     "acht|eight",
+     "achternaam|surname"
+    ]
+   },
+   {
+    "s": "sch",
+    "d": "An s followed by that same throat sound: s + ch.",
+    "ex": [
+     "schrijven|to write"
+    ]
+   },
+   {
+    "s": "j",
+    "d": "Like the y in “yes”, never like the English j.",
+    "ex": [
+     "ja|yes",
+     "jij|you",
+     "jaar|year",
+     "jullie|you (pl.)"
+    ]
+   },
+   {
+    "s": "w",
+    "d": "Softer than English w. Your lower lip lightly touches your upper teeth, between a v and a w.",
+    "ex": [
+     "wat|what",
+     "wie|who",
+     "wonen|to live",
+     "twee|two"
+    ]
+   },
+   {
+    "s": "v",
+    "d": "At the start of a word it often sounds almost like an f.",
+    "ex": [
+     "vier|four",
+     "vijf|five",
+     "van|of",
+     "vragen|to ask"
+    ]
+   },
+   {
+    "s": "r",
+    "d": "Either rolled or made in the throat, and it varies by region. After a vowel at the end of a word it is often soft.",
+    "ex": [
+     "drie|three",
+     "vragen|to ask",
+     "hier|here",
+     "naar|to"
+    ]
+   },
+   {
+    "s": "-d / -b",
+    "d": "At the end of a word, d sounds like t and b sounds like p.",
+    "ex": [
+     "goed|good",
+     "land|country",
+     "woord|word",
+     "ik heb|I have"
+    ]
+   },
+   {
+    "s": "-en",
+    "d": "In everyday speech the final n is usually dropped: hebben sounds like “hebbe”.",
+    "ex": [
+     "hebben|to have",
+     "spreken|to speak",
+     "luisteren|to listen",
+     "zeven|seven"
+    ]
+   },
+   {
+    "s": "-ig",
+    "d": "The unstressed ending sounds like “-uch” with the throat ch.",
+    "ex": [
+     "twintig|twenty",
+     "dertig|thirty",
+     "veertig|forty"
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Klemtoon en let op",
+  "en": "Stress and look-alikes",
+  "intro": "Most Dutch words stress the first syllable. The prefixes be-, ge- and her- are never stressed: be-DANKT, be-GRIJ-pen, ge-DAAN, her-HA-len. The accents in één show it is said with a full, stressed ee, which separates “one” from “a”.",
+  "rows": [
+   {
+    "s": "een / één",
+    "d": "een (“a”) sounds like “un”. één (“one”) has the long ee.",
+    "ex": [
+     "een boek|a book",
+     "één boek|one book"
+    ]
+   },
+   {
+    "s": "-tien / -tig",
+    "d": "13–19 end in -tien (“teen”), 30–90 end in -tig.",
+    "ex": [
+     "dertien|13",
+     "dertig|30",
+     "veertien|14",
+     "veertig|40",
+     "zeventien|17",
+     "zeventig|70"
+    ]
+   },
+   {
+    "s": "jij / je",
+    "d": "jij, wij, zij are stressed forms. je, we, ze are the everyday, unstressed forms.",
+    "ex": [
+     "jij bent|you are",
+     "je bent|you are",
+     "wij zijn|we are",
+     "we zijn|we are"
+    ]
+   },
+   {
+    "s": "be-",
+    "d": "Unstressed prefix, stress on the next syllable.",
+    "ex": [
+     "bedankt|thanks",
+     "begrijpen|to understand",
+     "begroeten|to greet",
+     "Goed gedaan.|well done"
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Zinnen",
+  "en": "Whole sentences",
+  "intro": "Words change when they run together. Listen for the rhythm.",
+  "rows": [
+   {
+    "s": "",
+    "d": "",
+    "ex": [
+     "Hoi, hoe gaat het?|Hi, how are you?",
+     "Goed, dank je. En met jou?|Fine, thanks. And you?",
+     "Ik heet Steven.|My name is Steven.",
+     "Waar kom je vandaan?|Where are you from?",
+     "Waar woon je?|Where do you live?",
+     "Tot de volgende les!|See you next class!"
+    ]
+   }
+  ]
+ }
+]
