@@ -199,31 +199,47 @@ td.r { text-align: right; white-space: nowrap; }
     speechSynthesis.addEventListener?.("voiceschanged", () => { const had = tts.voice; pickVoice(); if (had !== tts.voice && ["setup", "guide"].includes(S.view)) render(); });
   }
   // Recorded clips (audio/manifest.json, built by tools/build_audio.py) come first; the device voice is only a fallback.
-  const clips = { map: null, voice: "" };
+  // Clips are packed one file per chapter (manifest.packed: text → [pack, byte offset, length]); a clip is cut out of
+  // its loaded pack as a blob. Unpacked manifests (manifest.clips: text → file) still work.
+  const clips = { map: null, packed: null, packs: {}, bufs: {}, loading: {}, urls: {}, voice: "" };
   const player = new Audio();
   player.preload = "auto";
   fetch("audio/manifest.json").then(r => r.ok ? r.json() : null).then(m => {
-    if (!m?.clips) return;
-    clips.map = m.clips; clips.voice = m.voice || "";
+    if (!m?.packed && !m?.clips) return;
+    clips.packed = m.packed || null; clips.packs = m.packs || {}; clips.map = m.packed ? null : m.clips; clips.voice = m.voice || "";
     if (["setup", "guide", "list"].includes(S.view)) render();
   }).catch(() => {});
-  const canSpeak = () => !!clips.map || tts.ok;
+  const canSpeak = () => !!(clips.packed || clips.map) || tts.ok;
+  function loadPack(pid) {
+    if (clips.bufs[pid] || !clips.packs[pid]) return Promise.resolve(clips.bufs[pid] || null);
+    return clips.loading[pid] ||= fetch(clips.packs[pid]).then(r => r.ok ? r.arrayBuffer() : null)
+      .then(b => (clips.bufs[pid] = b)).catch(() => null).finally(() => { delete clips.loading[pid]; });
+  }
+  function preloadPacks(ids) { if (clips.packed) ids.forEach(loadPack); }
+  function clipUrl(text) { // synchronous when the pack is already loaded, so play() stays inside the click
+    if (!clips.packed) return clips.map?.[text] || null;
+    const e = clips.packed[text], buf = e && clips.bufs[e[0]];
+    if (!buf) return null;
+    return clips.urls[text] ||= URL.createObjectURL(new Blob([buf.slice(e[1], e[1] + e[2])], { type: "audio/mpeg" }));
+  }
   let playId = 0;
+  function playUrl(url, text, id) {
+    try { if (tts.ok) speechSynthesis.cancel(); } catch {}
+    player.pause();
+    player.src = url;
+    player.preservesPitch = true;
+    player.playbackRate = S.prefs.slow ? 0.75 : 1;
+    // an interrupted clip rejects with AbortError: that is a newer click, not a failure
+    player.play().catch(e => { if (id === playId && e?.name !== "AbortError") speakDevice(text); });
+  }
   function speak(text) {
     if (!text) return;
     const id = ++playId;
-    const file = clips.map?.[text];
-    if (file) {
-      try { if (tts.ok) speechSynthesis.cancel(); } catch {}
-      player.pause();
-      player.src = file;
-      player.preservesPitch = true;
-      player.playbackRate = S.prefs.slow ? 0.75 : 1;
-      // an interrupted clip rejects with AbortError: that is a newer click, not a failure
-      player.play().catch(e => { if (id === playId && e?.name !== "AbortError") speakDevice(text); });
-      return;
-    }
-    speakDevice(text);
+    const url = clipUrl(text);
+    if (url) return playUrl(url, text, id);
+    const e = clips.packed?.[text];
+    if (!e) return speakDevice(text);
+    loadPack(e[0]).then(() => { if (id !== playId) return; const u = clipUrl(text); u ? playUrl(u, text, id) : speakDevice(text); });
   }
   function speakDevice(text) {
     if (!tts.ok) return;
@@ -528,6 +544,7 @@ td.r { text-align: right; white-space: nowrap; }
   // ---------- session ----------
   function startSession() {
     const words = shuffle(pool().slice());
+    preloadPacks([...new Set(words.map(w => w.deck))]);
     S.session = { queue: words, total: words.length, seen: new Set(), retry: [], roundNo: 0, round: [], i: 0, missed: [], answered: null, firstTry: 0 };
     nextRound();
   }
@@ -706,6 +723,7 @@ td.r { text-align: right; white-space: nowrap; }
   }
 
   function renderList() {
+    preloadPacks(selectedDecks().map(d => d.id));
     const q = flat(S.listQuery || "");
     const ws = inScope().filter(w => !q || flat(w.nl).includes(q) || flat(w.en).includes(q));
     const label = { known: "gekend", learning: "bezig", new: "nieuw" };
@@ -736,6 +754,7 @@ td.r { text-align: right; white-space: nowrap; }
   let GUIDE = null;
 
   function renderGuide() {
+    preloadPacks(["guide"]);
     if (!GUIDE) { app.innerHTML = `<div class="state"><h2>Uitspraak laden…</h2></div>`; return; }
     const chipHtml = e => { const [nl, gl] = e.split("|"); return canSpeak()
       ? `<button type="button" class="ex-chip" data-say="${esc(nl)}" aria-label="Luister: ${esc(nl)}">${ICON}<span lang="nl">${esc(nl)}</span>${gl ? `<span class="gloss">${esc(gl)}</span>` : ""}</button>`
