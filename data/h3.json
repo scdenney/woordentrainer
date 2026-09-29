@@ -1,0 +1,549 @@
+{
+ "title": "Hoofdstuk 3",
+ "order": 3,
+ "source": "Hoofdstuk 3 nieuw EN-NL AI.xlsx (F. Fabbricotti, 29 Sept 2026)",
+ "sections": [
+  {
+   "id": "woorden",
+   "name": "Woorden"
+  },
+  {
+   "id": "zinnen-cafe",
+   "name": "Zinnen: café & verjaardag"
+  },
+  {
+   "id": "rangtelwoorden",
+   "name": "Rangtelwoorden"
+  }
+ ],
+ "words": [
+  {
+   "id": "afrekenen",
+   "nl": "afrekenen",
+   "en": "to pay, to settle the bill",
+   "sec": "woorden"
+  },
+  {
+   "id": "alcoholvrij",
+   "nl": "alcoholvrij",
+   "en": "non-alcoholic",
+   "sec": "woorden"
+  },
+  {
+   "id": "alsjeblieft",
+   "nl": "alsjeblieft",
+   "en": "please, here you go (informal)",
+   "sec": "woorden"
+  },
+  {
+   "id": "alstublieft",
+   "nl": "alstublieft",
+   "en": "please, here you go (formal)",
+   "sec": "woorden"
+  },
+  {
+   "id": "bedanken",
+   "nl": "bedanken",
+   "en": "to thank",
+   "sec": "woorden"
+  },
+  {
+   "id": "bestellen",
+   "nl": "bestellen",
+   "en": "to order",
+   "sec": "woorden"
+  },
+  {
+   "id": "betalen",
+   "nl": "betalen",
+   "en": "to pay",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-bier",
+   "nl": "het bier",
+   "en": "beer",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-biertje",
+   "nl": "het biertje",
+   "en": "(a glass of) beer",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-cafe",
+   "nl": "het café",
+   "en": "cafe, pub",
+   "sec": "woorden"
+  },
+  {
+   "id": "daarom",
+   "nl": "daarom",
+   "en": "that's why",
+   "sec": "woorden"
+  },
+  {
+   "id": "dank-je-wel-dank-je",
+   "nl": "dank je wel / dank je",
+   "en": "thank you (informal)",
+   "sec": "woorden"
+  },
+  {
+   "id": "dank-u-wel-dank-u",
+   "nl": "dank u wel / dank u",
+   "en": "thank you (formal)",
+   "sec": "woorden"
+  },
+  {
+   "id": "drinken",
+   "nl": "drinken",
+   "en": "to drink",
+   "sec": "woorden"
+  },
+  {
+   "id": "elkaar",
+   "nl": "elkaar",
+   "en": "each other",
+   "sec": "woorden"
+  },
+  {
+   "id": "frans",
+   "nl": "Frans",
+   "en": "French",
+   "sec": "woorden"
+  },
+  {
+   "id": "gefeliciteerd",
+   "nl": "gefeliciteerd",
+   "en": "congratulations",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-glas",
+   "nl": "het glas",
+   "en": "glass",
+   "sec": "woorden"
+  },
+  {
+   "id": "graag",
+   "nl": "graag",
+   "en": "please, gladly",
+   "sec": "woorden"
+  },
+  {
+   "id": "graag-willen",
+   "nl": "graag willen",
+   "en": "would like",
+   "sec": "woorden"
+  },
+  {
+   "id": "hetzelfde",
+   "nl": "hetzelfde",
+   "en": "the same",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-idee",
+   "nl": "het idee",
+   "en": "idea",
+   "sec": "woorden"
+  },
+  {
+   "id": "iemand",
+   "nl": "iemand",
+   "en": "someone",
+   "sec": "woorden"
+  },
+  {
+   "id": "ja-graag",
+   "nl": "ja, graag",
+   "en": "yes please",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-keer",
+   "nl": "de keer",
+   "en": "time (occasion)",
+   "sec": "woorden"
+  },
+  {
+   "id": "nog-een-keer",
+   "nl": "nog een keer",
+   "en": "once more",
+   "sec": "woorden"
+  },
+  {
+   "id": "kennen",
+   "nl": "kennen",
+   "en": "to know (a person)",
+   "sec": "woorden"
+  },
+  {
+   "id": "later",
+   "nl": "later",
+   "en": "later",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-medewerker",
+   "nl": "de medewerker",
+   "en": "employee",
+   "sec": "woorden"
+  },
+  {
+   "id": "mogen",
+   "nl": "mogen",
+   "en": "may, to be allowed to",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-munt",
+   "nl": "de munt",
+   "en": "mint",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-muntthee",
+   "nl": "de muntthee",
+   "en": "mint tea",
+   "sec": "woorden"
+  },
+  {
+   "id": "nemen",
+   "nl": "nemen",
+   "en": "to have, to take",
+   "sec": "woorden"
+  },
+  {
+   "id": "nog-een",
+   "nl": "nog een",
+   "en": "another",
+   "sec": "woorden"
+  },
+  {
+   "id": "nou",
+   "nl": "nou",
+   "en": "well then",
+   "sec": "woorden"
+  },
+  {
+   "id": "ontmoeten",
+   "nl": "ontmoeten",
+   "en": "to meet",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-poosje",
+   "nl": "het poosje",
+   "en": "short while",
+   "sec": "woorden"
+  },
+  {
+   "id": "proost",
+   "nl": "proost",
+   "en": "cheers",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-rekening",
+   "nl": "de rekening",
+   "en": "bill",
+   "sec": "woorden"
+  },
+  {
+   "id": "roepen",
+   "nl": "roepen",
+   "en": "to call",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-rondje",
+   "nl": "het rondje",
+   "en": "round (of drinks)",
+   "sec": "woorden"
+  },
+  {
+   "id": "samen",
+   "nl": "samen",
+   "en": "together",
+   "sec": "woorden"
+  },
+  {
+   "id": "spaans",
+   "nl": "Spaans",
+   "en": "Spanish",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-spa-rood",
+   "nl": "de spa rood",
+   "en": "sparkling water",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-thee",
+   "nl": "de thee",
+   "en": "tea",
+   "sec": "woorden"
+  },
+  {
+   "id": "trakteren",
+   "nl": "trakteren",
+   "en": "to treat someone (to drinks or food)",
+   "sec": "woorden"
+  },
+  {
+   "id": "vers",
+   "nl": "vers",
+   "en": "fresh",
+   "sec": "woorden"
+  },
+  {
+   "id": "vieren",
+   "nl": "vieren",
+   "en": "to celebrate",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-wijn",
+   "nl": "de wijn",
+   "en": "wine",
+   "sec": "woorden"
+  },
+  {
+   "id": "zuid-afrikaans",
+   "nl": "Zuid-Afrikaans",
+   "en": "South African",
+   "sec": "woorden"
+  },
+  {
+   "id": "zullen",
+   "nl": "zullen",
+   "en": "shall, will",
+   "sec": "woorden"
+  },
+  {
+   "id": "gefeliciteerd-met-je-verjaardag",
+   "nl": "Gefeliciteerd met je verjaardag!",
+   "en": "Happy birthday!",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "op-je-verjaardag",
+   "nl": "Op je verjaardag!",
+   "en": "To your birthday!",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "leuk-je-te-ontmoeten",
+   "nl": "Leuk je te ontmoeten.",
+   "en": "Nice to meet you.",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "mag-ik-een-biertje",
+   "nl": "Mag ik een biertje?",
+   "en": "May I have a beer?",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "ik-wil-graag-een-thee-ik-wil-graag-een-kopje-thee",
+   "nl": "Ik wil graag een thee. / Ik wil graag een kopje thee.",
+   "en": "I would like a tea.",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "een-cola-alsjeblieft-een-cola-alstublieft",
+   "nl": "Een cola, alsjeblieft. / Een cola, alstublieft.",
+   "en": "A coke, please.",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "voor-mij-een-cappuccino-alsjeblieft-voor-mij-een-cappuccino-",
+   "nl": "Voor mij een cappuccino, alsjeblieft. / Voor mij een cappuccino, alstublieft.",
+   "en": "A cappuccino for me, please.",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "mag-ik-de-rekening",
+   "nl": "Mag ik de rekening?",
+   "en": "Can I have the bill?",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "kan-ik-afrekenen",
+   "nl": "Kan ik afrekenen?",
+   "en": "Can I settle the bill?",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "kan-ik-betalen",
+   "nl": "Kan ik betalen?",
+   "en": "Can I pay?",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "dank-je-wel-dank-u-wel-bedankt",
+   "nl": "Dank je wel. / Dank u wel. / Bedankt.",
+   "en": "Thank you.",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "alsjeblieft-alstublieft",
+   "nl": "Alsjeblieft. / Alstublieft.",
+   "en": "Here you go.",
+   "sec": "zinnen-cafe"
+  },
+  {
+   "id": "eerste",
+   "nl": "eerste",
+   "en": "first",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "tweede",
+   "nl": "tweede",
+   "en": "second",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "derde",
+   "nl": "derde",
+   "en": "third",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "vierde",
+   "nl": "vierde",
+   "en": "fourth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "vijfde",
+   "nl": "vijfde",
+   "en": "fifth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "zesde",
+   "nl": "zesde",
+   "en": "sixth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "zevende",
+   "nl": "zevende",
+   "en": "seventh",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "achtste",
+   "nl": "achtste",
+   "en": "eighth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "negende",
+   "nl": "negende",
+   "en": "ninth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "tiende",
+   "nl": "tiende",
+   "en": "tenth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "elfde",
+   "nl": "elfde",
+   "en": "eleventh",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "twaalfde",
+   "nl": "twaalfde",
+   "en": "twelfth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "dertiende",
+   "nl": "dertiende",
+   "en": "thirteenth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "veertiende",
+   "nl": "veertiende",
+   "en": "fourteenth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "vijftiende",
+   "nl": "vijftiende",
+   "en": "fifteenth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "zestiende",
+   "nl": "zestiende",
+   "en": "sixteenth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "zeventiende",
+   "nl": "zeventiende",
+   "en": "seventeenth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "achttiende",
+   "nl": "achttiende",
+   "en": "eighteenth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "negentiende",
+   "nl": "negentiende",
+   "en": "nineteenth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "twintigste",
+   "nl": "twintigste",
+   "en": "twentieth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "eenentwintigste",
+   "nl": "eenentwintigste",
+   "en": "twenty-first",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "tweeentwintigste",
+   "nl": "tweeëntwintigste",
+   "en": "twenty-second",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "zevenendertigste",
+   "nl": "zevenendertigste",
+   "en": "thirty-seventh",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "honderdste",
+   "nl": "honderdste",
+   "en": "hundredth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "tweehonderdzesenveertigste",
+   "nl": "tweehonderdzesenveertigste",
+   "en": "two hundred and forty-sixth",
+   "sec": "rangtelwoorden"
+  }
+ ]
+}

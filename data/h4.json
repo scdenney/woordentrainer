@@ -1,0 +1,832 @@
+{
+ "title": "Hoofdstuk 4",
+ "order": 4,
+ "source": "Hoofdstuk 4 nieuw EN-NL AI.xlsx (F. Fabbricotti, 29 Sept 2026)",
+ "sections": [
+  {
+   "id": "woorden",
+   "name": "Woorden"
+  },
+  {
+   "id": "dagdelen",
+   "name": "Dagdelen & tijd"
+  },
+  {
+   "id": "zinnen-afspreken",
+   "name": "Zinnen: afspreken & hoe gaat het"
+  }
+ ],
+ "words": [
+  {
+   "id": "afsluiten",
+   "nl": "afsluiten",
+   "en": "to close, to finish",
+   "sec": "woorden"
+  },
+  {
+   "id": "belangrijk",
+   "nl": "belangrijk",
+   "en": "important",
+   "sec": "woorden"
+  },
+  {
+   "id": "bij",
+   "nl": "bij",
+   "en": "at",
+   "sec": "woorden"
+  },
+  {
+   "id": "bij-ons",
+   "nl": "bij ons",
+   "en": "at our house",
+   "sec": "woorden"
+  },
+  {
+   "id": "buiten",
+   "nl": "buiten",
+   "en": "outside",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-buren",
+   "nl": "de buren",
+   "en": "neighbours",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-buur",
+   "nl": "de buur",
+   "en": "neighbour",
+   "sec": "woorden"
+  },
+  {
+   "id": "echt",
+   "nl": "echt",
+   "en": "really",
+   "sec": "woorden"
+  },
+  {
+   "id": "ervandoor",
+   "nl": "ervandoor",
+   "en": "away, off",
+   "sec": "woorden"
+  },
+  {
+   "id": "ervandoor-moeten",
+   "nl": "ervandoor moeten",
+   "en": "to have to go",
+   "sec": "woorden"
+  },
+  {
+   "id": "eten",
+   "nl": "eten",
+   "en": "to eat",
+   "sec": "woorden"
+  },
+  {
+   "id": "fantastisch",
+   "nl": "fantastisch",
+   "en": "marvellous, great",
+   "sec": "woorden"
+  },
+  {
+   "id": "geen",
+   "nl": "geen",
+   "en": "no, not a",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-gesprek",
+   "nl": "het gesprek",
+   "en": "talk, conversation",
+   "sec": "woorden"
+  },
+  {
+   "id": "gezellig",
+   "nl": "gezellig",
+   "en": "pleasant, enjoyable, cosy",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-groet",
+   "nl": "de groet",
+   "en": "greeting",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-groeten-doen-aan",
+   "nl": "de groeten doen aan",
+   "en": "to give your regards to",
+   "sec": "woorden"
+  },
+  {
+   "id": "hard",
+   "nl": "hard",
+   "en": "hard",
+   "sec": "woorden"
+  },
+  {
+   "id": "hartstikke",
+   "nl": "hartstikke",
+   "en": "very, completely",
+   "sec": "woorden"
+  },
+  {
+   "id": "hartstikke-leuk",
+   "nl": "hartstikke leuk",
+   "en": "terrific, fantastic",
+   "sec": "woorden"
+  },
+  {
+   "id": "helaas",
+   "nl": "helaas",
+   "en": "unfortunately",
+   "sec": "woorden"
+  },
+  {
+   "id": "jammer",
+   "nl": "jammer",
+   "en": "a pity, too bad",
+   "sec": "woorden"
+  },
+  {
+   "id": "jou",
+   "nl": "jou",
+   "en": "you (singular, informal, object)",
+   "sec": "woorden"
+  },
+  {
+   "id": "jullie",
+   "nl": "jullie",
+   "en": "you (plural); your (plural)",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-koffietentje",
+   "nl": "het koffietentje",
+   "en": "cafe, coffee shop",
+   "sec": "woorden"
+  },
+  {
+   "id": "kunnen",
+   "nl": "kunnen",
+   "en": "can, to be able to",
+   "sec": "woorden"
+  },
+  {
+   "id": "lijken",
+   "nl": "lijken",
+   "en": "to seem",
+   "sec": "woorden"
+  },
+  {
+   "id": "lukken",
+   "nl": "lukken",
+   "en": "to work (out), to manage",
+   "sec": "woorden"
+  },
+  {
+   "id": "me",
+   "nl": "me",
+   "en": "me",
+   "sec": "woorden"
+  },
+  {
+   "id": "meegaan",
+   "nl": "meegaan",
+   "en": "to come along, to go with",
+   "sec": "woorden"
+  },
+  {
+   "id": "mooi",
+   "nl": "mooi",
+   "en": "nice, beautiful, great",
+   "sec": "woorden"
+  },
+  {
+   "id": "negatief",
+   "nl": "negatief",
+   "en": "negative",
+   "sec": "woorden"
+  },
+  {
+   "id": "om-te",
+   "nl": "om … te",
+   "en": "(in order) to",
+   "sec": "woorden"
+  },
+  {
+   "id": "ons",
+   "nl": "ons",
+   "en": "our, us",
+   "sec": "woorden"
+  },
+  {
+   "id": "een-paar",
+   "nl": "een paar",
+   "en": "a few",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-plan",
+   "nl": "het plan",
+   "en": "plan",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-plein",
+   "nl": "het plein",
+   "en": "square",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-plezier",
+   "nl": "het plezier",
+   "en": "pleasure, fun",
+   "sec": "woorden"
+  },
+  {
+   "id": "positief",
+   "nl": "positief",
+   "en": "positive",
+   "sec": "woorden"
+  },
+  {
+   "id": "prachtig",
+   "nl": "prachtig",
+   "en": "fine, splendid",
+   "sec": "woorden"
+  },
+  {
+   "id": "prima",
+   "nl": "prima",
+   "en": "great, fine",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-probleem",
+   "nl": "het probleem",
+   "en": "problem",
+   "sec": "woorden"
+  },
+  {
+   "id": "reageren",
+   "nl": "reageren",
+   "en": "to respond",
+   "sec": "woorden"
+  },
+  {
+   "id": "slecht",
+   "nl": "slecht",
+   "en": "bad, badly",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-spaghetti-carbonara",
+   "nl": "de spaghetti carbonara",
+   "en": "spaghetti carbonara",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-stad",
+   "nl": "de stad",
+   "en": "city",
+   "sec": "woorden"
+  },
+  {
+   "id": "sterkte",
+   "nl": "sterkte",
+   "en": "good luck, take care",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-straat",
+   "nl": "de straat",
+   "en": "street",
+   "sec": "woorden"
+  },
+  {
+   "id": "studeren",
+   "nl": "studeren",
+   "en": "to study",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-tandarts",
+   "nl": "de tandarts",
+   "en": "dentist",
+   "sec": "woorden"
+  },
+  {
+   "id": "bij-de-tandarts",
+   "nl": "bij de tandarts",
+   "en": "at the dentist",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-tentje",
+   "nl": "het tentje",
+   "en": "small cafe or restaurant",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-terras",
+   "nl": "het terras",
+   "en": "terrace",
+   "sec": "woorden"
+  },
+  {
+   "id": "thuis",
+   "nl": "thuis",
+   "en": "at home",
+   "sec": "woorden"
+  },
+  {
+   "id": "uitnodigen",
+   "nl": "uitnodigen",
+   "en": "to invite",
+   "sec": "woorden"
+  },
+  {
+   "id": "uitstekend",
+   "nl": "uitstekend",
+   "en": "excellent",
+   "sec": "woorden"
+  },
+  {
+   "id": "venetie",
+   "nl": "Venetië",
+   "en": "Venice",
+   "sec": "woorden"
+  },
+  {
+   "id": "vinden",
+   "nl": "vinden",
+   "en": "to find, to think",
+   "sec": "woorden"
+  },
+  {
+   "id": "vol",
+   "nl": "vol",
+   "en": "full",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-vriend",
+   "nl": "de vriend",
+   "en": "boyfriend, friend (m)",
+   "sec": "woorden"
+  },
+  {
+   "id": "wauw",
+   "nl": "wauw",
+   "en": "wow",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-weer",
+   "nl": "het weer",
+   "en": "weather",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-weg",
+   "nl": "de weg",
+   "en": "way",
+   "sec": "woorden"
+  },
+  {
+   "id": "op-weg-zijn-naar",
+   "nl": "op weg zijn naar",
+   "en": "to be on the way to",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-wens",
+   "nl": "de wens",
+   "en": "wish",
+   "sec": "woorden"
+  },
+  {
+   "id": "wensen",
+   "nl": "wensen",
+   "en": "to wish",
+   "sec": "woorden"
+  },
+  {
+   "id": "zeker",
+   "nl": "zeker",
+   "en": "sure, certain",
+   "sec": "woorden"
+  },
+  {
+   "id": "zetten",
+   "nl": "zetten",
+   "en": "to put",
+   "sec": "woorden"
+  },
+  {
+   "id": "zin-hebben-om-zin-hebben-in",
+   "nl": "zin hebben om / zin hebben in",
+   "en": "to feel like",
+   "sec": "woorden"
+  },
+  {
+   "id": "zo",
+   "nl": "zo",
+   "en": "so, this way",
+   "sec": "woorden"
+  },
+  {
+   "id": "volgende",
+   "nl": "volgende",
+   "en": "next",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-afspraak",
+   "nl": "de afspraak",
+   "en": "appointment",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "afspreken",
+   "nl": "afspreken",
+   "en": "to make an appointment, to arrange to meet",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "de-agenda",
+   "nl": "de agenda",
+   "en": "diary, calendar",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "de-datum",
+   "nl": "de datum",
+   "en": "date",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "de-tijd",
+   "nl": "de tijd",
+   "en": "time",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "daarna",
+   "nl": "daarna",
+   "en": "afterwards, after that",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "dan",
+   "nl": "dan",
+   "en": "then",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "geleden",
+   "nl": "geleden",
+   "en": "ago",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "tot-dan",
+   "nl": "tot dan",
+   "en": "until then",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "over-een-half-uur",
+   "nl": "over een half uur",
+   "en": "in half an hour",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "overdag",
+   "nl": "overdag",
+   "en": "in the daytime",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "de-ochtend",
+   "nl": "de ochtend",
+   "en": "morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "de-morgen",
+   "nl": "de morgen",
+   "en": "morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "de-middag",
+   "nl": "de middag",
+   "en": "afternoon",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "de-avond",
+   "nl": "de avond",
+   "en": "evening",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "de-nacht",
+   "nl": "de nacht",
+   "en": "night",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "s-ochtends",
+   "nl": "’s ochtends",
+   "en": "in the morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "s-morgens",
+   "nl": "’s morgens",
+   "en": "in the morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "s-middags",
+   "nl": "’s middags",
+   "en": "in the afternoon",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "s-avonds",
+   "nl": "’s avonds",
+   "en": "in the evening",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "s-nachts",
+   "nl": "’s nachts",
+   "en": "at night",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "gisterochtend",
+   "nl": "gisterochtend",
+   "en": "yesterday morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "gistermorgen",
+   "nl": "gistermorgen",
+   "en": "yesterday morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "gistermiddag",
+   "nl": "gistermiddag",
+   "en": "yesterday afternoon",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "gisteravond",
+   "nl": "gisteravond",
+   "en": "yesterday evening, last night",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "vanochtend",
+   "nl": "vanochtend",
+   "en": "this morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "vanmorgen",
+   "nl": "vanmorgen",
+   "en": "this morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "vanmiddag",
+   "nl": "vanmiddag",
+   "en": "this afternoon",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "vanavond",
+   "nl": "vanavond",
+   "en": "this evening, tonight",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "vannacht",
+   "nl": "vannacht",
+   "en": "last night; tonight",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "morgenochtend",
+   "nl": "morgenochtend",
+   "en": "tomorrow morning",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "morgenmiddag",
+   "nl": "morgenmiddag",
+   "en": "tomorrow afternoon",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "morgenavond",
+   "nl": "morgenavond",
+   "en": "tomorrow evening",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "morgennacht",
+   "nl": "morgennacht",
+   "en": "tomorrow night",
+   "sec": "dagdelen"
+  },
+  {
+   "id": "studeer-ze",
+   "nl": "Studeer ze!",
+   "en": "Have a productive day studying!",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "werk-ze",
+   "nl": "Werk ze!",
+   "en": "Have a good day at work!",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "fijne-dag",
+   "nl": "Fijne dag!",
+   "en": "Have a nice day!",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "prettig-weekend",
+   "nl": "Prettig weekend!",
+   "en": "Have a nice weekend!",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "veel-plezier",
+   "nl": "Veel plezier!",
+   "en": "Have fun!",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "doe-de-groeten-aan",
+   "nl": "Doe de groeten aan …",
+   "en": "Give my regards to …",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "alles-goed",
+   "nl": "Alles goed?",
+   "en": "All OK?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "hoe-gaat-het-met-jou-hoe-gaat-het-met-u-hoe-is-het",
+   "nl": "Hoe gaat het met jou? / Hoe gaat het met u? / Hoe is het?",
+   "en": "How are you?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "heel-goed-prima-fantastisch",
+   "nl": "heel goed / prima / fantastisch",
+   "en": "very good",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "goed-prima",
+   "nl": "goed / prima",
+   "en": "good",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "het-gaat-wel",
+   "nl": "het gaat wel",
+   "en": "so-so, okay",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "niet-zo-goed",
+   "nl": "niet zo goed",
+   "en": "not that well",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "niet-goed",
+   "nl": "niet goed",
+   "en": "not well",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "zullen-we-iets-afspreken-zullen-we-een-afspraak-maken",
+   "nl": "Zullen we iets afspreken? / Zullen we een afspraak maken?",
+   "en": "Shall we make an appointment?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "zullen-we-voor-zaterdag-een-afspraak-maken",
+   "nl": "Zullen we voor zaterdag een afspraak maken?",
+   "en": "Shall we make an appointment for Saturday?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "zullen-we-om-vier-uur-afspreken",
+   "nl": "Zullen we om vier uur afspreken?",
+   "en": "Shall we meet at 4 p.m.?",
+   "sec": "zinnen-afspreken",
+   "note": "Written in the list as: Zullen we om 16:00 afspreken?"
+  },
+  {
+   "id": "zullen-we-bij-mij-afspreken",
+   "nl": "Zullen we bij mij afspreken?",
+   "en": "Shall we meet at my place?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "zal-ik-spaghetti-maken",
+   "nl": "Zal ik spaghetti maken?",
+   "en": "Shall I cook spaghetti?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "ja-dat-kan-ja-dan-kan-ik",
+   "nl": "Ja, dat kan. / Ja, dan kan ik.",
+   "en": "Yes, that works. Yes, I'm free then.",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "ja-dat-is-goed",
+   "nl": "Ja, dat is goed.",
+   "en": "Yes, that's fine.",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "nee-dat-lukt-niet-nee-dan-kan-ik-niet",
+   "nl": "Nee, dat lukt niet. / Nee, dan kan ik niet.",
+   "en": "No, that doesn't work for me.",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "nee-ik-heb-al-een-afspraak",
+   "nl": "Nee, ik heb al een afspraak.",
+   "en": "No, I already have an appointment.",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "ga-je-mee-naar-saskia",
+   "nl": "Ga je mee naar Saskia?",
+   "en": "Are you coming along to Saskia's?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "ga-je-mee-dansen",
+   "nl": "Ga je mee dansen?",
+   "en": "Are you coming dancing?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "heb-je-zin-om-naar-het-park-te-gaan",
+   "nl": "Heb je zin om naar het park te gaan?",
+   "en": "Do you feel like going to the park?",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "ja-leuk",
+   "nl": "Ja, leuk!",
+   "en": "Yes, nice!",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "ja-goed-idee",
+   "nl": "Ja, goed idee!",
+   "en": "Yes, good idea!",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "nee-ik-kan-niet",
+   "nl": "Nee, ik kan niet.",
+   "en": "No, I can't.",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "nee-dat-vind-ik-niet-zo-leuk",
+   "nl": "Nee, dat vind ik niet zo leuk.",
+   "en": "No, I don't really like that.",
+   "sec": "zinnen-afspreken"
+  },
+  {
+   "id": "nee-ik-heb-geen-zin",
+   "nl": "Nee, ik heb geen zin.",
+   "en": "No, I don't feel like it.",
+   "sec": "zinnen-afspreken"
+  }
+ ]
+}

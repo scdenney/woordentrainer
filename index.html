@@ -370,25 +370,25 @@ td.r { text-align: right; white-space: nowrap; }
     if (S.view === "setup" || S.view === "list") render();
   }
 
-  // Outside claude.ai (the public site) chapters come from data/*.json and progress stays in this browser.
-  async function bootStatic() {
-    useLocal();
-    try {
-      const idx = await (await fetch("data/decks.json", { cache: "no-cache" })).json();
-      const decks = await Promise.all(idx.decks.map(async id => {
-        const body = await (await fetch(`data/${id}.json`, { cache: "no-cache" })).json();
-        return { id, data: () => body };
-      }));
-      setDecks(decks);
-    } catch { S.status = "nodb"; render(); }
+  // Chapters always come from data/*.json (the same files on claude.ai and on the public site).
+  // Progress uses the page's own storage on claude.ai, and this browser's storage elsewhere.
+  async function loadDecks() {
+    const idx = await (await fetch("data/decks.json", { cache: "no-cache" })).json();
+    const decks = await Promise.all(idx.decks.map(async id => {
+      const body = await (await fetch(`data/${id}.json`, { cache: "no-cache" })).json();
+      return { id, data: () => body };
+    }));
+    setDecks(decks);
   }
 
   async function boot() {
     render();
+    const decksLoaded = loadDecks().then(() => true, () => false);
     const use = window.claude && window.claude.use;
     db = use ? await window.claude.use("db") : null;
-    if (!db) { await bootStatic(); return; }
-    db.collection("decks").onSnapshot(snap => setDecks(snap.docs), () => { S.status = "error"; render(); });
+    const ok = await decksLoaded;
+    if (!db) { useLocal(); if (!ok) { S.status = "nodb"; } render(); return; }
+    if (!ok) db.collection("decks").onSnapshot(snap => setDecks(snap.docs), () => { S.status = "error"; render(); });
     db.collection("progress").onSnapshot(snap => {
       if (S.local) return;
       for (const d of snap.docs) {

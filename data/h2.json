@@ -1,0 +1,950 @@
+{
+ "title": "Hoofdstuk 2",
+ "order": 2,
+ "source": "Hoofdstuk 2 nieuw EN-NL AI.xlsx (F. Fabbricotti, 29 Sept 2026)",
+ "sections": [
+  {
+   "id": "woorden",
+   "name": "Woorden"
+  },
+  {
+   "id": "familie",
+   "name": "Familie"
+  },
+  {
+   "id": "uiterlijk",
+   "name": "Uiterlijk & kleuren"
+  },
+  {
+   "id": "kalender",
+   "name": "Dagen, maanden & seizoenen"
+  }
+ ],
+ "words": [
+  {
+   "id": "al-lang",
+   "nl": "al lang",
+   "en": "for a long time",
+   "sec": "woorden"
+  },
+  {
+   "id": "ander",
+   "nl": "ander",
+   "en": "different, other",
+   "sec": "woorden"
+  },
+  {
+   "id": "beschrijven",
+   "nl": "beschrijven",
+   "en": "to describe",
+   "sec": "woorden"
+  },
+  {
+   "id": "daar",
+   "nl": "daar",
+   "en": "there",
+   "sec": "woorden"
+  },
+  {
+   "id": "deze",
+   "nl": "deze",
+   "en": "this, these (de-words)",
+   "sec": "woorden"
+  },
+  {
+   "id": "diens",
+   "nl": "diens",
+   "en": "their (singular, non-binary)",
+   "sec": "woorden"
+  },
+  {
+   "id": "dit",
+   "nl": "dit",
+   "en": "this (het-words)",
+   "sec": "woorden"
+  },
+  {
+   "id": "doen",
+   "nl": "doen",
+   "en": "to do",
+   "sec": "woorden"
+  },
+  {
+   "id": "dus",
+   "nl": "dus",
+   "en": "so",
+   "sec": "woorden"
+  },
+  {
+   "id": "eigenlijk",
+   "nl": "eigenlijk",
+   "en": "actually, really",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-foto",
+   "nl": "de foto",
+   "en": "photo",
+   "sec": "woorden"
+  },
+  {
+   "id": "goh",
+   "nl": "goh",
+   "en": "gosh!",
+   "sec": "woorden"
+  },
+  {
+   "id": "haar",
+   "nl": "haar",
+   "en": "her",
+   "sec": "woorden"
+  },
+  {
+   "id": "heel",
+   "nl": "heel",
+   "en": "very; whole",
+   "sec": "woorden"
+  },
+  {
+   "id": "hoeveel",
+   "nl": "hoeveel",
+   "en": "how many, how much",
+   "sec": "woorden"
+  },
+  {
+   "id": "hun",
+   "nl": "hun",
+   "en": "their, them (also non-binary)",
+   "sec": "woorden"
+  },
+  {
+   "id": "iets",
+   "nl": "iets",
+   "en": "anything, something",
+   "sec": "woorden"
+  },
+  {
+   "id": "interessant",
+   "nl": "interessant",
+   "en": "interesting",
+   "sec": "woorden"
+  },
+  {
+   "id": "internationaal",
+   "nl": "internationaal",
+   "en": "international",
+   "sec": "woorden"
+  },
+  {
+   "id": "ja-hoor",
+   "nl": "ja hoor",
+   "en": "yes, sure",
+   "sec": "woorden"
+  },
+  {
+   "id": "jarig-zijn",
+   "nl": "jarig zijn",
+   "en": "to have your birthday",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-kantine",
+   "nl": "de kantine",
+   "en": "canteen",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-koffie",
+   "nl": "de koffie",
+   "en": "coffee",
+   "sec": "woorden"
+  },
+  {
+   "id": "laat",
+   "nl": "laat",
+   "en": "late",
+   "sec": "woorden"
+  },
+  {
+   "id": "lekker",
+   "nl": "lekker",
+   "en": "nice, delicious (food)",
+   "sec": "woorden"
+  },
+  {
+   "id": "leuk",
+   "nl": "leuk",
+   "en": "nice",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-mens",
+   "nl": "de mens",
+   "en": "person, human (being)",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-mensen",
+   "nl": "de mensen",
+   "en": "people",
+   "sec": "woorden"
+  },
+  {
+   "id": "moeten",
+   "nl": "moeten",
+   "en": "to have to, must",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-moment",
+   "nl": "het moment",
+   "en": "moment",
+   "sec": "woorden"
+  },
+  {
+   "id": "op-dit-moment",
+   "nl": "op dit moment",
+   "en": "at the moment",
+   "sec": "woorden"
+  },
+  {
+   "id": "na",
+   "nl": "na",
+   "en": "after",
+   "sec": "woorden"
+  },
+  {
+   "id": "nog",
+   "nl": "nog",
+   "en": "still, as well",
+   "sec": "woorden"
+  },
+  {
+   "id": "of",
+   "nl": "of",
+   "en": "or",
+   "sec": "woorden"
+  },
+  {
+   "id": "om",
+   "nl": "om",
+   "en": "at, around",
+   "sec": "woorden"
+  },
+  {
+   "id": "ons",
+   "nl": "ons",
+   "en": "our, us",
+   "sec": "woorden"
+  },
+  {
+   "id": "onze",
+   "nl": "onze",
+   "en": "our",
+   "sec": "woorden"
+  },
+  {
+   "id": "op",
+   "nl": "op",
+   "en": "on, at",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-organisatie",
+   "nl": "de organisatie",
+   "en": "organization",
+   "sec": "woorden"
+  },
+  {
+   "id": "over",
+   "nl": "over",
+   "en": "about, past",
+   "sec": "woorden"
+  },
+  {
+   "id": "pas",
+   "nl": "pas",
+   "en": "only (not until)",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-plek",
+   "nl": "de plek",
+   "en": "seat, spot",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-type",
+   "nl": "het type",
+   "en": "type",
+   "sec": "woorden"
+  },
+  {
+   "id": "uit-eten-gaan",
+   "nl": "uit eten gaan",
+   "en": "to go out for dinner",
+   "sec": "woorden"
+  },
+  {
+   "id": "uw",
+   "nl": "uw",
+   "en": "your (formal)",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-vakantie",
+   "nl": "de vakantie",
+   "en": "holiday",
+   "sec": "woorden"
+  },
+  {
+   "id": "op-vakantie",
+   "nl": "op vakantie",
+   "en": "on holiday",
+   "sec": "woorden"
+  },
+  {
+   "id": "van",
+   "nl": "van",
+   "en": "of, from",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-verjaardag",
+   "nl": "de verjaardag",
+   "en": "birthday",
+   "sec": "woorden"
+  },
+  {
+   "id": "vertellen",
+   "nl": "vertellen",
+   "en": "to tell",
+   "sec": "woorden"
+  },
+  {
+   "id": "vrij",
+   "nl": "vrij",
+   "en": "free",
+   "sec": "woorden"
+  },
+  {
+   "id": "vroeg",
+   "nl": "vroeg",
+   "en": "early",
+   "sec": "woorden"
+  },
+  {
+   "id": "waarom",
+   "nl": "waarom",
+   "en": "why",
+   "sec": "woorden"
+  },
+  {
+   "id": "wanneer",
+   "nl": "wanneer",
+   "en": "when",
+   "sec": "woorden"
+  },
+  {
+   "id": "wat",
+   "nl": "wat",
+   "en": "what, how",
+   "sec": "woorden"
+  },
+  {
+   "id": "wat-leuk",
+   "nl": "Wat leuk!",
+   "en": "How nice!",
+   "sec": "woorden"
+  },
+  {
+   "id": "weer",
+   "nl": "weer",
+   "en": "back, again",
+   "sec": "woorden"
+  },
+  {
+   "id": "wel",
+   "nl": "wel",
+   "en": "(contrast word, no direct translation)",
+   "sec": "woorden",
+   "note": "Ik niet, jij wel. – I don't, you do."
+  },
+  {
+   "id": "welk-welke",
+   "nl": "welk / welke",
+   "en": "which, what",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-werk",
+   "nl": "het werk",
+   "en": "work",
+   "sec": "woorden"
+  },
+  {
+   "id": "werken",
+   "nl": "werken",
+   "en": "to work",
+   "sec": "woorden"
+  },
+  {
+   "id": "weten",
+   "nl": "weten",
+   "en": "to know",
+   "sec": "woorden"
+  },
+  {
+   "id": "willen",
+   "nl": "willen",
+   "en": "to want, would like to",
+   "sec": "woorden"
+  },
+  {
+   "id": "zijn",
+   "nl": "zijn",
+   "en": "to be; his",
+   "sec": "woorden"
+  },
+  {
+   "id": "zitten",
+   "nl": "zitten",
+   "en": "to sit, to fit",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-broer",
+   "nl": "de broer",
+   "en": "brother",
+   "sec": "familie"
+  },
+  {
+   "id": "de-dochter",
+   "nl": "de dochter",
+   "en": "daughter",
+   "sec": "familie"
+  },
+  {
+   "id": "de-familie",
+   "nl": "de familie",
+   "en": "(extended) family",
+   "sec": "familie"
+  },
+  {
+   "id": "het-gezin",
+   "nl": "het gezin",
+   "en": "family (parents and children)",
+   "sec": "familie"
+  },
+  {
+   "id": "de-halfbroer",
+   "nl": "de halfbroer",
+   "en": "half-brother",
+   "sec": "familie"
+  },
+  {
+   "id": "de-halfzus",
+   "nl": "de halfzus",
+   "en": "half-sister",
+   "sec": "familie"
+  },
+  {
+   "id": "de-jongen",
+   "nl": "de jongen",
+   "en": "boy",
+   "sec": "familie"
+  },
+  {
+   "id": "het-kind",
+   "nl": "het kind",
+   "en": "child",
+   "sec": "familie"
+  },
+  {
+   "id": "het-kleinkind",
+   "nl": "het kleinkind",
+   "en": "grandchild",
+   "sec": "familie"
+  },
+  {
+   "id": "de-man",
+   "nl": "de man",
+   "en": "man, husband",
+   "sec": "familie"
+  },
+  {
+   "id": "het-meisje",
+   "nl": "het meisje",
+   "en": "girl",
+   "sec": "familie"
+  },
+  {
+   "id": "de-moeder",
+   "nl": "de moeder",
+   "en": "mother",
+   "sec": "familie"
+  },
+  {
+   "id": "de-neef",
+   "nl": "de neef",
+   "en": "cousin, nephew (m)",
+   "sec": "familie"
+  },
+  {
+   "id": "de-nicht",
+   "nl": "de nicht",
+   "en": "cousin, niece (f)",
+   "sec": "familie"
+  },
+  {
+   "id": "de-oma",
+   "nl": "de oma",
+   "en": "grandmother",
+   "sec": "familie"
+  },
+  {
+   "id": "de-oom",
+   "nl": "de oom",
+   "en": "uncle",
+   "sec": "familie"
+  },
+  {
+   "id": "de-opa",
+   "nl": "de opa",
+   "en": "grandfather",
+   "sec": "familie"
+  },
+  {
+   "id": "de-ouder",
+   "nl": "de ouder",
+   "en": "parent",
+   "sec": "familie"
+  },
+  {
+   "id": "de-schoonfamilie",
+   "nl": "de schoonfamilie",
+   "en": "in-laws",
+   "sec": "familie"
+  },
+  {
+   "id": "de-schoonmoeder",
+   "nl": "de schoonmoeder",
+   "en": "mother-in-law",
+   "sec": "familie"
+  },
+  {
+   "id": "de-schoonvader",
+   "nl": "de schoonvader",
+   "en": "father-in-law",
+   "sec": "familie"
+  },
+  {
+   "id": "de-schoonzus",
+   "nl": "de schoonzus",
+   "en": "sister-in-law",
+   "sec": "familie"
+  },
+  {
+   "id": "de-stiefmoeder",
+   "nl": "de stiefmoeder",
+   "en": "stepmother",
+   "sec": "familie"
+  },
+  {
+   "id": "de-stiefvader",
+   "nl": "de stiefvader",
+   "en": "stepfather",
+   "sec": "familie"
+  },
+  {
+   "id": "de-tante",
+   "nl": "de tante",
+   "en": "aunt",
+   "sec": "familie"
+  },
+  {
+   "id": "de-vader",
+   "nl": "de vader",
+   "en": "father",
+   "sec": "familie"
+  },
+  {
+   "id": "de-vriend",
+   "nl": "de vriend",
+   "en": "boyfriend, friend (m)",
+   "sec": "familie"
+  },
+  {
+   "id": "de-vriendin",
+   "nl": "de vriendin",
+   "en": "girlfriend, friend (f)",
+   "sec": "familie"
+  },
+  {
+   "id": "de-vrouw",
+   "nl": "de vrouw",
+   "en": "woman, wife",
+   "sec": "familie"
+  },
+  {
+   "id": "de-zoon",
+   "nl": "de zoon",
+   "en": "son",
+   "sec": "familie"
+  },
+  {
+   "id": "de-zus",
+   "nl": "de zus",
+   "en": "sister",
+   "sec": "familie"
+  },
+  {
+   "id": "de-zwager",
+   "nl": "de zwager",
+   "en": "brother-in-law",
+   "sec": "familie"
+  },
+  {
+   "id": "de-baard",
+   "nl": "de baard",
+   "en": "beard",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "blond",
+   "nl": "blond",
+   "en": "blond",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "de-bril",
+   "nl": "de bril",
+   "en": "glasses",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "bruin",
+   "nl": "bruin",
+   "en": "brown",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "donker",
+   "nl": "donker",
+   "en": "dark",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "grijs",
+   "nl": "grijs",
+   "en": "grey",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "groot",
+   "nl": "groot",
+   "en": "big, large",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "het-haar",
+   "nl": "het haar",
+   "en": "hair",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "de-hoofddoek",
+   "nl": "de hoofddoek",
+   "en": "headscarf",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "jong",
+   "nl": "jong",
+   "en": "young",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "kaal",
+   "nl": "kaal",
+   "en": "bald",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "klein",
+   "nl": "klein",
+   "en": "small",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "krullend",
+   "nl": "krullend",
+   "en": "curly",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "lang",
+   "nl": "lang",
+   "en": "long, tall",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "oud",
+   "nl": "oud",
+   "en": "old",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "rood",
+   "nl": "rood",
+   "en": "red",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "de-snor",
+   "nl": "de snor",
+   "en": "moustache",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "steil",
+   "nl": "steil",
+   "en": "straight (hair)",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "zwart",
+   "nl": "zwart",
+   "en": "black",
+   "sec": "uiterlijk"
+  },
+  {
+   "id": "maandag",
+   "nl": "maandag",
+   "en": "Monday",
+   "sec": "kalender"
+  },
+  {
+   "id": "dinsdag",
+   "nl": "dinsdag",
+   "en": "Tuesday",
+   "sec": "kalender"
+  },
+  {
+   "id": "woensdag",
+   "nl": "woensdag",
+   "en": "Wednesday",
+   "sec": "kalender"
+  },
+  {
+   "id": "donderdag",
+   "nl": "donderdag",
+   "en": "Thursday",
+   "sec": "kalender"
+  },
+  {
+   "id": "vrijdag",
+   "nl": "vrijdag",
+   "en": "Friday",
+   "sec": "kalender"
+  },
+  {
+   "id": "zaterdag",
+   "nl": "zaterdag",
+   "en": "Saturday",
+   "sec": "kalender"
+  },
+  {
+   "id": "zondag",
+   "nl": "zondag",
+   "en": "Sunday",
+   "sec": "kalender"
+  },
+  {
+   "id": "januari",
+   "nl": "januari",
+   "en": "January",
+   "sec": "kalender"
+  },
+  {
+   "id": "maart",
+   "nl": "maart",
+   "en": "March",
+   "sec": "kalender"
+  },
+  {
+   "id": "april",
+   "nl": "april",
+   "en": "April",
+   "sec": "kalender"
+  },
+  {
+   "id": "mei",
+   "nl": "mei",
+   "en": "May",
+   "sec": "kalender"
+  },
+  {
+   "id": "juni",
+   "nl": "juni",
+   "en": "June",
+   "sec": "kalender"
+  },
+  {
+   "id": "juli",
+   "nl": "juli",
+   "en": "July",
+   "sec": "kalender"
+  },
+  {
+   "id": "augustus",
+   "nl": "augustus",
+   "en": "August",
+   "sec": "kalender"
+  },
+  {
+   "id": "september",
+   "nl": "september",
+   "en": "September",
+   "sec": "kalender"
+  },
+  {
+   "id": "oktober",
+   "nl": "oktober",
+   "en": "October",
+   "sec": "kalender"
+  },
+  {
+   "id": "november",
+   "nl": "november",
+   "en": "November",
+   "sec": "kalender"
+  },
+  {
+   "id": "december",
+   "nl": "december",
+   "en": "December",
+   "sec": "kalender"
+  },
+  {
+   "id": "de-lente",
+   "nl": "de lente",
+   "en": "spring",
+   "sec": "kalender"
+  },
+  {
+   "id": "het-voorjaar",
+   "nl": "het voorjaar",
+   "en": "spring",
+   "sec": "kalender"
+  },
+  {
+   "id": "de-zomer",
+   "nl": "de zomer",
+   "en": "summer",
+   "sec": "kalender"
+  },
+  {
+   "id": "de-herfst",
+   "nl": "de herfst",
+   "en": "autumn",
+   "sec": "kalender"
+  },
+  {
+   "id": "het-najaar",
+   "nl": "het najaar",
+   "en": "autumn",
+   "sec": "kalender"
+  },
+  {
+   "id": "de-winter",
+   "nl": "de winter",
+   "en": "winter",
+   "sec": "kalender"
+  },
+  {
+   "id": "het-seizoen",
+   "nl": "het seizoen",
+   "en": "season",
+   "sec": "kalender"
+  },
+  {
+   "id": "de-maand",
+   "nl": "de maand",
+   "en": "month",
+   "sec": "kalender"
+  },
+  {
+   "id": "de-week",
+   "nl": "de week",
+   "en": "week",
+   "sec": "kalender"
+  },
+  {
+   "id": "het-weekend",
+   "nl": "het weekend",
+   "en": "weekend",
+   "sec": "kalender"
+  },
+  {
+   "id": "eergisteren",
+   "nl": "eergisteren",
+   "en": "the day before yesterday",
+   "sec": "kalender"
+  },
+  {
+   "id": "gisteren",
+   "nl": "gisteren",
+   "en": "yesterday",
+   "sec": "kalender"
+  },
+  {
+   "id": "vandaag",
+   "nl": "vandaag",
+   "en": "today",
+   "sec": "kalender"
+  },
+  {
+   "id": "morgen",
+   "nl": "morgen",
+   "en": "tomorrow",
+   "sec": "kalender"
+  },
+  {
+   "id": "overmorgen",
+   "nl": "overmorgen",
+   "en": "the day after tomorrow",
+   "sec": "kalender"
+  },
+  {
+   "id": "de-klok",
+   "nl": "de klok",
+   "en": "clock",
+   "sec": "kalender"
+  },
+  {
+   "id": "het-uur",
+   "nl": "het uur",
+   "en": "hour, o'clock",
+   "sec": "kalender"
+  },
+  {
+   "id": "het-halfuur",
+   "nl": "het halfuur",
+   "en": "half hour",
+   "sec": "kalender"
+  },
+  {
+   "id": "het-kwartier",
+   "nl": "het kwartier",
+   "en": "quarter of an hour",
+   "sec": "kalender"
+  },
+  {
+   "id": "de-minuut",
+   "nl": "de minuut",
+   "en": "minute",
+   "sec": "kalender"
+  }
+ ]
+}
