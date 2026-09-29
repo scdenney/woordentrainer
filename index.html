@@ -28,6 +28,9 @@
   --warn: #8a5d00;
   --warn-soft: #f6ecd4;
   --on-accent: #ffffff;
+  --delft-hover: #163f76;
+  --seg-bg: #e3e9e2;
+  --shadow: rgba(22, 34, 27, 0.14);
   --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --body: "Atkinson Hyperlegible", "Verdana", "Segoe UI", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
@@ -37,6 +40,7 @@
     --paper: #111814; --surface: #19221d; --ink: #e6ede8; --muted: #98a79e; --line: #2d3a32;
     --delft: #93b4e8; --delft-soft: #1b2940; --block: #72c496; --block-soft: #1a2e22;
     --bad: #f0897c; --bad-soft: #3a1f1b; --warn: #e3b75c; --warn-soft: #33290f; --on-accent: #0f1712;
+    --delft-hover: #b4cbf0; --seg-bg: #0d130f; --shadow: rgba(0, 0, 0, 0.45);
     color-scheme: dark;
   }
 }
@@ -44,6 +48,7 @@
   --paper: #111814; --surface: #19221d; --ink: #e6ede8; --muted: #98a79e; --line: #2d3a32;
   --delft: #93b4e8; --delft-soft: #1b2940; --block: #72c496; --block-soft: #1a2e22;
   --bad: #f0897c; --bad-soft: #3a1f1b; --warn: #e3b75c; --warn-soft: #33290f; --on-accent: #0f1712;
+  --delft-hover: #b4cbf0; --seg-bg: #0d130f; --shadow: rgba(0, 0, 0, 0.45);
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -74,14 +79,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 legend { padding: 0; margin-bottom: 8px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.chip { position: relative; }
-.chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
-.chip label { display: inline-flex; align-items: baseline; gap: 6px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); cursor: pointer; font-size: 0.925rem; }
-.chip label .num { font-size: 0.75rem; color: var(--muted); }
-.chip input:checked + label { background: var(--delft); border-color: var(--delft); color: var(--on-accent); }
-.chip input:checked + label .num { color: inherit; opacity: 0.8; }
-.chip input:focus-visible + label { outline: 2px solid var(--delft); outline-offset: 2px; }
-.chip input:disabled + label { opacity: 0.45; cursor: default; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .btn { border: 1px solid var(--line); background: var(--surface); padding: 10px 18px; border-radius: 8px; font-weight: 700; }
 .btn.primary { background: var(--delft); border-color: var(--delft); color: var(--on-accent); }
@@ -126,8 +123,68 @@ td { padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top
 td.r { text-align: right; white-space: nowrap; }
 .state { display: flex; flex-direction: column; gap: 8px; padding: 32px 0; }
 
+/* setup: chapter checklist, segmented settings, switches, start bar */
+.pick, .settings { display: flex; flex-direction: column; gap: 12px; }
+.pick-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.cb { width: 1.15rem; height: 1.15rem; margin: 0; flex: none; accent-color: var(--block); cursor: pointer; }
+.chapters { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); overflow: hidden; }
+.ch + .ch { border-top: 1px solid var(--line); }
+.ch-row { display: flex; align-items: center; gap: 14px; padding-inline: 16px; }
+.ch-row:hover { background: color-mix(in srgb, var(--block-soft) 45%, transparent); }
+.ch-open { flex: 1; min-width: 0; display: grid; grid-template-columns: 1fr auto 5rem 1rem; align-items: center; gap: 14px; border: 0; background: none; padding: 14px 0; text-align: left; }
+.ch-title { font: 700 1.05rem/1.2 var(--display); }
+.ch-meta { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
+.chev { width: 1rem; height: 1rem; color: var(--muted); transition: transform 0.15s ease; }
+.ch.open .chev { transform: rotate(180deg); }
+.secs { list-style: none; margin: 0; padding: 0 16px 10px 46px; }
+.sec-row { display: grid; grid-template-columns: auto 1fr 5rem 2.2rem; align-items: center; gap: 14px; padding: 8px 0; border-top: 1px solid var(--line); cursor: pointer; font-size: 0.95rem; }
+.sec-row:hover .sec-name { color: var(--block); }
+.sec-name { min-width: 0; }
+.sec-n { font-size: 0.8rem; color: var(--muted); text-align: right; }
+.mini { display: flex; height: 6px; border-radius: 3px; overflow: hidden; background: var(--line); }
+.mini .known { background: var(--block); } .mini .learning { background: var(--delft); }
+
+.set-row { display: grid; grid-template-columns: 5.5rem 1fr; align-items: center; gap: 8px 16px; }
+.set-label { margin: 0; }
+.seg { position: relative; display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 3px; background: var(--seg-bg); border-radius: 10px; width: fit-content; max-width: 100%; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg label { padding: 6px 14px; border-radius: 8px; color: var(--muted); font-weight: 700; font-size: 0.9rem; cursor: pointer; white-space: nowrap; transition: color 0.12s, background 0.12s; }
+.seg label:hover { color: var(--ink); }
+.seg input:checked + label { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px var(--shadow), 0 0 0 1px var(--line); }
+.seg input:focus-visible + label { outline: 2px solid var(--delft); outline-offset: 1px; }
+.seg .num { font-weight: 400; font-size: 0.75rem; margin-left: 6px; opacity: 0.75; }
+.switches { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.switch { position: relative; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.925rem; }
+.switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.track { position: relative; flex: none; width: 2.4rem; height: 1.4rem; border-radius: 999px; background: var(--line); transition: background 0.15s; }
+.thumb { position: absolute; top: 3px; left: 3px; width: calc(1.4rem - 6px); height: calc(1.4rem - 6px); border-radius: 50%; background: var(--surface); box-shadow: 0 1px 2px var(--shadow); transition: transform 0.15s ease; }
+.switch input:checked + .track { background: var(--block); }
+.switch input:checked + .track .thumb { transform: translateX(1rem); }
+.switch input:focus-visible + .track { outline: 2px solid var(--delft); outline-offset: 2px; }
+
+.startbar { position: sticky; bottom: 0; z-index: 5; margin-top: 4px; padding: 16px 0 calc(12px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to top, var(--paper) 72%, transparent); }
+.startbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 10px 10px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); box-shadow: 0 6px 24px var(--shadow); }
+.start-sum { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
+.start-sum b { font: 700 1.1rem var(--display); }
+.start-sum span { font-size: 0.85rem; color: var(--muted); }
+.start { display: inline-flex; align-items: center; gap: 10px; flex: none; border: 0; border-radius: 10px; padding: 12px 22px; background: var(--delft); color: var(--on-accent); font: 700 1.05rem var(--display); cursor: pointer; transition: background 0.15s, transform 0.15s, box-shadow 0.15s; }
+.start .arrow { width: 1.15rem; height: 1.15rem; transition: transform 0.15s ease; }
+.start:hover:not(:disabled) { background: var(--delft-hover); transform: translateY(-1px); box-shadow: 0 6px 16px color-mix(in srgb, var(--delft) 40%, transparent); }
+.start:hover:not(:disabled) .arrow { transform: translateX(4px); }
+.start:active:not(:disabled) { transform: translateY(0) scale(0.98); box-shadow: none; }
+.start:focus-visible { outline: 2px solid var(--delft); outline-offset: 3px; }
+.start:disabled { background: var(--line); color: var(--muted); cursor: default; }
+@media (prefers-reduced-motion: reduce) { .start, .start .arrow, .chev, .thumb, .track { transition: none; } .start:hover:not(:disabled) { transform: none; } }
+@media (max-width: 34rem) {
+  .ch-open { grid-template-columns: 1fr auto 1rem; } .ch-open .mini { display: none; }
+  .secs { padding-left: 16px; }
+  .sec-row { grid-template-columns: auto 1fr 2.2rem; } .sec-row .mini { display: none; }
+  .set-row { grid-template-columns: 1fr; gap: 6px; }
+  .start { padding: 12px 18px; }
+}
+
 /* tabs + audio */
-.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 4px; overflow-x: auto; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 20px; overflow-x: auto; }
 .tabs button { border: 0; background: none; padding: 8px 12px; font-weight: 700; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -1px; white-space: nowrap; }
 .tabs button[aria-current="page"] { color: var(--ink); border-bottom-color: var(--delft); }
 .say { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; flex: none; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--delft); padding: 0; vertical-align: middle; }
@@ -180,7 +237,8 @@ td.r { text-align: right; white-space: nowrap; }
   const S = {
     status: "loading", decks: [], words: [], prog: {}, local: false,
     view: "setup", session: null, listQuery: "",
-    prefs: Object.assign({ decks: null, secs: null, dir: "en-nl", mode: "type", focus: "all", auto: true, slow: false }, readLS("wt-prefs") || {}),
+    prefs: Object.assign({ sel: null, dir: "en-nl", mode: "type", focus: "all", auto: true, slow: false }, readLS("wt-prefs") || {}),
+    open: new Set(),
   };
   function readLS(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }
   function writeLS(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
@@ -419,23 +477,20 @@ td.r { text-align: right; white-space: nowrap; }
   }
 
   // ---------- selection ----------
-  const selectedDecks = () => S.prefs.decks?.length ? S.decks.filter(d => S.prefs.decks.includes(d.id)) : S.decks;
-  function sectionsFor(decks) {
-    const m = new Map();
-    for (const d of decks) for (const s of d.sections || []) if (!m.has(s.id)) m.set(s.id, s.name);
-    return [...m].map(([id, name]) => ({ id, name }));
-  }
-  function inScope() {
-    const deckIds = new Set(selectedDecks().map(d => d.id));
-    const secs = S.prefs.secs;
-    return S.words.filter(w => deckIds.has(w.deck) && (!secs?.length || secs.includes(w.sec)));
-  }
+  // S.prefs.sel: null means every section of every chapter; otherwise the chosen "chapter|section" keys.
+  const secKey = (deck, sec) => deck + "|" + sec;
+  const isSel = (deck, sec) => !Array.isArray(S.prefs.sel) || S.prefs.sel.includes(secKey(deck, sec));
+  const allKeys = () => S.decks.flatMap(d => (d.sections || []).map(s => secKey(d.id, s.id)));
+  const selectedDecks = () => S.decks.filter(d => (d.sections || []).some(s => isSel(d.id, s.id)));
+  function setSel(keys) { S.prefs.sel = keys.length === allKeys().length ? null : keys; savePrefs(); }
+  function inScope() { return S.words.filter(w => isSel(w.deck, w.sec)); }
   function pool() {
     const ws = inScope();
     if (S.prefs.focus === "unknown") return ws.filter(w => statusOf(w) !== "known");
     if (S.prefs.focus === "mistakes") return ws.filter(w => (rec(w)?.w || 0) > 0 && statusOf(w) !== "known");
     return ws;
   }
+  function tally(ws) { const n = { known: 0, learning: 0, new: 0 }; for (const w of ws) n[statusOf(w)]++; return n; }
 
   // ---------- views ----------
   function render() {
@@ -450,31 +505,60 @@ td.r { text-align: right; white-space: nowrap; }
         <p class="note">Chapters appear here once they are added.</p></div>`;
       return;
     }
+    const focusId = document.activeElement?.id;
     ({ setup: renderSetup, quiz: renderQuiz, round: renderRound, done: renderDone, list: renderList, guide: renderGuide })[S.view]();
     if (["setup", "list", "guide"].includes(S.view)) {
       const tabs = [["setup", "Oefenen"], ["list", "Woordenlijst"], ["guide", "Uitspraak"]];
       app.insertAdjacentHTML("afterbegin", `<nav class="tabs" aria-label="Sections">${tabs.map(([v, l]) => `<button type="button" data-view="${v}"${S.view === v ? ' aria-current="page"' : ""}>${l}</button>`).join("")}</nav>`);
       app.querySelectorAll("[data-view]").forEach(b => b.onclick = () => { S.view = b.dataset.view; render(); window.scrollTo(0, 0); });
     }
+    if (focusId && S.view === "setup") document.getElementById(focusId)?.focus({ preventScroll: true });
   }
 
-  function chip(type, name, id, value, label, checked, count, disabled) {
-    return `<span class="chip"><input type="${type}" name="${name}" id="${id}" value="${esc(value)}"${checked ? " checked" : ""}${disabled ? " disabled" : ""}>
-      <label for="${id}">${esc(label)}${count != null ? ` <span class="num">${count}</span>` : ""}</label></span>`;
+  const CHEV = `<svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const ARROW = `<svg class="arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  function mini(ws) { // progress bar: known, then learning
+    const n = tally(ws), t = ws.length || 1;
+    return `<span class="mini" role="img" aria-label="${n.known} gekend, ${n.learning} bezig, ${n.new} nieuw"><span class="known" style="width:${n.known / t * 100}%"></span><span class="learning" style="width:${n.learning / t * 100}%"></span></span>`;
+  }
+  function seg(name, options, current) { // one-of-several control
+    return `<div class="seg" role="radiogroup">${options.map(([value, label, count]) =>
+      `<input type="radio" name="${name}" id="${name}-${value}" value="${value}"${current === value ? " checked" : ""}><label for="${name}-${value}">${esc(label)}${count != null ? `<span class="num">${count}</span>` : ""}</label>`).join("")}</div>`;
+  }
+  function toggle(name, label, on) { // on/off switch
+    return `<label class="switch" for="sw-${name}"><input type="checkbox" role="switch" id="sw-${name}" name="${name}"${on ? " checked" : ""}><span class="track"><span class="thumb"></span></span><span>${esc(label)}</span></label>`;
   }
 
   function renderSetup() {
-    const decks = selectedDecks();
-    const secs = sectionsFor(decks);
-    const scope = inScope();
-    const n = { known: 0, learning: 0, new: 0 };
-    for (const w of scope) n[statusOf(w)]++;
-    const tot = scope.length || 1;
-    const nUnknown = scope.filter(w => statusOf(w) !== "known").length;
+    const P = S.prefs;
+    const scope = inScope(), n = tally(scope), tot = scope.length || 1;
+    const nUnknown = scope.length - n.known;
     const nMistakes = scope.filter(w => (rec(w)?.w || 0) > 0 && statusOf(w) !== "known").length;
     const p = pool().length;
-    const secCounts = id => S.words.filter(w => decks.some(d => d.id === w.deck) && w.sec === id).length;
-    const P = S.prefs;
+    const chapters = S.decks.map(d => {
+      const words = S.words.filter(w => w.deck === d.id);
+      const secs = (d.sections || []).map(s => ({ ...s, key: secKey(d.id, s.id), words: words.filter(w => w.sec === s.id) }));
+      const on = secs.filter(s => isSel(d.id, s.id));
+      const nOn = on.reduce((a, s) => a + s.words.length, 0);
+      const open = S.open.has(d.id);
+      return `<div class="ch${open ? " open" : ""}">
+        <div class="ch-row">
+          <input type="checkbox" class="cb" id="ch-${d.id}" data-ch="${d.id}"${on.length === secs.length ? " checked" : ""} data-mixed="${on.length > 0 && on.length < secs.length}" aria-label="${esc(d.title)}: alles selecteren">
+          <button type="button" class="ch-open" data-open="${d.id}" aria-expanded="${open}" aria-controls="secs-${d.id}">
+            <span class="ch-title">${esc(d.title)}</span>
+            <span class="ch-meta num">${nOn === words.length ? `${words.length} woorden` : `${nOn} van ${words.length}`}</span>
+            ${mini(words)}${CHEV}
+          </button>
+        </div>
+        <ul class="secs" id="secs-${d.id}"${open ? "" : " hidden"}>
+          ${secs.map(s => `<li><label class="sec-row" for="sec-${d.id}-${s.id}">
+            <input type="checkbox" class="cb" id="sec-${d.id}-${s.id}" data-key="${esc(s.key)}"${isSel(d.id, s.id) ? " checked" : ""}>
+            <span class="sec-name">${esc(s.name)}</span>${mini(s.words)}<span class="num sec-n">${s.words.length}</span>
+          </label></li>`).join("")}
+        </ul>
+      </div>`;
+    }).join("");
+    const dirLabel = { "en-nl": "Engels → Nederlands", "nl-en": "Nederlands → Engels", mix: "Gemengd" }[P.dir];
     app.innerHTML = `
       <div class="controls">
         <section class="overview" aria-label="Progress">
@@ -490,53 +574,50 @@ td.r { text-align: right; white-space: nowrap; }
           <p class="note">A word counts as <em>gekend</em> after three correct answers in a row.</p>
         </section>
 
-        <fieldset><legend class="kicker">Hoofdstukken</legend><div class="chips">
-          ${S.decks.map(d => chip("checkbox", "deck", "deck-" + d.id, d.id, d.title, !P.decks?.length || P.decks.includes(d.id), (d.words || []).length)).join("")}
-        </div></fieldset>
+        <section class="pick" aria-labelledby="pick-h">
+          <div class="pick-head">
+            <h2 id="pick-h">Wat wil je oefenen?</h2>
+            <span class="small"><button type="button" class="link" id="sel-all">Alles</button> · <button type="button" class="link" id="sel-none">Niets</button></span>
+          </div>
+          <div class="chapters">${chapters}</div>
+          <p class="note">Tick a chapter for all of it, or open it to pick parts.</p>
+        </section>
 
-        <fieldset><legend class="kicker">Onderdelen</legend><div class="chips">
-          ${secs.map(s => chip("checkbox", "sec", "sec-" + s.id, s.id, s.name, !P.secs?.length || P.secs.includes(s.id), secCounts(s.id))).join("")}
-        </div></fieldset>
+        <section class="settings" aria-labelledby="how-h">
+          <h2 id="how-h">Hoe?</h2>
+          <div class="set-row"><span class="set-label kicker">Richting</span>${seg("dir", [["en-nl", "EN → NL"], ["nl-en", "NL → EN"], ["mix", "Gemengd"]], P.dir)}</div>
+          <div class="set-row"><span class="set-label kicker">Manier</span>${seg("mode", [["type", "Typen"], ["flip", "Kaarten"]], P.mode)}</div>
+          <div class="set-row"><span class="set-label kicker">Focus</span>${seg("focus", [["all", "Alles", scope.length], ["unknown", "Nog niet gekend", nUnknown], ["mistakes", "Fouten", nMistakes]], P.focus)}</div>
+          ${canSpeak() ? `<div class="set-row"><span class="set-label kicker">Audio</span><div class="switches">${toggle("auto", "Automatisch voorlezen", P.auto)}${toggle("slow", "Langzaam", P.slow)}</div></div>` : ""}
+          ${voiceNote() ? `<p class="note">${esc(voiceNote())}</p>` : ""}
+          <p class="note">${P.mode === "flip" ? "Kaarten: see the word, think of the answer, flip the card and mark yourself." : "Typen: type the answer and the trainer checks it."} Rounds of ${ROUND}; words you miss come back at the start of the next round. ${S.local ? "Progress is saved in this browser." : "Progress is saved with this page."}</p>
+        </section>
 
-        <fieldset><legend class="kicker">Richting</legend><div class="chips">
-          ${chip("radio", "dir", "dir-en-nl", "en-nl", "Engels → Nederlands", P.dir === "en-nl")}
-          ${chip("radio", "dir", "dir-nl-en", "nl-en", "Nederlands → Engels", P.dir === "nl-en")}
-          ${chip("radio", "dir", "dir-mix", "mix", "Gemengd", P.dir === "mix")}
-        </div></fieldset>
-
-        <fieldset><legend class="kicker">Manier</legend><div class="chips">
-          ${chip("radio", "mode", "mode-type", "type", "Typen", P.mode === "type")}
-          ${chip("radio", "mode", "mode-flip", "flip", "Kaarten (flip and self-check)", P.mode === "flip")}
-        </div></fieldset>
-
-        <fieldset><legend class="kicker">Focus</legend><div class="chips">
-          ${chip("radio", "focus", "focus-all", "all", "Alles", P.focus === "all", scope.length)}
-          ${chip("radio", "focus", "focus-unknown", "unknown", "Nog niet gekend", P.focus === "unknown", nUnknown)}
-          ${chip("radio", "focus", "focus-mistakes", "mistakes", "Fouten", P.focus === "mistakes", nMistakes)}
-        </div></fieldset>
-
-        ${canSpeak() ? `<fieldset><legend class="kicker">Audio</legend><div class="chips">
-          ${chip("checkbox", "auto", "audio-auto", "auto", "Nederlands automatisch voorlezen", P.auto)}
-          ${chip("checkbox", "slow", "audio-slow", "slow", "Langzaam", P.slow)}
-        </div>${voiceNote() ? `<p class="note">${esc(voiceNote())}</p>` : ""}</fieldset>` : ""}
-
-        <div class="actions">
-          <button class="btn primary" id="start"${p ? "" : " disabled"}>Start · ${p} woorden</button>
+        <div class="startbar">
+          <div class="startbar-inner">
+            <div class="start-sum"><b class="num">${p} ${p === 1 ? "woord" : "woorden"}</b><span>${esc(dirLabel)} · ${P.mode === "flip" ? "Kaarten" : "Typen"}</span></div>
+            <button type="button" class="start" id="start"${p ? "" : " disabled"}>Start ${ARROW}</button>
+          </div>
         </div>
-        <p class="note">Rounds of ${ROUND}. Words you miss come back at the start of the next round, until you've had every word. ${S.local ? "Progress is saved in this browser only." : "Progress is saved with this page."}</p>
       </div>`;
-    app.querySelectorAll("input[name=deck]").forEach(el => el.onchange = () => {
-      const on = [...app.querySelectorAll("input[name=deck]:checked")].map(i => i.value);
-      P.decks = on.length === S.decks.length ? null : on; if (!on.length) P.decks = null;
-      savePrefs(); renderSetup();
+    app.querySelectorAll("[data-mixed=true]").forEach(cb => { cb.indeterminate = true; });
+    app.querySelectorAll("input[data-key]").forEach(el => el.onchange = () => {
+      setSel([...app.querySelectorAll("input[data-key]:checked")].map(i => i.dataset.key)); render();
     });
-    app.querySelectorAll("input[name=sec]").forEach(el => el.onchange = () => {
-      const all = [...app.querySelectorAll("input[name=sec]")];
-      const on = all.filter(i => i.checked).map(i => i.value);
-      P.secs = on.length === all.length || !on.length ? null : on;
-      savePrefs(); renderSetup();
+    app.querySelectorAll("input[data-ch]").forEach(el => el.onchange = () => {
+      const mine = new Set([...app.querySelectorAll(`#secs-${el.dataset.ch} input[data-key]`)].map(i => i.dataset.key));
+      const others = [...app.querySelectorAll("input[data-key]:checked")].map(i => i.dataset.key).filter(k => !mine.has(k));
+      setSel(el.checked ? [...others, ...mine] : others); render();
     });
-    for (const k of ["dir", "mode", "focus"]) app.querySelectorAll(`input[name=${k}]`).forEach(el => el.onchange = () => { P[k] = el.value; savePrefs(); renderSetup(); });
+    app.querySelectorAll("[data-open]").forEach(b => b.onclick = () => {
+      const id = b.dataset.open, open = !S.open.has(id);
+      open ? S.open.add(id) : S.open.delete(id);
+      b.setAttribute("aria-expanded", open); b.closest(".ch").classList.toggle("open", open);
+      app.querySelector(`#secs-${id}`).hidden = !open;
+    });
+    app.querySelector("#sel-all").onclick = () => { S.prefs.sel = null; savePrefs(); render(); };
+    app.querySelector("#sel-none").onclick = () => { S.prefs.sel = []; savePrefs(); render(); };
+    for (const k of ["dir", "mode", "focus"]) app.querySelectorAll(`input[name=${k}]`).forEach(el => el.onchange = () => { P[k] = el.value; savePrefs(); render(); });
     for (const k of ["auto", "slow"]) { const el = app.querySelector(`input[name=${k}]`); if (el) el.onchange = () => { P[k] = el.checked; savePrefs(); }; }
     app.querySelector("#start").onclick = startSession;
   }
@@ -764,7 +845,7 @@ td.r { text-align: right; white-space: nowrap; }
         <div class="guide-sec">
           <h2>Uitspraak</h2>
           <p class="note">${clips.map ? "Tap any example to hear it. The recordings are made with an AI voice speaking Netherlands Dutch: good for single words and sounds, but not a real person." : "Tap any example to hear it, read by your device's own voice."} For the course's own recordings by real speakers, use “Luister naar de woorden” on the 1.2 Woordenlijst page of the Nederlands in gang website.</p>
-          ${canSpeak() ? `<div class="chips">${chip("checkbox", "slow", "guide-slow", "slow", "Langzaam", S.prefs.slow)}</div>` : ""}
+          ${canSpeak() ? `<div>${toggle("slow", "Langzaam", S.prefs.slow)}</div>` : ""}
           ${voiceNote() ? `<p class="note">${esc(voiceNote())}</p>` : ""}
         </div>
         ${GUIDE.map(sec => `
@@ -776,7 +857,7 @@ td.r { text-align: right; white-space: nowrap; }
               : `<div class="ex">${r.ex.map(chipHtml).join("")}</div>`).join("")}</div>
           </section>`).join("")}
       </div>`;
-    const slow = app.querySelector("#guide-slow");
+    const slow = app.querySelector("#sw-slow");
     if (slow) slow.onchange = () => { S.prefs.slow = slow.checked; savePrefs(); };
   }
 
