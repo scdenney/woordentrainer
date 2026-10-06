@@ -1,0 +1,339 @@
+{
+ "title": "Woordvolgorde & inversie",
+ "order": 101,
+ "kind": "grammar",
+ "source": "Les 3 slides, the gaan/komen handout and class worksheets (F. Fabbricotti, Sept–Oct 2026)",
+ "rules": [
+  {
+   "title": "Het werkwoord staat op plaats 2",
+   "text": "In a statement the verb is always the second part of the sentence. Second part, not second word: a part can be several words, like Om 10 uur or Tim en Saskia."
+  },
+  {
+   "title": "Inversie",
+   "text": "When the sentence starts with something other than the subject (a time, a place, an object), the subject moves to just after the verb.",
+   "table": {
+    "head": [
+     "1",
+     "2 (werkwoord)",
+     "3",
+     "rest"
+    ],
+    "rows": [
+     [
+      "Tim en Saskia",
+      "fietsen",
+      "om 10 uur",
+      "naar school."
+     ],
+     [
+      "Om 10 uur",
+      "fietsen",
+      "Tim en Saskia",
+      "naar school."
+     ],
+     [
+      "Naar school",
+      "fietsen",
+      "Tim en Saskia",
+      "om 10 uur."
+     ]
+    ]
+   }
+  },
+  {
+   "title": "Betekenis",
+   "text": "All three mean that Tim and Saskia cycle to school at ten. Starting with the time is very common. Starting with the place puts the weight on it."
+  },
+  {
+   "title": "je/jij na het werkwoord",
+   "text": "Je vindt café Einstein aan de Nieuwe Rijn. → Café Einstein vind je aan de Nieuwe Rijn. With je/jij after the verb, the -t goes: vindt → vind, komt → kom."
+  }
+ ],
+ "sections": [
+  {
+   "id": "iets-eerst",
+   "name": "Iets anders eerst",
+   "task": "Start with the words in brackets. The verb stays in second place."
+  },
+  {
+   "id": "zinsvolgorde",
+   "name": "Zinnen bouwen",
+   "task": "Put the parts in the right order and type the sentence."
+  }
+ ],
+ "words": [
+  {
+   "id": "iets-eerst-ik-ga-naar-het-feest-vanavond",
+   "q": "Ik ga naar het feest. (vanavond)",
+   "nl": "Vanavond ga ik naar het feest.",
+   "en": "Tonight I'm going to the party.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-ik-drink-een-biertje-met-kees-straks",
+   "q": "Ik drink een biertje met Kees. (straks)",
+   "nl": "Straks drink ik een biertje met Kees.",
+   "en": "Later I'm having a beer with Kees.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-wij-gaan-op-vakantie-volgende-week",
+   "q": "Wij gaan op vakantie. (volgende week)",
+   "nl": "Volgende week gaan wij op vakantie./Volgende week gaan we op vakantie.",
+   "en": "Next week we're going on holiday.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-hij-werkt-niet-vandaag",
+   "q": "Hij werkt niet. (vandaag)",
+   "nl": "Vandaag werkt hij niet.",
+   "en": "Today he isn't working.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-ik-woon-in-utrecht-nu",
+   "q": "Ik woon in Utrecht. (nu)",
+   "nl": "Nu woon ik in Utrecht.",
+   "en": "Now I live in Utrecht.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-jij-komt-bij-mij-morgen",
+   "q": "Jij komt bij mij. (morgen)",
+   "nl": "Morgen kom jij bij mij./Morgen kom je bij mij.",
+   "en": "Tomorrow you're coming to my place. jij after the verb: kom.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-ik-heb-hooikoorts-in-de-lente",
+   "q": "Ik heb hooikoorts. (in de lente)",
+   "nl": "In de lente heb ik hooikoorts.",
+   "en": "In spring I have hay fever.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-zij-gaat-naar-de-film-vanavond",
+   "q": "Zij gaat naar de film. (vanavond)",
+   "nl": "Vanavond gaat zij naar de film./Vanavond gaat ze naar de film.",
+   "en": "Tonight she's going to the film.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-ik-ben-jarig-morgen",
+   "q": "Ik ben jarig. (morgen)",
+   "nl": "Morgen ben ik jarig.",
+   "en": "Tomorrow is my birthday.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-de-les-begint-om-acht-uur",
+   "q": "De les begint. (om acht uur)",
+   "nl": "Om acht uur begint de les.",
+   "en": "The class starts at eight.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-ik-leer-nederlands-in-leiden",
+   "q": "Ik leer Nederlands. (in Leiden)",
+   "nl": "In Leiden leer ik Nederlands.",
+   "en": "In Leiden I'm learning Dutch.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-jij-luistert-naar-muziek-vanavond",
+   "q": "Jij luistert naar muziek. (vanavond)",
+   "nl": "Vanavond luister jij naar muziek./Vanavond luister je naar muziek.",
+   "en": "Tonight you're listening to music. luistert → luister",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-de-cursus-begint-op-maandag-6-mei-op-maandag-6-m",
+   "q": "De cursus begint op maandag 6 mei. (op maandag 6 mei)",
+   "nl": "Op maandag 6 mei begint de cursus.",
+   "en": "On Monday 6 May the course starts.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-de-cursus-stopt-op-vrijdag-7-juni-op-vrijdag-7-j",
+   "q": "De cursus stopt op vrijdag 7 juni. (op vrijdag 7 juni)",
+   "nl": "Op vrijdag 7 juni stopt de cursus.",
+   "en": "On Friday 7 June the course ends.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-we-hebben-vier-dagen-per-week-les-vier-dagen-per",
+   "q": "We hebben vier dagen per week les. (vier dagen per week)",
+   "nl": "Vier dagen per week hebben we les./Vier dagen per week hebben wij les.",
+   "en": "Four days a week we have class.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-we-drinken-s-morgens-om-negen-uur-koffie-s-morge",
+   "q": "We drinken ’s morgens om negen uur koffie. (’s morgens om negen uur)",
+   "nl": "’s Morgens om negen uur drinken we koffie./’s Morgens om negen uur drinken wij koffie.",
+   "en": "At nine in the morning we drink coffee.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-we-drinken-onze-koffie-bij-de-automaat-bij-de-au",
+   "q": "We drinken onze koffie bij de automaat. (bij de automaat)",
+   "nl": "Bij de automaat drinken we onze koffie./Bij de automaat drinken wij onze koffie.",
+   "en": "We drink our coffee at the machine.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-mijn-broer-komt-morgenmiddag-op-bezoek-morgenmid",
+   "q": "Mijn broer komt morgenmiddag op bezoek. (morgenmiddag)",
+   "nl": "Morgenmiddag komt mijn broer op bezoek.",
+   "en": "Tomorrow afternoon my brother is visiting.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-mijn-ouders-zijn-in-indonesi-op-vakantie-in-indo",
+   "q": "Mijn ouders zijn in Indonesië op vakantie. (in Indonesië)",
+   "nl": "In Indonesië zijn mijn ouders op vakantie.",
+   "en": "My parents are on holiday in Indonesia.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-je-vindt-caf-einstein-aan-de-nieuwe-rijn-in-leid",
+   "q": "Je vindt café Einstein aan de Nieuwe Rijn in Leiden. (café Einstein)",
+   "nl": "Café Einstein vind je aan de Nieuwe Rijn in Leiden.",
+   "en": "You'll find café Einstein on the Nieuwe Rijn. je after the verb: vindt → vind.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-we-beginnen-morgen-met-les-4-morgen",
+   "q": "We beginnen morgen met les 4. (morgen)",
+   "nl": "Morgen beginnen we met les 4./Morgen beginnen wij met les 4.",
+   "en": "Tomorrow we start lesson 4.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-ik-ben-in-de-winter-jarig-in-de-winter",
+   "q": "Ik ben in de winter jarig. (in de winter)",
+   "nl": "In de winter ben ik jarig.",
+   "en": "My birthday is in winter.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-het-is-vandaag-donderdag-vandaag",
+   "q": "Het is vandaag donderdag. (vandaag)",
+   "nl": "Vandaag is het donderdag.",
+   "en": "Today it's Thursday.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-de-kinderen-gaan-samen-naar-school-samen",
+   "q": "De kinderen gaan samen naar school. (samen)",
+   "nl": "Samen gaan de kinderen naar school.",
+   "en": "The children go to school together.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-tim-en-saskia-fietsen-om-10-uur-naar-school-om-1",
+   "q": "Tim en Saskia fietsen om 10 uur naar school. (om 10 uur)",
+   "nl": "Om 10 uur fietsen Tim en Saskia naar school.",
+   "en": "At ten Tim and Saskia cycle to school.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-tim-en-saskia-fietsen-om-10-uur-naar-school-naar",
+   "q": "Tim en Saskia fietsen om 10 uur naar school. (naar school)",
+   "nl": "Naar school fietsen Tim en Saskia om 10 uur.",
+   "en": "Tim and Saskia cycle to school at ten (stress on where).",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "iets-eerst-ik-drink-s-morgens-altijd-koffie-s-morgens",
+   "q": "Ik drink ’s morgens altijd koffie. (’s morgens)",
+   "nl": "’s Morgens drink ik altijd koffie.",
+   "en": "In the morning I always drink coffee.",
+   "sec": "iets-eerst"
+  },
+  {
+   "id": "zin-wij-eten-spaghetti",
+   "q": "spaghetti · eten · wij  (.)",
+   "nl": "Wij eten spaghetti./Spaghetti eten wij.",
+   "en": "We eat spaghetti.",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-gaan-tim-en-saskia-naar-het-feest",
+   "q": "naar het feest · Tim en Saskia · gaan  (?)",
+   "nl": "Gaan Tim en Saskia naar het feest?",
+   "en": "Are Tim and Saskia going to the party?",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-welke-kleur-heeft-de-fiets",
+   "q": "heeft · de fiets · welke kleur  (?)",
+   "nl": "Welke kleur heeft de fiets?",
+   "en": "What colour is the bicycle?",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-lisa-koopt-een-boek",
+   "q": "een boek · koopt · Lisa  (.)",
+   "nl": "Lisa koopt een boek./Een boek koopt Lisa.",
+   "en": "Lisa buys a book.",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-hoe-laat-gaat-hij-naar-school",
+   "q": "gaat · naar school · hoe laat · hij  (?)",
+   "nl": "Hoe laat gaat hij naar school?",
+   "en": "What time does he go to school?",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-wonen-jullie-in-leiden",
+   "q": "in Leiden · jullie · wonen  (?)",
+   "nl": "Wonen jullie in Leiden?",
+   "en": "Do you live in Leiden?",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-waar-komt-peter-vandaan",
+   "q": "Peter · vandaan · waar · komt  (?)",
+   "nl": "Waar komt Peter vandaan?",
+   "en": "Where does Peter come from?",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-tim-en-saskia-fietsen-om-10-uur-naar-school",
+   "q": "naar school · fietsen · om 10 uur · Tim en Saskia  (.)",
+   "nl": "Tim en Saskia fietsen om 10 uur naar school./Om 10 uur fietsen Tim en Saskia naar school./Naar school fietsen Tim en Saskia om 10 uur.",
+   "en": "Tim and Saskia cycle to school at ten.",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-ga-jij-naar-het-feest",
+   "q": "jij · naar het feest · ga  (?)",
+   "nl": "Ga jij naar het feest?",
+   "en": "Are you going to the party?",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-de-les-begint-om-acht-uur",
+   "q": "begint · de les · om acht uur  (.)",
+   "nl": "De les begint om acht uur./Om acht uur begint de les.",
+   "en": "The class starts at eight.",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-waar-kom-jij-vandaan",
+   "q": "vandaan · jij · waar · kom  (?)",
+   "nl": "Waar kom jij vandaan?",
+   "en": "Where are you from?",
+   "sec": "zinsvolgorde"
+  },
+  {
+   "id": "zin-s-morgens-drink-ik-altijd-koffie",
+   "q": "koffie · drink · ’s morgens · altijd · ik  (.)",
+   "nl": "’s Morgens drink ik altijd koffie./Ik drink ’s morgens altijd koffie.",
+   "en": "In the morning I always drink coffee.",
+   "sec": "zinsvolgorde"
+  }
+ ]
+}

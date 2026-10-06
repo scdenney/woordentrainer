@@ -1,0 +1,166 @@
+{
+ "title": "Uit de les",
+ "subtitle": "Words from slides and worksheets",
+ "order": 50,
+ "source": "Class slides and worksheets, les 3 (F. Fabbricotti, Oct 2026)",
+ "sections": [
+  {
+   "id": "voorzetsels",
+   "name": "Waar? Voorzetsels"
+  },
+  {
+   "id": "positie",
+   "name": "liggen, staan, zitten, hangen"
+  },
+  {
+   "id": "zinnen",
+   "name": "Zinnen"
+  }
+ ],
+ "words": [
+  {
+   "id": "boven",
+   "nl": "boven",
+   "en": "above",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "onder",
+   "nl": "onder",
+   "en": "below, under",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "op",
+   "nl": "op",
+   "en": "on",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "naast",
+   "nl": "naast",
+   "en": "next to",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "voor",
+   "nl": "voor",
+   "en": "in front of",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "achter",
+   "nl": "achter",
+   "en": "behind",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "tussen",
+   "nl": "tussen",
+   "en": "between",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "in",
+   "nl": "in",
+   "en": "in, inside",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "tegen",
+   "nl": "tegen",
+   "en": "against",
+   "sec": "voorzetsels"
+  },
+  {
+   "id": "liggen",
+   "nl": "liggen",
+   "en": "to lie (flat)",
+   "sec": "positie"
+  },
+  {
+   "id": "staan",
+   "nl": "staan",
+   "en": "to stand (upright)",
+   "sec": "positie"
+  },
+  {
+   "id": "zitten",
+   "nl": "zitten",
+   "en": "to sit; to be (inside something)",
+   "sec": "positie"
+  },
+  {
+   "id": "hangen",
+   "nl": "hangen",
+   "en": "to hang",
+   "sec": "positie"
+  },
+  {
+   "id": "ik-lig",
+   "nl": "Ik lig.",
+   "en": "I am lying down.",
+   "sec": "positie"
+  },
+  {
+   "id": "ik-sta",
+   "nl": "Ik sta.",
+   "en": "I am standing.",
+   "sec": "positie"
+  },
+  {
+   "id": "ik-zit",
+   "nl": "Ik zit.",
+   "en": "I am sitting.",
+   "sec": "positie"
+  },
+  {
+   "id": "het-boek-ligt-op-de-tafel",
+   "nl": "Het boek ligt op de tafel.",
+   "en": "The book is on the table.",
+   "sec": "positie"
+  },
+  {
+   "id": "de-fles-staat-op-tafel",
+   "nl": "De fles staat op tafel.",
+   "en": "The bottle is on the table.",
+   "sec": "positie"
+  },
+  {
+   "id": "de-sleutel-zit-in-mijn-tas",
+   "nl": "De sleutel zit in mijn tas.",
+   "en": "The key is in my bag.",
+   "sec": "positie"
+  },
+  {
+   "id": "de-lamp-hangt-boven-de-tafel",
+   "nl": "De lamp hangt boven de tafel.",
+   "en": "The lamp hangs above the table.",
+   "sec": "positie"
+  },
+  {
+   "id": "de-jas-hangt-aan-de-kapstok",
+   "nl": "De jas hangt aan de kapstok.",
+   "en": "The coat is hanging on the coat rack.",
+   "sec": "positie"
+  },
+  {
+   "id": "altijd",
+   "nl": "altijd",
+   "en": "always",
+   "sec": "zinnen"
+  },
+  {
+   "id": "loop-met-me-mee",
+   "nl": "Loop met me mee.",
+   "en": "Walk with me.",
+   "sec": "zinnen"
+  },
+  {
+   "id": "s-morgens-drink-ik-altijd-koffie",
+   "nl": "’s Morgens drink ik altijd koffie.",
+   "en": "In the morning I always drink coffee.",
+   "sec": "zinnen"
+  }
+ ]
+}

@@ -99,6 +99,15 @@ legend { padding: 0; margin-bottom: 8px; }
 .choice { display: inline-flex; align-items: center; gap: 8px; }
 .choice.right { background: var(--block-soft); border-color: var(--block); color: var(--block); opacity: 1; }
 .choice.wrong { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); opacity: 1; }
+.rule-index { display: flex; flex-wrap: wrap; gap: 6px; }
+.rule-index a { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 12px; color: var(--ink); text-decoration: none; font-size: 0.9rem; }
+.rule-index a:hover { background: var(--block-soft); }
+.rule-deck { padding-top: 8px; border-top: 1px solid var(--line); scroll-margin-top: 12px; }
+.rule-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.rule-head .btn { display: inline-flex; align-items: center; gap: 8px; }
+.rule-head .arrow { width: 1rem; height: 1rem; }
+.rule h3 { font: 700 1rem/1.3 var(--display); margin: 0 0 4px; color: var(--block); }
+.rule p { margin: 0 0 8px; max-width: 62ch; }
 .hint { font-size: 0.875rem; color: var(--muted); margin-top: -8px; }
 form.answer { display: flex; gap: 8px; flex-wrap: wrap; }
 form.answer input { flex: 1 1 14rem; min-width: 0; font: 1.25rem var(--body); padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); }
@@ -465,7 +474,7 @@ td.r { text-align: right; white-space: nowrap; }
         words.push({ id: `${d.id}-${w.id}`, q: noun, nl: art.toLowerCase(), en: w.en, say: w.nl, sec: d.id, choices: ["de", "het"] });
       }
     }
-    return words.length ? { id: "dehet", title: "de of het?", order: 101, kind: "grammar", source: "Built from the nouns in the chapter word lists.", sections, words } : null;
+    return words.length ? { id: "dehet", title: "de of het?", order: 105, kind: "grammar", source: "Built from the nouns in the chapter word lists.", sections, words } : null;
   }
 
   // Chapters always come from data/*.json (the same files on claude.ai and on the public site).
@@ -530,9 +539,9 @@ td.r { text-align: right; white-space: nowrap; }
       return;
     }
     const focusId = document.activeElement?.id;
-    ({ setup: renderSetup, quiz: renderQuiz, round: renderRound, done: renderDone, list: renderList, guide: renderGuide })[S.view]();
-    if (["setup", "list", "guide"].includes(S.view)) {
-      const tabs = [["setup", "Oefenen"], ["list", "Woordenlijst"], ["guide", "Uitspraak"]];
+    ({ setup: renderSetup, quiz: renderQuiz, round: renderRound, done: renderDone, list: renderList, guide: renderGuide, rules: renderRules })[S.view]();
+    if (["setup", "list", "guide", "rules"].includes(S.view)) {
+      const tabs = [["setup", "Oefenen"], ["list", "Woordenlijst"], ["rules", "Regels"], ["guide", "Uitspraak"]];
       app.insertAdjacentHTML("afterbegin", `<nav class="tabs" aria-label="Sections">${tabs.map(([v, l]) => `<button type="button" data-view="${v}"${S.view === v ? ' aria-current="page"' : ""}>${l}</button>`).join("")}</nav>`);
       app.querySelectorAll("[data-view]").forEach(b => b.onclick = () => { S.view = b.dataset.view; render(); window.scrollTo(0, 0); });
     }
@@ -876,6 +885,30 @@ td.r { text-align: right; white-space: nowrap; }
       render();
       const n = app.querySelector("#list-search"); n.focus(); n.setSelectionRange(pos, pos);
     };
+  }
+
+  // ---------- grammar rules ----------
+  // Each grammar deck carries "rules": [{title, text?, table?: {head, rows}}], written by tools/build_grammar.py.
+  function renderRules() {
+    const decks = S.decks.filter(d => d.kind === "grammar" && d.rules?.length);
+    const table = t => `<div class="tablewrap"><table lang="nl"><thead><tr>${t.head.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+      <tbody>${t.rows.map(r => `<tr>${r.map((c, i) => i ? `<td>${esc(c)}</td>` : `<td><b>${esc(c)}</b></td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    app.innerHTML = `
+      <div class="controls">
+        <p class="note">The rules behind the grammar drills. Read a topic, then press Oefen to practise just that topic.</p>
+        <nav class="rule-index" aria-label="Topics">${decks.map(d => `<a href="#rules-${d.id}">${esc(d.title)}</a>`).join("")}</nav>
+        ${decks.map(d => `
+          <section class="guide-sec rule-deck" id="rules-${d.id}">
+            <div class="rule-head"><h2>${esc(d.title)}</h2><button type="button" class="btn" data-drill="${d.id}">Oefen ${ARROW}</button></div>
+            ${d.rules.map(r => `<div class="rule"><h3>${esc(r.title)}</h3>${r.text ? `<p>${esc(r.text)}</p>` : ""}${r.table ? table(r.table) : ""}</div>`).join("")}
+          </section>`).join("")}
+      </div>`;
+    app.querySelectorAll("[data-drill]").forEach(b => b.onclick = () => {
+      const d = S.decks.find(x => x.id === b.dataset.drill);
+      S.prefs.sel = (d.sections || []).map(x => secKey(d.id, x.id)); savePrefs();
+      S.open.add(d.id); S.view = "setup"; render(); window.scrollTo(0, 0);
+    });
+    app.querySelectorAll(".rule-index a").forEach(a => a.onclick = e => { e.preventDefault(); document.querySelector(a.getAttribute("href"))?.scrollIntoView({ behavior: "smooth" }); });
   }
 
   // ---------- pronunciation guide ----------

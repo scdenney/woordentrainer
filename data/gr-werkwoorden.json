@@ -1,0 +1,1290 @@
+{
+ "title": "Werkwoorden",
+ "order": 102,
+ "kind": "grammar",
+ "source": "Les 3 slides, the gaan/komen handout and class worksheets (F. Fabbricotti, Sept–Oct 2026)",
+ "rules": [
+  {
+   "title": "Regelmatig: stam, stam + t, infinitief",
+   "text": "Take -en off the infinitive to get the stem, and fix the spelling: wonen → woon, stoppen → stop. ik takes the stem; jij, u, hij/zij/het add -t; wij, jullie, zij (plural) use the infinitive.",
+   "table": {
+    "head": [
+     "",
+     "wonen",
+     "luisteren",
+     "spellen"
+    ],
+    "rows": [
+     [
+      "ik",
+      "woon",
+      "luister",
+      "spel"
+     ],
+     [
+      "jij / u",
+      "woont",
+      "luistert",
+      "spelt"
+     ],
+     [
+      "hij / zij / het",
+      "woont",
+      "luistert",
+      "spelt"
+     ],
+     [
+      "wij / jullie / zij",
+      "wonen",
+      "luisteren",
+      "spellen"
+     ],
+     [
+      "woon jij?",
+      "woon jij?",
+      "luister jij?",
+      "spel jij?"
+     ]
+    ]
+   }
+  },
+  {
+   "title": "Onregelmatig",
+   "table": {
+    "head": [
+     "",
+     "gaan",
+     "komen",
+     "hebben",
+     "zijn"
+    ],
+    "rows": [
+     [
+      "ik",
+      "ga",
+      "kom",
+      "heb",
+      "ben"
+     ],
+     [
+      "jij",
+      "gaat",
+      "komt",
+      "hebt",
+      "bent"
+     ],
+     [
+      "u",
+      "gaat",
+      "komt",
+      "hebt / heeft",
+      "bent / is"
+     ],
+     [
+      "hij / zij / het",
+      "gaat",
+      "komt",
+      "heeft",
+      "is"
+     ],
+     [
+      "wij / jullie / zij",
+      "gaan",
+      "komen",
+      "hebben",
+      "zijn"
+     ],
+     [
+      "vraag",
+      "ga jij?",
+      "kom jij?",
+      "heb jij?",
+      "ben jij?"
+     ]
+    ]
+   }
+  },
+  {
+   "title": "Stam op -t",
+   "text": "If the stem already ends in t, no extra t is added: heten → jij heet, hij heet; zitten → jij zit."
+  },
+  {
+   "title": "jij na het werkwoord",
+   "text": "When je/jij follows the verb, the -t goes: Ga je mee? Hoe spel je dat? Luister jij naar de radio? This doesn't happen with u or hij: Luistert Alexander naar muziek?"
+  }
+ ],
+ "sections": [
+  {
+   "id": "werkwoorden",
+   "name": "Vervoegen",
+   "task": "Type the verb form."
+  },
+  {
+   "id": "ww-zinnen",
+   "name": "Werkwoorden in een zin",
+   "task": "Type the right form of the verb in brackets."
+  }
+ ],
+ "words": [
+  {
+   "id": "werkwoorden-ik-gaan",
+   "q": "ik · gaan",
+   "nl": "ga/ik ga",
+   "en": "gaan: to go",
+   "sec": "werkwoorden",
+   "say": "ik ga"
+  },
+  {
+   "id": "werkwoorden-jij-gaan",
+   "q": "jij · gaan",
+   "nl": "gaat/jij gaat",
+   "en": "gaan: to go",
+   "sec": "werkwoorden",
+   "say": "jij gaat"
+  },
+  {
+   "id": "werkwoorden-hij-gaan",
+   "q": "hij · gaan",
+   "nl": "gaat/hij gaat",
+   "en": "gaan: to go",
+   "sec": "werkwoorden",
+   "say": "hij gaat"
+  },
+  {
+   "id": "werkwoorden-wij-gaan",
+   "q": "wij · gaan",
+   "nl": "gaan/wij gaan",
+   "en": "gaan: to go",
+   "sec": "werkwoorden",
+   "say": "wij gaan"
+  },
+  {
+   "id": "werkwoorden-jullie-gaan",
+   "q": "jullie · gaan",
+   "nl": "gaan/jullie gaan",
+   "en": "gaan: to go",
+   "sec": "werkwoorden",
+   "say": "jullie gaan"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-gaan",
+   "q": "zij (meervoud) · gaan",
+   "nl": "gaan/zij gaan",
+   "en": "gaan: to go",
+   "sec": "werkwoorden",
+   "say": "zij gaan"
+  },
+  {
+   "id": "werkwoorden-vraag-gaan",
+   "q": "___ jij …? · gaan",
+   "nl": "ga/ga jij",
+   "en": "gaan: jij after the verb loses the -t: Ga jij …?",
+   "sec": "werkwoorden",
+   "say": "Ga jij?"
+  },
+  {
+   "id": "werkwoorden-ik-komen",
+   "q": "ik · komen",
+   "nl": "kom/ik kom",
+   "en": "komen: to come",
+   "sec": "werkwoorden",
+   "say": "ik kom"
+  },
+  {
+   "id": "werkwoorden-jij-komen",
+   "q": "jij · komen",
+   "nl": "komt/jij komt",
+   "en": "komen: to come",
+   "sec": "werkwoorden",
+   "say": "jij komt"
+  },
+  {
+   "id": "werkwoorden-hij-komen",
+   "q": "hij · komen",
+   "nl": "komt/hij komt",
+   "en": "komen: to come",
+   "sec": "werkwoorden",
+   "say": "hij komt"
+  },
+  {
+   "id": "werkwoorden-wij-komen",
+   "q": "wij · komen",
+   "nl": "komen/wij komen",
+   "en": "komen: to come",
+   "sec": "werkwoorden",
+   "say": "wij komen"
+  },
+  {
+   "id": "werkwoorden-jullie-komen",
+   "q": "jullie · komen",
+   "nl": "komen/jullie komen",
+   "en": "komen: to come",
+   "sec": "werkwoorden",
+   "say": "jullie komen"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-komen",
+   "q": "zij (meervoud) · komen",
+   "nl": "komen/zij komen",
+   "en": "komen: to come",
+   "sec": "werkwoorden",
+   "say": "zij komen"
+  },
+  {
+   "id": "werkwoorden-vraag-komen",
+   "q": "___ jij …? · komen",
+   "nl": "kom/kom jij",
+   "en": "komen: jij after the verb loses the -t: Kom jij …?",
+   "sec": "werkwoorden",
+   "say": "Kom jij?"
+  },
+  {
+   "id": "werkwoorden-ik-luisteren",
+   "q": "ik · luisteren",
+   "nl": "luister/ik luister",
+   "en": "luisteren: to listen",
+   "sec": "werkwoorden",
+   "say": "ik luister"
+  },
+  {
+   "id": "werkwoorden-jij-luisteren",
+   "q": "jij · luisteren",
+   "nl": "luistert/jij luistert",
+   "en": "luisteren: to listen",
+   "sec": "werkwoorden",
+   "say": "jij luistert"
+  },
+  {
+   "id": "werkwoorden-hij-luisteren",
+   "q": "hij · luisteren",
+   "nl": "luistert/hij luistert",
+   "en": "luisteren: to listen",
+   "sec": "werkwoorden",
+   "say": "hij luistert"
+  },
+  {
+   "id": "werkwoorden-wij-luisteren",
+   "q": "wij · luisteren",
+   "nl": "luisteren/wij luisteren",
+   "en": "luisteren: to listen",
+   "sec": "werkwoorden",
+   "say": "wij luisteren"
+  },
+  {
+   "id": "werkwoorden-jullie-luisteren",
+   "q": "jullie · luisteren",
+   "nl": "luisteren/jullie luisteren",
+   "en": "luisteren: to listen",
+   "sec": "werkwoorden",
+   "say": "jullie luisteren"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-luisteren",
+   "q": "zij (meervoud) · luisteren",
+   "nl": "luisteren/zij luisteren",
+   "en": "luisteren: to listen",
+   "sec": "werkwoorden",
+   "say": "zij luisteren"
+  },
+  {
+   "id": "werkwoorden-vraag-luisteren",
+   "q": "___ jij …? · luisteren",
+   "nl": "luister/luister jij",
+   "en": "luisteren: jij after the verb loses the -t: Luister jij …?",
+   "sec": "werkwoorden",
+   "say": "Luister jij?"
+  },
+  {
+   "id": "werkwoorden-ik-hebben",
+   "q": "ik · hebben",
+   "nl": "heb/ik heb",
+   "en": "hebben: to have",
+   "sec": "werkwoorden",
+   "say": "ik heb"
+  },
+  {
+   "id": "werkwoorden-jij-hebben",
+   "q": "jij · hebben",
+   "nl": "hebt/jij hebt",
+   "en": "hebben: to have",
+   "sec": "werkwoorden",
+   "say": "jij hebt"
+  },
+  {
+   "id": "werkwoorden-u-hebben",
+   "q": "u · hebben",
+   "nl": "hebt/u hebt/heeft/u heeft",
+   "en": "hebben: to have",
+   "sec": "werkwoorden",
+   "say": "u hebt"
+  },
+  {
+   "id": "werkwoorden-hij-hebben",
+   "q": "hij · hebben",
+   "nl": "heeft/hij heeft",
+   "en": "hebben: to have",
+   "sec": "werkwoorden",
+   "say": "hij heeft"
+  },
+  {
+   "id": "werkwoorden-wij-hebben",
+   "q": "wij · hebben",
+   "nl": "hebben/wij hebben",
+   "en": "hebben: to have",
+   "sec": "werkwoorden",
+   "say": "wij hebben"
+  },
+  {
+   "id": "werkwoorden-jullie-hebben",
+   "q": "jullie · hebben",
+   "nl": "hebben/jullie hebben",
+   "en": "hebben: to have",
+   "sec": "werkwoorden",
+   "say": "jullie hebben"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-hebben",
+   "q": "zij (meervoud) · hebben",
+   "nl": "hebben/zij hebben",
+   "en": "hebben: to have",
+   "sec": "werkwoorden",
+   "say": "zij hebben"
+  },
+  {
+   "id": "werkwoorden-vraag-hebben",
+   "q": "___ jij …? · hebben",
+   "nl": "heb/heb jij",
+   "en": "hebben: jij after the verb loses the -t: Heb jij …?",
+   "sec": "werkwoorden",
+   "say": "Heb jij?"
+  },
+  {
+   "id": "werkwoorden-ik-zijn",
+   "q": "ik · zijn",
+   "nl": "ben/ik ben",
+   "en": "zijn: to be",
+   "sec": "werkwoorden",
+   "say": "ik ben"
+  },
+  {
+   "id": "werkwoorden-jij-zijn",
+   "q": "jij · zijn",
+   "nl": "bent/jij bent",
+   "en": "zijn: to be",
+   "sec": "werkwoorden",
+   "say": "jij bent"
+  },
+  {
+   "id": "werkwoorden-u-zijn",
+   "q": "u · zijn",
+   "nl": "bent/u bent/is/u is",
+   "en": "zijn: to be",
+   "sec": "werkwoorden",
+   "say": "u bent"
+  },
+  {
+   "id": "werkwoorden-hij-zijn",
+   "q": "hij · zijn",
+   "nl": "is/hij is",
+   "en": "zijn: to be",
+   "sec": "werkwoorden",
+   "say": "hij is"
+  },
+  {
+   "id": "werkwoorden-wij-zijn",
+   "q": "wij · zijn",
+   "nl": "zijn/wij zijn",
+   "en": "zijn: to be",
+   "sec": "werkwoorden",
+   "say": "wij zijn"
+  },
+  {
+   "id": "werkwoorden-jullie-zijn",
+   "q": "jullie · zijn",
+   "nl": "zijn/jullie zijn",
+   "en": "zijn: to be",
+   "sec": "werkwoorden",
+   "say": "jullie zijn"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-zijn",
+   "q": "zij (meervoud) · zijn",
+   "nl": "zijn/zij zijn",
+   "en": "zijn: to be",
+   "sec": "werkwoorden",
+   "say": "zij zijn"
+  },
+  {
+   "id": "werkwoorden-vraag-zijn",
+   "q": "___ jij …? · zijn",
+   "nl": "ben/ben jij",
+   "en": "zijn: jij after the verb loses the -t: Ben jij …?",
+   "sec": "werkwoorden",
+   "say": "Ben jij?"
+  },
+  {
+   "id": "werkwoorden-ik-wonen",
+   "q": "ik · wonen",
+   "nl": "woon/ik woon",
+   "en": "wonen: to live",
+   "sec": "werkwoorden",
+   "say": "ik woon"
+  },
+  {
+   "id": "werkwoorden-jij-wonen",
+   "q": "jij · wonen",
+   "nl": "woont/jij woont",
+   "en": "wonen: to live",
+   "sec": "werkwoorden",
+   "say": "jij woont"
+  },
+  {
+   "id": "werkwoorden-hij-wonen",
+   "q": "hij · wonen",
+   "nl": "woont/hij woont",
+   "en": "wonen: to live",
+   "sec": "werkwoorden",
+   "say": "hij woont"
+  },
+  {
+   "id": "werkwoorden-wij-wonen",
+   "q": "wij · wonen",
+   "nl": "wonen/wij wonen",
+   "en": "wonen: to live",
+   "sec": "werkwoorden",
+   "say": "wij wonen"
+  },
+  {
+   "id": "werkwoorden-jullie-wonen",
+   "q": "jullie · wonen",
+   "nl": "wonen/jullie wonen",
+   "en": "wonen: to live",
+   "sec": "werkwoorden",
+   "say": "jullie wonen"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-wonen",
+   "q": "zij (meervoud) · wonen",
+   "nl": "wonen/zij wonen",
+   "en": "wonen: to live",
+   "sec": "werkwoorden",
+   "say": "zij wonen"
+  },
+  {
+   "id": "werkwoorden-vraag-wonen",
+   "q": "___ jij …? · wonen",
+   "nl": "woon/woon jij",
+   "en": "wonen: jij after the verb loses the -t: Woon jij …?",
+   "sec": "werkwoorden",
+   "say": "Woon jij?"
+  },
+  {
+   "id": "werkwoorden-ik-werken",
+   "q": "ik · werken",
+   "nl": "werk/ik werk",
+   "en": "werken: to work",
+   "sec": "werkwoorden",
+   "say": "ik werk"
+  },
+  {
+   "id": "werkwoorden-jij-werken",
+   "q": "jij · werken",
+   "nl": "werkt/jij werkt",
+   "en": "werken: to work",
+   "sec": "werkwoorden",
+   "say": "jij werkt"
+  },
+  {
+   "id": "werkwoorden-hij-werken",
+   "q": "hij · werken",
+   "nl": "werkt/hij werkt",
+   "en": "werken: to work",
+   "sec": "werkwoorden",
+   "say": "hij werkt"
+  },
+  {
+   "id": "werkwoorden-wij-werken",
+   "q": "wij · werken",
+   "nl": "werken/wij werken",
+   "en": "werken: to work",
+   "sec": "werkwoorden",
+   "say": "wij werken"
+  },
+  {
+   "id": "werkwoorden-jullie-werken",
+   "q": "jullie · werken",
+   "nl": "werken/jullie werken",
+   "en": "werken: to work",
+   "sec": "werkwoorden",
+   "say": "jullie werken"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-werken",
+   "q": "zij (meervoud) · werken",
+   "nl": "werken/zij werken",
+   "en": "werken: to work",
+   "sec": "werkwoorden",
+   "say": "zij werken"
+  },
+  {
+   "id": "werkwoorden-vraag-werken",
+   "q": "___ jij …? · werken",
+   "nl": "werk/werk jij",
+   "en": "werken: jij after the verb loses the -t: Werk jij …?",
+   "sec": "werkwoorden",
+   "say": "Werk jij?"
+  },
+  {
+   "id": "werkwoorden-ik-drinken",
+   "q": "ik · drinken",
+   "nl": "drink/ik drink",
+   "en": "drinken: to drink",
+   "sec": "werkwoorden",
+   "say": "ik drink"
+  },
+  {
+   "id": "werkwoorden-jij-drinken",
+   "q": "jij · drinken",
+   "nl": "drinkt/jij drinkt",
+   "en": "drinken: to drink",
+   "sec": "werkwoorden",
+   "say": "jij drinkt"
+  },
+  {
+   "id": "werkwoorden-hij-drinken",
+   "q": "hij · drinken",
+   "nl": "drinkt/hij drinkt",
+   "en": "drinken: to drink",
+   "sec": "werkwoorden",
+   "say": "hij drinkt"
+  },
+  {
+   "id": "werkwoorden-wij-drinken",
+   "q": "wij · drinken",
+   "nl": "drinken/wij drinken",
+   "en": "drinken: to drink",
+   "sec": "werkwoorden",
+   "say": "wij drinken"
+  },
+  {
+   "id": "werkwoorden-jullie-drinken",
+   "q": "jullie · drinken",
+   "nl": "drinken/jullie drinken",
+   "en": "drinken: to drink",
+   "sec": "werkwoorden",
+   "say": "jullie drinken"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-drinken",
+   "q": "zij (meervoud) · drinken",
+   "nl": "drinken/zij drinken",
+   "en": "drinken: to drink",
+   "sec": "werkwoorden",
+   "say": "zij drinken"
+  },
+  {
+   "id": "werkwoorden-vraag-drinken",
+   "q": "___ jij …? · drinken",
+   "nl": "drink/drink jij",
+   "en": "drinken: jij after the verb loses the -t: Drink jij …?",
+   "sec": "werkwoorden",
+   "say": "Drink jij?"
+  },
+  {
+   "id": "werkwoorden-ik-heten",
+   "q": "ik · heten",
+   "nl": "heet/ik heet",
+   "en": "heten: to be called",
+   "sec": "werkwoorden",
+   "say": "ik heet"
+  },
+  {
+   "id": "werkwoorden-jij-heten",
+   "q": "jij · heten",
+   "nl": "heet/jij heet",
+   "en": "heten: to be called",
+   "sec": "werkwoorden",
+   "say": "jij heet"
+  },
+  {
+   "id": "werkwoorden-hij-heten",
+   "q": "hij · heten",
+   "nl": "heet/hij heet",
+   "en": "heten: to be called",
+   "sec": "werkwoorden",
+   "say": "hij heet"
+  },
+  {
+   "id": "werkwoorden-wij-heten",
+   "q": "wij · heten",
+   "nl": "heten/wij heten",
+   "en": "heten: to be called",
+   "sec": "werkwoorden",
+   "say": "wij heten"
+  },
+  {
+   "id": "werkwoorden-jullie-heten",
+   "q": "jullie · heten",
+   "nl": "heten/jullie heten",
+   "en": "heten: to be called",
+   "sec": "werkwoorden",
+   "say": "jullie heten"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-heten",
+   "q": "zij (meervoud) · heten",
+   "nl": "heten/zij heten",
+   "en": "heten: to be called",
+   "sec": "werkwoorden",
+   "say": "zij heten"
+  },
+  {
+   "id": "werkwoorden-vraag-heten",
+   "q": "___ jij …? · heten",
+   "nl": "heet/heet jij",
+   "en": "heten: jij after the verb loses the -t: Heet jij …?",
+   "sec": "werkwoorden",
+   "say": "Heet jij?"
+  },
+  {
+   "id": "werkwoorden-ik-maken",
+   "q": "ik · maken",
+   "nl": "maak/ik maak",
+   "en": "maken: to make",
+   "sec": "werkwoorden",
+   "say": "ik maak"
+  },
+  {
+   "id": "werkwoorden-jij-maken",
+   "q": "jij · maken",
+   "nl": "maakt/jij maakt",
+   "en": "maken: to make",
+   "sec": "werkwoorden",
+   "say": "jij maakt"
+  },
+  {
+   "id": "werkwoorden-hij-maken",
+   "q": "hij · maken",
+   "nl": "maakt/hij maakt",
+   "en": "maken: to make",
+   "sec": "werkwoorden",
+   "say": "hij maakt"
+  },
+  {
+   "id": "werkwoorden-wij-maken",
+   "q": "wij · maken",
+   "nl": "maken/wij maken",
+   "en": "maken: to make",
+   "sec": "werkwoorden",
+   "say": "wij maken"
+  },
+  {
+   "id": "werkwoorden-jullie-maken",
+   "q": "jullie · maken",
+   "nl": "maken/jullie maken",
+   "en": "maken: to make",
+   "sec": "werkwoorden",
+   "say": "jullie maken"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-maken",
+   "q": "zij (meervoud) · maken",
+   "nl": "maken/zij maken",
+   "en": "maken: to make",
+   "sec": "werkwoorden",
+   "say": "zij maken"
+  },
+  {
+   "id": "werkwoorden-vraag-maken",
+   "q": "___ jij …? · maken",
+   "nl": "maak/maak jij",
+   "en": "maken: jij after the verb loses the -t: Maak jij …?",
+   "sec": "werkwoorden",
+   "say": "Maak jij?"
+  },
+  {
+   "id": "werkwoorden-ik-spreken",
+   "q": "ik · spreken",
+   "nl": "spreek/ik spreek",
+   "en": "spreken: to speak",
+   "sec": "werkwoorden",
+   "say": "ik spreek"
+  },
+  {
+   "id": "werkwoorden-jij-spreken",
+   "q": "jij · spreken",
+   "nl": "spreekt/jij spreekt",
+   "en": "spreken: to speak",
+   "sec": "werkwoorden",
+   "say": "jij spreekt"
+  },
+  {
+   "id": "werkwoorden-hij-spreken",
+   "q": "hij · spreken",
+   "nl": "spreekt/hij spreekt",
+   "en": "spreken: to speak",
+   "sec": "werkwoorden",
+   "say": "hij spreekt"
+  },
+  {
+   "id": "werkwoorden-wij-spreken",
+   "q": "wij · spreken",
+   "nl": "spreken/wij spreken",
+   "en": "spreken: to speak",
+   "sec": "werkwoorden",
+   "say": "wij spreken"
+  },
+  {
+   "id": "werkwoorden-jullie-spreken",
+   "q": "jullie · spreken",
+   "nl": "spreken/jullie spreken",
+   "en": "spreken: to speak",
+   "sec": "werkwoorden",
+   "say": "jullie spreken"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-spreken",
+   "q": "zij (meervoud) · spreken",
+   "nl": "spreken/zij spreken",
+   "en": "spreken: to speak",
+   "sec": "werkwoorden",
+   "say": "zij spreken"
+  },
+  {
+   "id": "werkwoorden-vraag-spreken",
+   "q": "___ jij …? · spreken",
+   "nl": "spreek/spreek jij",
+   "en": "spreken: jij after the verb loses the -t: Spreek jij …?",
+   "sec": "werkwoorden",
+   "say": "Spreek jij?"
+  },
+  {
+   "id": "werkwoorden-ik-doen",
+   "q": "ik · doen",
+   "nl": "doe/ik doe",
+   "en": "doen: to do",
+   "sec": "werkwoorden",
+   "say": "ik doe"
+  },
+  {
+   "id": "werkwoorden-jij-doen",
+   "q": "jij · doen",
+   "nl": "doet/jij doet",
+   "en": "doen: to do",
+   "sec": "werkwoorden",
+   "say": "jij doet"
+  },
+  {
+   "id": "werkwoorden-hij-doen",
+   "q": "hij · doen",
+   "nl": "doet/hij doet",
+   "en": "doen: to do",
+   "sec": "werkwoorden",
+   "say": "hij doet"
+  },
+  {
+   "id": "werkwoorden-wij-doen",
+   "q": "wij · doen",
+   "nl": "doen/wij doen",
+   "en": "doen: to do",
+   "sec": "werkwoorden",
+   "say": "wij doen"
+  },
+  {
+   "id": "werkwoorden-jullie-doen",
+   "q": "jullie · doen",
+   "nl": "doen/jullie doen",
+   "en": "doen: to do",
+   "sec": "werkwoorden",
+   "say": "jullie doen"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-doen",
+   "q": "zij (meervoud) · doen",
+   "nl": "doen/zij doen",
+   "en": "doen: to do",
+   "sec": "werkwoorden",
+   "say": "zij doen"
+  },
+  {
+   "id": "werkwoorden-vraag-doen",
+   "q": "___ jij …? · doen",
+   "nl": "doe/doe jij",
+   "en": "doen: jij after the verb loses the -t: Doe jij …?",
+   "sec": "werkwoorden",
+   "say": "Doe jij?"
+  },
+  {
+   "id": "werkwoorden-ik-spellen",
+   "q": "ik · spellen",
+   "nl": "spel/ik spel",
+   "en": "spellen: to spell",
+   "sec": "werkwoorden",
+   "say": "ik spel"
+  },
+  {
+   "id": "werkwoorden-jij-spellen",
+   "q": "jij · spellen",
+   "nl": "spelt/jij spelt",
+   "en": "spellen: to spell",
+   "sec": "werkwoorden",
+   "say": "jij spelt"
+  },
+  {
+   "id": "werkwoorden-hij-spellen",
+   "q": "hij · spellen",
+   "nl": "spelt/hij spelt",
+   "en": "spellen: to spell",
+   "sec": "werkwoorden",
+   "say": "hij spelt"
+  },
+  {
+   "id": "werkwoorden-wij-spellen",
+   "q": "wij · spellen",
+   "nl": "spellen/wij spellen",
+   "en": "spellen: to spell",
+   "sec": "werkwoorden",
+   "say": "wij spellen"
+  },
+  {
+   "id": "werkwoorden-jullie-spellen",
+   "q": "jullie · spellen",
+   "nl": "spellen/jullie spellen",
+   "en": "spellen: to spell",
+   "sec": "werkwoorden",
+   "say": "jullie spellen"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-spellen",
+   "q": "zij (meervoud) · spellen",
+   "nl": "spellen/zij spellen",
+   "en": "spellen: to spell",
+   "sec": "werkwoorden",
+   "say": "zij spellen"
+  },
+  {
+   "id": "werkwoorden-vraag-spellen",
+   "q": "___ jij …? · spellen",
+   "nl": "spel/spel jij",
+   "en": "spellen: jij after the verb loses the -t: Spel jij …?",
+   "sec": "werkwoorden",
+   "say": "Spel jij?"
+  },
+  {
+   "id": "werkwoorden-ik-liggen",
+   "q": "ik · liggen",
+   "nl": "lig/ik lig",
+   "en": "liggen: to lie (flat)",
+   "sec": "werkwoorden",
+   "say": "ik lig"
+  },
+  {
+   "id": "werkwoorden-jij-liggen",
+   "q": "jij · liggen",
+   "nl": "ligt/jij ligt",
+   "en": "liggen: to lie (flat)",
+   "sec": "werkwoorden",
+   "say": "jij ligt"
+  },
+  {
+   "id": "werkwoorden-hij-liggen",
+   "q": "hij · liggen",
+   "nl": "ligt/hij ligt",
+   "en": "liggen: to lie (flat)",
+   "sec": "werkwoorden",
+   "say": "hij ligt"
+  },
+  {
+   "id": "werkwoorden-wij-liggen",
+   "q": "wij · liggen",
+   "nl": "liggen/wij liggen",
+   "en": "liggen: to lie (flat)",
+   "sec": "werkwoorden",
+   "say": "wij liggen"
+  },
+  {
+   "id": "werkwoorden-jullie-liggen",
+   "q": "jullie · liggen",
+   "nl": "liggen/jullie liggen",
+   "en": "liggen: to lie (flat)",
+   "sec": "werkwoorden",
+   "say": "jullie liggen"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-liggen",
+   "q": "zij (meervoud) · liggen",
+   "nl": "liggen/zij liggen",
+   "en": "liggen: to lie (flat)",
+   "sec": "werkwoorden",
+   "say": "zij liggen"
+  },
+  {
+   "id": "werkwoorden-vraag-liggen",
+   "q": "___ jij …? · liggen",
+   "nl": "lig/lig jij",
+   "en": "liggen: jij after the verb loses the -t: Lig jij …?",
+   "sec": "werkwoorden",
+   "say": "Lig jij?"
+  },
+  {
+   "id": "werkwoorden-ik-staan",
+   "q": "ik · staan",
+   "nl": "sta/ik sta",
+   "en": "staan: to stand",
+   "sec": "werkwoorden",
+   "say": "ik sta"
+  },
+  {
+   "id": "werkwoorden-jij-staan",
+   "q": "jij · staan",
+   "nl": "staat/jij staat",
+   "en": "staan: to stand",
+   "sec": "werkwoorden",
+   "say": "jij staat"
+  },
+  {
+   "id": "werkwoorden-hij-staan",
+   "q": "hij · staan",
+   "nl": "staat/hij staat",
+   "en": "staan: to stand",
+   "sec": "werkwoorden",
+   "say": "hij staat"
+  },
+  {
+   "id": "werkwoorden-wij-staan",
+   "q": "wij · staan",
+   "nl": "staan/wij staan",
+   "en": "staan: to stand",
+   "sec": "werkwoorden",
+   "say": "wij staan"
+  },
+  {
+   "id": "werkwoorden-jullie-staan",
+   "q": "jullie · staan",
+   "nl": "staan/jullie staan",
+   "en": "staan: to stand",
+   "sec": "werkwoorden",
+   "say": "jullie staan"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-staan",
+   "q": "zij (meervoud) · staan",
+   "nl": "staan/zij staan",
+   "en": "staan: to stand",
+   "sec": "werkwoorden",
+   "say": "zij staan"
+  },
+  {
+   "id": "werkwoorden-vraag-staan",
+   "q": "___ jij …? · staan",
+   "nl": "sta/sta jij",
+   "en": "staan: jij after the verb loses the -t: Sta jij …?",
+   "sec": "werkwoorden",
+   "say": "Sta jij?"
+  },
+  {
+   "id": "werkwoorden-ik-zitten",
+   "q": "ik · zitten",
+   "nl": "zit/ik zit",
+   "en": "zitten: to sit",
+   "sec": "werkwoorden",
+   "say": "ik zit"
+  },
+  {
+   "id": "werkwoorden-jij-zitten",
+   "q": "jij · zitten",
+   "nl": "zit/jij zit",
+   "en": "zitten: to sit",
+   "sec": "werkwoorden",
+   "say": "jij zit"
+  },
+  {
+   "id": "werkwoorden-hij-zitten",
+   "q": "hij · zitten",
+   "nl": "zit/hij zit",
+   "en": "zitten: to sit",
+   "sec": "werkwoorden",
+   "say": "hij zit"
+  },
+  {
+   "id": "werkwoorden-wij-zitten",
+   "q": "wij · zitten",
+   "nl": "zitten/wij zitten",
+   "en": "zitten: to sit",
+   "sec": "werkwoorden",
+   "say": "wij zitten"
+  },
+  {
+   "id": "werkwoorden-jullie-zitten",
+   "q": "jullie · zitten",
+   "nl": "zitten/jullie zitten",
+   "en": "zitten: to sit",
+   "sec": "werkwoorden",
+   "say": "jullie zitten"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-zitten",
+   "q": "zij (meervoud) · zitten",
+   "nl": "zitten/zij zitten",
+   "en": "zitten: to sit",
+   "sec": "werkwoorden",
+   "say": "zij zitten"
+  },
+  {
+   "id": "werkwoorden-vraag-zitten",
+   "q": "___ jij …? · zitten",
+   "nl": "zit/zit jij",
+   "en": "zitten: jij after the verb loses the -t: Zit jij …?",
+   "sec": "werkwoorden",
+   "say": "Zit jij?"
+  },
+  {
+   "id": "werkwoorden-ik-hangen",
+   "q": "ik · hangen",
+   "nl": "hang/ik hang",
+   "en": "hangen: to hang",
+   "sec": "werkwoorden",
+   "say": "ik hang"
+  },
+  {
+   "id": "werkwoorden-jij-hangen",
+   "q": "jij · hangen",
+   "nl": "hangt/jij hangt",
+   "en": "hangen: to hang",
+   "sec": "werkwoorden",
+   "say": "jij hangt"
+  },
+  {
+   "id": "werkwoorden-hij-hangen",
+   "q": "hij · hangen",
+   "nl": "hangt/hij hangt",
+   "en": "hangen: to hang",
+   "sec": "werkwoorden",
+   "say": "hij hangt"
+  },
+  {
+   "id": "werkwoorden-wij-hangen",
+   "q": "wij · hangen",
+   "nl": "hangen/wij hangen",
+   "en": "hangen: to hang",
+   "sec": "werkwoorden",
+   "say": "wij hangen"
+  },
+  {
+   "id": "werkwoorden-jullie-hangen",
+   "q": "jullie · hangen",
+   "nl": "hangen/jullie hangen",
+   "en": "hangen: to hang",
+   "sec": "werkwoorden",
+   "say": "jullie hangen"
+  },
+  {
+   "id": "werkwoorden-zij-meervoud-hangen",
+   "q": "zij (meervoud) · hangen",
+   "nl": "hangen/zij hangen",
+   "en": "hangen: to hang",
+   "sec": "werkwoorden",
+   "say": "zij hangen"
+  },
+  {
+   "id": "werkwoorden-vraag-hangen",
+   "q": "___ jij …? · hangen",
+   "nl": "hang/hang jij",
+   "en": "hangen: jij after the verb loses the -t: Hang jij …?",
+   "sec": "werkwoorden",
+   "say": "Hang jij?"
+  },
+  {
+   "id": "ww-zinnen-lucia-en-ik-uit-san-francisco-komen",
+   "q": "Lucia en ik ___ uit San Francisco. (komen)",
+   "nl": "komen",
+   "en": "Lucia and I come from San Francisco.",
+   "sec": "ww-zinnen",
+   "say": "Lucia en ik komen uit San Francisco."
+  },
+  {
+   "id": "ww-zinnen-waar-jullie-vandaan-komen",
+   "q": "Waar ___ jullie vandaan? (komen)",
+   "nl": "komen",
+   "en": "Where are you from?",
+   "sec": "ww-zinnen",
+   "say": "Waar komen jullie vandaan?"
+  },
+  {
+   "id": "ww-zinnen-ik-uit-peru-komen",
+   "q": "Ik ___ uit Peru. (komen)",
+   "nl": "kom",
+   "en": "I come from Peru.",
+   "sec": "ww-zinnen",
+   "say": "Ik kom uit Peru."
+  },
+  {
+   "id": "ww-zinnen-waar-de-buurman-vandaan-komen",
+   "q": "Waar ___ de buurman vandaan? (komen)",
+   "nl": "komt",
+   "en": "Where does the neighbour come from?",
+   "sec": "ww-zinnen",
+   "say": "Waar komt de buurman vandaan?"
+  },
+  {
+   "id": "ww-zinnen-hij-uit-canada-komen",
+   "q": "Hij ___ uit Canada. (komen)",
+   "nl": "komt",
+   "en": "He comes from Canada.",
+   "sec": "ww-zinnen",
+   "say": "Hij komt uit Canada."
+  },
+  {
+   "id": "ww-zinnen-na-de-pauze-we-verder-met-de-les-gaan",
+   "q": "Na de pauze ___ we verder met de les. (gaan)",
+   "nl": "gaan",
+   "en": "After the break we carry on with the lesson.",
+   "sec": "ww-zinnen",
+   "say": "Na de pauze gaan we verder met de les."
+  },
+  {
+   "id": "ww-zinnen-je-verder-met-nederlands-gaan",
+   "q": "___ je verder met Nederlands? (gaan)",
+   "nl": "ga",
+   "en": "Are you carrying on with Dutch? je after the verb: ga.",
+   "sec": "ww-zinnen",
+   "say": "Ga je verder met Nederlands?"
+  },
+  {
+   "id": "ww-zinnen-jullie-in-september-studeren-gaan",
+   "q": "___ jullie in september studeren? (gaan)",
+   "nl": "gaan",
+   "en": "Are you going to study in September?",
+   "sec": "ww-zinnen",
+   "say": "Gaan jullie in september studeren?"
+  },
+  {
+   "id": "ww-zinnen-je-na-de-les-ook-naar-het-caf-gaan",
+   "q": "___ je na de les ook naar het café? (gaan)",
+   "nl": "ga",
+   "en": "Are you going to the café after class too? je after the verb: ga.",
+   "sec": "ww-zinnen",
+   "say": "Ga je na de les ook naar het café?"
+  },
+  {
+   "id": "ww-zinnen-wij-een-cola-drinken-gaan",
+   "q": "Wij ___ een cola drinken. (gaan)",
+   "nl": "gaan",
+   "en": "We're going to have a cola.",
+   "sec": "ww-zinnen",
+   "say": "Wij gaan een cola drinken."
+  },
+  {
+   "id": "ww-zinnen-hoe-je-jouw-achternaam-spellen",
+   "q": "Hoe ___ je jouw achternaam? (spellen)",
+   "nl": "spel",
+   "en": "How do you spell your surname? je after the verb: spel.",
+   "sec": "ww-zinnen",
+   "say": "Hoe spel je jouw achternaam?"
+  },
+  {
+   "id": "ww-zinnen-lelystad-dat-je-met-een-griekse-y-spellen",
+   "q": "‘Lelystad’ – dat ___ je met een Griekse y. (spellen)",
+   "nl": "spel",
+   "en": "You spell Lelystad with a y. je after the verb: spel.",
+   "sec": "ww-zinnen",
+   "say": "‘Lelystad’ – dat spel je met een Griekse y."
+  },
+  {
+   "id": "ww-zinnen-wij-onze-namen-spellen",
+   "q": "Wij ___ onze namen. (spellen)",
+   "nl": "spellen",
+   "en": "We spell our names.",
+   "sec": "ww-zinnen",
+   "say": "Wij spellen onze namen."
+  },
+  {
+   "id": "ww-zinnen-hans-het-woord-fout-spellen",
+   "q": "Hans ___ het woord fout. (spellen)",
+   "nl": "spelt",
+   "en": "Hans spells the word wrong.",
+   "sec": "ww-zinnen",
+   "say": "Hans spelt het woord fout."
+  },
+  {
+   "id": "ww-zinnen-je-mijn-naam-met-dubbel-l-spellen",
+   "q": "Je ___ mijn naam met dubbel ‘l’. (spellen)",
+   "nl": "spelt",
+   "en": "You spell my name with a double l. je before the verb: spelt.",
+   "sec": "ww-zinnen",
+   "say": "Je spelt mijn naam met dubbel ‘l’."
+  },
+  {
+   "id": "ww-zinnen-ik-goed-luisteren",
+   "q": "Ik ___ goed. (luisteren)",
+   "nl": "luister",
+   "en": "I listen carefully.",
+   "sec": "ww-zinnen",
+   "say": "Ik luister goed."
+  },
+  {
+   "id": "ww-zinnen-wij-naar-de-docent-luisteren",
+   "q": "Wij ___ naar de docent. (luisteren)",
+   "nl": "luisteren",
+   "en": "We listen to the teacher.",
+   "sec": "ww-zinnen",
+   "say": "Wij luisteren naar de docent."
+  },
+  {
+   "id": "ww-zinnen-sophia-elke-dag-naar-een-podcast-luisteren",
+   "q": "Sophia ___ elke dag naar een podcast. (luisteren)",
+   "nl": "luistert",
+   "en": "Sophia listens to a podcast every day.",
+   "sec": "ww-zinnen",
+   "say": "Sophia luistert elke dag naar een podcast."
+  },
+  {
+   "id": "ww-zinnen-jij-naar-het-nieuws-luisteren",
+   "q": "Jij ___ naar het nieuws. (luisteren)",
+   "nl": "luistert",
+   "en": "You listen to the news.",
+   "sec": "ww-zinnen",
+   "say": "Jij luistert naar het nieuws."
+  },
+  {
+   "id": "ww-zinnen-alexander-naar-nederlandse-muziek-luisteren",
+   "q": "___ Alexander naar Nederlandse muziek? (luisteren)",
+   "nl": "luistert",
+   "en": "Does Alexander listen to Dutch music? Only je/jij drops the -t.",
+   "sec": "ww-zinnen",
+   "say": "Luistert Alexander naar Nederlandse muziek?"
+  },
+  {
+   "id": "ww-zinnen-ik-een-tweelingzus-hebben",
+   "q": "Ik ___ een tweelingzus. (hebben)",
+   "nl": "heb",
+   "en": "I have a twin sister.",
+   "sec": "ww-zinnen",
+   "say": "Ik heb een tweelingzus."
+  },
+  {
+   "id": "ww-zinnen-mijn-ouders-gescheiden-zijn",
+   "q": "Mijn ouders ___ gescheiden. (zijn)",
+   "nl": "zijn",
+   "en": "My parents are divorced.",
+   "sec": "ww-zinnen",
+   "say": "Mijn ouders zijn gescheiden."
+  },
+  {
+   "id": "ww-zinnen-hoe-oud-jij-zijn",
+   "q": "Hoe oud ___ jij? (zijn)",
+   "nl": "ben",
+   "en": "How old are you? jij after the verb: ben.",
+   "sec": "ww-zinnen",
+   "say": "Hoe oud ben jij?"
+  },
+  {
+   "id": "ww-zinnen-zij-in-de-winter-jarig-zijn",
+   "q": "Zij ___ in de winter jarig. (zijn)",
+   "nl": "is",
+   "en": "Her birthday is in winter.",
+   "sec": "ww-zinnen",
+   "say": "Zij is in de winter jarig."
+  }
+ ]
+}

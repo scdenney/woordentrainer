@@ -1,0 +1,530 @@
+{
+ "title": "Waar is het?",
+ "order": 103,
+ "kind": "grammar",
+ "source": "Les 3 slides, the gaan/komen handout and class worksheets (F. Fabbricotti, Sept–Oct 2026)",
+ "rules": [
+  {
+   "title": "Voorzetsels",
+   "table": {
+    "head": [
+     "Nederlands",
+     "English"
+    ],
+    "rows": [
+     [
+      "boven",
+      "above"
+     ],
+     [
+      "onder",
+      "below, under"
+     ],
+     [
+      "op",
+      "on"
+     ],
+     [
+      "naast",
+      "next to"
+     ],
+     [
+      "voor",
+      "in front of"
+     ],
+     [
+      "achter",
+      "behind"
+     ],
+     [
+      "tussen",
+      "between"
+     ],
+     [
+      "in",
+      "in, inside"
+     ],
+     [
+      "tegen",
+      "against"
+     ]
+    ]
+   }
+  },
+  {
+   "title": "liggen, staan, zitten, hangen",
+   "text": "Dutch usually says how something is placed instead of just “is”.",
+   "table": {
+    "head": [
+     "Werkwoord",
+     "Wanneer",
+     "Voorbeeld"
+    ],
+    "rows": [
+     [
+      "liggen",
+      "flat, lying down",
+      "Het boek ligt op tafel."
+     ],
+     [
+      "staan",
+      "upright",
+      "De fles staat op tafel."
+     ],
+     [
+      "zitten",
+      "sitting; inside or stuck in something",
+      "De sleutel zit in mijn tas."
+     ],
+     [
+      "hangen",
+      "hanging",
+      "De jas hangt aan de kapstok."
+     ]
+    ]
+   }
+  },
+  {
+   "title": "Over jezelf",
+   "text": "Ik lig = I am lying down. Ik sta = I am standing. Ik zit = I am sitting."
+  }
+ ],
+ "sections": [
+  {
+   "id": "voorzetsels",
+   "name": "Voorzetsels",
+   "task": "Pick the word that matches the English."
+  },
+  {
+   "id": "positie",
+   "name": "liggen, staan, zitten, hangen",
+   "task": "Flat, upright, inside or hanging?"
+  }
+ ],
+ "words": [
+  {
+   "id": "voorzetsels-de-lamp-hangt-de-tafel-above",
+   "q": "De lamp hangt ___ de tafel. (above)",
+   "nl": "boven",
+   "en": "boven = above",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De lamp hangt boven de tafel."
+  },
+  {
+   "id": "voorzetsels-de-kat-zit-de-tafel-under",
+   "q": "De kat zit ___ de tafel. (under)",
+   "nl": "onder",
+   "en": "onder = under",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De kat zit onder de tafel."
+  },
+  {
+   "id": "voorzetsels-het-boek-ligt-de-tafel-on",
+   "q": "Het boek ligt ___ de tafel. (on)",
+   "nl": "op",
+   "en": "op = on",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "Het boek ligt op de tafel."
+  },
+  {
+   "id": "voorzetsels-de-fiets-staat-het-huis-next-to",
+   "q": "De fiets staat ___ het huis. (next to)",
+   "nl": "naast",
+   "en": "naast = next to",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De fiets staat naast het huis."
+  },
+  {
+   "id": "voorzetsels-de-auto-staat-het-huis-in-front-of",
+   "q": "De auto staat ___ het huis. (in front of)",
+   "nl": "voor",
+   "en": "voor = in front of",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De auto staat voor het huis."
+  },
+  {
+   "id": "voorzetsels-de-tuin-is-het-huis-behind",
+   "q": "De tuin is ___ het huis. (behind)",
+   "nl": "achter",
+   "en": "achter = behind",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De tuin is achter het huis."
+  },
+  {
+   "id": "voorzetsels-ik-zit-kees-en-saskia-between",
+   "q": "Ik zit ___ Kees en Saskia. (between)",
+   "nl": "tussen",
+   "en": "tussen = between",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "Ik zit tussen Kees en Saskia."
+  },
+  {
+   "id": "voorzetsels-de-sleutel-zit-mijn-tas-in",
+   "q": "De sleutel zit ___ mijn tas. (in)",
+   "nl": "in",
+   "en": "in = in",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De sleutel zit in mijn tas."
+  },
+  {
+   "id": "voorzetsels-de-fiets-staat-de-muur-against",
+   "q": "De fiets staat ___ de muur. (against)",
+   "nl": "tegen",
+   "en": "tegen = against",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De fiets staat tegen de muur."
+  },
+  {
+   "id": "voorzetsels-de-klok-hangt-de-deur-above",
+   "q": "De klok hangt ___ de deur. (above)",
+   "nl": "boven",
+   "en": "boven = above",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De klok hangt boven de deur."
+  },
+  {
+   "id": "voorzetsels-de-schoenen-staan-het-bed-under",
+   "q": "De schoenen staan ___ het bed. (under)",
+   "nl": "onder",
+   "en": "onder = under",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "De schoenen staan onder het bed."
+  },
+  {
+   "id": "voorzetsels-mijn-huis-staat-de-bakker-next-to",
+   "q": "Mijn huis staat ___ de bakker. (next to)",
+   "nl": "naast",
+   "en": "naast = next to",
+   "sec": "voorzetsels",
+   "choices": [
+    "boven",
+    "onder",
+    "op",
+    "naast",
+    "voor",
+    "achter",
+    "tussen",
+    "in",
+    "tegen"
+   ],
+   "say": "Mijn huis staat naast de bakker."
+  },
+  {
+   "id": "positie-het-boek-op-tafel",
+   "q": "Het boek ___ op tafel.",
+   "nl": "ligt",
+   "en": "The book is (lying) on the table.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "Het boek ligt op tafel."
+  },
+  {
+   "id": "positie-de-fles-op-tafel",
+   "q": "De fles ___ op tafel.",
+   "nl": "staat",
+   "en": "The bottle is (standing) on the table.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De fles staat op tafel."
+  },
+  {
+   "id": "positie-de-sleutel-in-mijn-tas",
+   "q": "De sleutel ___ in mijn tas.",
+   "nl": "zit",
+   "en": "The key is in my bag.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De sleutel zit in mijn tas."
+  },
+  {
+   "id": "positie-de-jas-aan-de-kapstok",
+   "q": "De jas ___ aan de kapstok.",
+   "nl": "hangt",
+   "en": "The coat is hanging on the coat rack.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De jas hangt aan de kapstok."
+  },
+  {
+   "id": "positie-de-lamp-boven-de-tafel",
+   "q": "De lamp ___ boven de tafel.",
+   "nl": "hangt",
+   "en": "The lamp hangs above the table.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De lamp hangt boven de tafel."
+  },
+  {
+   "id": "positie-de-fiets-naast-het-huis",
+   "q": "De fiets ___ naast het huis.",
+   "nl": "staat",
+   "en": "The bike is (standing) next to the house.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De fiets staat naast het huis."
+  },
+  {
+   "id": "positie-het-geld-in-mijn-portemonnee",
+   "q": "Het geld ___ in mijn portemonnee.",
+   "nl": "zit",
+   "en": "The money is in my wallet.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "Het geld zit in mijn portemonnee."
+  },
+  {
+   "id": "positie-de-foto-aan-de-muur",
+   "q": "De foto ___ aan de muur.",
+   "nl": "hangt",
+   "en": "The photo is hanging on the wall.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De foto hangt aan de muur."
+  },
+  {
+   "id": "positie-de-krant-op-de-grond",
+   "q": "De krant ___ op de grond.",
+   "nl": "ligt",
+   "en": "The newspaper is (lying) on the floor.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De krant ligt op de grond."
+  },
+  {
+   "id": "positie-de-stoel-achter-de-tafel",
+   "q": "De stoel ___ achter de tafel.",
+   "nl": "staat",
+   "en": "The chair is (standing) behind the table.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De stoel staat achter de tafel."
+  },
+  {
+   "id": "positie-de-melk-in-de-koelkast",
+   "q": "De melk ___ in de koelkast.",
+   "nl": "staat",
+   "en": "The milk is in the fridge (it stands upright).",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De melk staat in de koelkast."
+  },
+  {
+   "id": "positie-mijn-telefoon-in-mijn-jaszak",
+   "q": "Mijn telefoon ___ in mijn jaszak.",
+   "nl": "zit",
+   "en": "My phone is in my coat pocket.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "Mijn telefoon zit in mijn jaszak."
+  },
+  {
+   "id": "positie-de-klok-boven-de-deur",
+   "q": "De klok ___ boven de deur.",
+   "nl": "hangt",
+   "en": "The clock hangs above the door.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De klok hangt boven de deur."
+  },
+  {
+   "id": "positie-de-pen-naast-het-boek",
+   "q": "De pen ___ naast het boek.",
+   "nl": "ligt",
+   "en": "The pen is (lying) next to the book.",
+   "sec": "positie",
+   "choices": [
+    "ligt",
+    "staat",
+    "zit",
+    "hangt"
+   ],
+   "say": "De pen ligt naast het boek."
+  }
+ ]
+}

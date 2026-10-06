@@ -1,7 +1,7 @@
 {
  "title": "Hoofdstuk 2",
  "order": 2,
- "source": "Hoofdstuk 2 nieuw EN-NL AI.xlsx (F. Fabbricotti, 29 Sept 2026)",
+ "source": "Hoofdstuk 2 nieuw EN-NL AI.xlsx (F. Fabbricotti, 29 Sept 2026); family-tree slide, les 3",
  "sections": [
   {
    "id": "woorden",
@@ -945,6 +945,116 @@
    "nl": "de minuut",
    "en": "minute",
    "sec": "kalender"
+  },
+  {
+   "id": "de-stamboom",
+   "nl": "de stamboom",
+   "en": "family tree",
+   "sec": "familie"
+  },
+  {
+   "id": "de-grootvader",
+   "nl": "de grootvader",
+   "en": "grandfather",
+   "sec": "familie"
+  },
+  {
+   "id": "de-grootmoeder",
+   "nl": "de grootmoeder",
+   "en": "grandmother",
+   "sec": "familie"
+  },
+  {
+   "id": "de-grootouders",
+   "nl": "de grootouders",
+   "en": "grandparents",
+   "sec": "familie"
+  },
+  {
+   "id": "de-ouders",
+   "nl": "de ouders",
+   "en": "parents",
+   "sec": "familie"
+  },
+  {
+   "id": "de-kinderen",
+   "nl": "de kinderen",
+   "en": "children",
+   "sec": "familie"
+  },
+  {
+   "id": "het-neefje",
+   "nl": "het neefje",
+   "en": "little nephew, little (male) cousin",
+   "sec": "familie"
+  },
+  {
+   "id": "het-nichtje",
+   "nl": "het nichtje",
+   "en": "little niece, little (female) cousin",
+   "sec": "familie"
+  },
+  {
+   "id": "het-achterneefje",
+   "nl": "het achterneefje",
+   "en": "cousin's young son, little second cousin",
+   "sec": "familie",
+   "note": "The exact relationship depends on context."
+  },
+  {
+   "id": "de-schoonbroer",
+   "nl": "de schoonbroer",
+   "en": "brother-in-law",
+   "sec": "familie"
+  },
+  {
+   "id": "de-tweelingbroer",
+   "nl": "de tweelingbroer",
+   "en": "twin brother",
+   "sec": "familie"
+  },
+  {
+   "id": "de-tweelingzus",
+   "nl": "de tweelingzus",
+   "en": "twin sister",
+   "sec": "familie"
+  },
+  {
+   "id": "de-kleindochter",
+   "nl": "de kleindochter",
+   "en": "granddaughter",
+   "sec": "familie"
+  },
+  {
+   "id": "de-kleinzoon",
+   "nl": "de kleinzoon",
+   "en": "grandson",
+   "sec": "familie"
+  },
+  {
+   "id": "broers-en-zussen",
+   "nl": "broers en zussen",
+   "en": "brothers and sisters, siblings",
+   "sec": "familie",
+   "note": "The slide also mentions brussen, but broers en zussen is the everyday way to say it."
+  },
+  {
+   "id": "mijn-ouders-zijn-gescheiden",
+   "nl": "Mijn ouders zijn gescheiden.",
+   "en": "My parents are divorced.",
+   "sec": "familie"
+  },
+  {
+   "id": "ik-heb-een-tweelingbroer",
+   "nl": "Ik heb een tweelingbroer.",
+   "en": "I have a twin brother.",
+   "sec": "familie"
+  },
+  {
+   "id": "ik-heb-een-tweelingzus",
+   "nl": "Ik heb een tweelingzus.",
+   "en": "I have a twin sister.",
+   "sec": "familie"
   }
  ]
 }

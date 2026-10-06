@@ -1,0 +1,765 @@
+{
+ "title": "Lidwoord & bezit",
+ "order": 104,
+ "kind": "grammar",
+ "source": "Les 3 slides, the gaan/komen handout and class worksheets (F. Fabbricotti, Sept–Oct 2026)",
+ "rules": [
+  {
+   "title": "de of het",
+   "text": "About three in four nouns take de: people and jobs, vehicles, fruit and vegetables, most animals, drinks, days, months and seasons, words ending in -heid. Het: diminutives in -je, languages, sports, materials, verbs used as nouns (het eten), compass points, two-syllable words starting with ge-, be-, ont-, ver-, and words ending in -isme, -um, -ment. Every plural takes de. Learn each noun with its article."
+  },
+  {
+   "title": "Bezittelijk voornaamwoord",
+   "table": {
+    "head": [
+     "",
+     "bezit",
+     "English"
+    ],
+    "rows": [
+     [
+      "ik",
+      "mijn",
+      "my"
+     ],
+     [
+      "jij / je",
+      "jouw / je",
+      "your (informal)"
+     ],
+     [
+      "u",
+      "uw",
+      "your (formal)"
+     ],
+     [
+      "zij / ze (enkelvoud)",
+      "haar",
+      "her"
+     ],
+     [
+      "hij / het",
+      "zijn",
+      "his, its"
+     ],
+     [
+      "wij / we",
+      "ons / onze",
+      "our"
+     ],
+     [
+      "jullie",
+      "jullie",
+      "your (plural)"
+     ],
+     [
+      "zij / ze (meervoud)",
+      "hun",
+      "their"
+     ]
+    ]
+   }
+  },
+  {
+   "title": "jouw of je",
+   "text": "jouw is the stressed form, je the everyday one: Is dat jouw fiets? Hoe heet je zus?"
+  },
+  {
+   "title": "welk, elk, ons: het-woorden zijn anders",
+   "text": "Singular het-words drop the -e. Plurals take welke, alle, onze, whatever their singular article.",
+   "table": {
+    "head": [
+     "",
+     "de fiets",
+     "het boek",
+     "meervoud"
+    ],
+    "rows": [
+     [
+      "which?",
+      "welke fiets?",
+      "welk boek?",
+      "welke fietsen / boeken?"
+     ],
+     [
+      "every / all",
+      "elke fiets",
+      "elk boek",
+      "alle fietsen / boeken"
+     ],
+     [
+      "our",
+      "onze fiets",
+      "ons boek",
+      "onze fietsen / boeken"
+     ]
+    ]
+   }
+  }
+ ],
+ "sections": [
+  {
+   "id": "bezit",
+   "name": "mijn, jouw, ons …",
+   "task": "Type the possessive word."
+  },
+  {
+   "id": "bezit-zin",
+   "name": "Bezit in een zin",
+   "task": "Pick the possessive for the person in brackets."
+  },
+  {
+   "id": "welk-elk",
+   "name": "welk/welke, elk/elke/alle, ons/onze",
+   "task": "het-word, de-word or plural?"
+  }
+ ],
+ "words": [
+  {
+   "id": "bezit-ik",
+   "q": "ik → ___",
+   "nl": "mijn",
+   "en": "my",
+   "sec": "bezit",
+   "say": "mijn"
+  },
+  {
+   "id": "bezit-jij",
+   "q": "jij → ___",
+   "nl": "jouw/je",
+   "en": "your (informal)",
+   "sec": "bezit",
+   "say": "jouw"
+  },
+  {
+   "id": "bezit-u",
+   "q": "u → ___",
+   "nl": "uw",
+   "en": "your (formal)",
+   "sec": "bezit",
+   "say": "uw"
+  },
+  {
+   "id": "bezit-zij-enkelvoud",
+   "q": "zij (enkelvoud) → ___",
+   "nl": "haar",
+   "en": "her",
+   "sec": "bezit",
+   "say": "haar"
+  },
+  {
+   "id": "bezit-hij",
+   "q": "hij → ___",
+   "nl": "zijn",
+   "en": "his",
+   "sec": "bezit",
+   "say": "zijn"
+  },
+  {
+   "id": "bezit-het",
+   "q": "het → ___",
+   "nl": "zijn",
+   "en": "its",
+   "sec": "bezit",
+   "say": "zijn"
+  },
+  {
+   "id": "bezit-wij",
+   "q": "wij → ___",
+   "nl": "ons/onze",
+   "en": "our: ons with singular het-words, onze otherwise",
+   "sec": "bezit",
+   "say": "ons"
+  },
+  {
+   "id": "bezit-jullie",
+   "q": "jullie → ___",
+   "nl": "jullie",
+   "en": "your (plural)",
+   "sec": "bezit",
+   "say": "jullie"
+  },
+  {
+   "id": "bezit-zij-meervoud",
+   "q": "zij (meervoud) → ___",
+   "nl": "hun",
+   "en": "their",
+   "sec": "bezit",
+   "say": "hun"
+  },
+  {
+   "id": "bezit-zin-dat-is-fiets-wij",
+   "q": "Dat is ___ fiets. (wij)",
+   "nl": "onze",
+   "en": "That's our bike. (de fiets → onze)",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Dat is onze fiets."
+  },
+  {
+   "id": "bezit-zin-dat-is-boek-wij",
+   "q": "Dat is ___ boek. (wij)",
+   "nl": "ons",
+   "en": "That's our book. (het boek → ons)",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Dat is ons boek."
+  },
+  {
+   "id": "bezit-zin-dat-zijn-boeken-wij",
+   "q": "Dat zijn ___ boeken. (wij)",
+   "nl": "onze",
+   "en": "Those are our books. (plural → onze)",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Dat zijn onze boeken."
+  },
+  {
+   "id": "bezit-zin-waar-is-tas-ik",
+   "q": "Waar is ___ tas? (ik)",
+   "nl": "mijn",
+   "en": "Where is my bag?",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Waar is mijn tas?"
+  },
+  {
+   "id": "bezit-zin-is-dat-jas-jij",
+   "q": "Is dat ___ jas? (jij)",
+   "nl": "jouw",
+   "en": "Is that your coat?",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Is dat jouw jas?"
+  },
+  {
+   "id": "bezit-zin-dat-is-broer-hij",
+   "q": "Dat is ___ broer. (hij)",
+   "nl": "zijn",
+   "en": "That is his brother.",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Dat is zijn broer."
+  },
+  {
+   "id": "bezit-zin-dat-is-moeder-zij-enkelvoud",
+   "q": "Dat is ___ moeder. (zij, enkelvoud)",
+   "nl": "haar",
+   "en": "That is her mother.",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Dat is haar moeder."
+  },
+  {
+   "id": "bezit-zin-dat-is-huis-zij-meervoud",
+   "q": "Dat is ___ huis. (zij, meervoud)",
+   "nl": "hun",
+   "en": "That is their house.",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Dat is hun huis."
+  },
+  {
+   "id": "bezit-zin-wat-is-naam-u",
+   "q": "Wat is ___ naam? (u)",
+   "nl": "uw",
+   "en": "What is your name? (formal)",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Wat is uw naam?"
+  },
+  {
+   "id": "bezit-zin-is-dat-docent-jullie",
+   "q": "Is dat ___ docent? (jullie)",
+   "nl": "jullie",
+   "en": "Is that your teacher? (plural)",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Is dat jullie docent?"
+  },
+  {
+   "id": "bezit-zin-les-begint-om-negen-uur-wij",
+   "q": "___ les begint om negen uur. (wij)",
+   "nl": "onze",
+   "en": "Our class starts at nine. (de les → onze)",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Onze les begint om negen uur."
+  },
+  {
+   "id": "bezit-zin-hoe-heten-zussen-jij",
+   "q": "Hoe heten ___ zussen? (jij)",
+   "nl": "jouw",
+   "en": "What are your sisters called?",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Hoe heten jouw zussen?"
+  },
+  {
+   "id": "bezit-zin-ouders-zijn-gescheiden-ik",
+   "q": "___ ouders zijn gescheiden. (ik)",
+   "nl": "mijn",
+   "en": "My parents are divorced.",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Mijn ouders zijn gescheiden."
+  },
+  {
+   "id": "bezit-zin-wat-is-adres-wij",
+   "q": "Wat is ___ adres? (wij)",
+   "nl": "ons",
+   "en": "What is our address? (het adres → ons)",
+   "sec": "bezit-zin",
+   "choices": [
+    "mijn",
+    "jouw",
+    "uw",
+    "haar",
+    "zijn",
+    "ons",
+    "onze",
+    "jullie",
+    "hun"
+   ],
+   "say": "Wat is ons adres?"
+  },
+  {
+   "id": "welk-elk-fiets-which",
+   "q": "___ fiets? (which)",
+   "nl": "welke",
+   "en": "de fiets → welke",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welke fiets?"
+  },
+  {
+   "id": "welk-elk-huis-which",
+   "q": "___ huis? (which)",
+   "nl": "welk",
+   "en": "het huis → welk",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welk huis?"
+  },
+  {
+   "id": "welk-elk-boeken-which",
+   "q": "___ boeken? (which)",
+   "nl": "welke",
+   "en": "plural → welke",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welke boeken?"
+  },
+  {
+   "id": "welk-elk-feest-which",
+   "q": "___ feest? (which)",
+   "nl": "welk",
+   "en": "het feest → welk",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welk feest?"
+  },
+  {
+   "id": "welk-elk-dag-which",
+   "q": "___ dag? (which)",
+   "nl": "welke",
+   "en": "de dag → welke",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welke dag?"
+  },
+  {
+   "id": "welk-elk-jaar-which",
+   "q": "___ jaar? (which)",
+   "nl": "welk",
+   "en": "het jaar → welk",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welk jaar?"
+  },
+  {
+   "id": "welk-elk-kleur-which",
+   "q": "___ kleur? (which)",
+   "nl": "welke",
+   "en": "de kleur → welke",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welke kleur?"
+  },
+  {
+   "id": "welk-elk-adres-which",
+   "q": "___ adres? (which)",
+   "nl": "welk",
+   "en": "het adres → welk",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welk adres?"
+  },
+  {
+   "id": "welk-elk-kinderen-which",
+   "q": "___ kinderen? (which)",
+   "nl": "welke",
+   "en": "plural → welke",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welke kinderen?"
+  },
+  {
+   "id": "welk-elk-land-which",
+   "q": "___ land? (which)",
+   "nl": "welk",
+   "en": "het land → welk",
+   "sec": "welk-elk",
+   "choices": [
+    "welk",
+    "welke"
+   ],
+   "say": "Welk land?"
+  },
+  {
+   "id": "welk-elk-fiets-every",
+   "q": "___ fiets (every)",
+   "nl": "elke",
+   "en": "de fiets → elke",
+   "sec": "welk-elk",
+   "choices": [
+    "elk",
+    "elke",
+    "alle"
+   ],
+   "say": "Elke fiets"
+  },
+  {
+   "id": "welk-elk-boek-every",
+   "q": "___ boek (every)",
+   "nl": "elk",
+   "en": "het boek → elk",
+   "sec": "welk-elk",
+   "choices": [
+    "elk",
+    "elke",
+    "alle"
+   ],
+   "say": "Elk boek"
+  },
+  {
+   "id": "welk-elk-fietsen-all",
+   "q": "___ fietsen (all)",
+   "nl": "alle",
+   "en": "plural → alle",
+   "sec": "welk-elk",
+   "choices": [
+    "elk",
+    "elke",
+    "alle"
+   ],
+   "say": "Alle fietsen"
+  },
+  {
+   "id": "welk-elk-dag-every",
+   "q": "___ dag (every)",
+   "nl": "elke",
+   "en": "de dag → elke",
+   "sec": "welk-elk",
+   "choices": [
+    "elk",
+    "elke",
+    "alle"
+   ],
+   "say": "Elke dag"
+  },
+  {
+   "id": "welk-elk-jaar-every",
+   "q": "___ jaar (every)",
+   "nl": "elk",
+   "en": "het jaar → elk",
+   "sec": "welk-elk",
+   "choices": [
+    "elk",
+    "elke",
+    "alle"
+   ],
+   "say": "Elk jaar"
+  },
+  {
+   "id": "welk-elk-week-every",
+   "q": "___ week (every)",
+   "nl": "elke",
+   "en": "de week → elke",
+   "sec": "welk-elk",
+   "choices": [
+    "elk",
+    "elke",
+    "alle"
+   ],
+   "say": "Elke week"
+  },
+  {
+   "id": "welk-elk-kinderen-all",
+   "q": "___ kinderen (all)",
+   "nl": "alle",
+   "en": "plural → alle",
+   "sec": "welk-elk",
+   "choices": [
+    "elk",
+    "elke",
+    "alle"
+   ],
+   "say": "Alle kinderen"
+  },
+  {
+   "id": "welk-elk-huis-every",
+   "q": "___ huis (every)",
+   "nl": "elk",
+   "en": "het huis → elk",
+   "sec": "welk-elk",
+   "choices": [
+    "elk",
+    "elke",
+    "alle"
+   ],
+   "say": "Elk huis"
+  },
+  {
+   "id": "welk-elk-fiets-our",
+   "q": "___ fiets (our)",
+   "nl": "onze",
+   "en": "de fiets → onze",
+   "sec": "welk-elk",
+   "choices": [
+    "ons",
+    "onze"
+   ],
+   "say": "Onze fiets"
+  },
+  {
+   "id": "welk-elk-boek-our",
+   "q": "___ boek (our)",
+   "nl": "ons",
+   "en": "het boek → ons",
+   "sec": "welk-elk",
+   "choices": [
+    "ons",
+    "onze"
+   ],
+   "say": "Ons boek"
+  },
+  {
+   "id": "welk-elk-fietsen-our",
+   "q": "___ fietsen (our)",
+   "nl": "onze",
+   "en": "plural → onze",
+   "sec": "welk-elk",
+   "choices": [
+    "ons",
+    "onze"
+   ],
+   "say": "Onze fietsen"
+  },
+  {
+   "id": "welk-elk-huis-our",
+   "q": "___ huis (our)",
+   "nl": "ons",
+   "en": "het huis → ons",
+   "sec": "welk-elk",
+   "choices": [
+    "ons",
+    "onze"
+   ],
+   "say": "Ons huis"
+  },
+  {
+   "id": "welk-elk-docent-our",
+   "q": "___ docent (our)",
+   "nl": "onze",
+   "en": "de docent → onze",
+   "sec": "welk-elk",
+   "choices": [
+    "ons",
+    "onze"
+   ],
+   "say": "Onze docent"
+  },
+  {
+   "id": "welk-elk-land-our",
+   "q": "___ land (our)",
+   "nl": "ons",
+   "en": "het land → ons",
+   "sec": "welk-elk",
+   "choices": [
+    "ons",
+    "onze"
+   ],
+   "say": "Ons land"
+  },
+  {
+   "id": "welk-elk-ouders-our",
+   "q": "___ ouders (our)",
+   "nl": "onze",
+   "en": "plural → onze",
+   "sec": "welk-elk",
+   "choices": [
+    "ons",
+    "onze"
+   ],
+   "say": "Onze ouders"
+  }
+ ]
+}

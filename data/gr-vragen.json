@@ -1,0 +1,1275 @@
+{
+ "title": "Vragen stellen",
+ "order": 100,
+ "kind": "grammar",
+ "source": "Les 3 slides, the gaan/komen handout and class worksheets (F. Fabbricotti, Sept–Oct 2026)",
+ "rules": [
+  {
+   "title": "Vraagwoorden",
+   "table": {
+    "head": [
+     "Nederlands",
+     "English",
+     "Voorbeeld"
+    ],
+    "rows": [
+     [
+      "wie",
+      "who",
+      "Wie is dat?"
+     ],
+     [
+      "wat",
+      "what",
+      "Wat drink jij?"
+     ],
+     [
+      "waar",
+      "where",
+      "Waar woon jij?"
+     ],
+     [
+      "waar … vandaan",
+      "where … from",
+      "Waar kom jij vandaan?"
+     ],
+     [
+      "welk / welke",
+      "which",
+      "Welk boek? Welke fiets?"
+     ],
+     [
+      "hoe",
+      "how",
+      "Hoe gaat het? Hoe heet je?"
+     ],
+     [
+      "hoe laat",
+      "(at) what time",
+      "Hoe laat begint de les?"
+     ],
+     [
+      "hoe oud",
+      "how old",
+      "Hoe oud ben jij?"
+     ],
+     [
+      "hoeveel",
+      "how much, how many",
+      "Hoeveel kost dat?"
+     ],
+     [
+      "wanneer",
+      "when",
+      "Wanneer ben je jarig?"
+     ],
+     [
+      "waarom",
+      "why",
+      "Waarom leer je Nederlands?"
+     ]
+    ]
+   }
+  },
+  {
+   "title": "Open vraag",
+   "text": "Question word, then the verb, then the subject, then the rest: Wat (1) drinken (2) zij (3) vandaag? (4). When wie or wat is itself the subject, the verb follows it directly: Wie woont in Utrecht?"
+  },
+  {
+   "title": "Ja/nee-vraag",
+   "text": "Put the verb first: Jij komt ook. → Kom jij ook?"
+  },
+  {
+   "title": "jij na het werkwoord",
+   "text": "When je or jij comes after the verb, the verb loses its -t: jij komt → kom jij?, jij woont → waar woon je? Only je/jij does this: Komt u ook? Komt Sjoerd ook?"
+  },
+  {
+   "title": "Let op",
+   "text": "“What is your name?” is Hoe heet je? (Wat is je naam? is also fine). Wanneer asks for a day or moment (morgen), hoe laat for a clock time (om acht uur)."
+  }
+ ],
+ "sections": [
+  {
+   "id": "vw-betekenis",
+   "name": "Vraagwoorden: betekenis",
+   "task": "Type the Dutch question word."
+  },
+  {
+   "id": "vw-zinnen",
+   "name": "Vraagwoorden in een zin",
+   "task": "Pick the question word that fits."
+  },
+  {
+   "id": "openvraag",
+   "name": "Open vraag maken",
+   "task": "Make the question: question word, verb, subject, rest."
+  },
+  {
+   "id": "janee",
+   "name": "Ja/nee-vraag",
+   "task": "Make a yes/no question: put the verb first."
+  }
+ ],
+ "words": [
+  {
+   "id": "vw-betekenis-who",
+   "q": "who",
+   "nl": "wie",
+   "en": "who",
+   "sec": "vw-betekenis",
+   "say": "wie"
+  },
+  {
+   "id": "vw-betekenis-what",
+   "q": "what",
+   "nl": "wat",
+   "en": "what",
+   "sec": "vw-betekenis",
+   "say": "wat"
+  },
+  {
+   "id": "vw-betekenis-where",
+   "q": "where",
+   "nl": "waar",
+   "en": "where",
+   "sec": "vw-betekenis",
+   "say": "waar"
+  },
+  {
+   "id": "vw-betekenis-which",
+   "q": "which",
+   "nl": "welk / welke",
+   "en": "which",
+   "sec": "vw-betekenis",
+   "say": "welk, welke"
+  },
+  {
+   "id": "vw-betekenis-how",
+   "q": "how",
+   "nl": "hoe",
+   "en": "how",
+   "sec": "vw-betekenis",
+   "say": "hoe"
+  },
+  {
+   "id": "vw-betekenis-at-what-time",
+   "q": "(at) what time",
+   "nl": "hoe laat",
+   "en": "(at) what time",
+   "sec": "vw-betekenis",
+   "say": "hoe laat"
+  },
+  {
+   "id": "vw-betekenis-how-much-how-many",
+   "q": "how much, how many",
+   "nl": "hoeveel",
+   "en": "how much, how many",
+   "sec": "vw-betekenis",
+   "say": "hoeveel"
+  },
+  {
+   "id": "vw-betekenis-when",
+   "q": "when",
+   "nl": "wanneer",
+   "en": "when",
+   "sec": "vw-betekenis",
+   "say": "wanneer"
+  },
+  {
+   "id": "vw-betekenis-why",
+   "q": "why",
+   "nl": "waarom",
+   "en": "why",
+   "sec": "vw-betekenis",
+   "say": "waarom"
+  },
+  {
+   "id": "vw-betekenis-where-from",
+   "q": "where … from",
+   "nl": "waar … vandaan",
+   "en": "where … from",
+   "sec": "vw-betekenis",
+   "say": "waar … vandaan"
+  },
+  {
+   "id": "vw-betekenis-how-old",
+   "q": "how old",
+   "nl": "hoe oud",
+   "en": "how old",
+   "sec": "vw-betekenis",
+   "say": "hoe oud"
+  },
+  {
+   "id": "vw-zinnen-woon-jij-in-leiden",
+   "q": "___ woon jij? — In Leiden.",
+   "nl": "waar",
+   "en": "Where do you live?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Waar woon jij??"
+  },
+  {
+   "id": "vw-zinnen-is-dat-dat-is-mijn-broer",
+   "q": "___ is dat? — Dat is mijn broer.",
+   "nl": "wie",
+   "en": "Who is that?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wie is dat??"
+  },
+  {
+   "id": "vw-zinnen-drink-jij-koffie-graag",
+   "q": "___ drink jij? — Koffie, graag.",
+   "nl": "wat",
+   "en": "What are you drinking?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wat drink jij??"
+  },
+  {
+   "id": "vw-zinnen-gaat-het-goed-dank-je",
+   "q": "___ gaat het? — Goed, dank je.",
+   "nl": "hoe",
+   "en": "How are you?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoe gaat het??"
+  },
+  {
+   "id": "vw-zinnen-begint-de-les-om-acht-uur",
+   "q": "___ begint de les? — Om acht uur.",
+   "nl": "hoe laat",
+   "en": "What time does the class start?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoe laat begint de les??"
+  },
+  {
+   "id": "vw-zinnen-kost-de-koffie-drie-euro",
+   "q": "___ kost de koffie? — Drie euro.",
+   "nl": "hoeveel",
+   "en": "How much is the coffee?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoeveel kost de koffie??"
+  },
+  {
+   "id": "vw-zinnen-kom-je-morgen",
+   "q": "___ kom je? — Morgen.",
+   "nl": "wanneer",
+   "en": "When are you coming?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wanneer kom je??"
+  },
+  {
+   "id": "vw-zinnen-werk-je-vandaag-niet-ik-ben-ziek",
+   "q": "___ werk je vandaag niet? — Ik ben ziek.",
+   "nl": "waarom",
+   "en": "Why aren't you working today?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Waarom werk je vandaag niet??"
+  },
+  {
+   "id": "vw-zinnen-fiets-is-van-jou-de-rode",
+   "q": "___ fiets is van jou? — De rode.",
+   "nl": "welke",
+   "en": "Which bike is yours? (de fiets → welke)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Welke fiets is van jou??"
+  },
+  {
+   "id": "vw-zinnen-boek-lees-je-het-boek-van-florence",
+   "q": "___ boek lees je? — Het boek van Florence.",
+   "nl": "welk",
+   "en": "Which book are you reading? (het boek → welk)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Welk boek lees je??"
+  },
+  {
+   "id": "vw-zinnen-kom-je-vandaan-uit-frankrijk",
+   "q": "___ kom je vandaan? — Uit Frankrijk.",
+   "nl": "waar",
+   "en": "Where are you from?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Waar kom je vandaan??"
+  },
+  {
+   "id": "vw-zinnen-heet-je-ik-heet-liam",
+   "q": "___ heet je? — Ik heet Liam.",
+   "nl": "hoe",
+   "en": "What's your name? (literally: how are you called?)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoe heet je??"
+  },
+  {
+   "id": "vw-zinnen-broers-heb-je-twee",
+   "q": "___ broers heb je? — Twee.",
+   "nl": "hoeveel",
+   "en": "How many brothers do you have?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoeveel broers heb je??"
+  },
+  {
+   "id": "vw-zinnen-is-je-achternaam-denney",
+   "q": "___ is je achternaam? — Denney.",
+   "nl": "wat",
+   "en": "What is your surname?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wat is je achternaam??"
+  },
+  {
+   "id": "vw-zinnen-ben-je-jarig-in-mei",
+   "q": "___ ben je jarig? — In mei.",
+   "nl": "wanneer",
+   "en": "When is your birthday?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wanneer ben je jarig??"
+  },
+  {
+   "id": "vw-zinnen-leer-je-nederlands-voor-mijn-werk",
+   "q": "___ leer je Nederlands? — Voor mijn werk.",
+   "nl": "waarom",
+   "en": "Why are you learning Dutch?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Waarom leer je Nederlands??"
+  },
+  {
+   "id": "vw-zinnen-woont-in-utrecht-alina",
+   "q": "___ woont in Utrecht? — Alina.",
+   "nl": "wie",
+   "en": "Who lives in Utrecht?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wie woont in Utrecht??"
+  },
+  {
+   "id": "vw-zinnen-taal-spreek-je-engels",
+   "q": "___ taal spreek je? — Engels.",
+   "nl": "welke",
+   "en": "Which language do you speak? (de taal → welke)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Welke taal spreek je??"
+  },
+  {
+   "id": "vw-zinnen-huis-is-van-jullie-het-grote-huis",
+   "q": "___ huis is van jullie? — Het grote huis.",
+   "nl": "welk",
+   "en": "Which house is yours? (het huis → welk)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Welk huis is van jullie??"
+  },
+  {
+   "id": "vw-zinnen-is-het-feest-bij-kees-thuis",
+   "q": "___ is het feest? — Bij Kees thuis.",
+   "nl": "waar",
+   "en": "Where is the party?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Waar is het feest??"
+  },
+  {
+   "id": "vw-zinnen-is-de-docent-florence",
+   "q": "___ is de docent? — Florence.",
+   "nl": "wie",
+   "en": "Who is the teacher?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wie is de docent??"
+  },
+  {
+   "id": "vw-zinnen-studeren-jullie-nederlands",
+   "q": "___ studeren jullie? — Nederlands.",
+   "nl": "wat",
+   "en": "What are you studying?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wat studeren jullie??"
+  },
+  {
+   "id": "vw-zinnen-woont-je-familie-in-japan",
+   "q": "___ woont je familie? — In Japan?",
+   "nl": "waar",
+   "en": "Where does your family live? In Japan?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Waar woont je familie??"
+  },
+  {
+   "id": "vw-zinnen-talen-spreek-je-japans-engels-en",
+   "q": "___ talen spreek je? — Japans, Engels en …?",
+   "nl": "welke",
+   "en": "Which languages do you speak? (plural → welke)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Welke talen spreek je??"
+  },
+  {
+   "id": "vw-zinnen-hebben-we-les-van-maandag-tot-en-met-donderdag",
+   "q": "___ hebben we les? — Van maandag tot en met donderdag?",
+   "nl": "wanneer",
+   "en": "When do we have class? Monday to Thursday?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wanneer hebben we les??"
+  },
+  {
+   "id": "vw-zinnen-leer-je-nederlands-heb-je-les-of-studeer-je-zelf",
+   "q": "___ leer je Nederlands? — Heb je les of studeer je zelf?",
+   "nl": "hoe",
+   "en": "How are you learning Dutch? Classes or on your own?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoe leer je Nederlands??"
+  },
+  {
+   "id": "vw-zinnen-is-je-naam-hoe-heet-je",
+   "q": "___ is je naam? — Hoe heet je?",
+   "nl": "wat",
+   "en": "What is your name?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wat is je naam??"
+  },
+  {
+   "id": "vw-zinnen-oud-ben-jij-ben-jij-ook-veertig-jaar",
+   "q": "___ oud ben jij? — Ben jij ook veertig jaar?",
+   "nl": "hoe",
+   "en": "How old are you? Are you forty too?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoe oud ben jij??"
+  },
+  {
+   "id": "vw-zinnen-maanden-heeft-een-jaar-twaalf-maanden",
+   "q": "___ maanden heeft een jaar? — Twaalf maanden?",
+   "nl": "hoeveel",
+   "en": "How many months does a year have?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoeveel maanden heeft een jaar??"
+  },
+  {
+   "id": "vw-zinnen-doe-je-op-maandag-heb-je-dan-les-of-heb-je-vrij",
+   "q": "___ doe je op maandag? — Heb je dan les of heb je vrij?",
+   "nl": "wat",
+   "en": "What do you do on Monday?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wat doe je op maandag??"
+  },
+  {
+   "id": "vw-zinnen-begint-de-zomervakantie-in-juni-of-in-juli",
+   "q": "___ begint de zomervakantie? — In juni of in juli?",
+   "nl": "wanneer",
+   "en": "When does the summer holiday start?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wanneer begint de zomervakantie??"
+  },
+  {
+   "id": "vw-zinnen-seizoen-is-het-nu-in-australi-is-het-daar-nu-zom",
+   "q": "___ seizoen is het nu in Australië? — Is het daar nu zomer?",
+   "nl": "welk",
+   "en": "Which season is it in Australia now? (het seizoen → welk)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Welk seizoen is het nu in Australië??"
+  },
+  {
+   "id": "vw-zinnen-is-het-nu-is-het-al-tijd-voor-de-pauze",
+   "q": "___ is het nu? — Is het al tijd voor de pauze?",
+   "nl": "hoe laat",
+   "en": "What time is it now?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoe laat is het nu??"
+  },
+  {
+   "id": "vw-zinnen-kom-je-naar-de-cursus-kom-je-met-de-fiets",
+   "q": "___ kom je naar de cursus? — Kom je met de fiets?",
+   "nl": "hoe",
+   "en": "How do you get to the course? By bike?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoe kom je naar de cursus??"
+  },
+  {
+   "id": "vw-zinnen-in-stad-werk-je-in-leiden-of-in-den-haag",
+   "q": "In ___ stad werk je? — In Leiden of in Den Haag?",
+   "nl": "welke",
+   "en": "Which city do you work in? (de stad → welke)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "In welke stad werk je??"
+  },
+  {
+   "id": "vw-zinnen-eet-jij-in-de-ochtend-yoghurt-met-fruit",
+   "q": "___ eet jij in de ochtend? — Yoghurt met fruit?",
+   "nl": "wat",
+   "en": "What do you eat in the morning?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Wat eet jij in de ochtend??"
+  },
+  {
+   "id": "vw-zinnen-broers-en-zussen-heb-jij",
+   "q": "___ broers en zussen heb jij?",
+   "nl": "hoeveel",
+   "en": "How many brothers and sisters do you have?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoeveel broers en zussen heb jij??"
+  },
+  {
+   "id": "vw-zinnen-heten-je-zussen-camilla-en-stephanie",
+   "q": "___ heten je zussen? — Camilla en Stephanie?",
+   "nl": "hoe",
+   "en": "What are your sisters called?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Hoe heten je zussen??"
+  },
+  {
+   "id": "vw-zinnen-studeer-jij-in-delft",
+   "q": "___ studeer jij? — In Delft?",
+   "nl": "waar",
+   "en": "Where do you study?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Waar studeer jij??"
+  },
+  {
+   "id": "vw-zinnen-in-jaar-ben-jij-geboren-in-2002",
+   "q": "In ___ jaar ben jij geboren? — In 2002?",
+   "nl": "welk",
+   "en": "Which year were you born in? (het jaar → welk)",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "In welk jaar ben jij geboren??"
+  },
+  {
+   "id": "vw-zinnen-met-spreek-je-graag-in-de-pauze-met-marc",
+   "q": "Met ___ spreek je graag in de pauze? — Met Marc?",
+   "nl": "wie",
+   "en": "Who do you like talking to in the break?",
+   "sec": "vw-zinnen",
+   "choices": [
+    "wie",
+    "wat",
+    "waar",
+    "welk",
+    "welke",
+    "hoe",
+    "hoe laat",
+    "hoeveel",
+    "wanneer",
+    "waarom"
+   ],
+   "say": "Met wie spreek je graag in de pauze??"
+  },
+  {
+   "id": "openvraag-hij-is-frank-wie",
+   "q": "Hij is Frank. (wie?)",
+   "nl": "Wie is hij?",
+   "en": "Who is he?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-zij-drinken-koffie-wat",
+   "q": "Zij drinken koffie. (wat?)",
+   "nl": "Wat drinken zij?/Wat drinken ze?",
+   "en": "What are they drinking?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-hij-komt-uit-frankrijk-waar-vandaan",
+   "q": "Hij komt uit Frankrijk. (waar … vandaan?)",
+   "nl": "Waar komt hij vandaan?",
+   "en": "Where is he from?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-hij-komt-vanavond-wanneer",
+   "q": "Hij komt vanavond. (wanneer?)",
+   "nl": "Wanneer komt hij?",
+   "en": "When is he coming?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-hij-is-thuis-waar",
+   "q": "Hij is thuis. (waar?)",
+   "nl": "Waar is hij?",
+   "en": "Where is he?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-de-les-begint-om-20-00-hoe-laat",
+   "q": "De les begint om 20.00. (hoe laat?)",
+   "nl": "Hoe laat begint de les?",
+   "en": "What time does the class start?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-saskia-woont-in-leiden-waar",
+   "q": "Saskia woont in Leiden. (waar?)",
+   "nl": "Waar woont Saskia?",
+   "en": "Where does Saskia live?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-zij-heet-alina-hoe",
+   "q": "Zij heet Alina. (hoe?)",
+   "nl": "Hoe heet zij?/Hoe heet ze?",
+   "en": "What is her name?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-de-koffie-kost-drie-euro-hoeveel",
+   "q": "De koffie kost drie euro. (hoeveel?)",
+   "nl": "Hoeveel kost de koffie?",
+   "en": "How much is the coffee?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-jullie-leren-nederlands-wat",
+   "q": "Jullie leren Nederlands. (wat?)",
+   "nl": "Wat leren jullie?",
+   "en": "What are you learning?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-hij-werkt-vandaag-niet-waarom",
+   "q": "Hij werkt vandaag niet. (waarom?)",
+   "nl": "Waarom werkt hij vandaag niet?",
+   "en": "Why isn't he working today?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-sjoerd-gaat-naar-de-film-wie",
+   "q": "Sjoerd gaat naar de film. (wie?)",
+   "nl": "Wie gaat naar de film?",
+   "en": "Who is going to the film? Wie is the subject here, so the verb follows it directly.",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-jij-gaat-morgen-naar-utrecht-wanneer",
+   "q": "Jij gaat morgen naar Utrecht. (wanneer?)",
+   "nl": "Wanneer ga jij naar Utrecht?/Wanneer ga je naar Utrecht?",
+   "en": "When are you going to Utrecht? Jij after the verb: ga, not gaat.",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-jij-woont-in-den-haag-waar",
+   "q": "Jij woont in Den Haag. (waar?)",
+   "nl": "Waar woon jij?/Waar woon je?",
+   "en": "Where do you live? Jij after the verb: woon, not woont.",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-jij-drinkt-thee-wat",
+   "q": "Jij drinkt thee. (wat?)",
+   "nl": "Wat drink jij?/Wat drink je?",
+   "en": "What are you drinking? Jij after the verb: drink, not drinkt.",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-jij-komt-uit-spanje-waar-vandaan",
+   "q": "Jij komt uit Spanje. (waar … vandaan?)",
+   "nl": "Waar kom jij vandaan?/Waar kom je vandaan?",
+   "en": "Where are you from? Jij after the verb: kom, not komt.",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-peter-komt-uit-canada-waar-vandaan",
+   "q": "Peter komt uit Canada. (waar … vandaan?)",
+   "nl": "Waar komt Peter vandaan?",
+   "en": "Where does Peter come from?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "openvraag-de-fiets-is-rood-welke-kleur",
+   "q": "De fiets is rood. (welke kleur?)",
+   "nl": "Welke kleur heeft de fiets?/Welke kleur is de fiets?",
+   "en": "What colour is the bike?",
+   "sec": "openvraag"
+  },
+  {
+   "id": "janee-jij-komt-ook",
+   "q": "Jij komt ook.",
+   "nl": "Kom jij ook?/Kom je ook?",
+   "en": "Are you coming too? komt → kom",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-gaat-naar-het-feest",
+   "q": "Jij gaat naar het feest.",
+   "nl": "Ga jij naar het feest?/Ga je naar het feest?",
+   "en": "Are you going to the party? gaat → ga",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-luistert-naar-de-radio",
+   "q": "Jij luistert naar de radio.",
+   "nl": "Luister jij naar de radio?/Luister je naar de radio?",
+   "en": "Are you listening to the radio? luistert → luister",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-woont-in-utrecht",
+   "q": "Jij woont in Utrecht.",
+   "nl": "Woon jij in Utrecht?/Woon je in Utrecht?",
+   "en": "Do you live in Utrecht? woont → woon",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-hebt-een-zus",
+   "q": "Jij hebt een zus.",
+   "nl": "Heb jij een zus?/Heb je een zus?",
+   "en": "Do you have a sister? hebt → heb",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-bent-ziek",
+   "q": "Jij bent ziek.",
+   "nl": "Ben jij ziek?/Ben je ziek?",
+   "en": "Are you ill? bent → ben",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-drinkt-koffie",
+   "q": "Jij drinkt koffie.",
+   "nl": "Drink jij koffie?/Drink je koffie?",
+   "en": "Do you drink coffee? drinkt → drink",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-spreekt-nederlands",
+   "q": "Jij spreekt Nederlands.",
+   "nl": "Spreek jij Nederlands?/Spreek je Nederlands?",
+   "en": "Do you speak Dutch? spreekt → spreek",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-sjoerd-komt-ook",
+   "q": "Sjoerd komt ook.",
+   "nl": "Komt Sjoerd ook?",
+   "en": "Is Sjoerd coming too? Only jij loses the -t.",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-u-komt-uit-leiden",
+   "q": "U komt uit Leiden.",
+   "nl": "Komt u uit Leiden?",
+   "en": "Are you from Leiden? With u the -t stays.",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-hij-werkt-vandaag",
+   "q": "Hij werkt vandaag.",
+   "nl": "Werkt hij vandaag?",
+   "en": "Is he working today?",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jullie-gaan-mee",
+   "q": "Jullie gaan mee.",
+   "nl": "Gaan jullie mee?",
+   "en": "Are you (all) coming along?",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-zij-is-jarig",
+   "q": "Zij is jarig.",
+   "nl": "Is zij jarig?/Is ze jarig?",
+   "en": "Is it her birthday?",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-werkt-in-leiden",
+   "q": "Jij werkt in Leiden.",
+   "nl": "Werk jij in Leiden?/Werk je in Leiden?",
+   "en": "Do you work in Leiden? werkt → werk",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-tim-en-saskia-gaan-naar-het-feest",
+   "q": "Tim en Saskia gaan naar het feest.",
+   "nl": "Gaan Tim en Saskia naar het feest?",
+   "en": "Are Tim and Saskia going to the party?",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jullie-wonen-in-leiden",
+   "q": "Jullie wonen in Leiden.",
+   "nl": "Wonen jullie in Leiden?",
+   "en": "Do you live in Leiden?",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-alexander-luistert-naar-nederlandse-muziek",
+   "q": "Alexander luistert naar Nederlandse muziek.",
+   "nl": "Luistert Alexander naar Nederlandse muziek?",
+   "en": "Does Alexander listen to Dutch music?",
+   "sec": "janee"
+  },
+  {
+   "id": "janee-jij-gaat-na-de-les-naar-het-caf",
+   "q": "Jij gaat na de les naar het café.",
+   "nl": "Ga jij na de les naar het café?/Ga je na de les naar het café?",
+   "en": "Are you going to the café after class? gaat → ga",
+   "sec": "janee"
+  }
+ ]
+}
