@@ -47,12 +47,16 @@
    },
    {
     "s": "e (zwak)",
-    "d": "An unstressed e, and the word een (“a”), sound like the a in “about”.",
+    "d": "An unstressed e sounds like the a in “about” (a schwa). In longer words this is the e of -je, ge- and -en; the n of -en is often dropped. Short words do it too: de, je, we, ze, een, and het is usually said ’t. A beginner's guideline, not a rule for every unstressed e.",
     "ex": [
      "de|the",
      "je|you",
      "een boek|a book",
-     "goedemorgen|good morning"
+     "goedemorgen|good morning",
+     "plantje|little plant",
+     "kindje|little child",
+     "gebruiken|to use",
+     "kijken|to look"
     ]
    },
    {
@@ -316,35 +320,6 @@
      "begrijpen|to understand",
      "begroeten|to greet",
      "Goed gedaan.|well done"
-    ]
-   }
-  ]
- },
- {
-  "title": "De e in lange woorden",
-  "en": "Unstressed e (schwa)",
-  "intro": "In a word of more than one syllable, a single e in an unstressed syllable usually sounds like a short, relaxed “uh” (schwa). Take it as a beginner's guideline: not every unstressed e follows it. The n of -en is often dropped in speech: kijken sounds like “kijkuh”.",
-  "rows": [
-   {
-    "s": "-je, ge-, -en",
-    "d": "The e in the diminutive -je, in the prefix ge- and in the ending -en is a schwa.",
-    "ex": [
-     "plantje|little plant",
-     "kindje|little child",
-     "gebruiken|to use",
-     "kijken|to look"
-    ]
-   },
-   {
-    "s": "de, het, een",
-    "d": "Short everyday words have the same sound: we, je, ze, een, de. het is usually said ’t. een (“a”) is a schwa; één (“one”) has a long ee.",
-    "ex": [
-     "we|we",
-     "je|you",
-     "ze|she, they",
-     "een|a",
-     "de|the",
-     "het|the, it"
     ]
    }
   ]
