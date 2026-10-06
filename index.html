@@ -94,6 +94,11 @@ legend { padding: 0; margin-bottom: 8px; }
 .card-body { padding: 24px 18px 20px; display: flex; flex-direction: column; gap: 16px; }
 .prompt { font: 700 clamp(1.7rem, 6vw, 2.4rem)/1.15 var(--display); letter-spacing: -0.01em; overflow-wrap: anywhere; text-wrap: balance; }
 .prompt small { font: 400 1rem var(--mono); color: var(--muted); margin-left: 0.4em; }
+.prompt-long { font-size: clamp(1.25rem, 4.5vw, 1.6rem); line-height: 1.3; }
+.choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.choice { display: inline-flex; align-items: center; gap: 8px; }
+.choice.right { background: var(--block-soft); border-color: var(--block); color: var(--block); opacity: 1; }
+.choice.wrong { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); opacity: 1; }
 .hint { font-size: 0.875rem; color: var(--muted); margin-top: -8px; }
 form.answer { display: flex; gap: 8px; flex-wrap: wrap; }
 form.answer input { flex: 1 1 14rem; min-width: 0; font: 1.25rem var(--body); padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); }
@@ -364,14 +369,14 @@ td.r { text-align: right; white-space: nowrap; }
     if (!a) return { ok: false, kind: "empty" };
     const toNl = dir === "en-nl";
     const own = toNl ? nlAlts(w) : enAlts(w);
-    const peers = toNl ? (byEn.get(keyOf(w.en)) || [w]) : (byNl.get(keyOf(w.nl)) || [w]);
+    const peers = w.g ? [w] : toNl ? (byEn.get(keyOf(w.en)) || [w]) : (byNl.get(keyOf(w.nl)) || [w]);
     const all = [...new Set(peers.flatMap(p => toNl ? nlAlts(p) : enAlts(p)))];
     const aFlatExact = a.replace(/ /g, "");
     for (const alt of all) {
       if (norm(alt).replace(/ /g, "") === aFlatExact) return { ok: true, kind: own.includes(alt) ? "exact" : "synonym", matched: alt };
     }
     for (const alt of all) if (flat(alt) === flat(a)) return { ok: true, kind: "accent", matched: alt };
-    if (toNl) {
+    if (toNl && !w.g) {
       for (const alt of own) {
         const m = norm(alt).match(/^(de|het) (.+)$/);
         if (!m) continue;
@@ -383,7 +388,7 @@ td.r { text-align: right; white-space: nowrap; }
     const fa = flat(a);
     for (const alt of all) {
       const fb = flat(alt), d = lev(fa, fb);
-      if ((fb.length >= 4 && d <= 1) || (fb.length >= 9 && d <= 2)) return { ok: false, kind: "typo" };
+      if ((fb.length >= 4 && d <= 1) || (fb.length >= 9 && d <= 2)) return { ok: false, kind: w.g ? "form" : "typo" };
     }
     return { ok: false, kind: "wrong" };
   }
@@ -437,11 +442,30 @@ td.r { text-align: right; white-space: nowrap; }
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") flush(); });
 
   function setDecks(docs) {
-    S.decks = docs.map(d => ({ id: d.id, ...d.data() })).sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
-    S.words = S.decks.flatMap(d => (d.words || []).map(w => ({ ...w, deck: d.id, deckTitle: d.title })));
+    S.decks = docs.map(d => ({ id: d.id, ...d.data() })).filter(d => d.id !== "dehet");
+    const dh = deHetDeck(S.decks);
+    if (dh) S.decks.push(dh);
+    S.decks.sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+    S.words = S.decks.flatMap(d => (d.words || []).map(w => ({ ...w, deck: d.id, deckTitle: d.title, g: d.kind === "grammar" })));
     indexWords();
     S.status = "ready";
     if (S.view === "setup" || S.view === "list") render();
+  }
+
+  // The de/het drill is built from the vocab nouns: one section per chapter, the bare noun as the prompt.
+  function deHetDeck(decks) {
+    const sections = [], words = [];
+    for (const d of decks) {
+      if (d.kind === "grammar") continue;
+      const ws = (d.words || []).filter(w => /^(de|het) [^/()…]+$/i.test(w.nl.trim()));
+      if (!ws.length) continue;
+      sections.push({ id: d.id, name: d.title, task: "de of het? Plurals always take de." });
+      for (const w of ws) {
+        const [, art, noun] = w.nl.trim().match(/^(de|het) (.+)$/i);
+        words.push({ id: `${d.id}-${w.id}`, q: noun, nl: art.toLowerCase(), en: w.en, say: w.nl, sec: d.id, choices: ["de", "het"] });
+      }
+    }
+    return words.length ? { id: "dehet", title: "de of het?", order: 101, kind: "grammar", source: "Built from the nouns in the chapter word lists.", sections, words } : null;
   }
 
   // Chapters always come from data/*.json (the same files on claude.ai and on the public site).
@@ -535,7 +559,7 @@ td.r { text-align: right; white-space: nowrap; }
     const nUnknown = scope.length - n.known;
     const nMistakes = scope.filter(w => (rec(w)?.w || 0) > 0 && statusOf(w) !== "known").length;
     const p = pool().length;
-    const chapters = S.decks.map(d => {
+    const chapterHtml = d => {
       const words = S.words.filter(w => w.deck === d.id);
       const secs = (d.sections || []).map(s => ({ ...s, key: secKey(d.id, s.id), words: words.filter(w => w.sec === s.id) }));
       const on = secs.filter(s => isSel(d.id, s.id));
@@ -546,7 +570,7 @@ td.r { text-align: right; white-space: nowrap; }
           <input type="checkbox" class="cb" id="ch-${d.id}" data-ch="${d.id}"${on.length === secs.length ? " checked" : ""} data-mixed="${on.length > 0 && on.length < secs.length}" aria-label="${esc(d.title)}: alles selecteren">
           <button type="button" class="ch-open" data-open="${d.id}" aria-expanded="${open}" aria-controls="secs-${d.id}">
             <span class="ch-title">${esc(d.title)}</span>
-            <span class="ch-meta num">${nOn === words.length ? `${words.length} woorden` : `${nOn} van ${words.length}`}</span>
+            <span class="ch-meta num">${nOn === words.length ? `${words.length} ${d.kind === "grammar" ? "vragen" : "woorden"}` : `${nOn} van ${words.length}`}</span>
             ${mini(words)}${CHEV}
           </button>
         </div>
@@ -557,7 +581,9 @@ td.r { text-align: right; white-space: nowrap; }
           </label></li>`).join("")}
         </ul>
       </div>`;
-    }).join("");
+    };
+    const vocab = S.decks.filter(d => d.kind !== "grammar").map(chapterHtml).join("");
+    const gram = S.decks.filter(d => d.kind === "grammar").map(chapterHtml).join("");
     const dirLabel = { "en-nl": "Engels → Nederlands", "nl-en": "Nederlands → Engels", mix: "Gemengd" }[P.dir];
     app.innerHTML = `
       <div class="controls">
@@ -579,8 +605,10 @@ td.r { text-align: right; white-space: nowrap; }
             <h2 id="pick-h">Wat wil je oefenen?</h2>
             <span class="small"><button type="button" class="link" id="sel-all">Alles</button> · <button type="button" class="link" id="sel-none">Niets</button></span>
           </div>
-          <div class="chapters">${chapters}</div>
-          <p class="note">Tick a chapter for all of it, or open it to pick parts.</p>
+          <span class="kicker">Woordenschat</span>
+          <div class="chapters">${vocab}</div>
+          ${gram ? `<span class="kicker">Grammatica</span><div class="chapters">${gram}</div>` : ""}
+          <p class="note">Tick a chapter for all of it, or open it to pick parts. Grammar questions are always answered in Dutch, whatever the Richting setting.</p>
         </section>
 
         <section class="settings" aria-labelledby="how-h">
@@ -595,7 +623,7 @@ td.r { text-align: right; white-space: nowrap; }
 
         <div class="startbar">
           <div class="startbar-inner">
-            <div class="start-sum"><b class="num">${p} ${p === 1 ? "woord" : "woorden"}</b><span>${esc(dirLabel)} · ${P.mode === "flip" ? "Kaarten" : "Typen"}</span></div>
+            <div class="start-sum"><b class="num">${p} ${p === 1 ? "vraag" : "vragen"}</b><span>${esc(dirLabel)} · ${P.mode === "flip" ? "Kaarten" : "Typen"}</span></div>
             <button type="button" class="start" id="start"${p ? "" : " disabled"}>Start ${ARROW}</button>
           </div>
         </div>
@@ -633,7 +661,7 @@ td.r { text-align: right; white-space: nowrap; }
     const s = S.session;
     const fromRetry = s.retry.splice(0, ROUND);
     const fill = s.queue.splice(0, ROUND - fromRetry.length);
-    s.round = [...fromRetry, ...fill].map(w => ({ w, dir: S.prefs.dir === "mix" ? (Math.random() < 0.5 ? "en-nl" : "nl-en") : S.prefs.dir }));
+    s.round = [...fromRetry, ...fill].map(w => ({ w, dir: w.g ? "en-nl" : S.prefs.dir === "mix" ? (Math.random() < 0.5 ? "en-nl" : "nl-en") : S.prefs.dir }));
     if (!s.round.length) { S.view = "done"; flush(); render(); return; }
     s.roundNo++; s.i = 0; s.missed = []; s.answered = null; s.revealed = false;
     S.view = "quiz"; render();
@@ -669,8 +697,11 @@ td.r { text-align: right; white-space: nowrap; }
   }
   function stopSession() { flush(); S.session = null; S.view = "setup"; render(); }
 
+  const sayText = w => w.say || nlAlts(w)[0];
+  const secOf = w => (S.decks.find(d => d.id === w.deck)?.sections || []).find(x => x.id === w.sec);
   const secName = w => (S.decks.find(d => d.id === w.deck)?.sections || []).find(x => x.id === w.sec)?.name || "";
   function promptHtml(w, dir) {
+    if (w.g) return `<div class="prompt-row"><div class="prompt${w.q.length > 24 ? " prompt-long" : ""}" lang="nl">${esc(w.q)}</div></div>`;
     if (dir === "nl-en") return `<div class="prompt-row"><div class="prompt" lang="nl">${esc(w.nl)}</div>${sayBtn(w.nl, "say-prompt")}</div>`;
     return `<div class="prompt" lang="en">${esc(w.en)}${w.num != null ? `<small>${w.num}</small>` : ""}</div>`;
   }
@@ -678,24 +709,28 @@ td.r { text-align: right; white-space: nowrap; }
   const verdicts = {
     exact: ["ok", "Goed!"], synonym: ["ok", "Goed! That's another word on the list for this."], accent: ["ok", "Goed! Mind the accents."],
     override: ["ok", "Counted as correct."], "article-missing": ["near", "Bijna: you left out the article."],
-    "article-wrong": ["near", "Bijna: wrong article (de/het)."], typo: ["near", "Bijna: check the spelling."],
+    "article-wrong": ["near", "Bijna: wrong article (de/het)."], typo: ["near", "Bijna: check the spelling."], form: ["near", "Bijna: check the verb form and word order."],
     wrong: ["bad", "Niet goed."], empty: ["bad", "No answer."], shown: ["bad", "Niet goed."], selfok: ["ok", "Goed!"],
   };
 
   function renderQuiz() {
     const s = S.session, item = s.round[s.i], w = item.w, dir = item.dir;
     const typeMode = S.prefs.mode === "type";
-    const nounHint = dir === "en-nl" && /^(de|het) /i.test(w.nl) ? "Include de or het." : "";
-    const multi = dir === "en-nl" && w.nl.includes("/") ? "More than one form is right; one is enough." : "";
+    const nounHint = w.g ? (secOf(w)?.task || "") : dir === "en-nl" && /^(de|het) /i.test(w.nl) ? "Include de or het." : "";
+    const multi = !w.g && dir === "en-nl" && w.nl.includes("/") ? "More than one form is right; one is enough." : "";
     let fbHtml = "", bodyHtml = "";
     if (s.answered) {
       const kind = s.answered.result?.kind || (s.answered.ok ? "selfok" : "shown");
       const [cls, text] = verdicts[kind] || verdicts.wrong;
       const exp = expected(w, dir);
-      const canOverride = typeMode && !s.answered.ok;
+      const canOverride = typeMode && !w.choices && !s.answered.ok;
       fbHtml = `<div class="fb ${cls}">
         <span class="verdict">${esc(text)}</span>
-        ${dir === "en-nl"
+        ${w.g
+          ? `<span class="with-say"><span class="answer-line" lang="nl">${esc(sayText(w))}</span>${sayBtn(sayText(w))}</span>
+             ${nlAlts(w).length > 1 && !w.say ? `<span class="extra">Ook goed: ${esc(nlAlts(w).slice(1).join(" · "))}</span>` : ""}
+             <span class="extra">${esc(w.en)}</span>`
+          : dir === "en-nl"
           ? `<span class="with-say"><span class="answer-line" lang="nl">${esc(exp)}</span>${sayBtn(w.nl)}</span>
              <span class="extra">${esc(w.en)}${w.note ? " · " + esc(w.note) : ""}</span>`
           : `<span class="answer-line" lang="en">${esc(exp)}</span>
@@ -705,7 +740,10 @@ td.r { text-align: right; white-space: nowrap; }
           ${canOverride ? `<button class="link" id="override">I was right, count it</button>` : ""}
         </div></div>`;
     }
-    if (typeMode) {
+    if (w.choices) {
+      const picked = s.answered?.result?.picked;
+      bodyHtml = `<div class="choices">${w.choices.map((c, k) => `<button type="button" class="btn choice${s.answered && nlAlts(w).includes(c) ? " right" : ""}${picked === c && !s.answered.ok ? " wrong" : ""}" data-pick="${esc(c)}"${s.answered ? " disabled" : ""}>${esc(c)}${k < 9 ? ` <span class="kbd">${k + 1}</span>` : ""}</button>`).join("")}</div>`;
+    } else if (typeMode) {
       bodyHtml = `<form class="answer" id="answer-form" autocomplete="off">
           <input id="answer" name="answer" lang="${dir === "en-nl" ? "nl" : "en"}" autocapitalize="off" autocorrect="off" spellcheck="false"
             placeholder="${dir === "en-nl" ? "In het Nederlands…" : "In English…"}" aria-label="Your answer"${s.answered ? " disabled" : ""}>
@@ -714,7 +752,7 @@ td.r { text-align: right; white-space: nowrap; }
         ${dir === "en-nl" && !s.answered ? `<div class="accents" aria-label="Insert a letter">${["é", "ë", "è", "ï", "ó"].map(c => `<button type="button" data-ch="${c}">${c}</button>`).join("")}</div>` : ""}`;
     } else if (!s.answered) {
       bodyHtml = s.revealed
-        ? `<div class="fb"><span class="with-say"><span class="answer-line">${esc(expected(w, dir))}</span>${dir === "en-nl" ? sayBtn(w.nl) : ""}</span>${w.note ? `<span class="extra">${esc(w.note)}</span>` : ""}</div>
+        ? `<div class="fb"><span class="with-say"><span class="answer-line">${esc(w.g ? sayText(w) : expected(w, dir))}</span>${dir === "en-nl" ? sayBtn(sayText(w)) : ""}</span>${w.g ? `<span class="extra">${esc(w.en)}</span>` : ""}${w.note ? `<span class="extra">${esc(w.note)}</span>` : ""}</div>
            <div class="actions"><button class="btn" id="self-bad">Fout <span class="kbd">1</span></button><button class="btn primary" id="self-ok">Goed <span class="kbd">2</span></button></div>`
         : `<div class="actions"><button class="btn primary" id="reveal">Toon antwoord <span class="kbd">spatie</span></button></div>`;
     }
@@ -741,7 +779,7 @@ td.r { text-align: right; white-space: nowrap; }
     app.querySelector("#stop").onclick = stopSession;
     if (S.prefs.auto) { // read the Dutch aloud once per card: the prompt for NL→EN, the answer for EN→NL
       const key = `${s.roundNo}:${s.i}:${dir === "nl-en" ? "q" : (s.answered || s.revealed) ? "a" : ""}`;
-      if (!key.endsWith(":") && s.spoke !== key) { s.spoke = key; speak(w.nl); }
+      if (!key.endsWith(":") && s.spoke !== key) { s.spoke = key; speak(sayText(w)); }
     }
     const input = app.querySelector("#answer");
     const form = app.querySelector("#answer-form");
@@ -752,6 +790,7 @@ td.r { text-align: right; white-space: nowrap; }
       input.value = input.value.slice(0, st) + b.dataset.ch + input.value.slice(en);
       input.focus(); input.setSelectionRange(st + 1, st + 1);
     });
+    app.querySelectorAll("[data-pick]").forEach(b => b.onclick = () => pick(b.dataset.pick));
     const next = app.querySelector("#next"); if (next) { next.onclick = advance; next.focus(); }
     const ov = app.querySelector("#override"); if (ov) ov.onclick = overrideCorrect;
     const rv = app.querySelector("#reveal"); if (rv) { rv.onclick = () => { s.revealed = true; renderQuiz(); }; rv.focus(); }
@@ -759,11 +798,18 @@ td.r { text-align: right; white-space: nowrap; }
     const so = app.querySelector("#self-ok"); if (so) { so.onclick = () => answer(true, { kind: "selfok" }); }
   }
 
+  function pick(c) {
+    const s = S.session, w = s.round[s.i].w;
+    if (s.answered) return;
+    answer(nlAlts(w).includes(c), { kind: nlAlts(w).includes(c) ? "exact" : "wrong", picked: c });
+  }
   document.addEventListener("keydown", e => {
     if (S.view !== "quiz" || !S.session || e.metaKey || e.ctrlKey || e.altKey) return;
     const s = S.session;
-    if ((e.key === "p" || e.key === "P") && e.target.tagName !== "INPUT") { speak(s.round[s.i]?.w.nl); return; }
-    if (S.prefs.mode === "flip" && !s.answered) {
+    if ((e.key === "p" || e.key === "P") && e.target.tagName !== "INPUT") { const w = s.round[s.i]?.w; if (w) speak(sayText(w)); return; }
+    const ch = s.round[s.i]?.w.choices;
+    if (ch && !s.answered && /^[1-9]$/.test(e.key) && ch[+e.key - 1]) { pick(ch[+e.key - 1]); return; }
+    if (S.prefs.mode === "flip" && !s.answered && !ch) {
       if (!s.revealed && e.key === " ") { e.preventDefault(); s.revealed = true; renderQuiz(); }
       else if (s.revealed && e.key === "1") answer(false, { kind: "shown" });
       else if (s.revealed && e.key === "2") answer(true, { kind: "selfok" });
@@ -771,7 +817,9 @@ td.r { text-align: right; white-space: nowrap; }
   });
 
   function missedList(words) {
-    return `<ul class="missed">${words.map(w => `<li><span lang="nl">${esc(w.nl)}</span><span class="muted" lang="en">${esc(w.en)}</span></li>`).join("")}</ul>`;
+    return `<ul class="missed">${words.map(w => w.g
+      ? `<li><span lang="nl">${esc(w.q)}</span><span lang="nl">${esc(sayText(w))}</span></li>`
+      : `<li><span lang="nl">${esc(w.nl)}</span><span class="muted" lang="en">${esc(w.en)}</span></li>`).join("")}</ul>`;
   }
   function renderRound() {
     const s = S.session, right = s.round.length - s.missed.length, left = s.queue.length + s.retry.length;
@@ -806,7 +854,7 @@ td.r { text-align: right; white-space: nowrap; }
   function renderList() {
     preloadPacks(selectedDecks().map(d => d.id));
     const q = flat(S.listQuery || "");
-    const ws = inScope().filter(w => !q || flat(w.nl).includes(q) || flat(w.en).includes(q));
+    const ws = inScope().filter(w => !w.g).filter(w => !q || flat(w.nl).includes(q) || flat(w.en).includes(q));
     const label = { known: "gekend", learning: "bezig", new: "nieuw" };
     app.innerHTML = `
       <div class="controls">
@@ -819,7 +867,7 @@ td.r { text-align: right; white-space: nowrap; }
             <td lang="en">${esc(w.en)}${w.note ? `<div class="muted small">${esc(w.note)}</div>` : ""}</td>
             <td class="r num">${r ? `${r.c || 0} · ${r.w || 0}` : "–"}</td></tr>`; }).join("")}</tbody>
         </table></div>
-        ${selectedDecks().map(d => d.source ? `<p class="note">${esc(d.title)}: ${esc(d.source)}</p>` : "").join("")}
+        ${selectedDecks().filter(d => d.kind !== "grammar").map(d => d.source ? `<p class="note">${esc(d.title)}: ${esc(d.source)}</p>` : "").join("")}
       </div>`;
     const s = app.querySelector("#list-search");
     s.oninput = () => {
