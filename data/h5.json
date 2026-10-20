@@ -1,0 +1,759 @@
+{
+ "title": "Hoofdstuk 5",
+ "order": 5,
+ "source": "Hoofdstuk 5 nieuw EN-NL AI.xlsx (F. Fabbricotti, 20 Oct 2026)",
+ "sections": [
+  {
+   "id": "woorden",
+   "name": "Woorden"
+  },
+  {
+   "id": "groente-fruit",
+   "name": "Groente & fruit"
+  },
+  {
+   "id": "zinnen-markt",
+   "name": "Zinnen: op de markt"
+  }
+ ],
+ "words": [
+  {
+   "id": "altijd",
+   "nl": "altijd",
+   "en": "always",
+   "sec": "woorden"
+  },
+  {
+   "id": "anders",
+   "nl": "anders",
+   "en": "different, otherwise",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-bak",
+   "nl": "de bak",
+   "en": "punnet, tub",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "het-bakje",
+   "nl": "het bakje",
+   "en": "small punnet, tub",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "de-beurt",
+   "nl": "de beurt",
+   "en": "turn",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "blauw",
+   "nl": "blauw",
+   "en": "blue",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-boodschappen",
+   "nl": "de boodschappen",
+   "en": "groceries",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "boodschappen-doen",
+   "nl": "boodschappen doen",
+   "en": "to go grocery shopping",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "de-bos",
+   "nl": "de bos",
+   "en": "bunch",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "het-bosje",
+   "nl": "het bosje",
+   "en": "small bunch",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "buitenlands",
+   "nl": "buitenlands",
+   "en": "foreign",
+   "sec": "woorden",
+   "grp": "eten"
+  },
+  {
+   "id": "duur",
+   "nl": "duur",
+   "en": "expensive",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "de-euro",
+   "nl": "de euro",
+   "en": "euro",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "geel",
+   "nl": "geel",
+   "en": "yellow",
+   "sec": "woorden"
+  },
+  {
+   "id": "genoeg",
+   "nl": "genoeg",
+   "en": "enough",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "het-gerecht",
+   "nl": "het gerecht",
+   "en": "dish",
+   "sec": "woorden",
+   "grp": "eten"
+  },
+  {
+   "id": "goedkoop",
+   "nl": "goedkoop",
+   "en": "cheap",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "het-gram",
+   "nl": "het gram",
+   "en": "gram",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "de-groenteboer",
+   "nl": "de groenteboer",
+   "en": "greengrocer",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "half",
+   "nl": "half",
+   "en": "half",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "heerlijk",
+   "nl": "heerlijk",
+   "en": "delicious, wonderful",
+   "sec": "woorden",
+   "grp": "eten"
+  },
+  {
+   "id": "inderdaad",
+   "nl": "inderdaad",
+   "en": "indeed",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-kilo",
+   "nl": "de kilo",
+   "en": "kilo",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "de-kilometer",
+   "nl": "de kilometer",
+   "en": "kilometre",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "de-klant",
+   "nl": "de klant",
+   "en": "customer, client",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "kopen",
+   "nl": "kopen",
+   "en": "to buy",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "kosten",
+   "nl": "kosten",
+   "en": "to cost",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "de-liter",
+   "nl": "de liter",
+   "en": "litre",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "de-markt",
+   "nl": "de markt",
+   "en": "market",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "natuurlijk",
+   "nl": "natuurlijk",
+   "en": "of course",
+   "sec": "woorden"
+  },
+  {
+   "id": "tuurlijk",
+   "nl": "tuurlijk",
+   "en": "of course (informal)",
+   "sec": "woorden"
+  },
+  {
+   "id": "nieuw",
+   "nl": "nieuw",
+   "en": "new",
+   "sec": "woorden"
+  },
+  {
+   "id": "nodig-hebben",
+   "nl": "nodig hebben",
+   "en": "to need",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "ongeveer",
+   "nl": "ongeveer",
+   "en": "about, approximately",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "per",
+   "nl": "per",
+   "en": "per",
+   "sec": "woorden",
+   "grp": "maten"
+  },
+  {
+   "id": "de-persoon",
+   "nl": "de persoon",
+   "en": "person",
+   "sec": "woorden"
+  },
+  {
+   "id": "pinnen",
+   "nl": "pinnen",
+   "en": "to pay by card",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "prettig",
+   "nl": "prettig",
+   "en": "pleasant, nice, enjoyable",
+   "sec": "woorden"
+  },
+  {
+   "id": "de-prijs",
+   "nl": "de prijs",
+   "en": "price",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "rijp",
+   "nl": "rijp",
+   "en": "ripe",
+   "sec": "woorden",
+   "grp": "eten"
+  },
+  {
+   "id": "de-slager",
+   "nl": "de slager",
+   "en": "butcher",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "het-spekje",
+   "nl": "het spekje",
+   "en": "bacon cube",
+   "sec": "woorden",
+   "grp": "eten"
+  },
+  {
+   "id": "de-stamppot",
+   "nl": "de stamppot",
+   "en": "mashed potato and vegetables",
+   "sec": "woorden",
+   "grp": "eten"
+  },
+  {
+   "id": "de-tas",
+   "nl": "de tas",
+   "en": "bag",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "het-tasje",
+   "nl": "het tasje",
+   "en": "plastic bag, small bag",
+   "sec": "woorden",
+   "grp": "winkelen"
+  },
+  {
+   "id": "typisch",
+   "nl": "typisch",
+   "en": "typical",
+   "sec": "woorden",
+   "grp": "eten"
+  },
+  {
+   "id": "vaak",
+   "nl": "vaak",
+   "en": "often",
+   "sec": "woorden"
+  },
+  {
+   "id": "waarnaartoe",
+   "nl": "waarnaartoe",
+   "en": "where to",
+   "sec": "woorden"
+  },
+  {
+   "id": "het-water",
+   "nl": "het water",
+   "en": "water",
+   "sec": "woorden",
+   "grp": "eten"
+  },
+  {
+   "id": "de-aardappel",
+   "nl": "de aardappel",
+   "en": "potato",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-aardbei",
+   "nl": "de aardbei",
+   "en": "strawberry",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-ananas",
+   "nl": "de ananas",
+   "en": "pineapple",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-andijvie",
+   "nl": "de andijvie",
+   "en": "endive",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-appel",
+   "nl": "de appel",
+   "en": "apple",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-aubergine",
+   "nl": "de aubergine",
+   "en": "aubergine",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-banaan",
+   "nl": "de banaan",
+   "en": "banana",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-bes",
+   "nl": "de bes",
+   "en": "berry",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-blauwe-bes",
+   "nl": "de blauwe bes",
+   "en": "blueberry",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-bloemkool",
+   "nl": "de bloemkool",
+   "en": "cauliflower",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-boerenkool",
+   "nl": "de boerenkool",
+   "en": "curly kale",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-boon",
+   "nl": "de boon",
+   "en": "bean",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "het-boontje",
+   "nl": "het boontje",
+   "en": "small bean",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-bosui-de-lente-ui",
+   "nl": "de bosui / de lente-ui",
+   "en": "spring onion",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-braam",
+   "nl": "de braam",
+   "en": "blackberry",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-broccoli",
+   "nl": "de broccoli",
+   "en": "broccoli",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-champignon",
+   "nl": "de champignon",
+   "en": "mushroom",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-citroen",
+   "nl": "de citroen",
+   "en": "lemon",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-courgette",
+   "nl": "de courgette",
+   "en": "courgette",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-druif",
+   "nl": "de druif",
+   "en": "grape",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-framboos",
+   "nl": "de framboos",
+   "en": "raspberry",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "het-fruit",
+   "nl": "het fruit",
+   "en": "fruit",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-groente",
+   "nl": "de groente",
+   "en": "vegetable",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-kers",
+   "nl": "de kers",
+   "en": "cherry",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-kiwi",
+   "nl": "de kiwi",
+   "en": "kiwi",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-knoflook",
+   "nl": "de knoflook",
+   "en": "garlic",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-komkommer",
+   "nl": "de komkommer",
+   "en": "cucumber",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-mandarijn",
+   "nl": "de mandarijn",
+   "en": "mandarin",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-mango",
+   "nl": "de mango",
+   "en": "mango",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-paprika",
+   "nl": "de paprika",
+   "en": "bell pepper, sweet pepper",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-peer",
+   "nl": "de peer",
+   "en": "pear",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-perzik",
+   "nl": "de perzik",
+   "en": "peach",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-peterselie",
+   "nl": "de peterselie",
+   "en": "parsley",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-prei",
+   "nl": "de prei",
+   "en": "leek",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-pruim",
+   "nl": "de pruim",
+   "en": "plum",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-rode-biet",
+   "nl": "de rode biet",
+   "en": "beetroot",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-rode-kool",
+   "nl": "de rode kool",
+   "en": "red cabbage",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-sinaasappel",
+   "nl": "de sinaasappel",
+   "en": "orange",
+   "sec": "groente-fruit",
+   "grp": "fruit"
+  },
+  {
+   "id": "de-sla",
+   "nl": "de sla",
+   "en": "lettuce",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-sperzieboon",
+   "nl": "de sperzieboon",
+   "en": "green bean",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-spinazie",
+   "nl": "de spinazie",
+   "en": "spinach",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-tomaat",
+   "nl": "de tomaat",
+   "en": "tomato",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-ui",
+   "nl": "de ui",
+   "en": "onion",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-witte-kool",
+   "nl": "de witte kool",
+   "en": "white cabbage",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-wortel",
+   "nl": "de wortel",
+   "en": "carrot",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "de-zuurkool",
+   "nl": "de zuurkool",
+   "en": "sauerkraut",
+   "sec": "groente-fruit",
+   "grp": "groente"
+  },
+  {
+   "id": "wie-is-er-aan-de-beurt-wie-is-er-dan",
+   "nl": "Wie is er aan de beurt? / Wie is er dan?",
+   "en": "Who's next? Whose turn is it?",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "zeg-het-maar",
+   "nl": "Zeg het maar.",
+   "en": "Tell me. / What can I get you?",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "twee-komkommers-graag",
+   "nl": "Twee komkommers, graag.",
+   "en": "Two cucumbers, please.",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "ik-heb-mooie-tomaten",
+   "nl": "Ik heb mooie tomaten.",
+   "en": "I have beautiful tomatoes.",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "doe-die-maar",
+   "nl": "Doe die maar.",
+   "en": "I'll take those.",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "anders-nog-iets-verder-nog-iets",
+   "nl": "Anders nog iets? / Verder nog iets?",
+   "en": "Anything else?",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "ja-graag-doe-mij-ook-maar",
+   "nl": "Ja, graag, doe mij ook maar… / Ja, ik wil graag ook nog…",
+   "en": "Yes, please, I'll also have…",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "nee-dank-je-wel-nee-dat-was-het",
+   "nl": "Nee, dank je wel. / Nee, dat was het.",
+   "en": "No, thank you. / No, that was it.",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "tasje-erbij",
+   "nl": "Tasje erbij? / Zal ik het in een zakje doen?",
+   "en": "Do you want a bag with that?",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "gaat-het-zo-mee-of-wilt-u-een-tasje",
+   "nl": "Gaat het zo mee? Of wilt u een tasje?",
+   "en": "Can you carry it like that? Or do you want a bag?",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "wat-kosten-de-bananen",
+   "nl": "Wat kosten de bananen? / Hoe duur zijn de bananen?",
+   "en": "How much are the bananas?",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "vijf-bananen-voor-een-euro",
+   "nl": "Vijf bananen voor één euro.",
+   "en": "Five bananas for one euro.",
+   "sec": "zinnen-markt",
+   "note": "Written in the list as: 5 bananen voor één Euro"
+  },
+  {
+   "id": "hoeveel-kost-een-bakje-champignons",
+   "nl": "Hoeveel kost een bakje champignons?",
+   "en": "How much does a punnet of mushrooms cost?",
+   "sec": "zinnen-markt"
+  },
+  {
+   "id": "twee-euro-dertig",
+   "nl": "Twee euro dertig.",
+   "en": "Two euros thirty.",
+   "sec": "zinnen-markt"
+  }
+ ]
+}

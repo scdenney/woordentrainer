@@ -251,7 +251,7 @@ td.r { text-align: right; white-space: nowrap; }
   const S = {
     status: "loading", decks: [], words: [], prog: {}, local: false,
     view: "setup", session: null, listQuery: "",
-    prefs: Object.assign({ sel: null, dir: "en-nl", mode: "type", focus: "all", auto: true, slow: false }, readLS("wt-prefs") || {}),
+    prefs: Object.assign({ sel: null, dir: "en-nl", mode: "type", focus: "all", order: "mix", auto: true, slow: false }, readLS("wt-prefs") || {}),
     open: new Set(),
   };
   function readLS(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }
@@ -625,6 +625,7 @@ td.r { text-align: right; white-space: nowrap; }
           <div class="set-row"><span class="set-label kicker">Richting</span>${seg("dir", [["en-nl", "EN → NL"], ["nl-en", "NL → EN"], ["mix", "Gemengd"]], P.dir)}</div>
           <div class="set-row"><span class="set-label kicker">Manier</span>${seg("mode", [["type", "Typen"], ["flip", "Kaarten"]], P.mode)}</div>
           <div class="set-row"><span class="set-label kicker">Focus</span>${seg("focus", [["all", "Alles", scope.length], ["unknown", "Nog niet gekend", nUnknown], ["mistakes", "Fouten", nMistakes]], P.focus)}</div>
+          <div class="set-row"><span class="set-label kicker">Volgorde</span>${seg("order", [["mix", "Door elkaar"], ["group", "Per thema"]], P.order)}</div>
           ${canSpeak() ? `<div class="set-row"><span class="set-label kicker">Audio</span><div class="switches">${toggle("auto", "Automatisch voorlezen", P.auto)}${toggle("slow", "Langzaam", P.slow)}</div></div>` : ""}
           ${voiceNote() ? `<p class="note">${esc(voiceNote())}</p>` : ""}
           <p class="note">${P.mode === "flip" ? "Kaarten: see the word, think of the answer, flip the card and mark yourself." : "Typen: type the answer and the trainer checks it."} Rounds of ${ROUND}; words you miss come back at the start of the next round. ${S.local ? "Progress is saved in this browser." : "Progress is saved with this page."}</p>
@@ -654,14 +655,22 @@ td.r { text-align: right; white-space: nowrap; }
     });
     app.querySelector("#sel-all").onclick = () => { S.prefs.sel = null; savePrefs(); render(); };
     app.querySelector("#sel-none").onclick = () => { S.prefs.sel = []; savePrefs(); render(); };
-    for (const k of ["dir", "mode", "focus"]) app.querySelectorAll(`input[name=${k}]`).forEach(el => el.onchange = () => { P[k] = el.value; savePrefs(); render(); });
+    for (const k of ["dir", "mode", "focus", "order"]) app.querySelectorAll(`input[name=${k}]`).forEach(el => el.onchange = () => { P[k] = el.value; savePrefs(); render(); });
     for (const k of ["auto", "slow"]) { const el = app.querySelector(`input[name=${k}]`); if (el) el.onchange = () => { P[k] = el.checked; savePrefs(); }; }
     app.querySelector("#start").onclick = startSession;
   }
 
   // ---------- session ----------
+  // "Per thema" keeps each topic together: a word's grp tag when the list has one, else its section.
+  // Topics come in random order and are shuffled inside, so rounds of ROUND mostly stay on one topic.
+  function ordered(ws) {
+    if (S.prefs.order !== "group") return shuffle(ws);
+    const by = new Map();
+    for (const w of shuffle(ws)) { const k = w.deck + "|" + (w.grp || w.sec); by.has(k) ? by.get(k).push(w) : by.set(k, [w]); }
+    return shuffle([...by.values()]).flat();
+  }
   function startSession() {
-    const words = shuffle(pool().slice());
+    const words = ordered(pool().slice());
     preloadPacks([...new Set(words.map(w => w.deck))]);
     S.session = { queue: words, total: words.length, seen: new Set(), retry: [], roundNo: 0, round: [], i: 0, missed: [], answered: null, firstTry: 0 };
     nextRound();
