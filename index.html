@@ -258,36 +258,27 @@ td.r { text-align: right; white-space: nowrap; }
   function writeLS(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
   const savePrefs = () => writeLS("wt-prefs", S.prefs);
 
-  // ---------- audio (the device's own Dutch text-to-speech voice) ----------
-  const tts = { ok: "speechSynthesis" in window && "SpeechSynthesisUtterance" in window, voice: null, listed: false };
-  function pickVoice() {
-    if (!tts.ok) return;
-    const vs = speechSynthesis.getVoices();
-    tts.listed = vs.length > 0;
-    tts.voice = vs.find(v => /^nl[-_]NL/i.test(v.lang) && v.localService) || vs.find(v => /^nl[-_]NL/i.test(v.lang)) || vs.find(v => /^nl/i.test(v.lang)) || null;
-  }
-  if (tts.ok) {
-    pickVoice();
-    speechSynthesis.addEventListener?.("voiceschanged", () => { const had = tts.voice; pickVoice(); if (had !== tts.voice && ["setup", "guide"].includes(S.view)) render(); });
-  }
-  // Recorded clips (audio/manifest.json, built by tools/build_audio.py) come first; the device voice is only a fallback.
+  // ---------- audio ----------
+  // Only recorded clips are played (audio/manifest.json, built by tools/build_audio.py); a text without a clip stays silent.
   // Clips are packed one file per chapter (manifest.packed: text → [pack, byte offset, length]); a clip is cut out of
   // its loaded pack as a blob. Unpacked manifests (manifest.clips: text → file) still work.
   const clips = { map: null, packed: null, packs: {}, bufs: {}, loading: {}, urls: {}, voice: "" };
   const player = new Audio();
   player.preload = "auto";
-  fetch("audio/manifest.json").then(r => r.ok ? r.json() : null).then(m => {
+  const manifestReady = fetch("audio/manifest.json").then(r => r.ok ? r.json() : null).then(m => {
     if (!m?.packed && !m?.clips) return;
     clips.packed = m.packed || null; clips.packs = m.packs || {}; clips.map = m.packed ? null : m.clips; clips.voice = m.voice || "";
     if (["setup", "guide", "list"].includes(S.view)) render();
   }).catch(() => {});
-  const canSpeak = () => !!(clips.packed || clips.map) || tts.ok;
+  const canSpeak = () => !!(clips.packed || clips.map);
   function loadPack(pid) {
     if (clips.bufs[pid] || !clips.packs[pid]) return Promise.resolve(clips.bufs[pid] || null);
     return clips.loading[pid] ||= fetch(clips.packs[pid]).then(r => r.ok ? r.arrayBuffer() : null)
       .then(b => (clips.bufs[pid] = b)).catch(() => null).finally(() => { delete clips.loading[pid]; });
   }
   function preloadPacks(ids) { if (clips.packed) ids.forEach(loadPack); }
+  // a clip shared by several decks sits in the first deck's pack, so preload by clip, not by deck
+  function preloadClips(words) { manifestReady.then(() => { if (clips.packed) new Set(words.map(w => clips.packed[clipText(w)]?.[0]).filter(Boolean)).forEach(loadPack); }); }
   function clipUrl(text) { // synchronous when the pack is already loaded, so play() stays inside the click
     if (!clips.packed) return clips.map?.[text] || null;
     const e = clips.packed[text], buf = e && clips.bufs[e[0]];
@@ -296,44 +287,27 @@ td.r { text-align: right; white-space: nowrap; }
   }
   let playId = 0;
   function playUrl(url, text, id) {
-    try { if (tts.ok) speechSynthesis.cancel(); } catch {}
     player.pause();
     player.src = url;
     player.preservesPitch = true;
     player.playbackRate = S.prefs.slow ? 0.75 : 1;
     // an interrupted clip rejects with AbortError: that is a newer click, not a failure
-    player.play().catch(e => { if (id === playId && e?.name !== "AbortError") speakDevice(text); });
+    player.play().catch(e => { if (id === playId && e?.name !== "AbortError") console.warn("Woordentrainer: clip did not play", text, e); });
   }
   function speak(text) {
     if (!text) return;
     const id = ++playId;
     const url = clipUrl(text);
     if (url) return playUrl(url, text, id);
-    const e = clips.packed?.[text];
-    if (!e) return speakDevice(text);
-    loadPack(e[0]).then(() => { if (id !== playId) return; const u = clipUrl(text); u ? playUrl(u, text, id) : speakDevice(text); });
-  }
-  function speakDevice(text) {
-    if (!tts.ok) return;
-    try {
-      player.pause();
-      speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(String(text).replace(/\s*\/\s*/g, ", ").replace(/…|\.\.\.+/g, " "));
-      u.lang = tts.voice?.lang || "nl-NL";
-      if (tts.voice) u.voice = tts.voice;
-      u.rate = S.prefs.slow ? 0.6 : 0.9;
-      speechSynthesis.speak(u);
-    } catch {}
+    manifestReady.then(() => {
+      const e = clips.packed?.[text];
+      if (!e) return console.warn("Woordentrainer: no recorded clip for", text);
+      return loadPack(e[0]).then(() => { if (id !== playId) return; const u = clipUrl(text); if (u) playUrl(u, text, id); });
+    });
   }
   const ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>`;
   const sayBtn = (nl, id) => canSpeak() ? `<button type="button" class="say"${id ? ` id="${id}"` : ""} data-say="${esc(nl)}" aria-label="Luister: ${esc(nl)}" title="Luister">${ICON}</button>` : "";
   document.addEventListener("click", e => { const b = e.target.closest("[data-say]"); if (b) { e.preventDefault(); speak(b.dataset.say); } });
-  function voiceNote() {
-    if (clips.map) return "";
-    if (!tts.ok) return "This browser can't read text aloud, so the listen buttons are hidden.";
-    if (tts.listed && !tts.voice) return "No Dutch voice is installed on this device, so words are read with a default voice. On a Mac: System Settings → Accessibility → Spoken Content → System voice → Manage Voices → Nederlands. On an iPhone: Settings → Accessibility → Spoken Content → Voices → Dutch.";
-    return "";
-  }
 
   // ---------- answer checking ----------
   const fold = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -627,7 +601,6 @@ td.r { text-align: right; white-space: nowrap; }
           <div class="set-row"><span class="set-label kicker">Focus</span>${seg("focus", [["all", "Alles", scope.length], ["unknown", "Nog niet gekend", nUnknown], ["mistakes", "Fouten", nMistakes]], P.focus)}</div>
           <div class="set-row"><span class="set-label kicker">Volgorde</span>${seg("order", [["mix", "Door elkaar"], ["group", "Per thema"]], P.order)}</div>
           ${canSpeak() ? `<div class="set-row"><span class="set-label kicker">Audio</span><div class="switches">${toggle("auto", "Automatisch voorlezen", P.auto)}${toggle("slow", "Langzaam", P.slow)}</div></div>` : ""}
-          ${voiceNote() ? `<p class="note">${esc(voiceNote())}</p>` : ""}
           <p class="note">${P.mode === "flip" ? "Kaarten: see the word, think of the answer, flip the card and mark yourself." : "Typen: type the answer and the trainer checks it."} Rounds of ${ROUND}; words you miss come back at the start of the next round. ${S.local ? "Progress is saved in this browser." : "Progress is saved with this page."}</p>
         </section>
 
@@ -671,7 +644,7 @@ td.r { text-align: right; white-space: nowrap; }
   }
   function startSession() {
     const words = ordered(pool().slice());
-    preloadPacks([...new Set(words.map(w => w.deck))]);
+    preloadClips(words);
     S.session = { queue: words, total: words.length, seen: new Set(), retry: [], roundNo: 0, round: [], i: 0, missed: [], answered: null, firstTry: 0 };
     nextRound();
   }
@@ -716,6 +689,7 @@ td.r { text-align: right; white-space: nowrap; }
   function stopSession() { flush(); S.session = null; S.view = "setup"; render(); }
 
   const sayText = w => w.say || nlAlts(w)[0];
+  const clipText = w => w.g ? sayText(w) : w.nl; // the text tools/build_audio.py recorded for w
   const secOf = w => (S.decks.find(d => d.id === w.deck)?.sections || []).find(x => x.id === w.sec);
   const secName = w => (S.decks.find(d => d.id === w.deck)?.sections || []).find(x => x.id === w.sec)?.name || "";
   function promptHtml(w, dir) {
@@ -770,7 +744,7 @@ td.r { text-align: right; white-space: nowrap; }
         ${dir === "en-nl" && !s.answered ? `<div class="accents" aria-label="Insert a letter">${["é", "ë", "è", "ï", "ó"].map(c => `<button type="button" data-ch="${c}">${c}</button>`).join("")}</div>` : ""}`;
     } else if (!s.answered) {
       bodyHtml = s.revealed
-        ? `<div class="fb"><span class="with-say"><span class="answer-line">${esc(w.g ? sayText(w) : expected(w, dir))}</span>${dir === "en-nl" ? sayBtn(sayText(w)) : ""}</span>${w.g ? `<span class="extra">${esc(w.en)}</span>` : ""}${w.note ? `<span class="extra">${esc(w.note)}</span>` : ""}</div>
+        ? `<div class="fb"><span class="with-say"><span class="answer-line">${esc(w.g ? sayText(w) : expected(w, dir))}</span>${dir === "en-nl" ? sayBtn(clipText(w)) : ""}</span>${w.g ? `<span class="extra">${esc(w.en)}</span>` : ""}${w.note ? `<span class="extra">${esc(w.note)}</span>` : ""}</div>
            <div class="actions"><button class="btn" id="self-bad">Fout <span class="kbd">1</span></button><button class="btn primary" id="self-ok">Goed <span class="kbd">2</span></button></div>`
         : `<div class="actions"><button class="btn primary" id="reveal">Toon antwoord <span class="kbd">spatie</span></button></div>`;
     }
@@ -797,7 +771,7 @@ td.r { text-align: right; white-space: nowrap; }
     app.querySelector("#stop").onclick = stopSession;
     if (S.prefs.auto) { // read the Dutch aloud once per card: the prompt for NL→EN, the answer for EN→NL
       const key = `${s.roundNo}:${s.i}:${dir === "nl-en" ? "q" : (s.answered || s.revealed) ? "a" : ""}`;
-      if (!key.endsWith(":") && s.spoke !== key) { s.spoke = key; speak(sayText(w)); }
+      if (!key.endsWith(":") && s.spoke !== key) { s.spoke = key; speak(clipText(w)); }
     }
     const input = app.querySelector("#answer");
     const form = app.querySelector("#answer-form");
@@ -824,7 +798,7 @@ td.r { text-align: right; white-space: nowrap; }
   document.addEventListener("keydown", e => {
     if (S.view !== "quiz" || !S.session || e.metaKey || e.ctrlKey || e.altKey) return;
     const s = S.session;
-    if ((e.key === "p" || e.key === "P") && e.target.tagName !== "INPUT") { const w = s.round[s.i]?.w; if (w) speak(sayText(w)); return; }
+    if ((e.key === "p" || e.key === "P") && e.target.tagName !== "INPUT") { const w = s.round[s.i]?.w; if (w) speak(clipText(w)); return; }
     const ch = s.round[s.i]?.w.choices;
     if (ch && !s.answered && /^[1-9]$/.test(e.key) && ch[+e.key - 1]) { pick(ch[+e.key - 1]); return; }
     if (S.prefs.mode === "flip" && !s.answered && !ch) {
@@ -870,7 +844,7 @@ td.r { text-align: right; white-space: nowrap; }
   }
 
   function renderList() {
-    preloadPacks(selectedDecks().map(d => d.id));
+    preloadClips(inScope());
     const q = flat(S.listQuery || "");
     const ws = inScope().filter(w => !w.g).filter(w => !q || flat(w.nl).includes(q) || flat(w.en).includes(q));
     const label = { known: "gekend", learning: "bezig", new: "nieuw" };
@@ -881,7 +855,7 @@ td.r { text-align: right; white-space: nowrap; }
         <div class="tablewrap"><table>
           <thead><tr><th>Nederlands</th><th>Engels</th><th class="r">Goed · fout</th></tr></thead>
           <tbody>${ws.map(w => { const r = rec(w), st = statusOf(w); return `<tr>
-            <td lang="nl"><span class="with-say">${sayBtn(w.nl)}<span><span class="dot ${st}" title="${label[st]}"></span>${esc(w.nl)}</span></span></td>
+            <td lang="nl"><span class="with-say">${sayBtn(clipText(w))}<span><span class="dot ${st}" title="${label[st]}"></span>${esc(w.nl)}</span></span></td>
             <td lang="en">${esc(w.en)}${w.note ? `<div class="muted small">${esc(w.note)}</div>` : ""}</td>
             <td class="r num">${r ? `${r.c || 0} · ${r.w || 0}` : "–"}</td></tr>`; }).join("")}</tbody>
         </table></div>
@@ -936,7 +910,6 @@ td.r { text-align: right; white-space: nowrap; }
           <h2>Uitspraak</h2>
           <p class="note">${clips.map ? "Tap any example to hear it. The recordings are made with an AI voice speaking Netherlands Dutch: good for single words and sounds, but not a real person." : "Tap any example to hear it, read by your device's own voice."} For the course's own recordings by real speakers, use “Luister naar de woorden” on the 1.2 Woordenlijst page of the Nederlands in gang website.</p>
           ${canSpeak() ? `<div>${toggle("slow", "Langzaam", S.prefs.slow)}</div>` : ""}
-          ${voiceNote() ? `<p class="note">${esc(voiceNote())}</p>` : ""}
         </div>
         ${GUIDE.map(sec => `
           <section class="guide-sec">
