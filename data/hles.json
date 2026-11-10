@@ -2,7 +2,7 @@
  "title": "Uit de les",
  "subtitle": "Words from slides and worksheets",
  "order": 50,
- "source": "Class slides and worksheets, les 3 (F. Fabbricotti, Oct 2026)",
+ "source": "Class slides and worksheets, les 3–7, and the H4 drills (F. Fabbricotti, Oct–Nov 2026)",
  "sections": [
   {
    "id": "voorzetsels",
@@ -15,6 +15,34 @@
   {
    "id": "zinnen",
    "name": "Zinnen"
+  },
+  {
+   "id": "les6",
+   "name": "Les 6: afspreken en dictee"
+  },
+  {
+   "id": "drills-h4",
+   "name": "Drills Hoofdstuk 4"
+  },
+  {
+   "id": "uitdrukkingen",
+   "name": "Uitdrukkingen"
+  },
+  {
+   "id": "rangtelwoorden",
+   "name": "Rangtelwoorden"
+  },
+  {
+   "id": "les7-vervoer",
+   "name": "Les 7: fietsen en vervoer"
+  },
+  {
+   "id": "les7-weg",
+   "name": "Les 7: de weg vragen"
+  },
+  {
+   "id": "voegwoorden",
+   "name": "en, maar, want, of, dus"
   }
  ],
  "words": [
@@ -161,6 +189,618 @@
    "nl": "’s Morgens drink ik altijd koffie.",
    "en": "In the morning I always drink coffee.",
    "sec": "zinnen"
+  },
+  {
+   "id": "les6-dat-is-lang-geleden-zeg",
+   "nl": "Dat is lang geleden, zeg!",
+   "en": "It's been a long time!",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-ik-heb-problemen-met-de-buren",
+   "nl": "Ik heb problemen met de buren.",
+   "en": "I have problems with the neighbours.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-dat-is-belangrijk",
+   "nl": "Dat is belangrijk.",
+   "en": "That's important.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-dat-is-niet-zo-belangrijk",
+   "nl": "Dat is niet zo belangrijk.",
+   "en": "That's not so important.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-sinds-gisteren",
+   "nl": "sinds gisteren",
+   "en": "since yesterday",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-zondag-kan-ik-wel",
+   "nl": "Zondag kan ik wel.",
+   "en": "I can make it on Sunday, though.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-ik-moet-ervandoor",
+   "nl": "Ik moet ervandoor.",
+   "en": "I have to go.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-tot-dan",
+   "nl": "Tot dan!",
+   "en": "Until then!",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-kun-jij-op-18-mei-om-20-00-uur",
+   "nl": "Kun jij op 18 mei om 20.00 uur?",
+   "en": "Are you free on 18 May at 8 p.m.?",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-ja-dat-lukt",
+   "nl": "Ja, dat lukt.",
+   "en": "Yes, that works.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-zullen-we-samen-eten",
+   "nl": "Zullen we samen eten?",
+   "en": "Shall we eat together?",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-gaan-jullie-mee-naar-de-pizzeria",
+   "nl": "Gaan jullie mee naar de pizzeria?",
+   "en": "Are you coming along to the pizzeria?",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-gaan-jullie-mee-sporten",
+   "nl": "Gaan jullie mee sporten?",
+   "en": "Are you coming along to do sport?",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-ik-houd-niet-zo-van-pizza",
+   "nl": "Ik houd niet zo van pizza.",
+   "en": "I'm not that keen on pizza.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-ja-gezellig",
+   "nl": "Ja, gezellig!",
+   "en": "Yes, that'll be fun!",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-goed-plan",
+   "nl": "Goed plan!",
+   "en": "Good plan!",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-hebben-jullie-zin-om-naar-de-film-te-gaa",
+   "nl": "Hebben jullie zin om naar de film te gaan?",
+   "en": "Do you feel like going to the cinema?",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-gefeliciteerd-met-je-verjaardag",
+   "nl": "Gefeliciteerd met je verjaardag.",
+   "en": "Happy birthday.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-we-kennen-elkaar-van-de-cursus-nederland",
+   "nl": "We kennen elkaar van de cursus Nederlands.",
+   "en": "We know each other from the Dutch course.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-wat-willen-jullie-drinken",
+   "nl": "Wat willen jullie drinken?",
+   "en": "What would you like to drink?",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-ik-neem-een-biertje-en-tim-neemt-een-rod",
+   "nl": "Ik neem een biertje en Tim neemt een rode wijn.",
+   "en": "I'll have a beer and Tim will have a red wine.",
+   "sec": "les6"
+  },
+  {
+   "id": "les6-wilt-u-pinnen-of-contant-betalen",
+   "nl": "Wilt u pinnen of contant betalen?",
+   "en": "Would you like to pay by card or cash?",
+   "sec": "les6"
+  },
+  {
+   "id": "drills-h4-met-mij-is-het-prima",
+   "nl": "Met mij is het prima.",
+   "en": "I'm fine.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-ja-uitstekend",
+   "nl": "Ja, uitstekend!",
+   "en": "Yes, excellent!",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-heb-je-zin-om-koffie-te-drinken",
+   "nl": "Heb je zin om koffie te drinken?",
+   "en": "Do you feel like a coffee?",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-helaas-ik-heb-geen-tijd",
+   "nl": "Helaas, ik heb geen tijd.",
+   "en": "Unfortunately I don't have time.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-zal-ik-morgen-bij-je-komen",
+   "nl": "Zal ik morgen bij je komen?",
+   "en": "Shall I come round tomorrow?",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-nee-dan-heb-ik-al-een-afspraak",
+   "nl": "Nee, dan heb ik al een afspraak.",
+   "en": "No, I already have an appointment then.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-kun-je-dan-zaterdag",
+   "nl": "Kun je dan zaterdag?",
+   "en": "Can you do Saturday, then?",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-ja-zaterdag-lukt-wel",
+   "nl": "Ja, zaterdag lukt wel.",
+   "en": "Yes, Saturday works.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-heb-je-zin-om-bij-ons-te-eten",
+   "nl": "Heb je zin om bij ons te eten?",
+   "en": "Would you like to eat at our place?",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-ik-moet-naar-de-tandarts",
+   "nl": "Ik moet naar de tandarts.",
+   "en": "I have to go to the dentist.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-we-gaan-een-paar-dagen-naar-veneti",
+   "nl": "We gaan een paar dagen naar Venetië.",
+   "en": "We're going to Venice for a few days.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-geniet-ervan",
+   "nl": "Geniet ervan!",
+   "en": "Enjoy it!",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-ja-doe-ik",
+   "nl": "Ja, doe ik.",
+   "en": "Yes, I will.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-wanneer-zijn-jullie-weer-thuis",
+   "nl": "Wanneer zijn jullie weer thuis?",
+   "en": "When will you be home again?",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-zondag-zijn-we-weer-thuis",
+   "nl": "Zondag zijn we weer thuis.",
+   "en": "We'll be home again on Sunday.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-heb-je-vanmiddag-cursus",
+   "nl": "Heb je vanmiddag cursus?",
+   "en": "Do you have a course this afternoon?",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-werkt-zij-s-ochtends",
+   "nl": "Werkt zij ’s ochtends?",
+   "en": "Does she work in the mornings?",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-nee-ze-werkt-s-middags",
+   "nl": "Nee, ze werkt ’s middags.",
+   "en": "No, she works in the afternoons.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-drink-je-s-avonds-koffie",
+   "nl": "Drink je ’s avonds koffie?",
+   "en": "Do you drink coffee in the evening?",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "drills-h4-nee-s-avonds-drink-ik-thee",
+   "nl": "Nee, ’s avonds drink ik thee.",
+   "en": "No, in the evening I drink tea.",
+   "sec": "drills-h4"
+  },
+  {
+   "id": "uitdrukkingen-de-aap-komt-uit-de-mouw",
+   "nl": "De aap komt uit de mouw.",
+   "en": "The truth comes out.",
+   "sec": "uitdrukkingen"
+  },
+  {
+   "id": "uitdrukkingen-appeltje-eitje",
+   "nl": "appeltje eitje",
+   "en": "piece of cake, dead easy",
+   "sec": "uitdrukkingen"
+  },
+  {
+   "id": "uitdrukkingen-we-zullen-dat-varkentje-even-wassen",
+   "nl": "We zullen dat varkentje even wassen.",
+   "en": "We'll sort that out.",
+   "sec": "uitdrukkingen"
+  },
+  {
+   "id": "uitdrukkingen-van-het-kastje-naar-de-muur",
+   "nl": "van het kastje naar de muur",
+   "en": "from pillar to post",
+   "sec": "uitdrukkingen"
+  },
+  {
+   "id": "uitdrukkingen-ik-val-met-de-deur-in-huis",
+   "nl": "Ik val met de deur in huis.",
+   "en": "I'll come straight to the point.",
+   "sec": "uitdrukkingen"
+  },
+  {
+   "id": "rangtelwoorden-vijfentwintigste",
+   "nl": "vijfentwintigste",
+   "en": "twenty-fifth",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "rangtelwoorden-de-laatste",
+   "nl": "de laatste",
+   "en": "the last one",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "rangtelwoorden-de-middelste",
+   "nl": "de middelste",
+   "en": "the middle one",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "rangtelwoorden-de-hoeveelste",
+   "nl": "De hoeveelste?",
+   "en": "Which one (in order)?",
+   "sec": "rangtelwoorden"
+  },
+  {
+   "id": "les7-vervoer-de-fiets",
+   "nl": "de fiets",
+   "en": "bicycle",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-bakfiets",
+   "nl": "de bakfiets",
+   "en": "cargo bike",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-fatbike",
+   "nl": "de fatbike",
+   "en": "fat bike",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-elektrische-fiets-de-e-bike",
+   "nl": "de elektrische fiets / de e-bike",
+   "en": "electric bike",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-vouwfiets",
+   "nl": "de vouwfiets",
+   "en": "folding bike",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-driewieler",
+   "nl": "de driewieler",
+   "en": "tricycle",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-ligfiets",
+   "nl": "de ligfiets",
+   "en": "recumbent bike",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-bromfiets-de-brommer",
+   "nl": "de bromfiets / de brommer",
+   "en": "moped",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-scooter",
+   "nl": "de scooter",
+   "en": "scooter (motor)",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-motor",
+   "nl": "de motor",
+   "en": "motorbike",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-de-step",
+   "nl": "de step",
+   "en": "kick scooter",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-mijn-band-is-lek",
+   "nl": "Mijn band is lek.",
+   "en": "I have a flat tyre.",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-kapot",
+   "nl": "kapot",
+   "en": "broken",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-dicht",
+   "nl": "dicht",
+   "en": "closed",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-vervoer-hoe-ga-jij-naar-je-werk",
+   "nl": "Hoe ga jij naar je werk?",
+   "en": "How do you get to work?",
+   "sec": "les7-vervoer"
+  },
+  {
+   "id": "les7-weg-mag-ik-iets-vragen",
+   "nl": "Mag ik iets vragen?",
+   "en": "May I ask something?",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-ja-natuurlijk",
+   "nl": "Ja, natuurlijk.",
+   "en": "Yes, of course.",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-waar-is-de-supermarkt",
+   "nl": "Waar is de supermarkt?",
+   "en": "Where is the supermarket?",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-even-denken",
+   "nl": "Even denken…",
+   "en": "Let me think…",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-hoe-kom-ik-bij-het-station",
+   "nl": "Hoe kom ik bij het station?",
+   "en": "How do I get to the station?",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-weet-u-de-weg-naar-het-station",
+   "nl": "Weet u de weg naar het station?",
+   "en": "Do you know the way to the station?",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-rechtdoor",
+   "nl": "rechtdoor",
+   "en": "straight on",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-naar-links",
+   "nl": "naar links",
+   "en": "to the left",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-naar-rechts",
+   "nl": "naar rechts",
+   "en": "to the right",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-u-gaat-hier-rechtdoor",
+   "nl": "U gaat hier rechtdoor.",
+   "en": "You go straight on here.",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-u-gaat-bij-de-kerk-naar-links",
+   "nl": "U gaat bij de kerk naar links.",
+   "en": "At the church you go left.",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-u-moet-bij-het-stoplicht-naar-rechts",
+   "nl": "U moet bij het stoplicht naar rechts.",
+   "en": "You have to go right at the traffic lights.",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-u-moet-de-straat-oversteken",
+   "nl": "U moet de straat oversteken.",
+   "en": "You have to cross the street.",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-oversteken",
+   "nl": "oversteken",
+   "en": "to cross (the road)",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-lopen",
+   "nl": "lopen",
+   "en": "to walk",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-het-stoplicht",
+   "nl": "het stoplicht",
+   "en": "traffic lights",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-het-zebrapad",
+   "nl": "het zebrapad",
+   "en": "zebra crossing",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-de-kerk",
+   "nl": "de kerk",
+   "en": "church",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-het-stadhuis-het-gemeentehuis",
+   "nl": "het stadhuis / het gemeentehuis",
+   "en": "town hall",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-het-ziekenhuis",
+   "nl": "het ziekenhuis",
+   "en": "hospital",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-de-winkel",
+   "nl": "de winkel",
+   "en": "shop",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-de-dierenwinkel",
+   "nl": "de dierenwinkel",
+   "en": "pet shop",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-het-museum",
+   "nl": "het museum",
+   "en": "museum",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-het-gebouw",
+   "nl": "het gebouw",
+   "en": "building",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-de-vijver",
+   "nl": "de vijver",
+   "en": "pond",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-het-meer",
+   "nl": "het meer",
+   "en": "lake",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-de-plattegrond",
+   "nl": "de plattegrond",
+   "en": "map (of a town)",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-tegenover",
+   "nl": "tegenover",
+   "en": "opposite",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "les7-weg-gratis",
+   "nl": "gratis",
+   "en": "free (of charge)",
+   "sec": "les7-weg"
+  },
+  {
+   "id": "voegwoorden-en",
+   "nl": "en",
+   "en": "and",
+   "sec": "voegwoorden"
+  },
+  {
+   "id": "voegwoorden-maar",
+   "nl": "maar",
+   "en": "but",
+   "sec": "voegwoorden"
+  },
+  {
+   "id": "voegwoorden-want",
+   "nl": "want",
+   "en": "because",
+   "sec": "voegwoorden"
+  },
+  {
+   "id": "voegwoorden-of",
+   "nl": "of",
+   "en": "or",
+   "sec": "voegwoorden"
+  },
+  {
+   "id": "voegwoorden-dus",
+   "nl": "dus",
+   "en": "so, therefore",
+   "sec": "voegwoorden"
+  },
+  {
+   "id": "voegwoorden-ik-ben-moe-dus-ik-ga-naar-huis",
+   "nl": "Ik ben moe, dus ik ga naar huis.",
+   "en": "I'm tired, so I'm going home.",
+   "sec": "voegwoorden"
+  },
+  {
+   "id": "voegwoorden-ik-ga-met-de-bus-want-mijn-fiets-is-kapo",
+   "nl": "Ik ga met de bus, want mijn fiets is kapot.",
+   "en": "I'm taking the bus because my bike is broken.",
+   "sec": "voegwoorden"
   }
  ]
 }

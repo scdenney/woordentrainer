@@ -2,7 +2,7 @@
  "title": "Werkwoorden",
  "order": 102,
  "kind": "grammar",
- "source": "Les 3 slides, the gaan/komen handout and class worksheets (F. Fabbricotti, Sept–Oct 2026)",
+ "source": "werkwoorden.pdf, les 6–7 slides and class worksheets (F. Fabbricotti, Sept–Nov 2026)",
  "rules": [
   {
    "title": "Regelmatig: stam, stam + t, infinitief",
@@ -111,6 +111,152 @@
   {
    "title": "jij na het werkwoord",
    "text": "When je/jij follows the verb, the -t goes: Ga je mee? Hoe spel je dat? Luister jij naar de radio? This doesn't happen with u or hij: Luistert Alexander naar muziek?"
+  },
+  {
+   "title": "Korte en lange klank",
+   "text": "The stem must keep the sound of the infinitive. A double consonant keeps a vowel short (stop-pen), but a Dutch word never ends in a double consonant, so the stem has one: ik stop. A single vowel at the end of a syllable is long (wo-nen); in the stem the syllable is closed, so the vowel is written double: ik woon. ie and oe never change: ik vier, ik doe.",
+   "table": {
+    "head": [
+     "klank",
+     "infinitief",
+     "ik",
+     "jij / hij"
+    ],
+    "rows": [
+     [
+      "kort o",
+      "stoppen",
+      "stop",
+      "stopt"
+     ],
+     [
+      "lang oo",
+      "wonen",
+      "woon",
+      "woont"
+     ],
+     [
+      "kort a",
+      "pakken",
+      "pak",
+      "pakt"
+     ],
+     [
+      "lang aa",
+      "maken",
+      "maak",
+      "maakt"
+     ],
+     [
+      "kort u",
+      "vullen",
+      "vul",
+      "vult"
+     ],
+     [
+      "lang uu",
+      "sturen",
+      "stuur",
+      "stuurt"
+     ],
+     [
+      "kort e",
+      "rennen",
+      "ren",
+      "rent"
+     ],
+     [
+      "lang ee",
+      "nemen",
+      "neem",
+      "neemt"
+     ],
+     [
+      "kort i",
+      "beginnen",
+      "begin",
+      "begint"
+     ],
+     [
+      "ie",
+      "vieren",
+      "vier",
+      "viert"
+     ]
+    ]
+   }
+  },
+  {
+   "title": "z → s, v → f",
+   "text": "A Dutch word doesn't end in z or v, so the stem changes: kiezen → ik kies, jij kiest; schrijven → ik schrijf, hij schrijft; geven → ik geef. The plural keeps the z or v: wij kiezen, wij geven."
+  },
+  {
+   "title": "Stam op d",
+   "text": "The d stays in the stem, and jij/hij add -t as usual: vinden → ik vind, jij vindt, hij vindt. d and dt both sound like t. With jij after the verb the t goes, the d stays: Vind jij het leuk?"
+  },
+  {
+   "title": "Modale werkwoorden",
+   "text": "willen, kunnen, moeten, mogen and zullen are irregular. The second verb goes to the end of the sentence, unchanged: Ik wil koffie drinken. Wat wil jij vandaag koken? Zullen we iets afspreken?",
+   "table": {
+    "head": [
+     "",
+     "willen",
+     "kunnen",
+     "moeten",
+     "mogen",
+     "zullen"
+    ],
+    "rows": [
+     [
+      "ik",
+      "wil",
+      "kan",
+      "moet",
+      "mag",
+      "zal"
+     ],
+     [
+      "jij",
+      "wilt / wil",
+      "kunt / kan",
+      "moet",
+      "mag",
+      "zult / zal"
+     ],
+     [
+      "u",
+      "wilt",
+      "kunt",
+      "moet",
+      "mag",
+      "zult"
+     ],
+     [
+      "hij / zij / het",
+      "wil",
+      "kan",
+      "moet",
+      "mag",
+      "zal"
+     ],
+     [
+      "wij / jullie / zij",
+      "willen",
+      "kunnen",
+      "moeten",
+      "mogen",
+      "zullen"
+     ],
+     [
+      "vraag",
+      "wil jij?",
+      "kun jij?",
+      "moet jij?",
+      "mag ik?",
+      "zullen we?"
+     ]
+    ]
+   }
   }
  ],
  "sections": [
@@ -122,6 +268,36 @@
   {
    "id": "ww-zinnen",
    "name": "Werkwoorden in een zin",
+   "task": "Type the right form of the verb in brackets."
+  },
+  {
+   "id": "ww-klank",
+   "name": "Korte en lange klank",
+   "task": "Type the verb form."
+  },
+  {
+   "id": "ww-zv",
+   "name": "z → s, v → f",
+   "task": "Type the verb form."
+  },
+  {
+   "id": "ww-dt",
+   "name": "Stam op d of t",
+   "task": "Type the verb form."
+  },
+  {
+   "id": "ww-regelmatig",
+   "name": "Regelmatig",
+   "task": "Type the verb form."
+  },
+  {
+   "id": "ww-modaal",
+   "name": "willen, kunnen, moeten, mogen, zullen",
+   "task": "Type the verb form."
+  },
+  {
+   "id": "ww-zinnen2",
+   "name": "Meer zinnen",
    "task": "Type the right form of the verb in brackets."
   }
  ],
@@ -1285,6 +1461,5111 @@
    "en": "Her birthday is in winter.",
    "sec": "ww-zinnen",
    "say": "Zij is in de winter jarig."
+  },
+  {
+   "id": "ww-klank-stoppen-ik",
+   "q": "ik · stoppen",
+   "nl": "stop/ik stop",
+   "en": "stoppen: to stop. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "ik stop"
+  },
+  {
+   "id": "ww-klank-stoppen-jij",
+   "q": "jij · stoppen",
+   "nl": "stopt/jij stopt",
+   "en": "stoppen: to stop. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "jij stopt"
+  },
+  {
+   "id": "ww-klank-stoppen-hij",
+   "q": "hij · stoppen",
+   "nl": "stopt/hij stopt",
+   "en": "stoppen: to stop. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "hij stopt"
+  },
+  {
+   "id": "ww-klank-stoppen-wij",
+   "q": "wij · stoppen",
+   "nl": "stoppen/wij stoppen",
+   "en": "stoppen: to stop. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "wij stoppen"
+  },
+  {
+   "id": "ww-klank-stoppen-jullie",
+   "q": "jullie · stoppen",
+   "nl": "stoppen/jullie stoppen",
+   "en": "stoppen: to stop. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "jullie stoppen"
+  },
+  {
+   "id": "ww-klank-stoppen-vraag",
+   "q": "___ jij …? · stoppen",
+   "nl": "stop/stop jij",
+   "en": "stoppen: to stop. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Stop jij?"
+  },
+  {
+   "id": "ww-klank-pakken-ik",
+   "q": "ik · pakken",
+   "nl": "pak/ik pak",
+   "en": "pakken: to take, to grab. Short a: one k in the stem.",
+   "sec": "ww-klank",
+   "say": "ik pak"
+  },
+  {
+   "id": "ww-klank-pakken-jij",
+   "q": "jij · pakken",
+   "nl": "pakt/jij pakt",
+   "en": "pakken: to take, to grab. Short a: one k in the stem.",
+   "sec": "ww-klank",
+   "say": "jij pakt"
+  },
+  {
+   "id": "ww-klank-pakken-hij",
+   "q": "hij · pakken",
+   "nl": "pakt/hij pakt",
+   "en": "pakken: to take, to grab. Short a: one k in the stem.",
+   "sec": "ww-klank",
+   "say": "hij pakt"
+  },
+  {
+   "id": "ww-klank-pakken-wij",
+   "q": "wij · pakken",
+   "nl": "pakken/wij pakken",
+   "en": "pakken: to take, to grab. Short a: one k in the stem.",
+   "sec": "ww-klank",
+   "say": "wij pakken"
+  },
+  {
+   "id": "ww-klank-pakken-zij-meervoud",
+   "q": "zij (meervoud) · pakken",
+   "nl": "pakken/zij pakken",
+   "en": "pakken: to take, to grab. Short a: one k in the stem.",
+   "sec": "ww-klank",
+   "say": "zij pakken"
+  },
+  {
+   "id": "ww-klank-pakken-vraag",
+   "q": "___ jij …? · pakken",
+   "nl": "pak/pak jij",
+   "en": "pakken: to take, to grab. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Pak jij?"
+  },
+  {
+   "id": "ww-klank-vullen-ik",
+   "q": "ik · vullen",
+   "nl": "vul/ik vul",
+   "en": "vullen: to fill. Short u: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "ik vul"
+  },
+  {
+   "id": "ww-klank-vullen-jij",
+   "q": "jij · vullen",
+   "nl": "vult/jij vult",
+   "en": "vullen: to fill. Short u: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "jij vult"
+  },
+  {
+   "id": "ww-klank-vullen-hij",
+   "q": "hij · vullen",
+   "nl": "vult/hij vult",
+   "en": "vullen: to fill. Short u: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "hij vult"
+  },
+  {
+   "id": "ww-klank-vullen-wij",
+   "q": "wij · vullen",
+   "nl": "vullen/wij vullen",
+   "en": "vullen: to fill. Short u: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "wij vullen"
+  },
+  {
+   "id": "ww-klank-vullen-anna",
+   "q": "Anna · vullen",
+   "nl": "vult/Anna vult",
+   "en": "vullen: to fill. Short u: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "Anna vult"
+  },
+  {
+   "id": "ww-klank-vullen-vraag",
+   "q": "___ jij …? · vullen",
+   "nl": "vul/vul jij",
+   "en": "vullen: to fill. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Vul jij?"
+  },
+  {
+   "id": "ww-klank-rennen-ik",
+   "q": "ik · rennen",
+   "nl": "ren/ik ren",
+   "en": "rennen: to run. Short e: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "ik ren"
+  },
+  {
+   "id": "ww-klank-rennen-jij",
+   "q": "jij · rennen",
+   "nl": "rent/jij rent",
+   "en": "rennen: to run. Short e: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "jij rent"
+  },
+  {
+   "id": "ww-klank-rennen-hij",
+   "q": "hij · rennen",
+   "nl": "rent/hij rent",
+   "en": "rennen: to run. Short e: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "hij rent"
+  },
+  {
+   "id": "ww-klank-rennen-wij",
+   "q": "wij · rennen",
+   "nl": "rennen/wij rennen",
+   "en": "rennen: to run. Short e: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "wij rennen"
+  },
+  {
+   "id": "ww-klank-rennen-jullie",
+   "q": "jullie · rennen",
+   "nl": "rennen/jullie rennen",
+   "en": "rennen: to run. Short e: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "jullie rennen"
+  },
+  {
+   "id": "ww-klank-rennen-vraag",
+   "q": "___ jij …? · rennen",
+   "nl": "ren/ren jij",
+   "en": "rennen: to run. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Ren jij?"
+  },
+  {
+   "id": "ww-klank-beginnen-ik",
+   "q": "ik · beginnen",
+   "nl": "begin/ik begin",
+   "en": "beginnen: to begin, to start. Short i: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "ik begin"
+  },
+  {
+   "id": "ww-klank-beginnen-jij",
+   "q": "jij · beginnen",
+   "nl": "begint/jij begint",
+   "en": "beginnen: to begin, to start. Short i: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "jij begint"
+  },
+  {
+   "id": "ww-klank-beginnen-hij",
+   "q": "hij · beginnen",
+   "nl": "begint/hij begint",
+   "en": "beginnen: to begin, to start. Short i: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "hij begint"
+  },
+  {
+   "id": "ww-klank-beginnen-wij",
+   "q": "wij · beginnen",
+   "nl": "beginnen/wij beginnen",
+   "en": "beginnen: to begin, to start. Short i: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "wij beginnen"
+  },
+  {
+   "id": "ww-klank-beginnen-zij-meervoud",
+   "q": "zij (meervoud) · beginnen",
+   "nl": "beginnen/zij beginnen",
+   "en": "beginnen: to begin, to start. Short i: one n in the stem.",
+   "sec": "ww-klank",
+   "say": "zij beginnen"
+  },
+  {
+   "id": "ww-klank-beginnen-vraag",
+   "q": "___ jij …? · beginnen",
+   "nl": "begin/begin jij",
+   "en": "beginnen: to begin, to start. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Begin jij?"
+  },
+  {
+   "id": "ww-klank-bestellen-ik",
+   "q": "ik · bestellen",
+   "nl": "bestel/ik bestel",
+   "en": "bestellen: to order. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "ik bestel"
+  },
+  {
+   "id": "ww-klank-bestellen-jij",
+   "q": "jij · bestellen",
+   "nl": "bestelt/jij bestelt",
+   "en": "bestellen: to order. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "jij bestelt"
+  },
+  {
+   "id": "ww-klank-bestellen-hij",
+   "q": "hij · bestellen",
+   "nl": "bestelt/hij bestelt",
+   "en": "bestellen: to order. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "hij bestelt"
+  },
+  {
+   "id": "ww-klank-bestellen-wij",
+   "q": "wij · bestellen",
+   "nl": "bestellen/wij bestellen",
+   "en": "bestellen: to order. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "wij bestellen"
+  },
+  {
+   "id": "ww-klank-bestellen-anna",
+   "q": "Anna · bestellen",
+   "nl": "bestelt/Anna bestelt",
+   "en": "bestellen: to order. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "Anna bestelt"
+  },
+  {
+   "id": "ww-klank-bestellen-vraag",
+   "q": "___ jij …? · bestellen",
+   "nl": "bestel/bestel jij",
+   "en": "bestellen: to order. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Bestel jij?"
+  },
+  {
+   "id": "ww-klank-kloppen-ik",
+   "q": "ik · kloppen",
+   "nl": "klop/ik klop",
+   "en": "kloppen: to knock; to be right. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "ik klop"
+  },
+  {
+   "id": "ww-klank-kloppen-jij",
+   "q": "jij · kloppen",
+   "nl": "klopt/jij klopt",
+   "en": "kloppen: to knock; to be right. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "jij klopt"
+  },
+  {
+   "id": "ww-klank-kloppen-hij",
+   "q": "hij · kloppen",
+   "nl": "klopt/hij klopt",
+   "en": "kloppen: to knock; to be right. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "hij klopt"
+  },
+  {
+   "id": "ww-klank-kloppen-wij",
+   "q": "wij · kloppen",
+   "nl": "kloppen/wij kloppen",
+   "en": "kloppen: to knock; to be right. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "wij kloppen"
+  },
+  {
+   "id": "ww-klank-kloppen-jullie",
+   "q": "jullie · kloppen",
+   "nl": "kloppen/jullie kloppen",
+   "en": "kloppen: to knock; to be right. Short o: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "jullie kloppen"
+  },
+  {
+   "id": "ww-klank-kloppen-vraag",
+   "q": "___ jij …? · kloppen",
+   "nl": "klop/klop jij",
+   "en": "kloppen: to knock; to be right. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Klop jij?"
+  },
+  {
+   "id": "ww-klank-klappen-ik",
+   "q": "ik · klappen",
+   "nl": "klap/ik klap",
+   "en": "klappen: to clap. Short a: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "ik klap"
+  },
+  {
+   "id": "ww-klank-klappen-jij",
+   "q": "jij · klappen",
+   "nl": "klapt/jij klapt",
+   "en": "klappen: to clap. Short a: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "jij klapt"
+  },
+  {
+   "id": "ww-klank-klappen-hij",
+   "q": "hij · klappen",
+   "nl": "klapt/hij klapt",
+   "en": "klappen: to clap. Short a: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "hij klapt"
+  },
+  {
+   "id": "ww-klank-klappen-wij",
+   "q": "wij · klappen",
+   "nl": "klappen/wij klappen",
+   "en": "klappen: to clap. Short a: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "wij klappen"
+  },
+  {
+   "id": "ww-klank-klappen-zij-meervoud",
+   "q": "zij (meervoud) · klappen",
+   "nl": "klappen/zij klappen",
+   "en": "klappen: to clap. Short a: one p in the stem.",
+   "sec": "ww-klank",
+   "say": "zij klappen"
+  },
+  {
+   "id": "ww-klank-klappen-vraag",
+   "q": "___ jij …? · klappen",
+   "nl": "klap/klap jij",
+   "en": "klappen: to clap. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Klap jij?"
+  },
+  {
+   "id": "ww-klank-zwemmen-ik",
+   "q": "ik · zwemmen",
+   "nl": "zwem/ik zwem",
+   "en": "zwemmen: to swim. Short e: one m in the stem.",
+   "sec": "ww-klank",
+   "say": "ik zwem"
+  },
+  {
+   "id": "ww-klank-zwemmen-jij",
+   "q": "jij · zwemmen",
+   "nl": "zwemt/jij zwemt",
+   "en": "zwemmen: to swim. Short e: one m in the stem.",
+   "sec": "ww-klank",
+   "say": "jij zwemt"
+  },
+  {
+   "id": "ww-klank-zwemmen-hij",
+   "q": "hij · zwemmen",
+   "nl": "zwemt/hij zwemt",
+   "en": "zwemmen: to swim. Short e: one m in the stem.",
+   "sec": "ww-klank",
+   "say": "hij zwemt"
+  },
+  {
+   "id": "ww-klank-zwemmen-wij",
+   "q": "wij · zwemmen",
+   "nl": "zwemmen/wij zwemmen",
+   "en": "zwemmen: to swim. Short e: one m in the stem.",
+   "sec": "ww-klank",
+   "say": "wij zwemmen"
+  },
+  {
+   "id": "ww-klank-zwemmen-anna",
+   "q": "Anna · zwemmen",
+   "nl": "zwemt/Anna zwemt",
+   "en": "zwemmen: to swim. Short e: one m in the stem.",
+   "sec": "ww-klank",
+   "say": "Anna zwemt"
+  },
+  {
+   "id": "ww-klank-zwemmen-vraag",
+   "q": "___ jij …? · zwemmen",
+   "nl": "zwem/zwem jij",
+   "en": "zwemmen: to swim. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Zwem jij?"
+  },
+  {
+   "id": "ww-klank-bellen-ik",
+   "q": "ik · bellen",
+   "nl": "bel/ik bel",
+   "en": "bellen: to call, to ring. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "ik bel"
+  },
+  {
+   "id": "ww-klank-bellen-jij",
+   "q": "jij · bellen",
+   "nl": "belt/jij belt",
+   "en": "bellen: to call, to ring. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "jij belt"
+  },
+  {
+   "id": "ww-klank-bellen-hij",
+   "q": "hij · bellen",
+   "nl": "belt/hij belt",
+   "en": "bellen: to call, to ring. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "hij belt"
+  },
+  {
+   "id": "ww-klank-bellen-wij",
+   "q": "wij · bellen",
+   "nl": "bellen/wij bellen",
+   "en": "bellen: to call, to ring. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "wij bellen"
+  },
+  {
+   "id": "ww-klank-bellen-jullie",
+   "q": "jullie · bellen",
+   "nl": "bellen/jullie bellen",
+   "en": "bellen: to call, to ring. Short e: one l in the stem.",
+   "sec": "ww-klank",
+   "say": "jullie bellen"
+  },
+  {
+   "id": "ww-klank-bellen-vraag",
+   "q": "___ jij …? · bellen",
+   "nl": "bel/bel jij",
+   "en": "bellen: to call, to ring. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Bel jij?"
+  },
+  {
+   "id": "ww-klank-sturen-ik",
+   "q": "ik · sturen",
+   "nl": "stuur/ik stuur",
+   "en": "sturen: to send; to steer. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "ik stuur"
+  },
+  {
+   "id": "ww-klank-sturen-jij",
+   "q": "jij · sturen",
+   "nl": "stuurt/jij stuurt",
+   "en": "sturen: to send; to steer. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "jij stuurt"
+  },
+  {
+   "id": "ww-klank-sturen-hij",
+   "q": "hij · sturen",
+   "nl": "stuurt/hij stuurt",
+   "en": "sturen: to send; to steer. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "hij stuurt"
+  },
+  {
+   "id": "ww-klank-sturen-wij",
+   "q": "wij · sturen",
+   "nl": "sturen/wij sturen",
+   "en": "sturen: to send; to steer. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "wij sturen"
+  },
+  {
+   "id": "ww-klank-sturen-zij-meervoud",
+   "q": "zij (meervoud) · sturen",
+   "nl": "sturen/zij sturen",
+   "en": "sturen: to send; to steer. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "zij sturen"
+  },
+  {
+   "id": "ww-klank-sturen-vraag",
+   "q": "___ jij …? · sturen",
+   "nl": "stuur/stuur jij",
+   "en": "sturen: to send; to steer. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Stuur jij?"
+  },
+  {
+   "id": "ww-klank-nemen-ik",
+   "q": "ik · nemen",
+   "nl": "neem/ik neem",
+   "en": "nemen: to take. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "ik neem"
+  },
+  {
+   "id": "ww-klank-nemen-jij",
+   "q": "jij · nemen",
+   "nl": "neemt/jij neemt",
+   "en": "nemen: to take. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "jij neemt"
+  },
+  {
+   "id": "ww-klank-nemen-hij",
+   "q": "hij · nemen",
+   "nl": "neemt/hij neemt",
+   "en": "nemen: to take. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "hij neemt"
+  },
+  {
+   "id": "ww-klank-nemen-wij",
+   "q": "wij · nemen",
+   "nl": "nemen/wij nemen",
+   "en": "nemen: to take. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "wij nemen"
+  },
+  {
+   "id": "ww-klank-nemen-anna",
+   "q": "Anna · nemen",
+   "nl": "neemt/Anna neemt",
+   "en": "nemen: to take. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "Anna neemt"
+  },
+  {
+   "id": "ww-klank-nemen-vraag",
+   "q": "___ jij …? · nemen",
+   "nl": "neem/neem jij",
+   "en": "nemen: to take. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Neem jij?"
+  },
+  {
+   "id": "ww-klank-kopen-ik",
+   "q": "ik · kopen",
+   "nl": "koop/ik koop",
+   "en": "kopen: to buy. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "ik koop"
+  },
+  {
+   "id": "ww-klank-kopen-jij",
+   "q": "jij · kopen",
+   "nl": "koopt/jij koopt",
+   "en": "kopen: to buy. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "jij koopt"
+  },
+  {
+   "id": "ww-klank-kopen-hij",
+   "q": "hij · kopen",
+   "nl": "koopt/hij koopt",
+   "en": "kopen: to buy. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "hij koopt"
+  },
+  {
+   "id": "ww-klank-kopen-wij",
+   "q": "wij · kopen",
+   "nl": "kopen/wij kopen",
+   "en": "kopen: to buy. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "wij kopen"
+  },
+  {
+   "id": "ww-klank-kopen-jullie",
+   "q": "jullie · kopen",
+   "nl": "kopen/jullie kopen",
+   "en": "kopen: to buy. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "jullie kopen"
+  },
+  {
+   "id": "ww-klank-kopen-vraag",
+   "q": "___ jij …? · kopen",
+   "nl": "koop/koop jij",
+   "en": "kopen: to buy. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Koop jij?"
+  },
+  {
+   "id": "ww-klank-dragen-ik",
+   "q": "ik · dragen",
+   "nl": "draag/ik draag",
+   "en": "dragen: to carry; to wear. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "ik draag"
+  },
+  {
+   "id": "ww-klank-dragen-jij",
+   "q": "jij · dragen",
+   "nl": "draagt/jij draagt",
+   "en": "dragen: to carry; to wear. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "jij draagt"
+  },
+  {
+   "id": "ww-klank-dragen-hij",
+   "q": "hij · dragen",
+   "nl": "draagt/hij draagt",
+   "en": "dragen: to carry; to wear. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "hij draagt"
+  },
+  {
+   "id": "ww-klank-dragen-wij",
+   "q": "wij · dragen",
+   "nl": "dragen/wij dragen",
+   "en": "dragen: to carry; to wear. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "wij dragen"
+  },
+  {
+   "id": "ww-klank-dragen-zij-meervoud",
+   "q": "zij (meervoud) · dragen",
+   "nl": "dragen/zij dragen",
+   "en": "dragen: to carry; to wear. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "zij dragen"
+  },
+  {
+   "id": "ww-klank-dragen-vraag",
+   "q": "___ jij …? · dragen",
+   "nl": "draag/draag jij",
+   "en": "dragen: to carry; to wear. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Draag jij?"
+  },
+  {
+   "id": "ww-klank-turen-ik",
+   "q": "ik · turen",
+   "nl": "tuur/ik tuur",
+   "en": "turen: to gaze. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "ik tuur"
+  },
+  {
+   "id": "ww-klank-turen-jij",
+   "q": "jij · turen",
+   "nl": "tuurt/jij tuurt",
+   "en": "turen: to gaze. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "jij tuurt"
+  },
+  {
+   "id": "ww-klank-turen-hij",
+   "q": "hij · turen",
+   "nl": "tuurt/hij tuurt",
+   "en": "turen: to gaze. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "hij tuurt"
+  },
+  {
+   "id": "ww-klank-turen-wij",
+   "q": "wij · turen",
+   "nl": "turen/wij turen",
+   "en": "turen: to gaze. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "wij turen"
+  },
+  {
+   "id": "ww-klank-turen-anna",
+   "q": "Anna · turen",
+   "nl": "tuurt/Anna tuurt",
+   "en": "turen: to gaze. Long u: uu in the stem.",
+   "sec": "ww-klank",
+   "say": "Anna tuurt"
+  },
+  {
+   "id": "ww-klank-turen-vraag",
+   "q": "___ jij …? · turen",
+   "nl": "tuur/tuur jij",
+   "en": "turen: to gaze. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Tuur jij?"
+  },
+  {
+   "id": "ww-klank-koken-ik",
+   "q": "ik · koken",
+   "nl": "kook/ik kook",
+   "en": "koken: to cook. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "ik kook"
+  },
+  {
+   "id": "ww-klank-koken-jij",
+   "q": "jij · koken",
+   "nl": "kookt/jij kookt",
+   "en": "koken: to cook. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "jij kookt"
+  },
+  {
+   "id": "ww-klank-koken-hij",
+   "q": "hij · koken",
+   "nl": "kookt/hij kookt",
+   "en": "koken: to cook. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "hij kookt"
+  },
+  {
+   "id": "ww-klank-koken-wij",
+   "q": "wij · koken",
+   "nl": "koken/wij koken",
+   "en": "koken: to cook. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "wij koken"
+  },
+  {
+   "id": "ww-klank-koken-jullie",
+   "q": "jullie · koken",
+   "nl": "koken/jullie koken",
+   "en": "koken: to cook. Long o: oo in the stem.",
+   "sec": "ww-klank",
+   "say": "jullie koken"
+  },
+  {
+   "id": "ww-klank-koken-vraag",
+   "q": "___ jij …? · koken",
+   "nl": "kook/kook jij",
+   "en": "koken: to cook. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Kook jij?"
+  },
+  {
+   "id": "ww-klank-betalen-ik",
+   "q": "ik · betalen",
+   "nl": "betaal/ik betaal",
+   "en": "betalen: to pay. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "ik betaal"
+  },
+  {
+   "id": "ww-klank-betalen-jij",
+   "q": "jij · betalen",
+   "nl": "betaalt/jij betaalt",
+   "en": "betalen: to pay. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "jij betaalt"
+  },
+  {
+   "id": "ww-klank-betalen-hij",
+   "q": "hij · betalen",
+   "nl": "betaalt/hij betaalt",
+   "en": "betalen: to pay. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "hij betaalt"
+  },
+  {
+   "id": "ww-klank-betalen-wij",
+   "q": "wij · betalen",
+   "nl": "betalen/wij betalen",
+   "en": "betalen: to pay. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "wij betalen"
+  },
+  {
+   "id": "ww-klank-betalen-zij-meervoud",
+   "q": "zij (meervoud) · betalen",
+   "nl": "betalen/zij betalen",
+   "en": "betalen: to pay. Long a: aa in the stem.",
+   "sec": "ww-klank",
+   "say": "zij betalen"
+  },
+  {
+   "id": "ww-klank-betalen-vraag",
+   "q": "___ jij …? · betalen",
+   "nl": "betaal/betaal jij",
+   "en": "betalen: to pay. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Betaal jij?"
+  },
+  {
+   "id": "ww-klank-spelen-ik",
+   "q": "ik · spelen",
+   "nl": "speel/ik speel",
+   "en": "spelen: to play. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "ik speel"
+  },
+  {
+   "id": "ww-klank-spelen-jij",
+   "q": "jij · spelen",
+   "nl": "speelt/jij speelt",
+   "en": "spelen: to play. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "jij speelt"
+  },
+  {
+   "id": "ww-klank-spelen-hij",
+   "q": "hij · spelen",
+   "nl": "speelt/hij speelt",
+   "en": "spelen: to play. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "hij speelt"
+  },
+  {
+   "id": "ww-klank-spelen-wij",
+   "q": "wij · spelen",
+   "nl": "spelen/wij spelen",
+   "en": "spelen: to play. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "wij spelen"
+  },
+  {
+   "id": "ww-klank-spelen-anna",
+   "q": "Anna · spelen",
+   "nl": "speelt/Anna speelt",
+   "en": "spelen: to play. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "Anna speelt"
+  },
+  {
+   "id": "ww-klank-spelen-vraag",
+   "q": "___ jij …? · spelen",
+   "nl": "speel/speel jij",
+   "en": "spelen: to play. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Speel jij?"
+  },
+  {
+   "id": "ww-klank-leren-ik",
+   "q": "ik · leren",
+   "nl": "leer/ik leer",
+   "en": "leren: to learn. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "ik leer"
+  },
+  {
+   "id": "ww-klank-leren-jij",
+   "q": "jij · leren",
+   "nl": "leert/jij leert",
+   "en": "leren: to learn. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "jij leert"
+  },
+  {
+   "id": "ww-klank-leren-hij",
+   "q": "hij · leren",
+   "nl": "leert/hij leert",
+   "en": "leren: to learn. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "hij leert"
+  },
+  {
+   "id": "ww-klank-leren-wij",
+   "q": "wij · leren",
+   "nl": "leren/wij leren",
+   "en": "leren: to learn. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "wij leren"
+  },
+  {
+   "id": "ww-klank-leren-jullie",
+   "q": "jullie · leren",
+   "nl": "leren/jullie leren",
+   "en": "leren: to learn. Long e: ee in the stem.",
+   "sec": "ww-klank",
+   "say": "jullie leren"
+  },
+  {
+   "id": "ww-klank-leren-vraag",
+   "q": "___ jij …? · leren",
+   "nl": "leer/leer jij",
+   "en": "leren: to learn. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Leer jij?"
+  },
+  {
+   "id": "ww-klank-vieren-ik",
+   "q": "ik · vieren",
+   "nl": "vier/ik vier",
+   "en": "vieren: to celebrate. Ie never changes.",
+   "sec": "ww-klank",
+   "say": "ik vier"
+  },
+  {
+   "id": "ww-klank-vieren-jij",
+   "q": "jij · vieren",
+   "nl": "viert/jij viert",
+   "en": "vieren: to celebrate. Ie never changes.",
+   "sec": "ww-klank",
+   "say": "jij viert"
+  },
+  {
+   "id": "ww-klank-vieren-hij",
+   "q": "hij · vieren",
+   "nl": "viert/hij viert",
+   "en": "vieren: to celebrate. Ie never changes.",
+   "sec": "ww-klank",
+   "say": "hij viert"
+  },
+  {
+   "id": "ww-klank-vieren-wij",
+   "q": "wij · vieren",
+   "nl": "vieren/wij vieren",
+   "en": "vieren: to celebrate. Ie never changes.",
+   "sec": "ww-klank",
+   "say": "wij vieren"
+  },
+  {
+   "id": "ww-klank-vieren-zij-meervoud",
+   "q": "zij (meervoud) · vieren",
+   "nl": "vieren/zij vieren",
+   "en": "vieren: to celebrate. Ie never changes.",
+   "sec": "ww-klank",
+   "say": "zij vieren"
+  },
+  {
+   "id": "ww-klank-vieren-vraag",
+   "q": "___ jij …? · vieren",
+   "nl": "vier/vier jij",
+   "en": "vieren: to celebrate. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Vier jij?"
+  },
+  {
+   "id": "ww-klank-zien-ik",
+   "q": "ik · zien",
+   "nl": "zie/ik zie",
+   "en": "zien: to see. The stem is zie.",
+   "sec": "ww-klank",
+   "say": "ik zie"
+  },
+  {
+   "id": "ww-klank-zien-jij",
+   "q": "jij · zien",
+   "nl": "ziet/jij ziet",
+   "en": "zien: to see. The stem is zie.",
+   "sec": "ww-klank",
+   "say": "jij ziet"
+  },
+  {
+   "id": "ww-klank-zien-hij",
+   "q": "hij · zien",
+   "nl": "ziet/hij ziet",
+   "en": "zien: to see. The stem is zie.",
+   "sec": "ww-klank",
+   "say": "hij ziet"
+  },
+  {
+   "id": "ww-klank-zien-wij",
+   "q": "wij · zien",
+   "nl": "zien/wij zien",
+   "en": "zien: to see. The stem is zie.",
+   "sec": "ww-klank",
+   "say": "wij zien"
+  },
+  {
+   "id": "ww-klank-zien-anna",
+   "q": "Anna · zien",
+   "nl": "ziet/Anna ziet",
+   "en": "zien: to see. The stem is zie.",
+   "sec": "ww-klank",
+   "say": "Anna ziet"
+  },
+  {
+   "id": "ww-klank-zien-vraag",
+   "q": "___ jij …? · zien",
+   "nl": "zie/zie jij",
+   "en": "zien: to see. Before jij the verb loses its -t.",
+   "sec": "ww-klank",
+   "say": "Zie jij?"
+  },
+  {
+   "id": "ww-zv-kiezen-ik",
+   "q": "ik · kiezen",
+   "nl": "kies/ik kies",
+   "en": "kiezen: to choose. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "ik kies"
+  },
+  {
+   "id": "ww-zv-kiezen-jij",
+   "q": "jij · kiezen",
+   "nl": "kiest/jij kiest",
+   "en": "kiezen: to choose. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "jij kiest"
+  },
+  {
+   "id": "ww-zv-kiezen-hij",
+   "q": "hij · kiezen",
+   "nl": "kiest/hij kiest",
+   "en": "kiezen: to choose. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "hij kiest"
+  },
+  {
+   "id": "ww-zv-kiezen-wij",
+   "q": "wij · kiezen",
+   "nl": "kiezen/wij kiezen",
+   "en": "kiezen: to choose. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "wij kiezen"
+  },
+  {
+   "id": "ww-zv-kiezen-jullie",
+   "q": "jullie · kiezen",
+   "nl": "kiezen/jullie kiezen",
+   "en": "kiezen: to choose. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "jullie kiezen"
+  },
+  {
+   "id": "ww-zv-kiezen-vraag",
+   "q": "___ jij …? · kiezen",
+   "nl": "kies/kies jij",
+   "en": "kiezen: to choose. Before jij the verb loses its -t.",
+   "sec": "ww-zv",
+   "say": "Kies jij?"
+  },
+  {
+   "id": "ww-zv-lezen-ik",
+   "q": "ik · lezen",
+   "nl": "lees/ik lees",
+   "en": "lezen: to read. Z becomes s, long e: ee.",
+   "sec": "ww-zv",
+   "say": "ik lees"
+  },
+  {
+   "id": "ww-zv-lezen-jij",
+   "q": "jij · lezen",
+   "nl": "leest/jij leest",
+   "en": "lezen: to read. Z becomes s, long e: ee.",
+   "sec": "ww-zv",
+   "say": "jij leest"
+  },
+  {
+   "id": "ww-zv-lezen-hij",
+   "q": "hij · lezen",
+   "nl": "leest/hij leest",
+   "en": "lezen: to read. Z becomes s, long e: ee.",
+   "sec": "ww-zv",
+   "say": "hij leest"
+  },
+  {
+   "id": "ww-zv-lezen-wij",
+   "q": "wij · lezen",
+   "nl": "lezen/wij lezen",
+   "en": "lezen: to read. Z becomes s, long e: ee.",
+   "sec": "ww-zv",
+   "say": "wij lezen"
+  },
+  {
+   "id": "ww-zv-lezen-zij-meervoud",
+   "q": "zij (meervoud) · lezen",
+   "nl": "lezen/zij lezen",
+   "en": "lezen: to read. Z becomes s, long e: ee.",
+   "sec": "ww-zv",
+   "say": "zij lezen"
+  },
+  {
+   "id": "ww-zv-lezen-vraag",
+   "q": "___ jij …? · lezen",
+   "nl": "lees/lees jij",
+   "en": "lezen: to read. Before jij the verb loses its -t.",
+   "sec": "ww-zv",
+   "say": "Lees jij?"
+  },
+  {
+   "id": "ww-zv-reizen-ik",
+   "q": "ik · reizen",
+   "nl": "reis/ik reis",
+   "en": "reizen: to travel. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "ik reis"
+  },
+  {
+   "id": "ww-zv-reizen-jij",
+   "q": "jij · reizen",
+   "nl": "reist/jij reist",
+   "en": "reizen: to travel. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "jij reist"
+  },
+  {
+   "id": "ww-zv-reizen-hij",
+   "q": "hij · reizen",
+   "nl": "reist/hij reist",
+   "en": "reizen: to travel. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "hij reist"
+  },
+  {
+   "id": "ww-zv-reizen-wij",
+   "q": "wij · reizen",
+   "nl": "reizen/wij reizen",
+   "en": "reizen: to travel. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "wij reizen"
+  },
+  {
+   "id": "ww-zv-reizen-anna",
+   "q": "Anna · reizen",
+   "nl": "reist/Anna reist",
+   "en": "reizen: to travel. Z becomes s in the stem.",
+   "sec": "ww-zv",
+   "say": "Anna reist"
+  },
+  {
+   "id": "ww-zv-reizen-vraag",
+   "q": "___ jij …? · reizen",
+   "nl": "reis/reis jij",
+   "en": "reizen: to travel. Before jij the verb loses its -t.",
+   "sec": "ww-zv",
+   "say": "Reis jij?"
+  },
+  {
+   "id": "ww-zv-schrijven-ik",
+   "q": "ik · schrijven",
+   "nl": "schrijf/ik schrijf",
+   "en": "schrijven: to write. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "ik schrijf"
+  },
+  {
+   "id": "ww-zv-schrijven-jij",
+   "q": "jij · schrijven",
+   "nl": "schrijft/jij schrijft",
+   "en": "schrijven: to write. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "jij schrijft"
+  },
+  {
+   "id": "ww-zv-schrijven-hij",
+   "q": "hij · schrijven",
+   "nl": "schrijft/hij schrijft",
+   "en": "schrijven: to write. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "hij schrijft"
+  },
+  {
+   "id": "ww-zv-schrijven-wij",
+   "q": "wij · schrijven",
+   "nl": "schrijven/wij schrijven",
+   "en": "schrijven: to write. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "wij schrijven"
+  },
+  {
+   "id": "ww-zv-schrijven-jullie",
+   "q": "jullie · schrijven",
+   "nl": "schrijven/jullie schrijven",
+   "en": "schrijven: to write. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "jullie schrijven"
+  },
+  {
+   "id": "ww-zv-schrijven-vraag",
+   "q": "___ jij …? · schrijven",
+   "nl": "schrijf/schrijf jij",
+   "en": "schrijven: to write. Before jij the verb loses its -t.",
+   "sec": "ww-zv",
+   "say": "Schrijf jij?"
+  },
+  {
+   "id": "ww-zv-geven-ik",
+   "q": "ik · geven",
+   "nl": "geef/ik geef",
+   "en": "geven: to give. V becomes f, long e: ee.",
+   "sec": "ww-zv",
+   "say": "ik geef"
+  },
+  {
+   "id": "ww-zv-geven-jij",
+   "q": "jij · geven",
+   "nl": "geeft/jij geeft",
+   "en": "geven: to give. V becomes f, long e: ee.",
+   "sec": "ww-zv",
+   "say": "jij geeft"
+  },
+  {
+   "id": "ww-zv-geven-hij",
+   "q": "hij · geven",
+   "nl": "geeft/hij geeft",
+   "en": "geven: to give. V becomes f, long e: ee.",
+   "sec": "ww-zv",
+   "say": "hij geeft"
+  },
+  {
+   "id": "ww-zv-geven-wij",
+   "q": "wij · geven",
+   "nl": "geven/wij geven",
+   "en": "geven: to give. V becomes f, long e: ee.",
+   "sec": "ww-zv",
+   "say": "wij geven"
+  },
+  {
+   "id": "ww-zv-geven-zij-meervoud",
+   "q": "zij (meervoud) · geven",
+   "nl": "geven/zij geven",
+   "en": "geven: to give. V becomes f, long e: ee.",
+   "sec": "ww-zv",
+   "say": "zij geven"
+  },
+  {
+   "id": "ww-zv-geven-vraag",
+   "q": "___ jij …? · geven",
+   "nl": "geef/geef jij",
+   "en": "geven: to give. Before jij the verb loses its -t.",
+   "sec": "ww-zv",
+   "say": "Geef jij?"
+  },
+  {
+   "id": "ww-zv-blijven-ik",
+   "q": "ik · blijven",
+   "nl": "blijf/ik blijf",
+   "en": "blijven: to stay. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "ik blijf"
+  },
+  {
+   "id": "ww-zv-blijven-jij",
+   "q": "jij · blijven",
+   "nl": "blijft/jij blijft",
+   "en": "blijven: to stay. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "jij blijft"
+  },
+  {
+   "id": "ww-zv-blijven-hij",
+   "q": "hij · blijven",
+   "nl": "blijft/hij blijft",
+   "en": "blijven: to stay. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "hij blijft"
+  },
+  {
+   "id": "ww-zv-blijven-wij",
+   "q": "wij · blijven",
+   "nl": "blijven/wij blijven",
+   "en": "blijven: to stay. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "wij blijven"
+  },
+  {
+   "id": "ww-zv-blijven-anna",
+   "q": "Anna · blijven",
+   "nl": "blijft/Anna blijft",
+   "en": "blijven: to stay. V becomes f in the stem.",
+   "sec": "ww-zv",
+   "say": "Anna blijft"
+  },
+  {
+   "id": "ww-zv-blijven-vraag",
+   "q": "___ jij …? · blijven",
+   "nl": "blijf/blijf jij",
+   "en": "blijven: to stay. Before jij the verb loses its -t.",
+   "sec": "ww-zv",
+   "say": "Blijf jij?"
+  },
+  {
+   "id": "ww-dt-vinden-ik",
+   "q": "ik · vinden",
+   "nl": "vind/ik vind",
+   "en": "vinden: to find; to think. Stem ends in d, then -t: vindt.",
+   "sec": "ww-dt",
+   "say": "ik vind"
+  },
+  {
+   "id": "ww-dt-vinden-jij",
+   "q": "jij · vinden",
+   "nl": "vindt/jij vindt",
+   "en": "vinden: to find; to think. Stem ends in d, then -t: vindt.",
+   "sec": "ww-dt",
+   "say": "jij vindt"
+  },
+  {
+   "id": "ww-dt-vinden-hij",
+   "q": "hij · vinden",
+   "nl": "vindt/hij vindt",
+   "en": "vinden: to find; to think. Stem ends in d, then -t: vindt.",
+   "sec": "ww-dt",
+   "say": "hij vindt"
+  },
+  {
+   "id": "ww-dt-vinden-wij",
+   "q": "wij · vinden",
+   "nl": "vinden/wij vinden",
+   "en": "vinden: to find; to think. Stem ends in d, then -t: vindt.",
+   "sec": "ww-dt",
+   "say": "wij vinden"
+  },
+  {
+   "id": "ww-dt-vinden-jullie",
+   "q": "jullie · vinden",
+   "nl": "vinden/jullie vinden",
+   "en": "vinden: to find; to think. Stem ends in d, then -t: vindt.",
+   "sec": "ww-dt",
+   "say": "jullie vinden"
+  },
+  {
+   "id": "ww-dt-vinden-vraag",
+   "q": "___ jij …? · vinden",
+   "nl": "vind/vind jij",
+   "en": "vinden: to find; to think. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Vind jij?"
+  },
+  {
+   "id": "ww-dt-worden-ik",
+   "q": "ik · worden",
+   "nl": "word/ik word",
+   "en": "worden: to become. Stem ends in d, then -t: wordt.",
+   "sec": "ww-dt",
+   "say": "ik word"
+  },
+  {
+   "id": "ww-dt-worden-jij",
+   "q": "jij · worden",
+   "nl": "wordt/jij wordt",
+   "en": "worden: to become. Stem ends in d, then -t: wordt.",
+   "sec": "ww-dt",
+   "say": "jij wordt"
+  },
+  {
+   "id": "ww-dt-worden-hij",
+   "q": "hij · worden",
+   "nl": "wordt/hij wordt",
+   "en": "worden: to become. Stem ends in d, then -t: wordt.",
+   "sec": "ww-dt",
+   "say": "hij wordt"
+  },
+  {
+   "id": "ww-dt-worden-wij",
+   "q": "wij · worden",
+   "nl": "worden/wij worden",
+   "en": "worden: to become. Stem ends in d, then -t: wordt.",
+   "sec": "ww-dt",
+   "say": "wij worden"
+  },
+  {
+   "id": "ww-dt-worden-zij-meervoud",
+   "q": "zij (meervoud) · worden",
+   "nl": "worden/zij worden",
+   "en": "worden: to become. Stem ends in d, then -t: wordt.",
+   "sec": "ww-dt",
+   "say": "zij worden"
+  },
+  {
+   "id": "ww-dt-worden-vraag",
+   "q": "___ jij …? · worden",
+   "nl": "word/word jij",
+   "en": "worden: to become. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Word jij?"
+  },
+  {
+   "id": "ww-dt-rijden-ik",
+   "q": "ik · rijden",
+   "nl": "rijd/ik rijd",
+   "en": "rijden: to ride, to drive. Stem ends in d, then -t: rijdt.",
+   "sec": "ww-dt",
+   "say": "ik rijd"
+  },
+  {
+   "id": "ww-dt-rijden-jij",
+   "q": "jij · rijden",
+   "nl": "rijdt/jij rijdt",
+   "en": "rijden: to ride, to drive. Stem ends in d, then -t: rijdt.",
+   "sec": "ww-dt",
+   "say": "jij rijdt"
+  },
+  {
+   "id": "ww-dt-rijden-hij",
+   "q": "hij · rijden",
+   "nl": "rijdt/hij rijdt",
+   "en": "rijden: to ride, to drive. Stem ends in d, then -t: rijdt.",
+   "sec": "ww-dt",
+   "say": "hij rijdt"
+  },
+  {
+   "id": "ww-dt-rijden-wij",
+   "q": "wij · rijden",
+   "nl": "rijden/wij rijden",
+   "en": "rijden: to ride, to drive. Stem ends in d, then -t: rijdt.",
+   "sec": "ww-dt",
+   "say": "wij rijden"
+  },
+  {
+   "id": "ww-dt-rijden-anna",
+   "q": "Anna · rijden",
+   "nl": "rijdt/Anna rijdt",
+   "en": "rijden: to ride, to drive. Stem ends in d, then -t: rijdt.",
+   "sec": "ww-dt",
+   "say": "Anna rijdt"
+  },
+  {
+   "id": "ww-dt-rijden-vraag",
+   "q": "___ jij …? · rijden",
+   "nl": "rijd/rijd jij",
+   "en": "rijden: to ride, to drive. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Rijd jij?"
+  },
+  {
+   "id": "ww-dt-houden-ik",
+   "q": "ik · houden",
+   "nl": "houd/ik houd",
+   "en": "houden: to hold; houden van = to love, to like. Stem ends in d, then -t: houdt.",
+   "sec": "ww-dt",
+   "say": "ik houd"
+  },
+  {
+   "id": "ww-dt-houden-jij",
+   "q": "jij · houden",
+   "nl": "houdt/jij houdt",
+   "en": "houden: to hold; houden van = to love, to like. Stem ends in d, then -t: houdt.",
+   "sec": "ww-dt",
+   "say": "jij houdt"
+  },
+  {
+   "id": "ww-dt-houden-hij",
+   "q": "hij · houden",
+   "nl": "houdt/hij houdt",
+   "en": "houden: to hold; houden van = to love, to like. Stem ends in d, then -t: houdt.",
+   "sec": "ww-dt",
+   "say": "hij houdt"
+  },
+  {
+   "id": "ww-dt-houden-wij",
+   "q": "wij · houden",
+   "nl": "houden/wij houden",
+   "en": "houden: to hold; houden van = to love, to like. Stem ends in d, then -t: houdt.",
+   "sec": "ww-dt",
+   "say": "wij houden"
+  },
+  {
+   "id": "ww-dt-houden-jullie",
+   "q": "jullie · houden",
+   "nl": "houden/jullie houden",
+   "en": "houden: to hold; houden van = to love, to like. Stem ends in d, then -t: houdt.",
+   "sec": "ww-dt",
+   "say": "jullie houden"
+  },
+  {
+   "id": "ww-dt-houden-vraag",
+   "q": "___ jij …? · houden",
+   "nl": "houd/houd jij",
+   "en": "houden: to hold; houden van = to love, to like. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Houd jij?"
+  },
+  {
+   "id": "ww-dt-antwoorden-ik",
+   "q": "ik · antwoorden",
+   "nl": "antwoord/ik antwoord",
+   "en": "antwoorden: to answer. Stem ends in d, then -t: antwoordt.",
+   "sec": "ww-dt",
+   "say": "ik antwoord"
+  },
+  {
+   "id": "ww-dt-antwoorden-jij",
+   "q": "jij · antwoorden",
+   "nl": "antwoordt/jij antwoordt",
+   "en": "antwoorden: to answer. Stem ends in d, then -t: antwoordt.",
+   "sec": "ww-dt",
+   "say": "jij antwoordt"
+  },
+  {
+   "id": "ww-dt-antwoorden-hij",
+   "q": "hij · antwoorden",
+   "nl": "antwoordt/hij antwoordt",
+   "en": "antwoorden: to answer. Stem ends in d, then -t: antwoordt.",
+   "sec": "ww-dt",
+   "say": "hij antwoordt"
+  },
+  {
+   "id": "ww-dt-antwoorden-wij",
+   "q": "wij · antwoorden",
+   "nl": "antwoorden/wij antwoorden",
+   "en": "antwoorden: to answer. Stem ends in d, then -t: antwoordt.",
+   "sec": "ww-dt",
+   "say": "wij antwoorden"
+  },
+  {
+   "id": "ww-dt-antwoorden-zij-meervoud",
+   "q": "zij (meervoud) · antwoorden",
+   "nl": "antwoorden/zij antwoorden",
+   "en": "antwoorden: to answer. Stem ends in d, then -t: antwoordt.",
+   "sec": "ww-dt",
+   "say": "zij antwoorden"
+  },
+  {
+   "id": "ww-dt-antwoorden-vraag",
+   "q": "___ jij …? · antwoorden",
+   "nl": "antwoord/antwoord jij",
+   "en": "antwoorden: to answer. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Antwoord jij?"
+  },
+  {
+   "id": "ww-dt-eten-ik",
+   "q": "ik · eten",
+   "nl": "eet/ik eet",
+   "en": "eten: to eat. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "ik eet"
+  },
+  {
+   "id": "ww-dt-eten-jij",
+   "q": "jij · eten",
+   "nl": "eet/jij eet",
+   "en": "eten: to eat. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "jij eet"
+  },
+  {
+   "id": "ww-dt-eten-hij",
+   "q": "hij · eten",
+   "nl": "eet/hij eet",
+   "en": "eten: to eat. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "hij eet"
+  },
+  {
+   "id": "ww-dt-eten-wij",
+   "q": "wij · eten",
+   "nl": "eten/wij eten",
+   "en": "eten: to eat. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "wij eten"
+  },
+  {
+   "id": "ww-dt-eten-anna",
+   "q": "Anna · eten",
+   "nl": "eet/Anna eet",
+   "en": "eten: to eat. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "Anna eet"
+  },
+  {
+   "id": "ww-dt-eten-vraag",
+   "q": "___ jij …? · eten",
+   "nl": "eet/eet jij",
+   "en": "eten: to eat. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Eet jij?"
+  },
+  {
+   "id": "ww-dt-weten-ik",
+   "q": "ik · weten",
+   "nl": "weet/ik weet",
+   "en": "weten: to know. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "ik weet"
+  },
+  {
+   "id": "ww-dt-weten-jij",
+   "q": "jij · weten",
+   "nl": "weet/jij weet",
+   "en": "weten: to know. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "jij weet"
+  },
+  {
+   "id": "ww-dt-weten-hij",
+   "q": "hij · weten",
+   "nl": "weet/hij weet",
+   "en": "weten: to know. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "hij weet"
+  },
+  {
+   "id": "ww-dt-weten-wij",
+   "q": "wij · weten",
+   "nl": "weten/wij weten",
+   "en": "weten: to know. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "wij weten"
+  },
+  {
+   "id": "ww-dt-weten-jullie",
+   "q": "jullie · weten",
+   "nl": "weten/jullie weten",
+   "en": "weten: to know. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "jullie weten"
+  },
+  {
+   "id": "ww-dt-weten-vraag",
+   "q": "___ jij …? · weten",
+   "nl": "weet/weet jij",
+   "en": "weten: to know. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Weet jij?"
+  },
+  {
+   "id": "ww-dt-wachten-ik",
+   "q": "ik · wachten",
+   "nl": "wacht/ik wacht",
+   "en": "wachten: to wait. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "ik wacht"
+  },
+  {
+   "id": "ww-dt-wachten-jij",
+   "q": "jij · wachten",
+   "nl": "wacht/jij wacht",
+   "en": "wachten: to wait. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "jij wacht"
+  },
+  {
+   "id": "ww-dt-wachten-hij",
+   "q": "hij · wachten",
+   "nl": "wacht/hij wacht",
+   "en": "wachten: to wait. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "hij wacht"
+  },
+  {
+   "id": "ww-dt-wachten-wij",
+   "q": "wij · wachten",
+   "nl": "wachten/wij wachten",
+   "en": "wachten: to wait. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "wij wachten"
+  },
+  {
+   "id": "ww-dt-wachten-zij-meervoud",
+   "q": "zij (meervoud) · wachten",
+   "nl": "wachten/zij wachten",
+   "en": "wachten: to wait. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "zij wachten"
+  },
+  {
+   "id": "ww-dt-wachten-vraag",
+   "q": "___ jij …? · wachten",
+   "nl": "wacht/wacht jij",
+   "en": "wachten: to wait. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Wacht jij?"
+  },
+  {
+   "id": "ww-dt-sporten-ik",
+   "q": "ik · sporten",
+   "nl": "sport/ik sport",
+   "en": "sporten: to do sport. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "ik sport"
+  },
+  {
+   "id": "ww-dt-sporten-jij",
+   "q": "jij · sporten",
+   "nl": "sport/jij sport",
+   "en": "sporten: to do sport. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "jij sport"
+  },
+  {
+   "id": "ww-dt-sporten-hij",
+   "q": "hij · sporten",
+   "nl": "sport/hij sport",
+   "en": "sporten: to do sport. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "hij sport"
+  },
+  {
+   "id": "ww-dt-sporten-wij",
+   "q": "wij · sporten",
+   "nl": "sporten/wij sporten",
+   "en": "sporten: to do sport. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "wij sporten"
+  },
+  {
+   "id": "ww-dt-sporten-anna",
+   "q": "Anna · sporten",
+   "nl": "sport/Anna sport",
+   "en": "sporten: to do sport. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "Anna sport"
+  },
+  {
+   "id": "ww-dt-sporten-vraag",
+   "q": "___ jij …? · sporten",
+   "nl": "sport/sport jij",
+   "en": "sporten: to do sport. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Sport jij?"
+  },
+  {
+   "id": "ww-dt-vluchten-ik",
+   "q": "ik · vluchten",
+   "nl": "vlucht/ik vlucht",
+   "en": "vluchten: to flee. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "ik vlucht"
+  },
+  {
+   "id": "ww-dt-vluchten-jij",
+   "q": "jij · vluchten",
+   "nl": "vlucht/jij vlucht",
+   "en": "vluchten: to flee. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "jij vlucht"
+  },
+  {
+   "id": "ww-dt-vluchten-hij",
+   "q": "hij · vluchten",
+   "nl": "vlucht/hij vlucht",
+   "en": "vluchten: to flee. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "hij vlucht"
+  },
+  {
+   "id": "ww-dt-vluchten-wij",
+   "q": "wij · vluchten",
+   "nl": "vluchten/wij vluchten",
+   "en": "vluchten: to flee. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "wij vluchten"
+  },
+  {
+   "id": "ww-dt-vluchten-jullie",
+   "q": "jullie · vluchten",
+   "nl": "vluchten/jullie vluchten",
+   "en": "vluchten: to flee. Stem ends in t: no extra t.",
+   "sec": "ww-dt",
+   "say": "jullie vluchten"
+  },
+  {
+   "id": "ww-dt-vluchten-vraag",
+   "q": "___ jij …? · vluchten",
+   "nl": "vlucht/vlucht jij",
+   "en": "vluchten: to flee. Before jij the verb loses its -t.",
+   "sec": "ww-dt",
+   "say": "Vlucht jij?"
+  },
+  {
+   "id": "ww-regelmatig-fietsen-ik",
+   "q": "ik · fietsen",
+   "nl": "fiets/ik fiets",
+   "en": "fietsen: to cycle. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "ik fiets"
+  },
+  {
+   "id": "ww-regelmatig-fietsen-jij",
+   "q": "jij · fietsen",
+   "nl": "fietst/jij fietst",
+   "en": "fietsen: to cycle. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "jij fietst"
+  },
+  {
+   "id": "ww-regelmatig-fietsen-hij",
+   "q": "hij · fietsen",
+   "nl": "fietst/hij fietst",
+   "en": "fietsen: to cycle. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "hij fietst"
+  },
+  {
+   "id": "ww-regelmatig-fietsen-wij",
+   "q": "wij · fietsen",
+   "nl": "fietsen/wij fietsen",
+   "en": "fietsen: to cycle. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "wij fietsen"
+  },
+  {
+   "id": "ww-regelmatig-fietsen-zij-meervoud",
+   "q": "zij (meervoud) · fietsen",
+   "nl": "fietsen/zij fietsen",
+   "en": "fietsen: to cycle. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "zij fietsen"
+  },
+  {
+   "id": "ww-regelmatig-fietsen-vraag",
+   "q": "___ jij …? · fietsen",
+   "nl": "fiets/fiets jij",
+   "en": "fietsen: to cycle. Before jij the verb loses its -t.",
+   "sec": "ww-regelmatig",
+   "say": "Fiets jij?"
+  },
+  {
+   "id": "ww-regelmatig-wandelen-ik",
+   "q": "ik · wandelen",
+   "nl": "wandel/ik wandel",
+   "en": "wandelen: to walk (for pleasure). Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "ik wandel"
+  },
+  {
+   "id": "ww-regelmatig-wandelen-jij",
+   "q": "jij · wandelen",
+   "nl": "wandelt/jij wandelt",
+   "en": "wandelen: to walk (for pleasure). Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "jij wandelt"
+  },
+  {
+   "id": "ww-regelmatig-wandelen-hij",
+   "q": "hij · wandelen",
+   "nl": "wandelt/hij wandelt",
+   "en": "wandelen: to walk (for pleasure). Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "hij wandelt"
+  },
+  {
+   "id": "ww-regelmatig-wandelen-wij",
+   "q": "wij · wandelen",
+   "nl": "wandelen/wij wandelen",
+   "en": "wandelen: to walk (for pleasure). Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "wij wandelen"
+  },
+  {
+   "id": "ww-regelmatig-wandelen-anna",
+   "q": "Anna · wandelen",
+   "nl": "wandelt/Anna wandelt",
+   "en": "wandelen: to walk (for pleasure). Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "Anna wandelt"
+  },
+  {
+   "id": "ww-regelmatig-wandelen-vraag",
+   "q": "___ jij …? · wandelen",
+   "nl": "wandel/wandel jij",
+   "en": "wandelen: to walk (for pleasure). Before jij the verb loses its -t.",
+   "sec": "ww-regelmatig",
+   "say": "Wandel jij?"
+  },
+  {
+   "id": "ww-regelmatig-dansen-ik",
+   "q": "ik · dansen",
+   "nl": "dans/ik dans",
+   "en": "dansen: to dance. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "ik dans"
+  },
+  {
+   "id": "ww-regelmatig-dansen-jij",
+   "q": "jij · dansen",
+   "nl": "danst/jij danst",
+   "en": "dansen: to dance. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "jij danst"
+  },
+  {
+   "id": "ww-regelmatig-dansen-hij",
+   "q": "hij · dansen",
+   "nl": "danst/hij danst",
+   "en": "dansen: to dance. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "hij danst"
+  },
+  {
+   "id": "ww-regelmatig-dansen-wij",
+   "q": "wij · dansen",
+   "nl": "dansen/wij dansen",
+   "en": "dansen: to dance. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "wij dansen"
+  },
+  {
+   "id": "ww-regelmatig-dansen-jullie",
+   "q": "jullie · dansen",
+   "nl": "dansen/jullie dansen",
+   "en": "dansen: to dance. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "jullie dansen"
+  },
+  {
+   "id": "ww-regelmatig-dansen-vraag",
+   "q": "___ jij …? · dansen",
+   "nl": "dans/dans jij",
+   "en": "dansen: to dance. Before jij the verb loses its -t.",
+   "sec": "ww-regelmatig",
+   "say": "Dans jij?"
+  },
+  {
+   "id": "ww-regelmatig-zingen-ik",
+   "q": "ik · zingen",
+   "nl": "zing/ik zing",
+   "en": "zingen: to sing. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "ik zing"
+  },
+  {
+   "id": "ww-regelmatig-zingen-jij",
+   "q": "jij · zingen",
+   "nl": "zingt/jij zingt",
+   "en": "zingen: to sing. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "jij zingt"
+  },
+  {
+   "id": "ww-regelmatig-zingen-hij",
+   "q": "hij · zingen",
+   "nl": "zingt/hij zingt",
+   "en": "zingen: to sing. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "hij zingt"
+  },
+  {
+   "id": "ww-regelmatig-zingen-wij",
+   "q": "wij · zingen",
+   "nl": "zingen/wij zingen",
+   "en": "zingen: to sing. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "wij zingen"
+  },
+  {
+   "id": "ww-regelmatig-zingen-zij-meervoud",
+   "q": "zij (meervoud) · zingen",
+   "nl": "zingen/zij zingen",
+   "en": "zingen: to sing. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "zij zingen"
+  },
+  {
+   "id": "ww-regelmatig-zingen-vraag",
+   "q": "___ jij …? · zingen",
+   "nl": "zing/zing jij",
+   "en": "zingen: to sing. Before jij the verb loses its -t.",
+   "sec": "ww-regelmatig",
+   "say": "Zing jij?"
+  },
+  {
+   "id": "ww-regelmatig-helpen-ik",
+   "q": "ik · helpen",
+   "nl": "help/ik help",
+   "en": "helpen: to help. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "ik help"
+  },
+  {
+   "id": "ww-regelmatig-helpen-jij",
+   "q": "jij · helpen",
+   "nl": "helpt/jij helpt",
+   "en": "helpen: to help. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "jij helpt"
+  },
+  {
+   "id": "ww-regelmatig-helpen-hij",
+   "q": "hij · helpen",
+   "nl": "helpt/hij helpt",
+   "en": "helpen: to help. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "hij helpt"
+  },
+  {
+   "id": "ww-regelmatig-helpen-wij",
+   "q": "wij · helpen",
+   "nl": "helpen/wij helpen",
+   "en": "helpen: to help. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "wij helpen"
+  },
+  {
+   "id": "ww-regelmatig-helpen-anna",
+   "q": "Anna · helpen",
+   "nl": "helpt/Anna helpt",
+   "en": "helpen: to help. Regular: stem + t.",
+   "sec": "ww-regelmatig",
+   "say": "Anna helpt"
+  },
+  {
+   "id": "ww-regelmatig-helpen-vraag",
+   "q": "___ jij …? · helpen",
+   "nl": "help/help jij",
+   "en": "helpen: to help. Before jij the verb loses its -t.",
+   "sec": "ww-regelmatig",
+   "say": "Help jij?"
+  },
+  {
+   "id": "ww-regelmatig-vertrekken-ik",
+   "q": "ik · vertrekken",
+   "nl": "vertrek/ik vertrek",
+   "en": "vertrekken: to leave, to depart. Short e: one k in the stem.",
+   "sec": "ww-regelmatig",
+   "say": "ik vertrek"
+  },
+  {
+   "id": "ww-regelmatig-vertrekken-jij",
+   "q": "jij · vertrekken",
+   "nl": "vertrekt/jij vertrekt",
+   "en": "vertrekken: to leave, to depart. Short e: one k in the stem.",
+   "sec": "ww-regelmatig",
+   "say": "jij vertrekt"
+  },
+  {
+   "id": "ww-regelmatig-vertrekken-hij",
+   "q": "hij · vertrekken",
+   "nl": "vertrekt/hij vertrekt",
+   "en": "vertrekken: to leave, to depart. Short e: one k in the stem.",
+   "sec": "ww-regelmatig",
+   "say": "hij vertrekt"
+  },
+  {
+   "id": "ww-regelmatig-vertrekken-wij",
+   "q": "wij · vertrekken",
+   "nl": "vertrekken/wij vertrekken",
+   "en": "vertrekken: to leave, to depart. Short e: one k in the stem.",
+   "sec": "ww-regelmatig",
+   "say": "wij vertrekken"
+  },
+  {
+   "id": "ww-regelmatig-vertrekken-jullie",
+   "q": "jullie · vertrekken",
+   "nl": "vertrekken/jullie vertrekken",
+   "en": "vertrekken: to leave, to depart. Short e: one k in the stem.",
+   "sec": "ww-regelmatig",
+   "say": "jullie vertrekken"
+  },
+  {
+   "id": "ww-regelmatig-vertrekken-vraag",
+   "q": "___ jij …? · vertrekken",
+   "nl": "vertrek/vertrek jij",
+   "en": "vertrekken: to leave, to depart. Before jij the verb loses its -t.",
+   "sec": "ww-regelmatig",
+   "say": "Vertrek jij?"
+  },
+  {
+   "id": "ww-modaal-willen-ik",
+   "q": "ik · willen",
+   "nl": "wil/ik wil",
+   "en": "willen: to want. Modal: ik wil, jij wilt.",
+   "sec": "ww-modaal",
+   "say": "ik wil"
+  },
+  {
+   "id": "ww-modaal-willen-jij",
+   "q": "jij · willen",
+   "nl": "wilt/jij wilt/wil/jij wil",
+   "en": "willen: to want. Modal: ik wil, jij wilt.",
+   "sec": "ww-modaal",
+   "say": "jij wilt"
+  },
+  {
+   "id": "ww-modaal-willen-u",
+   "q": "u · willen",
+   "nl": "wilt/u wilt",
+   "en": "willen: to want. Modal: ik wil, jij wilt.",
+   "sec": "ww-modaal",
+   "say": "u wilt"
+  },
+  {
+   "id": "ww-modaal-willen-hij",
+   "q": "hij · willen",
+   "nl": "wil/hij wil",
+   "en": "willen: to want. Modal: ik wil, jij wilt.",
+   "sec": "ww-modaal",
+   "say": "hij wil"
+  },
+  {
+   "id": "ww-modaal-willen-wij",
+   "q": "wij · willen",
+   "nl": "willen/wij willen",
+   "en": "willen: to want. Modal: ik wil, jij wilt.",
+   "sec": "ww-modaal",
+   "say": "wij willen"
+  },
+  {
+   "id": "ww-modaal-willen-zij-meervoud",
+   "q": "zij (meervoud) · willen",
+   "nl": "willen/zij willen",
+   "en": "willen: to want. Modal: ik wil, jij wilt.",
+   "sec": "ww-modaal",
+   "say": "zij willen"
+  },
+  {
+   "id": "ww-modaal-willen-vraag",
+   "q": "___ jij …? · willen",
+   "nl": "wil/wil jij",
+   "en": "willen: to want.",
+   "sec": "ww-modaal",
+   "say": "Wil jij?"
+  },
+  {
+   "id": "ww-modaal-kunnen-ik",
+   "q": "ik · kunnen",
+   "nl": "kan/ik kan",
+   "en": "kunnen: can, to be able to. Modal: ik kan, jij kunt.",
+   "sec": "ww-modaal",
+   "say": "ik kan"
+  },
+  {
+   "id": "ww-modaal-kunnen-jij",
+   "q": "jij · kunnen",
+   "nl": "kunt/jij kunt/kan/jij kan",
+   "en": "kunnen: can, to be able to. Modal: ik kan, jij kunt.",
+   "sec": "ww-modaal",
+   "say": "jij kunt"
+  },
+  {
+   "id": "ww-modaal-kunnen-u",
+   "q": "u · kunnen",
+   "nl": "kunt/u kunt",
+   "en": "kunnen: can, to be able to. Modal: ik kan, jij kunt.",
+   "sec": "ww-modaal",
+   "say": "u kunt"
+  },
+  {
+   "id": "ww-modaal-kunnen-hij",
+   "q": "hij · kunnen",
+   "nl": "kan/hij kan",
+   "en": "kunnen: can, to be able to. Modal: ik kan, jij kunt.",
+   "sec": "ww-modaal",
+   "say": "hij kan"
+  },
+  {
+   "id": "ww-modaal-kunnen-wij",
+   "q": "wij · kunnen",
+   "nl": "kunnen/wij kunnen",
+   "en": "kunnen: can, to be able to. Modal: ik kan, jij kunt.",
+   "sec": "ww-modaal",
+   "say": "wij kunnen"
+  },
+  {
+   "id": "ww-modaal-kunnen-anna",
+   "q": "Anna · kunnen",
+   "nl": "kan/Anna kan",
+   "en": "kunnen: can, to be able to. Modal: ik kan, jij kunt.",
+   "sec": "ww-modaal",
+   "say": "Anna kan"
+  },
+  {
+   "id": "ww-modaal-kunnen-vraag",
+   "q": "___ jij morgen? · kunnen",
+   "nl": "kun/kun jij/kan/kan jij",
+   "en": "kunnen: can, to be able to.",
+   "sec": "ww-modaal",
+   "say": "Kun jij morgen?"
+  },
+  {
+   "id": "ww-modaal-moeten-ik",
+   "q": "ik · moeten",
+   "nl": "moet/ik moet",
+   "en": "moeten: must, to have to. Modal: no extra t.",
+   "sec": "ww-modaal",
+   "say": "ik moet"
+  },
+  {
+   "id": "ww-modaal-moeten-jij",
+   "q": "jij · moeten",
+   "nl": "moet/jij moet",
+   "en": "moeten: must, to have to. Modal: no extra t.",
+   "sec": "ww-modaal",
+   "say": "jij moet"
+  },
+  {
+   "id": "ww-modaal-moeten-hij",
+   "q": "hij · moeten",
+   "nl": "moet/hij moet",
+   "en": "moeten: must, to have to. Modal: no extra t.",
+   "sec": "ww-modaal",
+   "say": "hij moet"
+  },
+  {
+   "id": "ww-modaal-moeten-wij",
+   "q": "wij · moeten",
+   "nl": "moeten/wij moeten",
+   "en": "moeten: must, to have to. Modal: no extra t.",
+   "sec": "ww-modaal",
+   "say": "wij moeten"
+  },
+  {
+   "id": "ww-modaal-moeten-jullie",
+   "q": "jullie · moeten",
+   "nl": "moeten/jullie moeten",
+   "en": "moeten: must, to have to. Modal: no extra t.",
+   "sec": "ww-modaal",
+   "say": "jullie moeten"
+  },
+  {
+   "id": "ww-modaal-moeten-vraag",
+   "q": "___ jij …? · moeten",
+   "nl": "moet/moet jij",
+   "en": "moeten: must, to have to. Before jij the verb loses its -t.",
+   "sec": "ww-modaal",
+   "say": "Moet jij?"
+  },
+  {
+   "id": "ww-modaal-mogen-ik",
+   "q": "ik · mogen",
+   "nl": "mag/ik mag",
+   "en": "mogen: may, to be allowed to. Modal: ik mag, jij mag.",
+   "sec": "ww-modaal",
+   "say": "ik mag"
+  },
+  {
+   "id": "ww-modaal-mogen-jij",
+   "q": "jij · mogen",
+   "nl": "mag/jij mag",
+   "en": "mogen: may, to be allowed to. Modal: ik mag, jij mag.",
+   "sec": "ww-modaal",
+   "say": "jij mag"
+  },
+  {
+   "id": "ww-modaal-mogen-hij",
+   "q": "hij · mogen",
+   "nl": "mag/hij mag",
+   "en": "mogen: may, to be allowed to. Modal: ik mag, jij mag.",
+   "sec": "ww-modaal",
+   "say": "hij mag"
+  },
+  {
+   "id": "ww-modaal-mogen-wij",
+   "q": "wij · mogen",
+   "nl": "mogen/wij mogen",
+   "en": "mogen: may, to be allowed to. Modal: ik mag, jij mag.",
+   "sec": "ww-modaal",
+   "say": "wij mogen"
+  },
+  {
+   "id": "ww-modaal-mogen-zij-meervoud",
+   "q": "zij (meervoud) · mogen",
+   "nl": "mogen/zij mogen",
+   "en": "mogen: may, to be allowed to. Modal: ik mag, jij mag.",
+   "sec": "ww-modaal",
+   "say": "zij mogen"
+  },
+  {
+   "id": "ww-modaal-mogen-vraag",
+   "q": "___ ik iets vragen? · mogen",
+   "nl": "mag/mag ik",
+   "en": "mogen: may, to be allowed to.",
+   "sec": "ww-modaal",
+   "say": "Mag ik iets vragen?"
+  },
+  {
+   "id": "ww-modaal-zullen-ik",
+   "q": "ik · zullen",
+   "nl": "zal/ik zal",
+   "en": "zullen: shall, will. Modal: ik zal, jij zult.",
+   "sec": "ww-modaal",
+   "say": "ik zal"
+  },
+  {
+   "id": "ww-modaal-zullen-jij",
+   "q": "jij · zullen",
+   "nl": "zult/jij zult/zal/jij zal",
+   "en": "zullen: shall, will. Modal: ik zal, jij zult.",
+   "sec": "ww-modaal",
+   "say": "jij zult"
+  },
+  {
+   "id": "ww-modaal-zullen-u",
+   "q": "u · zullen",
+   "nl": "zult/u zult",
+   "en": "zullen: shall, will. Modal: ik zal, jij zult.",
+   "sec": "ww-modaal",
+   "say": "u zult"
+  },
+  {
+   "id": "ww-modaal-zullen-hij",
+   "q": "hij · zullen",
+   "nl": "zal/hij zal",
+   "en": "zullen: shall, will. Modal: ik zal, jij zult.",
+   "sec": "ww-modaal",
+   "say": "hij zal"
+  },
+  {
+   "id": "ww-modaal-zullen-wij",
+   "q": "wij · zullen",
+   "nl": "zullen/wij zullen",
+   "en": "zullen: shall, will. Modal: ik zal, jij zult.",
+   "sec": "ww-modaal",
+   "say": "wij zullen"
+  },
+  {
+   "id": "ww-modaal-zullen-anna",
+   "q": "Anna · zullen",
+   "nl": "zal/Anna zal",
+   "en": "zullen: shall, will. Modal: ik zal, jij zult.",
+   "sec": "ww-modaal",
+   "say": "Anna zal"
+  },
+  {
+   "id": "ww-modaal-zullen-vraag",
+   "q": "___ we iets afspreken? · zullen",
+   "nl": "zullen/zullen we",
+   "en": "zullen: shall, will.",
+   "sec": "ww-modaal",
+   "say": "Zullen we iets afspreken?"
+  },
+  {
+   "id": "ww-zinnen2-ik-om-negen-uur-met-mijn-werk-beginnen",
+   "q": "Ik ___ om negen uur met mijn werk. (beginnen)",
+   "nl": "begin",
+   "en": "I start work at nine.",
+   "sec": "ww-zinnen2",
+   "say": "Ik begin om negen uur met mijn werk."
+  },
+  {
+   "id": "ww-zinnen2-de-les-om-kwart-over-zeven-beginnen",
+   "q": "De les ___ om kwart over zeven. (beginnen)",
+   "nl": "begint",
+   "en": "The class starts at a quarter past seven.",
+   "sec": "ww-zinnen2",
+   "say": "De les begint om kwart over zeven."
+  },
+  {
+   "id": "ww-zinnen2-wij-een-pizza-bestellen",
+   "q": "Wij ___ een pizza. (bestellen)",
+   "nl": "bestellen",
+   "en": "We're ordering a pizza.",
+   "sec": "ww-zinnen2",
+   "say": "Wij bestellen een pizza."
+  },
+  {
+   "id": "ww-zinnen2-jij-de-bus-of-de-trein-nemen",
+   "q": "___ jij de bus of de trein? (nemen)",
+   "nl": "neem",
+   "en": "Are you taking the bus or the train? jij after the verb: neem.",
+   "sec": "ww-zinnen2",
+   "say": "Neem jij de bus of de trein?"
+  },
+  {
+   "id": "ww-zinnen2-mijn-moeder-elke-week-een-kaart-sturen",
+   "q": "Mijn moeder ___ elke week een kaart. (sturen)",
+   "nl": "stuurt",
+   "en": "My mother sends a card every week.",
+   "sec": "ww-zinnen2",
+   "say": "Mijn moeder stuurt elke week een kaart."
+  },
+  {
+   "id": "ww-zinnen2-ik-altijd-de-rode-appels-kiezen",
+   "q": "Ik ___ altijd de rode appels. (kiezen)",
+   "nl": "kies",
+   "en": "I always choose the red apples. z → s.",
+   "sec": "ww-zinnen2",
+   "say": "Ik kies altijd de rode appels."
+  },
+  {
+   "id": "ww-zinnen2-wat-jij-een-boek-lezen",
+   "q": "Wat ___ jij? Een boek? (lezen)",
+   "nl": "lees",
+   "en": "What are you reading? A book?",
+   "sec": "ww-zinnen2",
+   "say": "Wat lees jij? Een boek?"
+  },
+  {
+   "id": "ww-zinnen2-hij-een-e-mail-aan-de-docent-schrijven",
+   "q": "Hij ___ een e-mail aan de docent. (schrijven)",
+   "nl": "schrijft",
+   "en": "He writes an email to the teacher. v → f.",
+   "sec": "ww-zinnen2",
+   "say": "Hij schrijft een e-mail aan de docent."
+  },
+  {
+   "id": "ww-zinnen2-wij-vanavond-thuis-blijven",
+   "q": "Wij ___ vanavond thuis. (blijven)",
+   "nl": "blijven",
+   "en": "We're staying home tonight.",
+   "sec": "ww-zinnen2",
+   "say": "Wij blijven vanavond thuis."
+  },
+  {
+   "id": "ww-zinnen2-jij-de-soep-lekker-vinden",
+   "q": "___ jij de soep lekker? (vinden)",
+   "nl": "vind",
+   "en": "Do you like the soup? jij after the verb: vind.",
+   "sec": "ww-zinnen2",
+   "say": "Vind jij de soep lekker?"
+  },
+  {
+   "id": "ww-zinnen2-anna-de-soep-niet-lekker-vinden",
+   "q": "Anna ___ de soep niet lekker. (vinden)",
+   "nl": "vindt",
+   "en": "Anna doesn't like the soup. d + t.",
+   "sec": "ww-zinnen2",
+   "say": "Anna vindt de soep niet lekker."
+  },
+  {
+   "id": "ww-zinnen2-mijn-zoon-morgen-tien-worden",
+   "q": "Mijn zoon ___ morgen tien. (worden)",
+   "nl": "wordt",
+   "en": "My son turns ten tomorrow.",
+   "sec": "ww-zinnen2",
+   "say": "Mijn zoon wordt morgen tien."
+  },
+  {
+   "id": "ww-zinnen2-ik-met-de-auto-naar-amsterdam-rijden",
+   "q": "Ik ___ met de auto naar Amsterdam. (rijden)",
+   "nl": "rijd",
+   "en": "I drive to Amsterdam.",
+   "sec": "ww-zinnen2",
+   "say": "Ik rijd met de auto naar Amsterdam."
+  },
+  {
+   "id": "ww-zinnen2-peter-van-jazzmuziek-houden",
+   "q": "Peter ___ van jazzmuziek. (houden)",
+   "nl": "houdt",
+   "en": "Peter loves jazz.",
+   "sec": "ww-zinnen2",
+   "say": "Peter houdt van jazzmuziek."
+  },
+  {
+   "id": "ww-zinnen2-ik-niet-zo-van-pizza-houden",
+   "q": "Ik ___ niet zo van pizza. (houden)",
+   "nl": "houd",
+   "en": "I'm not that keen on pizza.",
+   "sec": "ww-zinnen2",
+   "say": "Ik houd niet zo van pizza."
+  },
+  {
+   "id": "ww-zinnen2-wat-jullie-vanavond-eten",
+   "q": "Wat ___ jullie vanavond? (eten)",
+   "nl": "eten",
+   "en": "What are you having for dinner tonight?",
+   "sec": "ww-zinnen2",
+   "say": "Wat eten jullie vanavond?"
+  },
+  {
+   "id": "ww-zinnen2-jij-hoe-laat-het-is-weten",
+   "q": "___ jij hoe laat het is? (weten)",
+   "nl": "weet",
+   "en": "Do you know what time it is?",
+   "sec": "ww-zinnen2",
+   "say": "Weet jij hoe laat het is?"
+  },
+  {
+   "id": "ww-zinnen2-ik-vandaag-niet-ik-ben-moe-sporten",
+   "q": "Ik ___ vandaag niet, ik ben moe. (sporten)",
+   "nl": "sport",
+   "en": "I'm not doing sport today, I'm tired.",
+   "sec": "ww-zinnen2",
+   "say": "Ik sport vandaag niet, ik ben moe."
+  },
+  {
+   "id": "ww-zinnen2-ik-graag-een-kopje-koffie-willen",
+   "q": "Ik ___ graag een kopje koffie. (willen)",
+   "nl": "wil",
+   "en": "I'd like a cup of coffee.",
+   "sec": "ww-zinnen2",
+   "say": "Ik wil graag een kopje koffie."
+  },
+  {
+   "id": "ww-zinnen2-jij-morgen-om-tien-uur-kunnen",
+   "q": "___ jij morgen om tien uur? (kunnen)",
+   "nl": "kun/kan",
+   "en": "Are you free tomorrow at ten?",
+   "sec": "ww-zinnen2",
+   "say": "Kun jij morgen om tien uur?"
+  },
+  {
+   "id": "ww-zinnen2-ik-naar-de-tandarts-moeten",
+   "q": "Ik ___ naar de tandarts. (moeten)",
+   "nl": "moet",
+   "en": "I have to go to the dentist.",
+   "sec": "ww-zinnen2",
+   "say": "Ik moet naar de tandarts."
+  },
+  {
+   "id": "ww-zinnen2-ik-iets-vragen-mogen",
+   "q": "___ ik iets vragen? (mogen)",
+   "nl": "mag",
+   "en": "May I ask something?",
+   "sec": "ww-zinnen2",
+   "say": "Mag ik iets vragen?"
+  },
+  {
+   "id": "ww-zinnen2-we-samen-eten-zullen",
+   "q": "___ we samen eten? (zullen)",
+   "nl": "zullen",
+   "en": "Shall we eat together?",
+   "sec": "ww-zinnen2",
+   "say": "Zullen we samen eten?"
+  },
+  {
+   "id": "ww-zinnen2-het-feest-tot-n-uur-duren",
+   "q": "Het feest ___ tot één uur. (duren)",
+   "nl": "duurt",
+   "en": "The party lasts until one.",
+   "sec": "ww-zinnen2",
+   "say": "Het feest duurt tot één uur."
+  },
+  {
+   "id": "ww-zinnen2-saskia-op-de-deur-kloppen",
+   "q": "Saskia ___ op de deur. (kloppen)",
+   "nl": "klopt",
+   "en": "Saskia knocks on the door.",
+   "sec": "ww-zinnen2",
+   "say": "Saskia klopt op de deur."
+  },
+  {
+   "id": "ww-zinnen2-het-publiek-voor-de-pianist-klappen",
+   "q": "Het publiek ___ voor de pianist. (klappen)",
+   "nl": "klapt",
+   "en": "The audience applauds the pianist.",
+   "sec": "ww-zinnen2",
+   "say": "Het publiek klapt voor de pianist."
+  },
+  {
+   "id": "ww-zinnen2-bart-een-volkoren-brood-kopen",
+   "q": "Bart ___ een volkoren brood. (kopen)",
+   "nl": "koopt",
+   "en": "Bart buys a wholemeal loaf.",
+   "sec": "ww-zinnen2",
+   "say": "Bart koopt een volkoren brood."
+  },
+  {
+   "id": "ww-zinnen2-jij-een-leuke-broek-dragen",
+   "q": "Jij ___ een leuke broek! (dragen)",
+   "nl": "draagt",
+   "en": "You're wearing nice trousers!",
+   "sec": "ww-zinnen2",
+   "say": "Jij draagt een leuke broek!"
+  },
+  {
+   "id": "ww-zinnen2-ik-graag-naar-de-sterren-turen",
+   "q": "Ik ___ graag naar de sterren. (turen)",
+   "nl": "tuur",
+   "en": "I like gazing at the stars.",
+   "sec": "ww-zinnen2",
+   "say": "Ik tuur graag naar de sterren."
+  },
+  {
+   "id": "ww-zinnen2-de-muis-voor-de-kat-vluchten",
+   "q": "De muis ___ voor de kat. (vluchten)",
+   "nl": "vlucht",
+   "en": "The mouse flees from the cat.",
+   "sec": "ww-zinnen2",
+   "say": "De muis vlucht voor de kat."
+  },
+  {
+   "id": "ww-zinnen2-wij-de-verjaardag-van-oma-vieren",
+   "q": "Wij ___ de verjaardag van oma. (vieren)",
+   "nl": "vieren",
+   "en": "We're celebrating grandma's birthday.",
+   "sec": "ww-zinnen2",
+   "say": "Wij vieren de verjaardag van oma."
+  },
+  {
+   "id": "ww-zinnen2-jij-mijn-fiets-zien",
+   "q": "___ jij mijn fiets? (zien)",
+   "nl": "zie",
+   "en": "Do you see my bike?",
+   "sec": "ww-zinnen2",
+   "say": "Zie jij mijn fiets?"
+  },
+  {
+   "id": "ww-zinnen2-hoe-laat-de-trein-vertrekken",
+   "q": "Hoe laat ___ de trein? (vertrekken)",
+   "nl": "vertrekt",
+   "en": "What time does the train leave?",
+   "sec": "ww-zinnen2",
+   "say": "Hoe laat vertrekt de trein?"
+  },
+  {
+   "id": "ww-zinnen2-wij-met-de-pinpas-betalen",
+   "q": "Wij ___ met de pinpas. (betalen)",
+   "nl": "betalen",
+   "en": "We pay by debit card.",
+   "sec": "ww-zinnen2",
+   "say": "Wij betalen met de pinpas."
+  }
+ ],
+ "group": "werkwoorden",
+ "verbs": [
+  {
+   "inf": "gaan",
+   "en": "to go",
+   "type": "onregelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "ga",
+     "ik ga"
+    ],
+    [
+     "jij",
+     "gaat",
+     "jij gaat"
+    ],
+    [
+     "u",
+     "gaat",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "gaat",
+     "hij gaat"
+    ],
+    [
+     "wij / jullie / zij",
+     "gaan",
+     "wij gaan"
+    ],
+    [
+     "vraag",
+     "ga jij?",
+     "Ga jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "komen",
+   "en": "to come",
+   "type": "onregelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "kom",
+     "ik kom"
+    ],
+    [
+     "jij",
+     "komt",
+     "jij komt"
+    ],
+    [
+     "u",
+     "komt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "komt",
+     "hij komt"
+    ],
+    [
+     "wij / jullie / zij",
+     "komen",
+     "wij komen"
+    ],
+    [
+     "vraag",
+     "kom jij?",
+     "Kom jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "luisteren",
+   "en": "to listen",
+   "type": "regelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "luister",
+     "ik luister"
+    ],
+    [
+     "jij",
+     "luistert",
+     "jij luistert"
+    ],
+    [
+     "u",
+     "luistert",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "luistert",
+     "hij luistert"
+    ],
+    [
+     "wij / jullie / zij",
+     "luisteren",
+     "wij luisteren"
+    ],
+    [
+     "vraag",
+     "luister jij?",
+     "Luister jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "hebben",
+   "en": "to have",
+   "type": "onregelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "heb",
+     "ik heb"
+    ],
+    [
+     "jij",
+     "hebt",
+     "jij hebt"
+    ],
+    [
+     "u",
+     "hebt/heeft",
+     "u hebt"
+    ],
+    [
+     "hij / zij / het",
+     "heeft",
+     "hij heeft"
+    ],
+    [
+     "wij / jullie / zij",
+     "hebben",
+     "wij hebben"
+    ],
+    [
+     "vraag",
+     "heb jij?",
+     "Heb jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "zijn",
+   "en": "to be",
+   "type": "onregelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "ben",
+     "ik ben"
+    ],
+    [
+     "jij",
+     "bent",
+     "jij bent"
+    ],
+    [
+     "u",
+     "bent/is",
+     "u bent"
+    ],
+    [
+     "hij / zij / het",
+     "is",
+     "hij is"
+    ],
+    [
+     "wij / jullie / zij",
+     "zijn",
+     "wij zijn"
+    ],
+    [
+     "vraag",
+     "ben jij?",
+     "Ben jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "wonen",
+   "en": "to live",
+   "type": "klank",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "woon",
+     "ik woon"
+    ],
+    [
+     "jij",
+     "woont",
+     "jij woont"
+    ],
+    [
+     "u",
+     "woont",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "woont",
+     "hij woont"
+    ],
+    [
+     "wij / jullie / zij",
+     "wonen",
+     "wij wonen"
+    ],
+    [
+     "vraag",
+     "woon jij?",
+     "Woon jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "werken",
+   "en": "to work",
+   "type": "regelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "werk",
+     "ik werk"
+    ],
+    [
+     "jij",
+     "werkt",
+     "jij werkt"
+    ],
+    [
+     "u",
+     "werkt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "werkt",
+     "hij werkt"
+    ],
+    [
+     "wij / jullie / zij",
+     "werken",
+     "wij werken"
+    ],
+    [
+     "vraag",
+     "werk jij?",
+     "Werk jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "drinken",
+   "en": "to drink",
+   "type": "regelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "drink",
+     "ik drink"
+    ],
+    [
+     "jij",
+     "drinkt",
+     "jij drinkt"
+    ],
+    [
+     "u",
+     "drinkt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "drinkt",
+     "hij drinkt"
+    ],
+    [
+     "wij / jullie / zij",
+     "drinken",
+     "wij drinken"
+    ],
+    [
+     "vraag",
+     "drink jij?",
+     "Drink jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "heten",
+   "en": "to be called",
+   "type": "dt",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "heet",
+     "ik heet"
+    ],
+    [
+     "jij",
+     "heet",
+     "jij heet"
+    ],
+    [
+     "u",
+     "heet",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "heet",
+     "hij heet"
+    ],
+    [
+     "wij / jullie / zij",
+     "heten",
+     "wij heten"
+    ],
+    [
+     "vraag",
+     "heet jij?",
+     "Heet jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "maken",
+   "en": "to make",
+   "type": "klank",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "maak",
+     "ik maak"
+    ],
+    [
+     "jij",
+     "maakt",
+     "jij maakt"
+    ],
+    [
+     "u",
+     "maakt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "maakt",
+     "hij maakt"
+    ],
+    [
+     "wij / jullie / zij",
+     "maken",
+     "wij maken"
+    ],
+    [
+     "vraag",
+     "maak jij?",
+     "Maak jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "spreken",
+   "en": "to speak",
+   "type": "klank",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "spreek",
+     "ik spreek"
+    ],
+    [
+     "jij",
+     "spreekt",
+     "jij spreekt"
+    ],
+    [
+     "u",
+     "spreekt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "spreekt",
+     "hij spreekt"
+    ],
+    [
+     "wij / jullie / zij",
+     "spreken",
+     "wij spreken"
+    ],
+    [
+     "vraag",
+     "spreek jij?",
+     "Spreek jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "doen",
+   "en": "to do",
+   "type": "onregelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "doe",
+     "ik doe"
+    ],
+    [
+     "jij",
+     "doet",
+     "jij doet"
+    ],
+    [
+     "u",
+     "doet",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "doet",
+     "hij doet"
+    ],
+    [
+     "wij / jullie / zij",
+     "doen",
+     "wij doen"
+    ],
+    [
+     "vraag",
+     "doe jij?",
+     "Doe jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "spellen",
+   "en": "to spell",
+   "type": "klank",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "spel",
+     "ik spel"
+    ],
+    [
+     "jij",
+     "spelt",
+     "jij spelt"
+    ],
+    [
+     "u",
+     "spelt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "spelt",
+     "hij spelt"
+    ],
+    [
+     "wij / jullie / zij",
+     "spellen",
+     "wij spellen"
+    ],
+    [
+     "vraag",
+     "spel jij?",
+     "Spel jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "liggen",
+   "en": "to lie (flat)",
+   "type": "klank",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "lig",
+     "ik lig"
+    ],
+    [
+     "jij",
+     "ligt",
+     "jij ligt"
+    ],
+    [
+     "u",
+     "ligt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "ligt",
+     "hij ligt"
+    ],
+    [
+     "wij / jullie / zij",
+     "liggen",
+     "wij liggen"
+    ],
+    [
+     "vraag",
+     "lig jij?",
+     "Lig jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "staan",
+   "en": "to stand",
+   "type": "onregelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "sta",
+     "ik sta"
+    ],
+    [
+     "jij",
+     "staat",
+     "jij staat"
+    ],
+    [
+     "u",
+     "staat",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "staat",
+     "hij staat"
+    ],
+    [
+     "wij / jullie / zij",
+     "staan",
+     "wij staan"
+    ],
+    [
+     "vraag",
+     "sta jij?",
+     "Sta jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "zitten",
+   "en": "to sit",
+   "type": "dt",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "zit",
+     "ik zit"
+    ],
+    [
+     "jij",
+     "zit",
+     "jij zit"
+    ],
+    [
+     "u",
+     "zit",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "zit",
+     "hij zit"
+    ],
+    [
+     "wij / jullie / zij",
+     "zitten",
+     "wij zitten"
+    ],
+    [
+     "vraag",
+     "zit jij?",
+     "Zit jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "hangen",
+   "en": "to hang",
+   "type": "regelmatig",
+   "sec": "werkwoorden",
+   "forms": [
+    [
+     "ik",
+     "hang",
+     "ik hang"
+    ],
+    [
+     "jij",
+     "hangt",
+     "jij hangt"
+    ],
+    [
+     "u",
+     "hangt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "hangt",
+     "hij hangt"
+    ],
+    [
+     "wij / jullie / zij",
+     "hangen",
+     "wij hangen"
+    ],
+    [
+     "vraag",
+     "hang jij?",
+     "Hang jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "stoppen",
+   "en": "to stop",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "stop",
+     "ik stop"
+    ],
+    [
+     "jij",
+     "stopt",
+     "jij stopt"
+    ],
+    [
+     "u",
+     "stopt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "stopt",
+     "hij stopt"
+    ],
+    [
+     "wij / jullie / zij",
+     "stoppen",
+     "wij stoppen"
+    ],
+    [
+     "vraag",
+     "Stop jij?",
+     "Stop jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "pakken",
+   "en": "to take, to grab",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "pak",
+     "ik pak"
+    ],
+    [
+     "jij",
+     "pakt",
+     "jij pakt"
+    ],
+    [
+     "u",
+     "pakt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "pakt",
+     "hij pakt"
+    ],
+    [
+     "wij / jullie / zij",
+     "pakken",
+     "wij pakken"
+    ],
+    [
+     "vraag",
+     "Pak jij?",
+     "Pak jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "vullen",
+   "en": "to fill",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "vul",
+     "ik vul"
+    ],
+    [
+     "jij",
+     "vult",
+     "jij vult"
+    ],
+    [
+     "u",
+     "vult",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "vult",
+     "hij vult"
+    ],
+    [
+     "wij / jullie / zij",
+     "vullen",
+     "wij vullen"
+    ],
+    [
+     "vraag",
+     "Vul jij?",
+     "Vul jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "rennen",
+   "en": "to run",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "ren",
+     "ik ren"
+    ],
+    [
+     "jij",
+     "rent",
+     "jij rent"
+    ],
+    [
+     "u",
+     "rent",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "rent",
+     "hij rent"
+    ],
+    [
+     "wij / jullie / zij",
+     "rennen",
+     "wij rennen"
+    ],
+    [
+     "vraag",
+     "Ren jij?",
+     "Ren jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "beginnen",
+   "en": "to begin, to start",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "begin",
+     "ik begin"
+    ],
+    [
+     "jij",
+     "begint",
+     "jij begint"
+    ],
+    [
+     "u",
+     "begint",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "begint",
+     "hij begint"
+    ],
+    [
+     "wij / jullie / zij",
+     "beginnen",
+     "wij beginnen"
+    ],
+    [
+     "vraag",
+     "Begin jij?",
+     "Begin jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "bestellen",
+   "en": "to order",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "bestel",
+     "ik bestel"
+    ],
+    [
+     "jij",
+     "bestelt",
+     "jij bestelt"
+    ],
+    [
+     "u",
+     "bestelt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "bestelt",
+     "hij bestelt"
+    ],
+    [
+     "wij / jullie / zij",
+     "bestellen",
+     "wij bestellen"
+    ],
+    [
+     "vraag",
+     "Bestel jij?",
+     "Bestel jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "kloppen",
+   "en": "to knock; to be right",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "klop",
+     "ik klop"
+    ],
+    [
+     "jij",
+     "klopt",
+     "jij klopt"
+    ],
+    [
+     "u",
+     "klopt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "klopt",
+     "hij klopt"
+    ],
+    [
+     "wij / jullie / zij",
+     "kloppen",
+     "wij kloppen"
+    ],
+    [
+     "vraag",
+     "Klop jij?",
+     "Klop jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "klappen",
+   "en": "to clap",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "klap",
+     "ik klap"
+    ],
+    [
+     "jij",
+     "klapt",
+     "jij klapt"
+    ],
+    [
+     "u",
+     "klapt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "klapt",
+     "hij klapt"
+    ],
+    [
+     "wij / jullie / zij",
+     "klappen",
+     "wij klappen"
+    ],
+    [
+     "vraag",
+     "Klap jij?",
+     "Klap jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "zwemmen",
+   "en": "to swim",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "zwem",
+     "ik zwem"
+    ],
+    [
+     "jij",
+     "zwemt",
+     "jij zwemt"
+    ],
+    [
+     "u",
+     "zwemt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "zwemt",
+     "hij zwemt"
+    ],
+    [
+     "wij / jullie / zij",
+     "zwemmen",
+     "wij zwemmen"
+    ],
+    [
+     "vraag",
+     "Zwem jij?",
+     "Zwem jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "bellen",
+   "en": "to call, to ring",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "bel",
+     "ik bel"
+    ],
+    [
+     "jij",
+     "belt",
+     "jij belt"
+    ],
+    [
+     "u",
+     "belt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "belt",
+     "hij belt"
+    ],
+    [
+     "wij / jullie / zij",
+     "bellen",
+     "wij bellen"
+    ],
+    [
+     "vraag",
+     "Bel jij?",
+     "Bel jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "sturen",
+   "en": "to send; to steer",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "stuur",
+     "ik stuur"
+    ],
+    [
+     "jij",
+     "stuurt",
+     "jij stuurt"
+    ],
+    [
+     "u",
+     "stuurt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "stuurt",
+     "hij stuurt"
+    ],
+    [
+     "wij / jullie / zij",
+     "sturen",
+     "wij sturen"
+    ],
+    [
+     "vraag",
+     "Stuur jij?",
+     "Stuur jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "nemen",
+   "en": "to take",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "neem",
+     "ik neem"
+    ],
+    [
+     "jij",
+     "neemt",
+     "jij neemt"
+    ],
+    [
+     "u",
+     "neemt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "neemt",
+     "hij neemt"
+    ],
+    [
+     "wij / jullie / zij",
+     "nemen",
+     "wij nemen"
+    ],
+    [
+     "vraag",
+     "Neem jij?",
+     "Neem jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "kopen",
+   "en": "to buy",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "koop",
+     "ik koop"
+    ],
+    [
+     "jij",
+     "koopt",
+     "jij koopt"
+    ],
+    [
+     "u",
+     "koopt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "koopt",
+     "hij koopt"
+    ],
+    [
+     "wij / jullie / zij",
+     "kopen",
+     "wij kopen"
+    ],
+    [
+     "vraag",
+     "Koop jij?",
+     "Koop jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "dragen",
+   "en": "to carry; to wear",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "draag",
+     "ik draag"
+    ],
+    [
+     "jij",
+     "draagt",
+     "jij draagt"
+    ],
+    [
+     "u",
+     "draagt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "draagt",
+     "hij draagt"
+    ],
+    [
+     "wij / jullie / zij",
+     "dragen",
+     "wij dragen"
+    ],
+    [
+     "vraag",
+     "Draag jij?",
+     "Draag jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "turen",
+   "en": "to gaze",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "tuur",
+     "ik tuur"
+    ],
+    [
+     "jij",
+     "tuurt",
+     "jij tuurt"
+    ],
+    [
+     "u",
+     "tuurt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "tuurt",
+     "hij tuurt"
+    ],
+    [
+     "wij / jullie / zij",
+     "turen",
+     "wij turen"
+    ],
+    [
+     "vraag",
+     "Tuur jij?",
+     "Tuur jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "koken",
+   "en": "to cook",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "kook",
+     "ik kook"
+    ],
+    [
+     "jij",
+     "kookt",
+     "jij kookt"
+    ],
+    [
+     "u",
+     "kookt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "kookt",
+     "hij kookt"
+    ],
+    [
+     "wij / jullie / zij",
+     "koken",
+     "wij koken"
+    ],
+    [
+     "vraag",
+     "Kook jij?",
+     "Kook jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "betalen",
+   "en": "to pay",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "betaal",
+     "ik betaal"
+    ],
+    [
+     "jij",
+     "betaalt",
+     "jij betaalt"
+    ],
+    [
+     "u",
+     "betaalt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "betaalt",
+     "hij betaalt"
+    ],
+    [
+     "wij / jullie / zij",
+     "betalen",
+     "wij betalen"
+    ],
+    [
+     "vraag",
+     "Betaal jij?",
+     "Betaal jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "spelen",
+   "en": "to play",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "speel",
+     "ik speel"
+    ],
+    [
+     "jij",
+     "speelt",
+     "jij speelt"
+    ],
+    [
+     "u",
+     "speelt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "speelt",
+     "hij speelt"
+    ],
+    [
+     "wij / jullie / zij",
+     "spelen",
+     "wij spelen"
+    ],
+    [
+     "vraag",
+     "Speel jij?",
+     "Speel jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "leren",
+   "en": "to learn",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "leer",
+     "ik leer"
+    ],
+    [
+     "jij",
+     "leert",
+     "jij leert"
+    ],
+    [
+     "u",
+     "leert",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "leert",
+     "hij leert"
+    ],
+    [
+     "wij / jullie / zij",
+     "leren",
+     "wij leren"
+    ],
+    [
+     "vraag",
+     "Leer jij?",
+     "Leer jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "vieren",
+   "en": "to celebrate",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "vier",
+     "ik vier"
+    ],
+    [
+     "jij",
+     "viert",
+     "jij viert"
+    ],
+    [
+     "u",
+     "viert",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "viert",
+     "hij viert"
+    ],
+    [
+     "wij / jullie / zij",
+     "vieren",
+     "wij vieren"
+    ],
+    [
+     "vraag",
+     "Vier jij?",
+     "Vier jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "zien",
+   "en": "to see",
+   "type": "klank",
+   "sec": "ww-klank",
+   "forms": [
+    [
+     "ik",
+     "zie",
+     "ik zie"
+    ],
+    [
+     "jij",
+     "ziet",
+     "jij ziet"
+    ],
+    [
+     "u",
+     "ziet",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "ziet",
+     "hij ziet"
+    ],
+    [
+     "wij / jullie / zij",
+     "zien",
+     "wij zien"
+    ],
+    [
+     "vraag",
+     "Zie jij?",
+     "Zie jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "kiezen",
+   "en": "to choose",
+   "type": "zv",
+   "sec": "ww-zv",
+   "forms": [
+    [
+     "ik",
+     "kies",
+     "ik kies"
+    ],
+    [
+     "jij",
+     "kiest",
+     "jij kiest"
+    ],
+    [
+     "u",
+     "kiest",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "kiest",
+     "hij kiest"
+    ],
+    [
+     "wij / jullie / zij",
+     "kiezen",
+     "wij kiezen"
+    ],
+    [
+     "vraag",
+     "Kies jij?",
+     "Kies jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "lezen",
+   "en": "to read",
+   "type": "zv",
+   "sec": "ww-zv",
+   "forms": [
+    [
+     "ik",
+     "lees",
+     "ik lees"
+    ],
+    [
+     "jij",
+     "leest",
+     "jij leest"
+    ],
+    [
+     "u",
+     "leest",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "leest",
+     "hij leest"
+    ],
+    [
+     "wij / jullie / zij",
+     "lezen",
+     "wij lezen"
+    ],
+    [
+     "vraag",
+     "Lees jij?",
+     "Lees jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "reizen",
+   "en": "to travel",
+   "type": "zv",
+   "sec": "ww-zv",
+   "forms": [
+    [
+     "ik",
+     "reis",
+     "ik reis"
+    ],
+    [
+     "jij",
+     "reist",
+     "jij reist"
+    ],
+    [
+     "u",
+     "reist",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "reist",
+     "hij reist"
+    ],
+    [
+     "wij / jullie / zij",
+     "reizen",
+     "wij reizen"
+    ],
+    [
+     "vraag",
+     "Reis jij?",
+     "Reis jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "schrijven",
+   "en": "to write",
+   "type": "zv",
+   "sec": "ww-zv",
+   "forms": [
+    [
+     "ik",
+     "schrijf",
+     "ik schrijf"
+    ],
+    [
+     "jij",
+     "schrijft",
+     "jij schrijft"
+    ],
+    [
+     "u",
+     "schrijft",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "schrijft",
+     "hij schrijft"
+    ],
+    [
+     "wij / jullie / zij",
+     "schrijven",
+     "wij schrijven"
+    ],
+    [
+     "vraag",
+     "Schrijf jij?",
+     "Schrijf jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "geven",
+   "en": "to give",
+   "type": "zv",
+   "sec": "ww-zv",
+   "forms": [
+    [
+     "ik",
+     "geef",
+     "ik geef"
+    ],
+    [
+     "jij",
+     "geeft",
+     "jij geeft"
+    ],
+    [
+     "u",
+     "geeft",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "geeft",
+     "hij geeft"
+    ],
+    [
+     "wij / jullie / zij",
+     "geven",
+     "wij geven"
+    ],
+    [
+     "vraag",
+     "Geef jij?",
+     "Geef jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "blijven",
+   "en": "to stay",
+   "type": "zv",
+   "sec": "ww-zv",
+   "forms": [
+    [
+     "ik",
+     "blijf",
+     "ik blijf"
+    ],
+    [
+     "jij",
+     "blijft",
+     "jij blijft"
+    ],
+    [
+     "u",
+     "blijft",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "blijft",
+     "hij blijft"
+    ],
+    [
+     "wij / jullie / zij",
+     "blijven",
+     "wij blijven"
+    ],
+    [
+     "vraag",
+     "Blijf jij?",
+     "Blijf jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "vinden",
+   "en": "to find; to think",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "vind",
+     "ik vind"
+    ],
+    [
+     "jij",
+     "vindt",
+     "jij vindt"
+    ],
+    [
+     "u",
+     "vindt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "vindt",
+     "hij vindt"
+    ],
+    [
+     "wij / jullie / zij",
+     "vinden",
+     "wij vinden"
+    ],
+    [
+     "vraag",
+     "Vind jij?",
+     "Vind jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "worden",
+   "en": "to become",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "word",
+     "ik word"
+    ],
+    [
+     "jij",
+     "wordt",
+     "jij wordt"
+    ],
+    [
+     "u",
+     "wordt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "wordt",
+     "hij wordt"
+    ],
+    [
+     "wij / jullie / zij",
+     "worden",
+     "wij worden"
+    ],
+    [
+     "vraag",
+     "Word jij?",
+     "Word jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "rijden",
+   "en": "to ride, to drive",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "rijd",
+     "ik rijd"
+    ],
+    [
+     "jij",
+     "rijdt",
+     "jij rijdt"
+    ],
+    [
+     "u",
+     "rijdt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "rijdt",
+     "hij rijdt"
+    ],
+    [
+     "wij / jullie / zij",
+     "rijden",
+     "wij rijden"
+    ],
+    [
+     "vraag",
+     "Rijd jij?",
+     "Rijd jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "houden",
+   "en": "to hold; houden van = to love, to like",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "houd",
+     "ik houd"
+    ],
+    [
+     "jij",
+     "houdt",
+     "jij houdt"
+    ],
+    [
+     "u",
+     "houdt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "houdt",
+     "hij houdt"
+    ],
+    [
+     "wij / jullie / zij",
+     "houden",
+     "wij houden"
+    ],
+    [
+     "vraag",
+     "Houd jij?",
+     "Houd jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "antwoorden",
+   "en": "to answer",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "antwoord",
+     "ik antwoord"
+    ],
+    [
+     "jij",
+     "antwoordt",
+     "jij antwoordt"
+    ],
+    [
+     "u",
+     "antwoordt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "antwoordt",
+     "hij antwoordt"
+    ],
+    [
+     "wij / jullie / zij",
+     "antwoorden",
+     "wij antwoorden"
+    ],
+    [
+     "vraag",
+     "Antwoord jij?",
+     "Antwoord jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "eten",
+   "en": "to eat",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "eet",
+     "ik eet"
+    ],
+    [
+     "jij",
+     "eet",
+     "jij eet"
+    ],
+    [
+     "u",
+     "eet",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "eet",
+     "hij eet"
+    ],
+    [
+     "wij / jullie / zij",
+     "eten",
+     "wij eten"
+    ],
+    [
+     "vraag",
+     "Eet jij?",
+     "Eet jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "weten",
+   "en": "to know",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "weet",
+     "ik weet"
+    ],
+    [
+     "jij",
+     "weet",
+     "jij weet"
+    ],
+    [
+     "u",
+     "weet",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "weet",
+     "hij weet"
+    ],
+    [
+     "wij / jullie / zij",
+     "weten",
+     "wij weten"
+    ],
+    [
+     "vraag",
+     "Weet jij?",
+     "Weet jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "wachten",
+   "en": "to wait",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "wacht",
+     "ik wacht"
+    ],
+    [
+     "jij",
+     "wacht",
+     "jij wacht"
+    ],
+    [
+     "u",
+     "wacht",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "wacht",
+     "hij wacht"
+    ],
+    [
+     "wij / jullie / zij",
+     "wachten",
+     "wij wachten"
+    ],
+    [
+     "vraag",
+     "Wacht jij?",
+     "Wacht jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "sporten",
+   "en": "to do sport",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "sport",
+     "ik sport"
+    ],
+    [
+     "jij",
+     "sport",
+     "jij sport"
+    ],
+    [
+     "u",
+     "sport",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "sport",
+     "hij sport"
+    ],
+    [
+     "wij / jullie / zij",
+     "sporten",
+     "wij sporten"
+    ],
+    [
+     "vraag",
+     "Sport jij?",
+     "Sport jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "vluchten",
+   "en": "to flee",
+   "type": "dt",
+   "sec": "ww-dt",
+   "forms": [
+    [
+     "ik",
+     "vlucht",
+     "ik vlucht"
+    ],
+    [
+     "jij",
+     "vlucht",
+     "jij vlucht"
+    ],
+    [
+     "u",
+     "vlucht",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "vlucht",
+     "hij vlucht"
+    ],
+    [
+     "wij / jullie / zij",
+     "vluchten",
+     "wij vluchten"
+    ],
+    [
+     "vraag",
+     "Vlucht jij?",
+     "Vlucht jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "fietsen",
+   "en": "to cycle",
+   "type": "regelmatig",
+   "sec": "ww-regelmatig",
+   "forms": [
+    [
+     "ik",
+     "fiets",
+     "ik fiets"
+    ],
+    [
+     "jij",
+     "fietst",
+     "jij fietst"
+    ],
+    [
+     "u",
+     "fietst",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "fietst",
+     "hij fietst"
+    ],
+    [
+     "wij / jullie / zij",
+     "fietsen",
+     "wij fietsen"
+    ],
+    [
+     "vraag",
+     "Fiets jij?",
+     "Fiets jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "wandelen",
+   "en": "to walk (for pleasure)",
+   "type": "regelmatig",
+   "sec": "ww-regelmatig",
+   "forms": [
+    [
+     "ik",
+     "wandel",
+     "ik wandel"
+    ],
+    [
+     "jij",
+     "wandelt",
+     "jij wandelt"
+    ],
+    [
+     "u",
+     "wandelt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "wandelt",
+     "hij wandelt"
+    ],
+    [
+     "wij / jullie / zij",
+     "wandelen",
+     "wij wandelen"
+    ],
+    [
+     "vraag",
+     "Wandel jij?",
+     "Wandel jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "dansen",
+   "en": "to dance",
+   "type": "regelmatig",
+   "sec": "ww-regelmatig",
+   "forms": [
+    [
+     "ik",
+     "dans",
+     "ik dans"
+    ],
+    [
+     "jij",
+     "danst",
+     "jij danst"
+    ],
+    [
+     "u",
+     "danst",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "danst",
+     "hij danst"
+    ],
+    [
+     "wij / jullie / zij",
+     "dansen",
+     "wij dansen"
+    ],
+    [
+     "vraag",
+     "Dans jij?",
+     "Dans jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "zingen",
+   "en": "to sing",
+   "type": "regelmatig",
+   "sec": "ww-regelmatig",
+   "forms": [
+    [
+     "ik",
+     "zing",
+     "ik zing"
+    ],
+    [
+     "jij",
+     "zingt",
+     "jij zingt"
+    ],
+    [
+     "u",
+     "zingt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "zingt",
+     "hij zingt"
+    ],
+    [
+     "wij / jullie / zij",
+     "zingen",
+     "wij zingen"
+    ],
+    [
+     "vraag",
+     "Zing jij?",
+     "Zing jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "helpen",
+   "en": "to help",
+   "type": "regelmatig",
+   "sec": "ww-regelmatig",
+   "forms": [
+    [
+     "ik",
+     "help",
+     "ik help"
+    ],
+    [
+     "jij",
+     "helpt",
+     "jij helpt"
+    ],
+    [
+     "u",
+     "helpt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "helpt",
+     "hij helpt"
+    ],
+    [
+     "wij / jullie / zij",
+     "helpen",
+     "wij helpen"
+    ],
+    [
+     "vraag",
+     "Help jij?",
+     "Help jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "vertrekken",
+   "en": "to leave, to depart",
+   "type": "regelmatig",
+   "sec": "ww-regelmatig",
+   "forms": [
+    [
+     "ik",
+     "vertrek",
+     "ik vertrek"
+    ],
+    [
+     "jij",
+     "vertrekt",
+     "jij vertrekt"
+    ],
+    [
+     "u",
+     "vertrekt",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "vertrekt",
+     "hij vertrekt"
+    ],
+    [
+     "wij / jullie / zij",
+     "vertrekken",
+     "wij vertrekken"
+    ],
+    [
+     "vraag",
+     "Vertrek jij?",
+     "Vertrek jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "willen",
+   "en": "to want",
+   "type": "modaal",
+   "sec": "ww-modaal",
+   "forms": [
+    [
+     "ik",
+     "wil",
+     "ik wil"
+    ],
+    [
+     "jij",
+     "wilt / wil",
+     "jij wilt"
+    ],
+    [
+     "u",
+     "wilt",
+     "u wilt"
+    ],
+    [
+     "hij / zij / het",
+     "wil",
+     "hij wil"
+    ],
+    [
+     "wij / jullie / zij",
+     "willen",
+     "wij willen"
+    ],
+    [
+     "vraag",
+     "Wil jij?",
+     "Wil jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "kunnen",
+   "en": "can, to be able to",
+   "type": "modaal",
+   "sec": "ww-modaal",
+   "forms": [
+    [
+     "ik",
+     "kan",
+     "ik kan"
+    ],
+    [
+     "jij",
+     "kunt / kan",
+     "jij kunt"
+    ],
+    [
+     "u",
+     "kunt",
+     "u kunt"
+    ],
+    [
+     "hij / zij / het",
+     "kan",
+     "hij kan"
+    ],
+    [
+     "wij / jullie / zij",
+     "kunnen",
+     "wij kunnen"
+    ],
+    [
+     "vraag",
+     "Kun jij morgen?",
+     "Kun jij morgen?"
+    ]
+   ]
+  },
+  {
+   "inf": "moeten",
+   "en": "must, to have to",
+   "type": "modaal",
+   "sec": "ww-modaal",
+   "forms": [
+    [
+     "ik",
+     "moet",
+     "ik moet"
+    ],
+    [
+     "jij",
+     "moet",
+     "jij moet"
+    ],
+    [
+     "u",
+     "moet",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "moet",
+     "hij moet"
+    ],
+    [
+     "wij / jullie / zij",
+     "moeten",
+     "wij moeten"
+    ],
+    [
+     "vraag",
+     "Moet jij?",
+     "Moet jij?"
+    ]
+   ]
+  },
+  {
+   "inf": "mogen",
+   "en": "may, to be allowed to",
+   "type": "modaal",
+   "sec": "ww-modaal",
+   "forms": [
+    [
+     "ik",
+     "mag",
+     "ik mag"
+    ],
+    [
+     "jij",
+     "mag",
+     "jij mag"
+    ],
+    [
+     "u",
+     "mag",
+     null
+    ],
+    [
+     "hij / zij / het",
+     "mag",
+     "hij mag"
+    ],
+    [
+     "wij / jullie / zij",
+     "mogen",
+     "wij mogen"
+    ],
+    [
+     "vraag",
+     "Mag ik iets vragen?",
+     "Mag ik iets vragen?"
+    ]
+   ]
+  },
+  {
+   "inf": "zullen",
+   "en": "shall, will",
+   "type": "modaal",
+   "sec": "ww-modaal",
+   "forms": [
+    [
+     "ik",
+     "zal",
+     "ik zal"
+    ],
+    [
+     "jij",
+     "zult / zal",
+     "jij zult"
+    ],
+    [
+     "u",
+     "zult",
+     "u zult"
+    ],
+    [
+     "hij / zij / het",
+     "zal",
+     "hij zal"
+    ],
+    [
+     "wij / jullie / zij",
+     "zullen",
+     "wij zullen"
+    ],
+    [
+     "vraag",
+     "Zullen we iets afspreken?",
+     "Zullen we iets afspreken?"
+    ]
+   ]
+  }
+ ],
+ "types": [
+  {
+   "id": "regelmatig",
+   "name": "Regelmatig",
+   "rule": "ik = stam; jij, u, hij = stam + t; wij, jullie, zij = infinitief."
+  },
+  {
+   "id": "klank",
+   "name": "Korte en lange klank",
+   "rule": "Keep the sound: stoppen → ik stop (one p), wonen → ik woon (oo)."
+  },
+  {
+   "id": "zv",
+   "name": "z → s, v → f",
+   "rule": "No word ends in z or v: kiezen → ik kies, geven → ik geef."
+  },
+  {
+   "id": "dt",
+   "name": "Stam op d of t",
+   "rule": "vinden → hij vindt (d + t); eten → hij eet (no extra t)."
+  },
+  {
+   "id": "modaal",
+   "name": "Modaal",
+   "rule": "ik wil / kan / moet / mag / zal; the second verb goes to the end."
+  },
+  {
+   "id": "onregelmatig",
+   "name": "Onregelmatig",
+   "rule": "Learn these by heart: ik ben, jij bent, hij is; ik heb, hij heeft."
   }
  ]
 }

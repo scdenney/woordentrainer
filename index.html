@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex">
-<meta name="description" content="Vocabulary practice and pronunciation for Nederlands in gang (A1).">
+<meta name="description" content="Vocabulary, verb and exam practice with pronunciation for Nederlands in gang (A1).">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232b7a4b'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='17' font-weight='700' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Woordentrainer</title>
@@ -105,7 +105,8 @@ legend { padding: 0; margin-bottom: 8px; }
 .rule-deck { padding-top: 8px; border-top: 1px solid var(--line); scroll-margin-top: 12px; }
 .rule-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .rule-head .btn { display: inline-flex; align-items: center; gap: 8px; }
-.rule-head .arrow { width: 1rem; height: 1rem; }
+.rule-head .arrow, .btn .arrow { width: 1rem; height: 1rem; }
+.btn:has(.arrow) { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
 .rule h3 { font: 700 1rem/1.3 var(--display); margin: 0 0 4px; color: var(--block); }
 .rule p { margin: 0 0 8px; max-width: 62ch; }
 .hint { font-size: 0.875rem; color: var(--muted); margin-top: -8px; }
@@ -220,6 +221,31 @@ td.r { text-align: right; white-space: nowrap; }
 .ex-chip svg { width: 0.85rem; height: 0.85rem; color: var(--delft); flex: none; }
 .ex-chip .gloss { color: var(--muted); font-size: 0.8rem; }
 @media (max-width: 30rem) { .sound { grid-template-columns: 1fr; } .sound .ex { grid-column: 1; } }
+/* werkwoorden and examen tabs */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 12px; font-size: 0.9rem; color: var(--ink); }
+.chips button:hover { background: var(--delft-soft); }
+.chips button[aria-pressed="true"] { background: var(--delft); border-color: var(--delft); color: var(--on-accent); }
+.verb-type { display: flex; flex-direction: column; gap: 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+.verb-type-head, .part-head { display: flex; justify-content: space-between; align-items: center; gap: 8px 12px; flex-wrap: wrap; }
+.verb-type .note { margin: 0; }
+table.verbs td, table.verbs th { white-space: nowrap; }
+table.verbs .en { color: var(--muted); font-size: 0.8rem; white-space: normal; min-width: 8rem; }
+.form-say { border: 0; background: none; padding: 0; font: inherit; color: inherit; text-decoration: underline dotted var(--muted); text-underline-offset: 3px; }
+.form-say:hover { color: var(--delft); }
+.exam-card { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+.exam-card p { margin: 0; }
+.part { border-top: 1px solid var(--line); padding: 12px 0; display: flex; flex-direction: column; gap: 6px; }
+.part h3 { margin: 0; font: 700 1.05rem/1.25 var(--display); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.part p { margin: 0; max-width: 62ch; }
+.part ul { margin: 0; padding-left: 1.2em; color: var(--muted); font-size: 0.925rem; }
+.score { font: 600 0.8rem var(--mono); font-variant-numeric: tabular-nums; padding: 1px 8px; border-radius: 999px; background: var(--seg-bg); color: var(--ink); }
+.score.ok { background: var(--block-soft); color: var(--block); }
+.score.bad { background: var(--bad-soft); color: var(--bad); }
+.passage { border-left: 3px solid var(--block); background: var(--paper); padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 0.95rem; max-height: 18rem; overflow-y: auto; margin-bottom: 12px; }
+.passage h3 { margin: 0 0 6px; font: 700 1rem var(--display); }
+.passage p { margin: 0 0 8px; }
+.passage .gloss { color: var(--muted); font-size: 0.85rem; margin: 0; }
 @media (prefers-reduced-motion: no-preference) {
   .fb { animation: rise 160ms ease-out; }
   @keyframes rise { from { transform: translateY(4px); opacity: 0.6; } to { transform: none; opacity: 1; } }
@@ -250,7 +276,7 @@ td.r { text-align: right; white-space: nowrap; }
   // ---------- state ----------
   const S = {
     status: "loading", decks: [], words: [], prog: {}, local: false,
-    view: "setup", session: null, listQuery: "",
+    view: "setup", session: null, listQuery: "", verbQuery: "", verbType: "all",
     prefs: Object.assign({ sel: null, dir: "en-nl", mode: "type", focus: "all", order: "mix", auto: true, slow: false }, readLS("wt-prefs") || {}),
     open: new Set(),
   };
@@ -268,7 +294,7 @@ td.r { text-align: right; white-space: nowrap; }
   const manifestReady = fetch("audio/manifest.json").then(r => r.ok ? r.json() : null).then(m => {
     if (!m?.packed && !m?.clips) return;
     clips.packed = m.packed || null; clips.packs = m.packs || {}; clips.map = m.packed ? null : m.clips; clips.voice = m.voice || "";
-    if (["setup", "guide", "list"].includes(S.view)) render();
+    if (["setup", "guide", "list", "verbs"].includes(S.view)) render();
   }).catch(() => {});
   const canSpeak = () => !!(clips.packed || clips.map);
   function loadPack(pid) {
@@ -432,7 +458,7 @@ td.r { text-align: right; white-space: nowrap; }
     S.words = S.decks.flatMap(d => (d.words || []).map(w => ({ ...w, deck: d.id, deckTitle: d.title, g: d.kind === "grammar" })));
     indexWords();
     S.status = "ready";
-    if (S.view === "setup" || S.view === "list") render();
+    if (["setup", "list", "verbs", "exam"].includes(S.view)) render();
   }
 
   // The de/het drill is built from the vocab nouns: one section per chapter, the bare noun as the prompt.
@@ -491,12 +517,12 @@ td.r { text-align: right; white-space: nowrap; }
   const selectedDecks = () => S.decks.filter(d => (d.sections || []).some(s => isSel(d.id, s.id)));
   function setSel(keys) { S.prefs.sel = keys.length === allKeys().length ? null : keys; savePrefs(); }
   function inScope() { return S.words.filter(w => isSel(w.deck, w.sec)); }
-  function pool() {
-    const ws = inScope();
+  function focusOn(ws) {
     if (S.prefs.focus === "unknown") return ws.filter(w => statusOf(w) !== "known");
     if (S.prefs.focus === "mistakes") return ws.filter(w => (rec(w)?.w || 0) > 0 && statusOf(w) !== "known");
     return ws;
   }
+  const pool = () => focusOn(inScope());
   function tally(ws) { const n = { known: 0, learning: 0, new: 0 }; for (const w of ws) n[statusOf(w)]++; return n; }
 
   // ---------- views ----------
@@ -513,9 +539,9 @@ td.r { text-align: right; white-space: nowrap; }
       return;
     }
     const focusId = document.activeElement?.id;
-    ({ setup: renderSetup, quiz: renderQuiz, round: renderRound, done: renderDone, list: renderList, guide: renderGuide, rules: renderRules })[S.view]();
-    if (["setup", "list", "guide", "rules"].includes(S.view)) {
-      const tabs = [["setup", "Oefenen"], ["list", "Woordenlijst"], ["rules", "Regels"], ["guide", "Uitspraak"]];
+    ({ setup: renderSetup, quiz: renderQuiz, round: renderRound, done: renderDone, list: renderList, guide: renderGuide, rules: renderRules, verbs: renderVerbs, exam: renderExam })[S.view]();
+    if (["setup", "list", "guide", "rules", "verbs", "exam"].includes(S.view)) {
+      const tabs = [["setup", "Oefenen"], ["verbs", "Werkwoorden"], ["exam", "Examen"], ["list", "Woordenlijst"], ["rules", "Regels"], ["guide", "Uitspraak"]];
       app.insertAdjacentHTML("afterbegin", `<nav class="tabs" aria-label="Sections">${tabs.map(([v, l]) => `<button type="button" data-view="${v}"${S.view === v ? ' aria-current="page"' : ""}>${l}</button>`).join("")}</nav>`);
       app.querySelectorAll("[data-view]").forEach(b => b.onclick = () => { S.view = b.dataset.view; render(); window.scrollTo(0, 0); });
     }
@@ -565,8 +591,9 @@ td.r { text-align: right; white-space: nowrap; }
         </ul>
       </div>`;
     };
-    const vocab = S.decks.filter(d => d.kind !== "grammar").map(chapterHtml).join("");
-    const gram = S.decks.filter(d => d.kind === "grammar").map(chapterHtml).join("");
+    const GROUPS = [["Woordenschat", d => d.kind !== "grammar"], ["Werkwoorden", d => d.group === "werkwoorden"],
+      ["Grammatica", d => d.kind === "grammar" && !d.group], ["Examen", d => d.group === "examen"]];
+    const lists = GROUPS.map(([label, f]) => { const h = S.decks.filter(f).map(chapterHtml).join(""); return h ? `<span class="kicker">${label}</span><div class="chapters">${h}</div>` : ""; }).join("");
     const dirLabel = { "en-nl": "Engels → Nederlands", "nl-en": "Nederlands → Engels", mix: "Gemengd" }[P.dir];
     app.innerHTML = `
       <div class="controls">
@@ -588,9 +615,7 @@ td.r { text-align: right; white-space: nowrap; }
             <h2 id="pick-h">Wat wil je oefenen?</h2>
             <span class="small"><button type="button" class="link" id="sel-all">Alles</button> · <button type="button" class="link" id="sel-none">Niets</button></span>
           </div>
-          <span class="kicker">Woordenschat</span>
-          <div class="chapters">${vocab}</div>
-          ${gram ? `<span class="kicker">Grammatica</span><div class="chapters">${gram}</div>` : ""}
+          ${lists}
           <p class="note">Tick a chapter for all of it, or open it to pick parts. Grammar questions are always answered in Dutch, whatever the Richting setting.</p>
         </section>
 
@@ -630,7 +655,7 @@ td.r { text-align: right; white-space: nowrap; }
     app.querySelector("#sel-none").onclick = () => { S.prefs.sel = []; savePrefs(); render(); };
     for (const k of ["dir", "mode", "focus", "order"]) app.querySelectorAll(`input[name=${k}]`).forEach(el => el.onchange = () => { P[k] = el.value; savePrefs(); render(); });
     for (const k of ["auto", "slow"]) { const el = app.querySelector(`input[name=${k}]`); if (el) el.onchange = () => { P[k] = el.checked; savePrefs(); }; }
-    app.querySelector("#start").onclick = startSession;
+    app.querySelector("#start").onclick = () => startSession();
   }
 
   // ---------- session ----------
@@ -642,16 +667,25 @@ td.r { text-align: right; white-space: nowrap; }
     for (const w of shuffle(ws)) { const k = w.deck + "|" + (w.grp || w.sec); by.has(k) ? by.get(k).push(w) : by.set(k, [w]); }
     return shuffle([...by.values()]).flat();
   }
-  function startSession() {
-    const words = ordered(pool().slice());
+  // list: the words to drill, in order (default: the selection under Oefenen). exam: one pass, no retries, a score per part.
+  function startSession(list, exam = false) {
+    const words = list || ordered(pool().slice());
+    if (!words.length) return;
     preloadClips(words);
-    S.session = { queue: words, total: words.length, seen: new Set(), retry: [], roundNo: 0, round: [], i: 0, missed: [], answered: null, firstTry: 0 };
+    S.session = { queue: words, total: words.length, seen: new Set(), retry: [], roundNo: 0, round: [], i: 0, missed: [], answered: null, firstTry: 0, exam, results: [] };
     nextRound();
   }
+  // Reading questions stay with their text and in text order; everything else follows the Volgorde setting.
+  function drillOrder(ws) {
+    if (!ws.every(w => w.text)) return ordered(ws.slice());
+    const texts = shuffle([...new Set(ws.map(w => w.text))]);
+    return texts.flatMap(t => ws.filter(w => w.text === t).sort((a, b) => a.n - b.n));
+  }
+  function drill(ws) { const f = focusOn(ws); startSession(drillOrder(f.length ? f : ws)); }
   function nextRound() {
     const s = S.session;
-    const fromRetry = s.retry.splice(0, ROUND);
-    const fill = s.queue.splice(0, ROUND - fromRetry.length);
+    const fromRetry = s.exam ? [] : s.retry.splice(0, ROUND);
+    const fill = s.queue.splice(0, s.exam ? s.queue.length : ROUND - fromRetry.length);
     s.round = [...fromRetry, ...fill].map(w => ({ w, dir: w.g ? "en-nl" : S.prefs.dir === "mix" ? (Math.random() < 0.5 ? "en-nl" : "nl-en") : S.prefs.dir }));
     if (!s.round.length) { S.view = "done"; flush(); render(); return; }
     s.roundNo++; s.i = 0; s.missed = []; s.answered = null; s.revealed = false;
@@ -662,6 +696,7 @@ td.r { text-align: right; white-space: nowrap; }
     if (s.answered) return;
     s.answered = { ok, result };
     if (!s.seen.has(item.w)) { s.seen.add(item.w); if (ok) s.firstTry++; }
+    if (s.exam) s.results.push({ w: item.w, ok });
     record(item.w, ok);
     if (!ok) s.missed.push(item.w);
     renderQuiz();
@@ -672,12 +707,14 @@ td.r { text-align: right; white-space: nowrap; }
     unrecordWrong(item.w);
     s.missed = s.missed.filter(w => w !== item.w);
     if (s.seen.has(item.w) && !s.retriedOnce?.has(item.w)) s.firstTry++;
+    const r = s.results.find(x => x.w === item.w); if (r) r.ok = true;
     s.answered = { ok: true, result: { kind: "override" } };
     renderQuiz();
   }
   function advance() {
     const s = S.session;
     s.i++; s.answered = null; s.revealed = false;
+    if (s.i >= s.round.length && s.exam) { saveExam(s); flush(); S.view = "done"; render(); return; }
     if (s.i >= s.round.length) {
       s.retry.push(...s.missed);
       (s.retriedOnce ||= new Set()); s.missed.forEach(w => s.retriedOnce.add(w));
@@ -686,14 +723,19 @@ td.r { text-align: right; white-space: nowrap; }
     }
     renderQuiz();
   }
-  function stopSession() { flush(); S.session = null; S.view = "setup"; render(); }
+  function stopSession() { flush(); S.view = S.session?.exam ? "exam" : "setup"; S.session = null; render(); }
 
   const sayText = w => w.say || nlAlts(w)[0];
+  const answerText = w => w.text ? w.nl : sayText(w); // a reading question's answer is waar / niet waar; its clip is the statement
+  function passageHtml(w) {
+    const t = S.decks.find(d => d.id === w.deck)?.texts?.[w.text];
+    return t ? `<div class="passage" lang="nl"><h3>${esc(t.title)}</h3>${t.body.split("\n\n").map(p => `<p>${esc(p)}</p>`).join("")}${t.gloss ? `<p class="gloss">${esc(t.gloss)}</p>` : ""}</div>` : "";
+  }
   const clipText = w => w.g ? sayText(w) : w.nl; // the text tools/build_audio.py recorded for w
   const secOf = w => (S.decks.find(d => d.id === w.deck)?.sections || []).find(x => x.id === w.sec);
   const secName = w => (S.decks.find(d => d.id === w.deck)?.sections || []).find(x => x.id === w.sec)?.name || "";
   function promptHtml(w, dir) {
-    if (w.g) return `<div class="prompt-row"><div class="prompt${w.q.length > 24 ? " prompt-long" : ""}" lang="nl">${esc(w.q)}</div></div>`;
+    if (w.g) return `${w.text ? passageHtml(w) : ""}<div class="prompt-row"><div class="prompt${w.q.length > 24 ? " prompt-long" : ""}" lang="nl">${esc(w.q)}</div></div>`;
     if (dir === "nl-en") return `<div class="prompt-row"><div class="prompt" lang="nl">${esc(w.nl)}</div>${sayBtn(w.nl, "say-prompt")}</div>`;
     return `<div class="prompt" lang="en">${esc(w.en)}${w.num != null ? `<small>${w.num}</small>` : ""}</div>`;
   }
@@ -719,7 +761,7 @@ td.r { text-align: right; white-space: nowrap; }
       fbHtml = `<div class="fb ${cls}">
         <span class="verdict">${esc(text)}</span>
         ${w.g
-          ? `<span class="with-say"><span class="answer-line" lang="nl">${esc(sayText(w))}</span>${sayBtn(sayText(w))}</span>
+          ? `<span class="with-say"><span class="answer-line" lang="nl">${esc(answerText(w))}</span>${sayBtn(sayText(w))}</span>
              ${nlAlts(w).length > 1 && !w.say ? `<span class="extra">Ook goed: ${esc(nlAlts(w).slice(1).join(" · "))}</span>` : ""}
              <span class="extra">${esc(w.en)}</span>`
           : dir === "en-nl"
@@ -744,7 +786,7 @@ td.r { text-align: right; white-space: nowrap; }
         ${dir === "en-nl" && !s.answered ? `<div class="accents" aria-label="Insert a letter">${["é", "ë", "è", "ï", "ó"].map(c => `<button type="button" data-ch="${c}">${c}</button>`).join("")}</div>` : ""}`;
     } else if (!s.answered) {
       bodyHtml = s.revealed
-        ? `<div class="fb"><span class="with-say"><span class="answer-line">${esc(w.g ? sayText(w) : expected(w, dir))}</span>${dir === "en-nl" ? sayBtn(clipText(w)) : ""}</span>${w.g ? `<span class="extra">${esc(w.en)}</span>` : ""}${w.note ? `<span class="extra">${esc(w.note)}</span>` : ""}</div>
+        ? `<div class="fb"><span class="with-say"><span class="answer-line">${esc(w.g ? answerText(w) : expected(w, dir))}</span>${dir === "en-nl" ? sayBtn(clipText(w)) : ""}</span>${w.g ? `<span class="extra">${esc(w.en)}</span>` : ""}${w.note ? `<span class="extra">${esc(w.note)}</span>` : ""}</div>
            <div class="actions"><button class="btn" id="self-bad">Fout <span class="kbd">1</span></button><button class="btn primary" id="self-ok">Goed <span class="kbd">2</span></button></div>`
         : `<div class="actions"><button class="btn primary" id="reveal">Toon antwoord <span class="kbd">spatie</span></button></div>`;
     }
@@ -752,8 +794,8 @@ td.r { text-align: right; white-space: nowrap; }
       <div class="controls">
         <div class="quizbar">
           <div class="stats num">
-            <span>Ronde ${s.roundNo} · ${s.i + 1}/${s.round.length}</span>
-            <span>${s.seen.size}/${s.total} gehad</span>
+            ${s.exam ? `<span>Oefentoets · ${s.i + 1}/${s.round.length}</span>` : `<span>Ronde ${s.roundNo} · ${s.i + 1}/${s.round.length}</span>
+            <span>${s.seen.size}/${s.total} gehad</span>`}
             ${s.retry.length ? `<span>${s.retry.length} to redo</span>` : ""}
           </div>
           <button class="link" id="stop">Stoppen</button>
@@ -810,7 +852,7 @@ td.r { text-align: right; white-space: nowrap; }
 
   function missedList(words) {
     return `<ul class="missed">${words.map(w => w.g
-      ? `<li><span lang="nl">${esc(w.q)}</span><span lang="nl">${esc(sayText(w))}</span></li>`
+      ? `<li><span lang="nl">${esc(w.q)}</span><span lang="nl">${esc(answerText(w))}</span></li>`
       : `<li><span lang="nl">${esc(w.nl)}</span><span class="muted" lang="en">${esc(w.en)}</span></li>`).join("")}</ul>`;
   }
   function renderRound() {
@@ -830,6 +872,7 @@ td.r { text-align: right; white-space: nowrap; }
   }
   function renderDone() {
     const s = S.session;
+    if (s.exam) return renderExamDone(s);
     const hard = [...(s.retriedOnce || [])];
     app.innerHTML = `
       <div class="controls">
@@ -868,6 +911,129 @@ td.r { text-align: right; white-space: nowrap; }
       render();
       const n = app.querySelector("#list-search"); n.focus(); n.setSelectionRange(pos, pos);
     };
+  }
+
+  // ---------- werkwoorden ----------
+  // The verb deck carries "verbs" (one row per verb; each form is [person, form, recorded text]) and "types" (spelling groups).
+  const verbOf = w => /^(ww-|werkwoorden)/.test(w.sec) && !/zinnen/.test(w.sec) ? w.q.split(" \u00b7 ").pop() : null;
+  function renderVerbs() {
+    const d = S.decks.find(x => x.group === "werkwoorden" && x.verbs);
+    if (!d) { app.innerHTML = `<div class="state"><h2>Werkwoorden laden…</h2></div>`; return; }
+    preloadPacks([d.id]);
+    const f = S.verbType, q = flat(S.verbQuery || "");
+    const match = v => !q || [v.inf, v.en, ...v.forms.map(x => x[1])].some(t => flat(t).includes(q));
+    const cell = ([, form, say]) => say && clips.packed?.[say] ? `<button type="button" class="form-say" data-say="${esc(say)}" aria-label="Luister: ${esc(say)}">${esc(form)}</button>` : esc(form);
+    const head = ["werkwoord", ...d.verbs[0].forms.map(x => x[0])];
+    const groups = (d.types || []).filter(t => f === "all" || t.id === f)
+      .map(t => ({ t, vs: d.verbs.filter(v => v.type === t.id && match(v)) })).filter(g => g.vs.length);
+    app.innerHTML = `
+      <div class="controls">
+        <div class="guide-sec">
+          <h2>Werkwoorden vervoegen</h2>
+          <p class="note">The present tense of ${d.verbs.length} verbs from werkwoorden.pdf, the slides and the mock exam, grouped by spelling rule. Tap a form to hear it; Oefen drills a group. The full rules are on the Regels tab.</p>
+          <div class="actions"><button type="button" class="btn primary" data-vdrill="all">Oefen alle werkwoorden ${ARROW}</button></div>
+        </div>
+        <div class="chips" role="group" aria-label="Spelling groups">${[["all", "Alle"], ...(d.types || []).map(t => [t.id, t.name])].map(([id, l]) => `<button type="button" data-vtype="${id}" aria-pressed="${f === id}">${esc(l)}</button>`).join("")}</div>
+        <input class="search" id="verb-search" type="search" placeholder="Zoek een werkwoord (Nederlands of Engels)" value="${esc(S.verbQuery)}" aria-label="Search verbs">
+        ${groups.map(({ t, vs }) => `<section class="verb-type">
+          <div class="verb-type-head"><h2>${esc(t.name)}</h2><button type="button" class="btn" data-vdrill="${t.id}">Oefen ${ARROW}</button></div>
+          <p class="note">${esc(t.rule)}</p>
+          <div class="tablewrap"><table class="verbs" lang="nl"><thead><tr>${head.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+          <tbody>${vs.map(v => `<tr><td><b>${esc(v.inf)}</b><div class="en" lang="en">${esc(v.en)}</div></td>${v.forms.map(x => `<td>${cell(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+        </section>`).join("") || `<p class="note">No verb matches.</p>`}
+      </div>`;
+    app.querySelectorAll("[data-vtype]").forEach(b => b.onclick = () => { S.verbType = b.dataset.vtype; render(); });
+    app.querySelectorAll("[data-vdrill]").forEach(b => b.onclick = () => {
+      const t = b.dataset.vdrill, infs = new Set(d.verbs.filter(v => t === "all" || v.type === t).map(v => v.inf));
+      drill(S.words.filter(w => w.deck === d.id && (t === "all" || infs.has(verbOf(w)))));
+    });
+    const inp = app.querySelector("#verb-search");
+    inp.oninput = () => { S.verbQuery = inp.value; const pos = inp.selectionStart; render(); const n = app.querySelector("#verb-search"); n.focus(); n.setSelectionRange(pos, pos); };
+  }
+
+  // ---------- examen ----------
+  // The exam deck carries "exam" (its parts in order, with how many questions each), "guide" (per part: what it asks,
+  // the rule, the traps), "texts" (reading passages) and "review" (other selections worth revising).
+  const examDeck = () => S.decks.find(x => x.group === "examen" && x.exam);
+  const pctClass = (r, t) => r / t >= 0.8 ? "ok" : r / t < 0.6 ? "bad" : "";
+  function examWords(d) {
+    return d.exam.parts.flatMap(([sec, n]) => {
+      const ws = S.words.filter(w => w.deck === d.id && w.sec === sec);
+      if (n !== "text") return shuffle(ws.slice()).slice(0, n);
+      const texts = [...new Set(ws.map(w => w.text))], t = texts[Math.floor(Math.random() * texts.length)];
+      return ws.filter(w => w.text === t).sort((a, b) => a.n - b.n);
+    });
+  }
+  function saveExam(s) {
+    const parts = {};
+    for (const r of s.results) { const p = (parts[r.w.sec] ||= [0, 0]); p[1]++; if (r.ok) p[0]++; }
+    s.summary = { date: Date.now(), right: s.results.filter(r => r.ok).length, total: s.results.length, parts };
+    writeLS("wt-exam-last", s.summary);
+  }
+  function renderExam() {
+    const d = examDeck();
+    if (!d) { app.innerHTML = `<div class="state"><h2>Examen laden…</h2></div>`; return; }
+    const name = id => (d.sections || []).find(x => x.id === id)?.name || id;
+    const last = readLS("wt-exam-last");
+    const score = id => { const r = last?.parts?.[id]; return r ? `<span class="score ${pctClass(r[0], r[1])}">${r[0]}/${r[1]}</span>` : ""; };
+    const weak = last ? Object.entries(last.parts).filter(([, r]) => r[0] / r[1] < 0.8).map(([id]) => id) : [];
+    const size = d.exam.parts.reduce((a, [, n]) => a + (n === "text" ? 7 : n), 0);
+    app.innerHTML = `
+      <div class="controls">
+        <div class="guide-sec">
+          <h2>Examen voorbereiden</h2>
+          <p class="note">Built on Oefentoets 1 (Florence, 3 November): the same ten parts in the same order, with its questions plus new ones of each kind.</p>
+        </div>
+        <section class="exam-card" aria-labelledby="toets-h">
+          <div><span class="kicker">Oefentoets</span><h2 id="toets-h">Doe een oefentoets</h2></div>
+          <p>About ${size} questions from all ten parts, in exam order. You see the right answer after each one and your score per part at the end. Every run draws new questions.</p>
+          ${last ? `<p class="note">Last toets, ${esc(new Date(last.date).toLocaleDateString("nl-NL", { day: "numeric", month: "long" }))}: <b class="num">${last.right}/${last.total}</b>. ${weak.length ? `Under 80%: ${esc(weak.map(name).join(", "))}.` : "Every part at 80% or more."}</p>` : ""}
+          <div class="actions"><button type="button" class="btn primary" id="exam-start">Start oefentoets ${ARROW}</button>${weak.length ? `<button type="button" class="btn" id="exam-weak">Oefen zwakke onderdelen</button>` : ""}</div>
+        </section>
+        <section class="guide-sec" aria-labelledby="parts-h">
+          <h2 id="parts-h">De onderdelen</h2>
+          <p class="note">What each part asks, the rule to know and the traps from the mock exam. Oefen drills all questions of one part.</p>
+          <div>${(d.guide || []).map(g => `<div class="part">
+            <div class="part-head"><h3>${esc(name(g.sec))} ${score(g.sec)}</h3><button type="button" class="btn" data-part="${g.sec}">Oefen ${ARROW}</button></div>
+            <p class="muted">${esc(g.ask)}</p>
+            <p>${esc(g.rule)}</p>
+            ${g.tips?.length ? `<ul>${g.tips.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
+          </div>`).join("")}</div>
+        </section>
+        <section class="guide-sec" aria-labelledby="review-h">
+          <h2 id="review-h">Ook herhalen</h2>
+          <p class="note">Other material from the lessons. Each button selects it under Oefenen.</p>
+          <div class="chips">${(d.review || []).map((r, i) => `<button type="button" data-review="${i}">${esc(r.label)}</button>`).join("")}</div>
+        </section>
+      </div>`;
+    const part = sec => S.words.filter(w => w.deck === d.id && w.sec === sec);
+    app.querySelector("#exam-start").onclick = () => startSession(examWords(d), true);
+    const wk = app.querySelector("#exam-weak"); if (wk) wk.onclick = () => drill(weak.flatMap(part));
+    app.querySelectorAll("[data-part]").forEach(b => b.onclick = () => drill(part(b.dataset.part)));
+    app.querySelectorAll("[data-review]").forEach(b => b.onclick = () => {
+      const keys = d.review[+b.dataset.review].sel.flatMap(k => k.includes("|") ? [k] : (S.decks.find(x => x.id === k)?.sections || []).map(x => secKey(k, x.id)));
+      S.prefs.sel = keys.filter(k => allKeys().includes(k)); savePrefs();
+      new Set(S.prefs.sel.map(k => k.split("|")[0])).forEach(id => S.open.add(id));
+      S.view = "setup"; render(); window.scrollTo(0, 0);
+    });
+  }
+  function renderExamDone(s) {
+    const d = examDeck(), sum = s.summary;
+    const name = id => (d?.sections || []).find(x => x.id === id)?.name || id;
+    const missed = s.results.filter(r => !r.ok).map(r => r.w);
+    app.innerHTML = `
+      <div class="controls">
+        <div><span class="kicker">Oefentoets klaar</span><div class="big-score num">${sum.right}/${sum.total}</div><p class="num muted">${Math.round(sum.right / Math.max(1, sum.total) * 100)}% right</p></div>
+        <div class="tablewrap"><table><thead><tr><th>Onderdeel</th><th class="r">Score</th></tr></thead>
+          <tbody>${Object.entries(sum.parts).map(([id, [r, t]]) => `<tr><td>${esc(name(id))}</td><td class="r"><span class="score ${pctClass(r, t)}">${r}/${t}</span></td></tr>`).join("")}</tbody></table></div>
+        ${missed.length ? `<div class="overview"><h2>Fout</h2>${missedList(missed)}</div>` : `<p>Alles goed. Mooi zo!</p>`}
+        <div class="actions">
+          <button class="btn primary" id="again">Terug naar Examen</button>
+          ${missed.length ? `<button class="btn" id="redo">Oefen je fouten</button>` : ""}
+        </div>
+      </div>`;
+    const b = app.querySelector("#again"); b.onclick = () => { S.session = null; S.view = "exam"; render(); window.scrollTo(0, 0); }; b.focus();
+    const r = app.querySelector("#redo"); if (r) r.onclick = () => startSession(missed);
   }
 
   // ---------- grammar rules ----------

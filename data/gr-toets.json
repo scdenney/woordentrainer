@@ -1,0 +1,2382 @@
+{
+ "title": "Oefentoets",
+ "order": 120,
+ "kind": "grammar",
+ "source": "Oefentoets 1 and its answers (F. Fabbricotti, 3 and 8 Nov 2026); GEEN of NIET sheet and les 6–7 slides",
+ "rules": [],
+ "sections": [
+  {
+   "id": "tt-ww",
+   "name": "1. Werkwoord invullen",
+   "task": "Type the right form of the verb in brackets."
+  },
+  {
+   "id": "tt-vw",
+   "name": "2. Vraagwoord",
+   "task": "Type the question word that fits the answer."
+  },
+  {
+   "id": "tt-prep",
+   "name": "3. in, om of op",
+   "task": "Pick in, om or op."
+  },
+  {
+   "id": "tt-pers",
+   "name": "4. Persoonlijk voornaamwoord",
+   "task": "Type the personal pronoun: ik, jij, u, hij, zij, het, wij, jullie or zij."
+  },
+  {
+   "id": "tt-bezit",
+   "name": "5. Bezittelijk voornaamwoord",
+   "task": "Type the possessive: mijn, jouw, uw, zijn, haar, ons, onze, jullie or hun."
+  },
+  {
+   "id": "tt-volgorde",
+   "name": "6. Zinsvolgorde",
+   "task": "Make a sentence. Start with the word(s) after ‘begin:’ and don't change the parts."
+  },
+  {
+   "id": "tt-neg",
+   "name": "7. Nee: niet of geen",
+   "task": "Answer with Nee and a full sentence, using niet or geen."
+  },
+  {
+   "id": "tt-antwoord",
+   "name": "8. Antwoord in een hele zin",
+   "task": "Answer in a full sentence, with the information in brackets."
+  },
+  {
+   "id": "tt-vraag",
+   "name": "9. Vraag bij het antwoord",
+   "task": "Write the question that goes with the answer."
+  },
+  {
+   "id": "tt-tekst",
+   "name": "10. Leestekst: waar of niet waar",
+   "task": "Read the text, then pick waar (true) or niet waar (false)."
+  },
+  {
+   "id": "tt-voegw",
+   "name": "Extra: en, maar, want, of, dus",
+   "task": "Pick the word that joins the two sentences."
+  }
+ ],
+ "words": [
+  {
+   "id": "tt-ww-hoe-laat-de-les-beginnen",
+   "q": "Hoe laat ___ de les? (beginnen)",
+   "nl": "begint",
+   "en": "What time does the class start?",
+   "sec": "tt-ww",
+   "say": "Hoe laat begint de les?"
+  },
+  {
+   "id": "tt-ww-wij-vandaag-tot-20-00-werken",
+   "q": "Wij ___ vandaag tot 20.00. (werken)",
+   "nl": "werken",
+   "en": "We're working until 8 p.m. today.",
+   "sec": "tt-ww",
+   "say": "Wij werken vandaag tot 20.00."
+  },
+  {
+   "id": "tt-ww-u-ook-naar-het-concert-komen",
+   "q": "___ u ook naar het concert? (komen)",
+   "nl": "komt",
+   "en": "Are you coming to the concert too? u keeps the -t.",
+   "sec": "tt-ww",
+   "say": "Komt u ook naar het concert?"
+  },
+  {
+   "id": "tt-ww-zij-koffie-bij-de-ober-bestellen",
+   "q": "Zij ___ koffie bij de ober. (bestellen)",
+   "nl": "bestelt/bestellen",
+   "en": "She orders / they order coffee from the waiter: zij can be singular or plural.",
+   "sec": "tt-ww",
+   "say": "Zij bestelt koffie bij de ober."
+  },
+  {
+   "id": "tt-ww-waar-jij-wonen",
+   "q": "Waar ___ jij? (wonen)",
+   "nl": "woon",
+   "en": "Where do you live? jij after the verb: no -t.",
+   "sec": "tt-ww",
+   "say": "Waar woon jij?"
+  },
+  {
+   "id": "tt-ww-jullie-te-laat-zijn",
+   "q": "Jullie ___ te laat. (zijn)",
+   "nl": "zijn",
+   "en": "You're late.",
+   "sec": "tt-ww",
+   "say": "Jullie zijn te laat."
+  },
+  {
+   "id": "tt-ww-hij-een-fiets-hebben",
+   "q": "___ hij een fiets? (hebben)",
+   "nl": "heeft",
+   "en": "Does he have a bike?",
+   "sec": "tt-ww",
+   "say": "Heeft hij een fiets?"
+  },
+  {
+   "id": "tt-ww-wat-wil-jij-vandaag-koken",
+   "q": "Wat wil jij vandaag ___? (koken)",
+   "nl": "koken",
+   "en": "What do you want to cook today? After wil the second verb stays the infinitive.",
+   "sec": "tt-ww",
+   "say": "Wat wil jij vandaag koken?"
+  },
+  {
+   "id": "tt-ww-wat-jij-graag-eten",
+   "q": "Wat ___ jij graag? (eten)",
+   "nl": "eet",
+   "en": "What do you like to eat? Stem eet already ends in t.",
+   "sec": "tt-ww",
+   "say": "Wat eet jij graag?"
+  },
+  {
+   "id": "tt-ww-ik-naar-huis-gaan",
+   "q": "Ik ___ naar huis. (gaan)",
+   "nl": "ga",
+   "en": "I'm going home.",
+   "sec": "tt-ww",
+   "say": "Ik ga naar huis."
+  },
+  {
+   "id": "tt-ww-mijn-zus-in-utrecht-wonen",
+   "q": "Mijn zus ___ in Utrecht. (wonen)",
+   "nl": "woont",
+   "en": "My sister lives in Utrecht.",
+   "sec": "tt-ww",
+   "say": "Mijn zus woont in Utrecht."
+  },
+  {
+   "id": "tt-ww-jij-vanavond-werken",
+   "q": "___ jij vanavond? (werken)",
+   "nl": "werk",
+   "en": "Are you working tonight? jij after the verb: no -t.",
+   "sec": "tt-ww",
+   "say": "Werk jij vanavond?"
+  },
+  {
+   "id": "tt-ww-u-een-afspraak-om-drie-uur-hebben",
+   "q": "U ___ een afspraak om drie uur. (hebben)",
+   "nl": "hebt/heeft",
+   "en": "You have an appointment at three. u hebt and u heeft are both right.",
+   "sec": "tt-ww",
+   "say": "U hebt een afspraak om drie uur."
+  },
+  {
+   "id": "tt-ww-hoe-laat-de-trein-vertrekken",
+   "q": "Hoe laat ___ de trein? (vertrekken)",
+   "nl": "vertrekt",
+   "en": "What time does the train leave?",
+   "sec": "tt-ww",
+   "say": "Hoe laat vertrekt de trein?"
+  },
+  {
+   "id": "tt-ww-jullie-mee-naar-het-caf-gaan",
+   "q": "___ jullie mee naar het café? (gaan)",
+   "nl": "gaan",
+   "en": "Are you coming along to the café?",
+   "sec": "tt-ww",
+   "say": "Gaan jullie mee naar het café?"
+  },
+  {
+   "id": "tt-ww-peter-elke-dag-naar-zijn-werk-fietsen",
+   "q": "Peter ___ elke dag naar zijn werk. (fietsen)",
+   "nl": "fietst",
+   "en": "Peter cycles to work every day.",
+   "sec": "tt-ww",
+   "say": "Peter fietst elke dag naar zijn werk."
+  },
+  {
+   "id": "tt-ww-ik-een-kopje-thee-nemen",
+   "q": "Ik ___ een kopje thee. (nemen)",
+   "nl": "neem",
+   "en": "I'll have a cup of tea. nemen → neem (long e).",
+   "sec": "tt-ww",
+   "say": "Ik neem een kopje thee."
+  },
+  {
+   "id": "tt-ww-jij-nederlands-spreken",
+   "q": "___ jij Nederlands? (spreken)",
+   "nl": "spreek",
+   "en": "Do you speak Dutch?",
+   "sec": "tt-ww",
+   "say": "Spreek jij Nederlands?"
+  },
+  {
+   "id": "tt-ww-mijn-ouders-in-de-zomer-naar-spanje-gaan",
+   "q": "Mijn ouders ___ in de zomer naar Spanje. (gaan)",
+   "nl": "gaan",
+   "en": "My parents go to Spain in the summer.",
+   "sec": "tt-ww",
+   "say": "Mijn ouders gaan in de zomer naar Spanje."
+  },
+  {
+   "id": "tt-ww-wat-jij-van-de-les-vinden",
+   "q": "Wat ___ jij van de les? (vinden)",
+   "nl": "vind",
+   "en": "What do you think of the class? jij after the verb: vind.",
+   "sec": "tt-ww",
+   "say": "Wat vind jij van de les?"
+  },
+  {
+   "id": "tt-ww-anna-een-brief-aan-haar-oma-schrijven",
+   "q": "Anna ___ een brief aan haar oma. (schrijven)",
+   "nl": "schrijft",
+   "en": "Anna writes a letter to her grandma. v → f.",
+   "sec": "tt-ww",
+   "say": "Anna schrijft een brief aan haar oma."
+  },
+  {
+   "id": "tt-ww-ik-een-pizza-maken-zullen",
+   "q": "___ ik een pizza maken? (zullen)",
+   "nl": "zal",
+   "en": "Shall I make a pizza?",
+   "sec": "tt-ww",
+   "say": "Zal ik een pizza maken?"
+  },
+  {
+   "id": "tt-ww-ik-naar-de-tandarts-moeten",
+   "q": "Ik ___ naar de tandarts. (moeten)",
+   "nl": "moet",
+   "en": "I have to go to the dentist.",
+   "sec": "tt-ww",
+   "say": "Ik moet naar de tandarts."
+  },
+  {
+   "id": "tt-ww-hij-graag-een-biertje-willen",
+   "q": "Hij ___ graag een biertje. (willen)",
+   "nl": "wil",
+   "en": "He'd like a beer.",
+   "sec": "tt-ww",
+   "say": "Hij wil graag een biertje."
+  },
+  {
+   "id": "tt-ww-wat-jij-zaterdag-doen",
+   "q": "Wat ___ jij zaterdag? (doen)",
+   "nl": "doe",
+   "en": "What are you doing on Saturday?",
+   "sec": "tt-ww",
+   "say": "Wat doe jij zaterdag?"
+  },
+  {
+   "id": "tt-ww-hoe-jij-heten",
+   "q": "Hoe ___ jij? (heten)",
+   "nl": "heet",
+   "en": "What's your name?",
+   "sec": "tt-ww",
+   "say": "Hoe heet jij?"
+  },
+  {
+   "id": "tt-ww-wij-om-zes-uur-eten",
+   "q": "Wij ___ om zes uur. (eten)",
+   "nl": "eten",
+   "en": "We eat at six.",
+   "sec": "tt-ww",
+   "say": "Wij eten om zes uur."
+  },
+  {
+   "id": "tt-ww-ik-36-jaar-zijn",
+   "q": "Ik ___ 36 jaar. (zijn)",
+   "nl": "ben",
+   "en": "I'm 36.",
+   "sec": "tt-ww",
+   "say": "Ik ben 36 jaar."
+  },
+  {
+   "id": "tt-ww-het-vandaag-regenen",
+   "q": "Het ___ vandaag. (regenen)",
+   "nl": "regent",
+   "en": "It's raining today.",
+   "sec": "tt-ww",
+   "say": "Het regent vandaag."
+  },
+  {
+   "id": "tt-vw-is-uw-naam-mijn-naam-is-maartje",
+   "q": "___ is uw naam? — Mijn naam is Maartje.",
+   "nl": "wat",
+   "en": "What is your name?",
+   "sec": "tt-vw",
+   "say": "Wat is uw naam?"
+  },
+  {
+   "id": "tt-vw-begint-de-les-de-les-begint-om-9-uur",
+   "q": "___ begint de les? — De les begint om 9 uur.",
+   "nl": "hoe laat/wanneer",
+   "en": "What time does the class start?",
+   "sec": "tt-vw",
+   "say": "Hoe laat begint de les?"
+  },
+  {
+   "id": "tt-vw-wil-je-drinken-voor-mij-een-cappuccino-graag",
+   "q": "___ wil je drinken? — Voor mij een cappuccino, graag.",
+   "nl": "wat",
+   "en": "What would you like to drink?",
+   "sec": "tt-vw",
+   "say": "Wat wil je drinken?"
+  },
+  {
+   "id": "tt-vw-kom-jij-vandaan-ik-kom-uit-frankrijk",
+   "q": "___ kom jij vandaan? — Ik kom uit Frankrijk.",
+   "nl": "waar",
+   "en": "Where are you from?",
+   "sec": "tt-vw",
+   "say": "Waar kom jij vandaan?"
+  },
+  {
+   "id": "tt-vw-op-dag-heb-je-les-ik-heb-elke-woensdag-les",
+   "q": "Op ___ dag heb je les? — Ik heb elke woensdag les.",
+   "nl": "welke",
+   "en": "On which day do you have class? de dag → welke.",
+   "sec": "tt-vw",
+   "say": "Op welke dag heb je les?"
+  },
+  {
+   "id": "tt-vw-met-ga-je-naar-het-feest-met-sara-en-roel",
+   "q": "Met ___ ga je naar het feest? — Met Sara en Roel.",
+   "nl": "wie",
+   "en": "Who are you going to the party with?",
+   "sec": "tt-vw",
+   "say": "Met wie ga je naar het feest?"
+  },
+  {
+   "id": "tt-vw-woon-jij-in-leiden",
+   "q": "___ woon jij? — In Leiden.",
+   "nl": "waar",
+   "en": "Where do you live?",
+   "sec": "tt-vw",
+   "say": "Waar woon jij?"
+  },
+  {
+   "id": "tt-vw-oud-ben-jij-ik-ben-34",
+   "q": "___ oud ben jij? — Ik ben 34.",
+   "nl": "hoe",
+   "en": "How old are you?",
+   "sec": "tt-vw",
+   "say": "Hoe oud ben jij?"
+  },
+  {
+   "id": "tt-vw-kost-een-kilo-appels-twee-euro",
+   "q": "___ kost een kilo appels? — Twee euro.",
+   "nl": "hoeveel/wat",
+   "en": "How much is a kilo of apples?",
+   "sec": "tt-vw",
+   "say": "Hoeveel kost een kilo appels?"
+  },
+  {
+   "id": "tt-vw-ben-je-jarig-in-oktober",
+   "q": "___ ben je jarig? — In oktober.",
+   "nl": "wanneer",
+   "en": "When is your birthday?",
+   "sec": "tt-vw",
+   "say": "Wanneer ben je jarig?"
+  },
+  {
+   "id": "tt-vw-is-jouw-beroep-ik-ben-bakker",
+   "q": "___ is jouw beroep? — Ik ben bakker.",
+   "nl": "wat",
+   "en": "What is your job?",
+   "sec": "tt-vw",
+   "say": "Wat is jouw beroep?"
+  },
+  {
+   "id": "tt-vw-leer-je-nederlands-want-ik-woon-in-nederland",
+   "q": "___ leer je Nederlands? — Want ik woon in Nederland.",
+   "nl": "waarom",
+   "en": "Why are you learning Dutch?",
+   "sec": "tt-vw",
+   "say": "Waarom leer je Nederlands?"
+  },
+  {
+   "id": "tt-vw-gaat-het-met-jou-goed-dank-je",
+   "q": "___ gaat het met jou? — Goed, dank je.",
+   "nl": "hoe",
+   "en": "How are you?",
+   "sec": "tt-vw",
+   "say": "Hoe gaat het met jou?"
+  },
+  {
+   "id": "tt-vw-is-dat-dat-is-mijn-buurvrouw",
+   "q": "___ is dat? — Dat is mijn buurvrouw.",
+   "nl": "wie",
+   "en": "Who is that?",
+   "sec": "tt-vw",
+   "say": "Wie is dat?"
+  },
+  {
+   "id": "tt-vw-in-maand-ben-je-jarig-in-mei",
+   "q": "In ___ maand ben je jarig? — In mei.",
+   "nl": "welke",
+   "en": "In which month is your birthday? de maand → welke.",
+   "sec": "tt-vw",
+   "say": "In welke maand ben je jarig?"
+  },
+  {
+   "id": "tt-vw-gaan-jullie-naartoe-naar-den-haag",
+   "q": "___ gaan jullie naartoe? — Naar Den Haag.",
+   "nl": "waar",
+   "en": "Where are you going?",
+   "sec": "tt-vw",
+   "say": "Waar gaan jullie naartoe?"
+  },
+  {
+   "id": "tt-vw-broers-en-zussen-heb-je-e-n-broer-en-twee-zussen",
+   "q": "___ broers en zussen heb je? — Eén broer en twee zussen.",
+   "nl": "hoeveel",
+   "en": "How many brothers and sisters do you have?",
+   "sec": "tt-vw",
+   "say": "Hoeveel broers en zussen heb je?"
+  },
+  {
+   "id": "tt-vw-vertrekt-de-trein-om-kwart-over-acht",
+   "q": "___ vertrekt de trein? — Om kwart over acht.",
+   "nl": "hoe laat/wanneer",
+   "en": "What time does the train leave?",
+   "sec": "tt-vw",
+   "say": "Hoe laat vertrekt de trein?"
+  },
+  {
+   "id": "tt-vw-werk-jij-bij-de-universiteit",
+   "q": "___ werk jij? — Bij de universiteit.",
+   "nl": "waar",
+   "en": "Where do you work?",
+   "sec": "tt-vw",
+   "say": "Waar werk jij?"
+  },
+  {
+   "id": "tt-vw-heet-je-ik-heet-steven",
+   "q": "___ heet je? — Ik heet Steven.",
+   "nl": "hoe",
+   "en": "What's your name?",
+   "sec": "tt-vw",
+   "say": "Hoe heet je?"
+  },
+  {
+   "id": "tt-vw-boek-lees-je-het-boek-van-florence",
+   "q": "___ boek lees je? — Het boek van Florence.",
+   "nl": "welk",
+   "en": "Which book are you reading? het boek → welk.",
+   "sec": "tt-vw",
+   "say": "Welk boek lees je?"
+  },
+  {
+   "id": "tt-vw-doe-je-zaterdag-ik-ga-fietsen",
+   "q": "___ doe je zaterdag? — Ik ga fietsen.",
+   "nl": "wat",
+   "en": "What are you doing on Saturday?",
+   "sec": "tt-vw",
+   "say": "Wat doe je zaterdag?"
+  },
+  {
+   "id": "tt-vw-ga-je-niet-mee-ik-ben-ziek",
+   "q": "___ ga je niet mee? — Ik ben ziek.",
+   "nl": "waarom",
+   "en": "Why aren't you coming along?",
+   "sec": "tt-vw",
+   "say": "Waarom ga je niet mee?"
+  },
+  {
+   "id": "tt-prep-mijn-moeder-komt-10-00-uur",
+   "q": "Mijn moeder komt ___ 10.00 uur.",
+   "nl": "om",
+   "en": "om + clock time",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Mijn moeder komt om 10.00 uur."
+  },
+  {
+   "id": "tt-prep-3-november-maken-wij-het-oefenexamen",
+   "q": "___ 3 november maken wij het oefenexamen.",
+   "nl": "op",
+   "en": "op + date",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Op 3 november maken wij het oefenexamen."
+  },
+  {
+   "id": "tt-prep-zij-is-jarig-september",
+   "q": "Zij is jarig ___ september.",
+   "nl": "in",
+   "en": "in + month",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Zij is jarig in september."
+  },
+  {
+   "id": "tt-prep-maandag-en-woensdag-hebben-wij-les",
+   "q": "___ maandag en woensdag hebben wij les.",
+   "nl": "op",
+   "en": "op + day",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Op maandag en woensdag hebben wij les."
+  },
+  {
+   "id": "tt-prep-de-herfst-regent-het-vaak",
+   "q": "___ de herfst regent het vaak.",
+   "nl": "in",
+   "en": "in + season",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "In de herfst regent het vaak."
+  },
+  {
+   "id": "tt-prep-de-les-begint-kwart-over-zeven",
+   "q": "De les begint ___ kwart over zeven.",
+   "nl": "om",
+   "en": "om + clock time",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "De les begint om kwart over zeven."
+  },
+  {
+   "id": "tt-prep-ik-ben-jarig-12-mei",
+   "q": "Ik ben jarig ___ 12 mei.",
+   "nl": "op",
+   "en": "op + date",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Ik ben jarig op 12 mei."
+  },
+  {
+   "id": "tt-prep-2027-ga-ik-naar-japan",
+   "q": "___ 2027 ga ik naar Japan.",
+   "nl": "in",
+   "en": "in + year",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "In 2027 ga ik naar Japan."
+  },
+  {
+   "id": "tt-prep-de-film-begint-half-negen",
+   "q": "De film begint ___ half negen.",
+   "nl": "om",
+   "en": "om + clock time",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "De film begint om half negen."
+  },
+  {
+   "id": "tt-prep-de-winter-is-het-koud",
+   "q": "___ de winter is het koud.",
+   "nl": "in",
+   "en": "in + season",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "In de winter is het koud."
+  },
+  {
+   "id": "tt-prep-wij-hebben-dinsdag-les",
+   "q": "Wij hebben ___ dinsdag les.",
+   "nl": "op",
+   "en": "op + day",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Wij hebben op dinsdag les."
+  },
+  {
+   "id": "tt-prep-het-weekend-slaap-ik-lang",
+   "q": "___ het weekend slaap ik lang.",
+   "nl": "in",
+   "en": "in het weekend",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "In het weekend slaap ik lang."
+  },
+  {
+   "id": "tt-prep-kom-je-zaterdag",
+   "q": "Kom je ___ zaterdag?",
+   "nl": "op",
+   "en": "op + day",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Kom je op zaterdag?"
+  },
+  {
+   "id": "tt-prep-de-winkel-gaat-zes-uur-dicht",
+   "q": "De winkel gaat ___ zes uur dicht.",
+   "nl": "om",
+   "en": "om + clock time",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "De winkel gaat om zes uur dicht."
+  },
+  {
+   "id": "tt-prep-juli-is-het-festival",
+   "q": "___ juli is het festival.",
+   "nl": "in",
+   "en": "in + month",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "In juli is het festival."
+  },
+  {
+   "id": "tt-prep-ik-sta-zeven-uur-op",
+   "q": "Ik sta ___ zeven uur op.",
+   "nl": "om",
+   "en": "om + clock time",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Ik sta om zeven uur op."
+  },
+  {
+   "id": "tt-prep-vrijdagavond-ga-ik-naar-het-caf",
+   "q": "___ vrijdagavond ga ik naar het café.",
+   "nl": "op",
+   "en": "op + day (also with a part of the day)",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Op vrijdagavond ga ik naar het café."
+  },
+  {
+   "id": "tt-prep-de-zomer-fiets-ik-veel",
+   "q": "___ de zomer fiets ik veel.",
+   "nl": "in",
+   "en": "in + season",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "In de zomer fiets ik veel."
+  },
+  {
+   "id": "tt-prep-het-concert-is-13-juli",
+   "q": "Het concert is ___ 13 juli.",
+   "nl": "op",
+   "en": "op + date",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Het concert is op 13 juli."
+  },
+  {
+   "id": "tt-prep-zullen-we-vier-uur-afspreken",
+   "q": "Zullen we ___ vier uur afspreken?",
+   "nl": "om",
+   "en": "om + clock time",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "Zullen we om vier uur afspreken?"
+  },
+  {
+   "id": "tt-prep-de-ochtend-drink-ik-koffie",
+   "q": "___ de ochtend drink ik koffie.",
+   "nl": "in",
+   "en": "in de ochtend = ’s ochtends",
+   "sec": "tt-prep",
+   "choices": [
+    "in",
+    "om",
+    "op"
+   ],
+   "say": "In de ochtend drink ik koffie."
+  },
+  {
+   "id": "tt-pers-anna-ben-thuis",
+   "q": "Anna, ben ___ thuis?",
+   "nl": "jij/je",
+   "en": "Anna, are you at home? One person, informal: jij.",
+   "sec": "tt-pers",
+   "say": "Anna, ben jij thuis?"
+  },
+  {
+   "id": "tt-pers-luister-naar-de-muziek-i",
+   "q": "___ luister naar de muziek. (I)",
+   "nl": "ik",
+   "en": "I'm listening to the music.",
+   "sec": "tt-pers",
+   "say": "Ik luister naar de muziek."
+  },
+  {
+   "id": "tt-pers-hoi-saskia-en-kees-komen-ook-naar-het-caf",
+   "q": "Hoi Saskia en Kees, komen ___ ook naar het café?",
+   "nl": "jullie",
+   "en": "Saskia and Kees, are you coming too? Two people: jullie.",
+   "sec": "tt-pers",
+   "say": "Hoi Saskia en Kees, komen jullie ook naar het café?"
+  },
+  {
+   "id": "tt-pers-mijn-broer-en-ik-kopen-stroopwafels",
+   "q": "Mijn broer en ik, ___ kopen stroopwafels.",
+   "nl": "wij/we",
+   "en": "My brother and I, we buy stroopwafels.",
+   "sec": "tt-pers",
+   "say": "Mijn broer en ik, wij kopen stroopwafels."
+  },
+  {
+   "id": "tt-pers-is-vandaag-mooi-weer",
+   "q": "___ is vandaag mooi weer.",
+   "nl": "het",
+   "en": "The weather is nice today. Weather and time: het.",
+   "sec": "tt-pers",
+   "say": "Het is vandaag mooi weer."
+  },
+  {
+   "id": "tt-pers-paulo-woont-in-den-haag",
+   "q": "___ (Paulo) woont in Den Haag.",
+   "nl": "hij",
+   "en": "He lives in The Hague.",
+   "sec": "tt-pers",
+   "say": "Hij woont in Den Haag."
+  },
+  {
+   "id": "tt-pers-maria-fietst-naar-de-les",
+   "q": "___ (Maria) fietst naar de les.",
+   "nl": "zij/ze",
+   "en": "She cycles to class.",
+   "sec": "tt-pers",
+   "say": "Zij fietst naar de les."
+  },
+  {
+   "id": "tt-pers-ken-jij-mijn-ouders-komen-vanavond-ook-op-bezoek",
+   "q": "Ken jij mijn ouders? ___ komen vanavond ook op bezoek.",
+   "nl": "zij/ze",
+   "en": "They're visiting tonight too.",
+   "sec": "tt-pers",
+   "say": "Ken jij mijn ouders? Zij komen vanavond ook op bezoek."
+  },
+  {
+   "id": "tt-pers-meneer-de-vries-waar-woont",
+   "q": "Meneer De Vries, waar woont ___?",
+   "nl": "u",
+   "en": "Mr De Vries, where do you live? Polite: u.",
+   "sec": "tt-pers",
+   "say": "Meneer De Vries, waar woont u?"
+  },
+  {
+   "id": "tt-pers-tim-en-ik-gaan-naar-de-film-gaan-om-acht-uur",
+   "q": "Tim en ik gaan naar de film. ___ gaan om acht uur.",
+   "nl": "wij/we",
+   "en": "Tim and I: we.",
+   "sec": "tt-pers",
+   "say": "Tim en ik gaan naar de film. Wij gaan om acht uur."
+  },
+  {
+   "id": "tt-pers-waar-is-het-boek-ligt-op-tafel",
+   "q": "Waar is het boek? ___ ligt op tafel.",
+   "nl": "het",
+   "en": "het boek → het.",
+   "sec": "tt-pers",
+   "say": "Waar is het boek? Het ligt op tafel."
+  },
+  {
+   "id": "tt-pers-lisa-en-tom-waar-wonen",
+   "q": "Lisa en Tom, waar wonen ___?",
+   "nl": "jullie",
+   "en": "Lisa and Tom, where do you live?",
+   "sec": "tt-pers",
+   "say": "Lisa en Tom, waar wonen jullie?"
+  },
+  {
+   "id": "tt-pers-mijn-zus-is-ziek-blijft-thuis",
+   "q": "Mijn zus is ziek. ___ blijft thuis.",
+   "nl": "zij/ze",
+   "en": "My sister is ill. She's staying home.",
+   "sec": "tt-pers",
+   "say": "Mijn zus is ziek. Zij blijft thuis."
+  },
+  {
+   "id": "tt-pers-mijn-vader-werkt-bij-de-bank-is-bankmedewerker",
+   "q": "Mijn vader werkt bij de bank. ___ is bankmedewerker.",
+   "nl": "hij",
+   "en": "My father: he.",
+   "sec": "tt-pers",
+   "say": "Mijn vader werkt bij de bank. Hij is bankmedewerker."
+  },
+  {
+   "id": "tt-pers-mevrouw-kunt-hier-betalen",
+   "q": "Mevrouw, ___ kunt hier betalen.",
+   "nl": "u",
+   "en": "Madam, you can pay here.",
+   "sec": "tt-pers",
+   "say": "Mevrouw, u kunt hier betalen."
+  },
+  {
+   "id": "tt-pers-saskia-en-peter-zijn-mijn-buren-hebben-een-hond",
+   "q": "Saskia en Peter zijn mijn buren. ___ hebben een hond.",
+   "nl": "zij/ze",
+   "en": "They have a dog.",
+   "sec": "tt-pers",
+   "say": "Saskia en Peter zijn mijn buren. Zij hebben een hond."
+  },
+  {
+   "id": "tt-pers-hoe-laat-is-drie-uur",
+   "q": "Hoe laat is ___? — Drie uur.",
+   "nl": "het",
+   "en": "What time is it?",
+   "sec": "tt-pers",
+   "say": "Hoe laat is het?"
+  },
+  {
+   "id": "tt-pers-kees-heb-een-pen-voor-mij",
+   "q": "Kees, heb ___ een pen voor mij?",
+   "nl": "jij/je",
+   "en": "Kees, do you have a pen for me?",
+   "sec": "tt-pers",
+   "say": "Kees, heb jij een pen voor mij?"
+  },
+  {
+   "id": "tt-bezit-ik-heb-dit-boek-gekocht-het-is-boek",
+   "q": "Ik heb dit boek gekocht. Het is ___ boek.",
+   "nl": "mijn",
+   "en": "It's my book.",
+   "sec": "tt-bezit",
+   "say": "Ik heb dit boek gekocht. Het is mijn boek."
+  },
+  {
+   "id": "tt-bezit-dit-is-de-fiets-van-laura-het-is-fiets",
+   "q": "Dit is de fiets van Laura. Het is ___ fiets.",
+   "nl": "haar",
+   "en": "Laura's bike: her bike.",
+   "sec": "tt-bezit",
+   "say": "Dit is de fiets van Laura. Het is haar fiets."
+  },
+  {
+   "id": "tt-bezit-wij-wonen-hier-dit-is-huis",
+   "q": "Wij wonen hier. Dit is ___ huis.",
+   "nl": "ons",
+   "en": "Our house: het huis → ons.",
+   "sec": "tt-bezit",
+   "say": "Wij wonen hier. Dit is ons huis."
+  },
+  {
+   "id": "tt-bezit-jij-hebt-een-mooie-pen-dit-is-pen",
+   "q": "Jij hebt een mooie pen. Dit is ___ pen.",
+   "nl": "jouw/je",
+   "en": "Your pen.",
+   "sec": "tt-bezit",
+   "say": "Jij hebt een mooie pen. Dit is jouw pen."
+  },
+  {
+   "id": "tt-bezit-zij-hebben-een-gele-fiat-500-dit-is-auto",
+   "q": "Zij hebben een gele Fiat 500. Dit is ___ auto.",
+   "nl": "hun",
+   "en": "Their car.",
+   "sec": "tt-bezit",
+   "say": "Zij hebben een gele Fiat 500. Dit is hun auto."
+  },
+  {
+   "id": "tt-bezit-u-koopt-een-nieuwe-jas-het-is-jas",
+   "q": "U koopt een nieuwe jas. Het is ___ jas.",
+   "nl": "uw",
+   "en": "Your (polite) coat.",
+   "sec": "tt-bezit",
+   "say": "U koopt een nieuwe jas. Het is uw jas."
+  },
+  {
+   "id": "tt-bezit-dit-is-de-auto-van-peter-het-is-auto",
+   "q": "Dit is de auto van Peter. Het is ___ auto.",
+   "nl": "zijn",
+   "en": "Peter's car: his car.",
+   "sec": "tt-bezit",
+   "say": "Dit is de auto van Peter. Het is zijn auto."
+  },
+  {
+   "id": "tt-bezit-wij-hebben-een-docent-docent-heet-florence",
+   "q": "Wij hebben een docent. ___ docent heet Florence.",
+   "nl": "onze",
+   "en": "Our teacher: de docent → onze.",
+   "sec": "tt-bezit",
+   "say": "Wij hebben een docent. Onze docent heet Florence."
+  },
+  {
+   "id": "tt-bezit-jullie-hebben-een-kat-is-dat-kat",
+   "q": "Jullie hebben een kat. Is dat ___ kat?",
+   "nl": "jullie",
+   "en": "Is that your cat?",
+   "sec": "tt-bezit",
+   "say": "Jullie hebben een kat. Is dat jullie kat?"
+  },
+  {
+   "id": "tt-bezit-mijn-zus-en-ik-hebben-ouders-in-canada-ouders-wo",
+   "q": "Mijn zus en ik hebben ouders in Canada. ___ ouders wonen in Toronto.",
+   "nl": "onze",
+   "en": "Our parents: plural → onze.",
+   "sec": "tt-bezit",
+   "say": "Mijn zus en ik hebben ouders in Canada. Onze ouders wonen in Toronto."
+  },
+  {
+   "id": "tt-bezit-anna-en-tim-hebben-een-dochter-dochter-heet-eva",
+   "q": "Anna en Tim hebben een dochter. ___ dochter heet Eva.",
+   "nl": "hun",
+   "en": "Their daughter.",
+   "sec": "tt-bezit",
+   "say": "Anna en Tim hebben een dochter. Hun dochter heet Eva."
+  },
+  {
+   "id": "tt-bezit-meneer-is-dit-tas",
+   "q": "Meneer, is dit ___ tas?",
+   "nl": "uw",
+   "en": "Sir, is this your bag?",
+   "sec": "tt-bezit",
+   "say": "Meneer, is dit uw tas?"
+  },
+  {
+   "id": "tt-bezit-ik-heb-een-broer-broer-woont-in-leiden",
+   "q": "Ik heb een broer. ___ broer woont in Leiden.",
+   "nl": "mijn",
+   "en": "My brother.",
+   "sec": "tt-bezit",
+   "say": "Ik heb een broer. Mijn broer woont in Leiden."
+  },
+  {
+   "id": "tt-bezit-sara-heeft-een-hond-hond-heet-max",
+   "q": "Sara heeft een hond. ___ hond heet Max.",
+   "nl": "haar",
+   "en": "Her dog.",
+   "sec": "tt-bezit",
+   "say": "Sara heeft een hond. Haar hond heet Max."
+  },
+  {
+   "id": "tt-bezit-wij-hebben-een-kind-kind-is-drie-jaar",
+   "q": "Wij hebben een kind. ___ kind is drie jaar.",
+   "nl": "ons",
+   "en": "Our child: het kind → ons.",
+   "sec": "tt-bezit",
+   "say": "Wij hebben een kind. Ons kind is drie jaar."
+  },
+  {
+   "id": "tt-bezit-kees-hoe-heet-moeder",
+   "q": "Kees, hoe heet ___ moeder?",
+   "nl": "jouw/je",
+   "en": "Kees, what's your mother's name?",
+   "sec": "tt-bezit",
+   "say": "Kees, hoe heet jouw moeder?"
+  },
+  {
+   "id": "tt-bezit-tom-woont-in-delft-huis-is-groot",
+   "q": "Tom woont in Delft. ___ huis is groot.",
+   "nl": "zijn",
+   "en": "His house.",
+   "sec": "tt-bezit",
+   "say": "Tom woont in Delft. Zijn huis is groot."
+  },
+  {
+   "id": "tt-volgorde-wij-maken-vandaag-een-proefexamen",
+   "q": "maken / vandaag / een proefexamen / wij  (.)  — begin: wij",
+   "nl": "Wij maken vandaag een proefexamen.",
+   "en": "We're doing a mock exam today.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-ik-kook-vanavond-spaghetti-carbonara",
+   "q": "ik / vanavond spaghetti carbonara / kook  (.)  — begin: ik",
+   "nl": "Ik kook vanavond spaghetti carbonara.",
+   "en": "I'm cooking spaghetti carbonara tonight.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-gaan-jullie-om-11-00-naar-de-sportschool",
+   "q": "jullie / om 11.00 naar de sportschool / gaan  (?)  — begin: gaan",
+   "nl": "Gaan jullie om 11.00 naar de sportschool?",
+   "en": "Are you going to the gym at eleven?",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-hoe-laat-vertrekt-de-trein",
+   "q": "de trein / hoe laat / vertrekt  (?)  — begin: hoe laat",
+   "nl": "Hoe laat vertrekt de trein?",
+   "en": "What time does the train leave?",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-wij-gaan-naar-het-strand",
+   "q": "gaan / wij / naar het strand  (.)  — begin: wij",
+   "nl": "Wij gaan naar het strand.",
+   "en": "We're going to the beach.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-in-het-park-wandelen-wij",
+   "q": "in het park / wij / wandelen  (.)  — begin: in het park",
+   "nl": "In het park wandelen wij.",
+   "en": "We walk in the park. Inversion: verb second, then the subject.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-morgen-ga-ik-naar-de-markt",
+   "q": "morgen / ik / naar de markt / ga  (.)  — begin: morgen",
+   "nl": "Morgen ga ik naar de markt.",
+   "en": "Tomorrow I'm going to the market.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-waar-woont-jouw-zus",
+   "q": "woont / waar / jouw zus  (?)  — begin: waar",
+   "nl": "Waar woont jouw zus?",
+   "en": "Where does your sister live?",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-de-film-begint-om-acht-uur",
+   "q": "om acht uur / begint / de film  (.)  — begin: de film",
+   "nl": "De film begint om acht uur.",
+   "en": "The film starts at eight.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-om-acht-uur-begint-de-film",
+   "q": "om acht uur / begint / de film  (.)  — begin: om acht uur",
+   "nl": "Om acht uur begint de film.",
+   "en": "At eight the film starts. Inversion.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-drink-jij-s-ochtends-koffie",
+   "q": "jij / koffie / drink / ’s ochtends  (?)  — begin: drink",
+   "nl": "Drink jij ’s ochtends koffie?",
+   "en": "Do you drink coffee in the morning?",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-s-avonds-kijken-wij-tv",
+   "q": "’s avonds / wij / tv / kijken  (.)  — begin: ’s avonds",
+   "nl": "’s Avonds kijken wij tv.",
+   "en": "In the evening we watch TV.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-vandaag-is-het-mooi-weer",
+   "q": "vandaag / het / mooi weer / is  (.)  — begin: vandaag",
+   "nl": "Vandaag is het mooi weer.",
+   "en": "The weather is nice today.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-hebben-jullie-een-hond",
+   "q": "hebben / jullie / een hond  (?)  — begin: hebben",
+   "nl": "Hebben jullie een hond?",
+   "en": "Do you have a dog?",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-op-zaterdag-werkt-mijn-broer-niet",
+   "q": "op zaterdag / mijn broer / werkt / niet  (.)  — begin: op zaterdag",
+   "nl": "Op zaterdag werkt mijn broer niet.",
+   "en": "My brother doesn't work on Saturdays.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-ik-ga-met-de-trein-naar-amsterdam",
+   "q": "met de trein / naar Amsterdam / ik / ga  (.)  — begin: ik",
+   "nl": "Ik ga met de trein naar Amsterdam.",
+   "en": "I'm taking the train to Amsterdam.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-in-september-is-anna-jarig",
+   "q": "in september / jarig / is / Anna  (.)  — begin: in september",
+   "nl": "In september is Anna jarig.",
+   "en": "Anna's birthday is in September.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-met-wie-gaat-tim-naar-het-feest",
+   "q": "naar het feest / gaat / met wie / Tim  (?)  — begin: met wie",
+   "nl": "Met wie gaat Tim naar het feest?",
+   "en": "Who is Tim going to the party with?",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-volgorde-zij-fietst-elke-dag-naar-haar-werk",
+   "q": "elke dag / fietst / naar haar werk / zij  (.)  — begin: zij",
+   "nl": "Zij fietst elke dag naar haar werk.",
+   "en": "She cycles to work every day.",
+   "sec": "tt-volgorde"
+  },
+  {
+   "id": "tt-neg-heb-jij-een-fiets",
+   "q": "Heb jij een fiets?",
+   "nl": "Nee, ik heb geen fiets./Ik heb geen fiets.",
+   "en": "een + noun → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, ik heb geen fiets."
+  },
+  {
+   "id": "tt-neg-hebben-zij-een-auto",
+   "q": "Hebben zij een auto?",
+   "nl": "Nee, zij hebben geen auto./Nee, ze hebben geen auto./Ze hebben geen auto./Zij hebben geen auto.",
+   "en": "een + noun → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, zij hebben geen auto."
+  },
+  {
+   "id": "tt-neg-spreekt-hij-nederlands",
+   "q": "Spreekt hij Nederlands?",
+   "nl": "Nee, hij spreekt geen Nederlands./Hij spreekt geen Nederlands.",
+   "en": "A language takes geen. (The answer sheet has a slip: spreekt, with t.)",
+   "sec": "tt-neg",
+   "say": "Nee, hij spreekt geen Nederlands."
+  },
+  {
+   "id": "tt-neg-vind-jij-de-appeltaart-lekker",
+   "q": "Vind jij de appeltaart lekker?",
+   "nl": "Nee, ik vind de appeltaart niet lekker./Ik vind de appeltaart niet lekker.",
+   "en": "niet before an adjective.",
+   "sec": "tt-neg",
+   "say": "Nee, ik vind de appeltaart niet lekker."
+  },
+  {
+   "id": "tt-neg-willen-jullie-wandelen",
+   "q": "Willen jullie wandelen?",
+   "nl": "Nee, wij willen niet wandelen./Nee, we willen niet wandelen./We willen niet wandelen./Wij willen niet wandelen.",
+   "en": "niet before the second verb.",
+   "sec": "tt-neg",
+   "say": "Nee, wij willen niet wandelen."
+  },
+  {
+   "id": "tt-neg-werk-jij-in-de-supermarkt",
+   "q": "Werk jij in de supermarkt?",
+   "nl": "Nee, ik werk niet in de supermarkt./Ik werk niet in de supermarkt.",
+   "en": "niet before a preposition.",
+   "sec": "tt-neg",
+   "say": "Nee, ik werk niet in de supermarkt."
+  },
+  {
+   "id": "tt-neg-heb-jij-vandaag-les",
+   "q": "Heb jij vandaag les?",
+   "nl": "Nee, ik heb vandaag geen les./Ik heb vandaag geen les.",
+   "en": "les without an article → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, ik heb vandaag geen les."
+  },
+  {
+   "id": "tt-neg-willen-jullie-een-stroopwafel",
+   "q": "Willen jullie een stroopwafel?",
+   "nl": "Nee, wij willen geen stroopwafel./Nee, we willen geen stroopwafel./We willen geen stroopwafel./Wij willen geen stroopwafel.",
+   "en": "een + noun → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, wij willen geen stroopwafel."
+  },
+  {
+   "id": "tt-neg-kan-saskia-goed-zingen",
+   "q": "Kan Saskia goed zingen?",
+   "nl": "Nee, Saskia kan niet goed zingen./Saskia kan niet goed zingen./Nee, zij kan niet goed zingen./Nee, ze kan niet goed zingen./Ze kan niet goed zingen./Zij kan niet goed zingen.",
+   "en": "niet before an adverb (goed).",
+   "sec": "tt-neg",
+   "say": "Nee, Saskia kan niet goed zingen."
+  },
+  {
+   "id": "tt-neg-willen-jullie-dansen",
+   "q": "Willen jullie dansen?",
+   "nl": "Nee, wij willen niet dansen./Nee, we willen niet dansen./We willen niet dansen./Wij willen niet dansen.",
+   "en": "niet before the second verb.",
+   "sec": "tt-neg",
+   "say": "Nee, wij willen niet dansen."
+  },
+  {
+   "id": "tt-neg-heb-jij-broers-of-zussen",
+   "q": "Heb jij broers of zussen?",
+   "nl": "Nee, ik heb geen broers of zussen./Ik heb geen broers of zussen.",
+   "en": "Plural without an article → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, ik heb geen broers of zussen."
+  },
+  {
+   "id": "tt-neg-gaat-peter-naar-het-feest",
+   "q": "Gaat Peter naar het feest?",
+   "nl": "Nee, Peter gaat niet naar het feest./Peter gaat niet naar het feest./Nee, hij gaat niet naar het feest./Hij gaat niet naar het feest.",
+   "en": "niet before a preposition.",
+   "sec": "tt-neg",
+   "say": "Nee, Peter gaat niet naar het feest."
+  },
+  {
+   "id": "tt-neg-gaan-jullie-sporten",
+   "q": "Gaan jullie sporten?",
+   "nl": "Nee, wij gaan niet sporten./Nee, we gaan niet sporten./We gaan niet sporten./Wij gaan niet sporten.",
+   "en": "niet before the second verb.",
+   "sec": "tt-neg",
+   "say": "Nee, wij gaan niet sporten."
+  },
+  {
+   "id": "tt-neg-zijn-de-bitterballen-lekker",
+   "q": "Zijn de bitterballen lekker?",
+   "nl": "Nee, de bitterballen zijn niet lekker./De bitterballen zijn niet lekker./Nee, zij zijn niet lekker./Nee, ze zijn niet lekker./Ze zijn niet lekker./Zij zijn niet lekker.",
+   "en": "niet before an adjective.",
+   "sec": "tt-neg",
+   "say": "Nee, de bitterballen zijn niet lekker."
+  },
+  {
+   "id": "tt-neg-koop-jij-het-blauwe-boek",
+   "q": "Koop jij het blauwe boek?",
+   "nl": "Nee, ik koop het blauwe boek niet./Ik koop het blauwe boek niet.",
+   "en": "het boek is specific → niet, at the end.",
+   "sec": "tt-neg",
+   "say": "Nee, ik koop het blauwe boek niet."
+  },
+  {
+   "id": "tt-neg-bel-jij-jouw-moeder",
+   "q": "Bel jij jouw moeder?",
+   "nl": "Nee, ik bel mijn moeder niet./Ik bel mijn moeder niet./Nee, ik bel haar niet./Ik bel haar niet.",
+   "en": "mijn moeder is specific → niet, at the end.",
+   "sec": "tt-neg",
+   "say": "Nee, ik bel mijn moeder niet."
+  },
+  {
+   "id": "tt-neg-kom-jij-met-de-trein",
+   "q": "Kom jij met de trein?",
+   "nl": "Nee, ik kom niet met de trein./Ik kom niet met de trein.",
+   "en": "niet before a preposition.",
+   "sec": "tt-neg",
+   "say": "Nee, ik kom niet met de trein."
+  },
+  {
+   "id": "tt-neg-is-kees-jouw-broer",
+   "q": "Is Kees jouw broer?",
+   "nl": "Nee, Kees is mijn broer niet./Kees is mijn broer niet./Nee, Kees is niet mijn broer./Kees is niet mijn broer./Nee, hij is mijn broer niet./Hij is mijn broer niet./Nee, hij is niet mijn broer./Hij is niet mijn broer.",
+   "en": "Default: niet at the end.",
+   "sec": "tt-neg",
+   "say": "Nee, Kees is mijn broer niet."
+  },
+  {
+   "id": "tt-neg-kom-jij-uit-nederland",
+   "q": "Kom jij uit Nederland?",
+   "nl": "Nee, ik kom niet uit Nederland./Ik kom niet uit Nederland.",
+   "en": "niet before a preposition.",
+   "sec": "tt-neg",
+   "say": "Nee, ik kom niet uit Nederland."
+  },
+  {
+   "id": "tt-neg-wil-jij-een-biertje-drinken",
+   "q": "Wil jij een biertje drinken?",
+   "nl": "Nee, ik wil geen biertje drinken./Ik wil geen biertje drinken.",
+   "en": "een + noun → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, ik wil geen biertje drinken."
+  },
+  {
+   "id": "tt-neg-wil-jij-deze-stroopwafels-kopen",
+   "q": "Wil jij deze stroopwafels kopen?",
+   "nl": "Nee, ik wil deze stroopwafels niet kopen./Ik wil deze stroopwafels niet kopen.",
+   "en": "deze stroopwafels are specific → niet, before the second verb.",
+   "sec": "tt-neg",
+   "say": "Nee, ik wil deze stroopwafels niet kopen."
+  },
+  {
+   "id": "tt-neg-werk-jij",
+   "q": "Werk jij?",
+   "nl": "Nee, ik werk niet./Ik werk niet.",
+   "en": "niet at the end.",
+   "sec": "tt-neg",
+   "say": "Nee, ik werk niet."
+  },
+  {
+   "id": "tt-neg-hoor-jij-muziek",
+   "q": "Hoor jij muziek?",
+   "nl": "Nee, ik hoor geen muziek./Ik hoor geen muziek.",
+   "en": "Uncountable noun without an article → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, ik hoor geen muziek."
+  },
+  {
+   "id": "tt-neg-is-de-les-leuk",
+   "q": "Is de les leuk?",
+   "nl": "Nee, de les is niet leuk./De les is niet leuk./Nee, hij is niet leuk./Hij is niet leuk.",
+   "en": "niet before an adjective.",
+   "sec": "tt-neg",
+   "say": "Nee, de les is niet leuk."
+  },
+  {
+   "id": "tt-neg-heeft-anna-een-hond",
+   "q": "Heeft Anna een hond?",
+   "nl": "Nee, Anna heeft geen hond./Anna heeft geen hond./Nee, zij heeft geen hond./Nee, ze heeft geen hond./Ze heeft geen hond./Zij heeft geen hond.",
+   "en": "een + noun → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, Anna heeft geen hond."
+  },
+  {
+   "id": "tt-neg-drink-jij-koffie",
+   "q": "Drink jij koffie?",
+   "nl": "Nee, ik drink geen koffie./Ik drink geen koffie.",
+   "en": "Uncountable noun without an article → geen.",
+   "sec": "tt-neg",
+   "say": "Nee, ik drink geen koffie."
+  },
+  {
+   "id": "tt-neg-ben-jij-moe",
+   "q": "Ben jij moe?",
+   "nl": "Nee, ik ben niet moe./Ik ben niet moe.",
+   "en": "niet before an adjective.",
+   "sec": "tt-neg",
+   "say": "Nee, ik ben niet moe."
+  },
+  {
+   "id": "tt-antwoord-in-welke-maand-ben-jij-jarig-oktober",
+   "q": "In welke maand ben jij jarig? (oktober)",
+   "nl": "Ik ben jarig in oktober./Ik ben in oktober jarig./In oktober ben ik jarig.",
+   "en": "jij → ik; ben stays ben. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik ben jarig in oktober."
+  },
+  {
+   "id": "tt-antwoord-welke-dag-is-het-vandaag-maandag",
+   "q": "Welke dag is het vandaag? (maandag)",
+   "nl": "Het is vandaag maandag./Vandaag is het maandag./Het is maandag.",
+   "en": "Inversion after vandaag. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Het is vandaag maandag."
+  },
+  {
+   "id": "tt-antwoord-hoe-laat-vertrekt-de-trein-10-00",
+   "q": "Hoe laat vertrekt de trein? (10.00)",
+   "nl": "De trein vertrekt om tien uur./De trein vertrekt om 10 uur./De trein vertrekt om 10.00 uur./De trein vertrekt om 10.00./Om tien uur vertrekt de trein./Hij vertrekt om tien uur./Hij vertrekt om 10 uur.",
+   "en": "om + clock time. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "De trein vertrekt om tien uur."
+  },
+  {
+   "id": "tt-antwoord-waar-werk-jij-de-universiteit",
+   "q": "Waar werk jij? (de universiteit)",
+   "nl": "Ik werk bij de universiteit./Ik werk aan de universiteit./Ik werk op de universiteit.",
+   "en": "jij → ik: werk. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik werk bij de universiteit."
+  },
+  {
+   "id": "tt-antwoord-waar-kom-je-vandaan-brussel",
+   "q": "Waar kom je vandaan? (Brussel)",
+   "nl": "Ik kom uit Brussel.",
+   "en": "vandaan in the question → uit in the answer. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik kom uit Brussel."
+  },
+  {
+   "id": "tt-antwoord-hoe-heet-jij-steven",
+   "q": "Hoe heet jij? (Steven)",
+   "nl": "Ik heet Steven./Mijn naam is Steven.",
+   "en": "jij → ik. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik heet Steven."
+  },
+  {
+   "id": "tt-antwoord-waar-woon-jij-leiden",
+   "q": "Waar woon jij? (Leiden)",
+   "nl": "Ik woon in Leiden.",
+   "en": "jij → ik: woon. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik woon in Leiden."
+  },
+  {
+   "id": "tt-antwoord-hoe-oud-ben-jij-40",
+   "q": "Hoe oud ben jij? (40)",
+   "nl": "Ik ben 40 jaar./Ik ben 40./Ik ben veertig jaar./Ik ben veertig./Ik ben 40 jaar oud./Ik ben veertig jaar oud.",
+   "en": "ben jij? → ik ben. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik ben 40 jaar."
+  },
+  {
+   "id": "tt-antwoord-wat-is-jouw-beroep-docent",
+   "q": "Wat is jouw beroep? (docent)",
+   "nl": "Ik ben docent./Mijn beroep is docent.",
+   "en": "No article before a job: Ik ben docent. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik ben docent."
+  },
+  {
+   "id": "tt-antwoord-welke-talen-spreek-jij-engels-en-een-beetje-nede",
+   "q": "Welke talen spreek jij? (Engels en een beetje Nederlands)",
+   "nl": "Ik spreek Engels en een beetje Nederlands.",
+   "en": "jij → ik: spreek. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik spreek Engels en een beetje Nederlands."
+  },
+  {
+   "id": "tt-antwoord-hoe-laat-begint-de-les-half-zeven",
+   "q": "Hoe laat begint de les? (half zeven)",
+   "nl": "De les begint om half zeven./Om half zeven begint de les./Hij begint om half zeven.",
+   "en": "om + clock time. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "De les begint om half zeven."
+  },
+  {
+   "id": "tt-antwoord-wanneer-heb-jij-les-dinsdag",
+   "q": "Wanneer heb jij les? (dinsdag)",
+   "nl": "Ik heb op dinsdag les./Ik heb dinsdag les./Ik heb les op dinsdag./Op dinsdag heb ik les./Dinsdag heb ik les.",
+   "en": "op + day. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik heb op dinsdag les."
+  },
+  {
+   "id": "tt-antwoord-hoe-ga-jij-naar-je-werk-de-fiets",
+   "q": "Hoe ga jij naar je werk? (de fiets)",
+   "nl": "Ik ga met de fiets naar mijn werk./Ik ga op de fiets naar mijn werk./Ik ga met de fiets naar het werk./Ik ga met de fiets./Ik ga op de fiets./Ik fiets naar mijn werk.",
+   "en": "met de fiets or op de fiets. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik ga met de fiets naar mijn werk."
+  },
+  {
+   "id": "tt-antwoord-wat-drink-jij-s-ochtends-koffie",
+   "q": "Wat drink jij ’s ochtends? (koffie)",
+   "nl": "Ik drink ’s ochtends koffie./’s Ochtends drink ik koffie./Ik drink koffie.",
+   "en": "Inversion after ’s ochtends. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik drink ’s ochtends koffie."
+  },
+  {
+   "id": "tt-antwoord-hoeveel-kost-het-brood-drie-euro",
+   "q": "Hoeveel kost het brood? (drie euro)",
+   "nl": "Het brood kost drie euro./Het kost drie euro./Het brood kost 3 euro./Het kost 3 euro.",
+   "en": "euro stays singular after a number. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Het brood kost drie euro."
+  },
+  {
+   "id": "tt-antwoord-welk-seizoen-is-het-nu-de-herfst",
+   "q": "Welk seizoen is het nu? (de herfst)",
+   "nl": "Het is nu herfst./Nu is het herfst./Het is herfst./Het is nu de herfst.",
+   "en": "het is + season. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Het is nu herfst."
+  },
+  {
+   "id": "tt-antwoord-met-wie-ga-jij-naar-het-feest-mijn-zus",
+   "q": "Met wie ga jij naar het feest? (mijn zus)",
+   "nl": "Ik ga met mijn zus naar het feest./Ik ga met mijn zus./Met mijn zus ga ik naar het feest.",
+   "en": "jij → ik: ga. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik ga met mijn zus naar het feest."
+  },
+  {
+   "id": "tt-antwoord-wanneer-ben-jij-jarig-12-mei",
+   "q": "Wanneer ben jij jarig? (12 mei)",
+   "nl": "Ik ben jarig op 12 mei./Ik ben op 12 mei jarig./Op 12 mei ben ik jarig./Ik ben jarig op twaalf mei.",
+   "en": "op + date. Other sensible answers can count: press ‘I was right’.",
+   "sec": "tt-antwoord",
+   "say": "Ik ben jarig op 12 mei."
+  },
+  {
+   "id": "tt-vraag-ik-woon-in-amsterdam",
+   "q": "___? — Ik woon in Amsterdam.",
+   "nl": "Waar woon jij?/Waar woon je?/Waar woont u?",
+   "en": "Place → waar.",
+   "sec": "tt-vraag",
+   "say": "Waar woon jij?"
+  },
+  {
+   "id": "tt-vraag-wij-gaan-naar-den-haag",
+   "q": "___? — Wij gaan naar Den Haag.",
+   "nl": "Waar gaan jullie naartoe?/Waar gaan jullie heen?/Waar gaan jullie naar toe?",
+   "en": "naar + place → waar … naartoe?",
+   "sec": "tt-vraag",
+   "say": "Waar gaan jullie naartoe?"
+  },
+  {
+   "id": "tt-vraag-ik-ga-met-saskia-naar-het-feest",
+   "q": "___? — Ik ga met Saskia naar het feest.",
+   "nl": "Met wie ga jij naar het feest?/Met wie ga je naar het feest?/Met wie gaat u naar het feest?",
+   "en": "met + person → met wie?",
+   "sec": "tt-vraag",
+   "say": "Met wie ga jij naar het feest?"
+  },
+  {
+   "id": "tt-vraag-ja-goed-idee",
+   "q": "___? — Ja, goed idee!",
+   "nl": "Zullen we iets afspreken?/Zullen we pizza eten?/Zullen we naar de film gaan?/Zullen we samen eten?/Zullen we een afspraak maken?",
+   "en": "A proposal: Zullen we …? Any sensible one counts.",
+   "sec": "tt-vraag",
+   "say": "Zullen we iets afspreken?"
+  },
+  {
+   "id": "tt-vraag-ik-ben-bakker",
+   "q": "___? — Ik ben bakker.",
+   "nl": "Wat is jouw beroep?/Wat is je beroep?/Wat is uw beroep?/Wat doe jij?/Wat doe je?/Wat voor werk doe jij?/Wat voor werk doe je?/Wat is jouw werk?/Wat is je werk?",
+   "en": "Job → Wat is jouw beroep?",
+   "sec": "tt-vraag",
+   "say": "Wat is jouw beroep?"
+  },
+  {
+   "id": "tt-vraag-ik-kom-uit-canada",
+   "q": "___? — Ik kom uit Canada.",
+   "nl": "Waar kom jij vandaan?/Waar kom je vandaan?/Waar komt u vandaan?/Uit welk land kom jij?/Uit welk land kom je?",
+   "en": "uit + country → waar … vandaan?",
+   "sec": "tt-vraag",
+   "say": "Waar kom jij vandaan?"
+  },
+  {
+   "id": "tt-vraag-ik-heet-lisa",
+   "q": "___? — Ik heet Lisa.",
+   "nl": "Hoe heet jij?/Hoe heet je?/Hoe heet u?/Wat is jouw naam?/Wat is je naam?/Wat is uw naam?",
+   "en": "Name → Hoe heet jij?",
+   "sec": "tt-vraag",
+   "say": "Hoe heet jij?"
+  },
+  {
+   "id": "tt-vraag-de-les-begint-om-negen-uur",
+   "q": "___? — De les begint om negen uur.",
+   "nl": "Hoe laat begint de les?/Wanneer begint de les?",
+   "en": "Clock time → hoe laat?",
+   "sec": "tt-vraag",
+   "say": "Hoe laat begint de les?"
+  },
+  {
+   "id": "tt-vraag-ik-ben-in-juni-jarig",
+   "q": "___? — Ik ben in juni jarig.",
+   "nl": "Wanneer ben jij jarig?/Wanneer ben je jarig?/In welke maand ben jij jarig?/In welke maand ben je jarig?/Wanneer bent u jarig?",
+   "en": "Month → wanneer? or in welke maand?",
+   "sec": "tt-vraag",
+   "say": "Wanneer ben jij jarig?"
+  },
+  {
+   "id": "tt-vraag-het-kost-vijf-euro",
+   "q": "___? — Het kost vijf euro.",
+   "nl": "Hoeveel kost het?/Wat kost het?/Hoeveel kost dat?/Wat kost dat?",
+   "en": "Price → hoeveel kost …?",
+   "sec": "tt-vraag",
+   "say": "Hoeveel kost het?"
+  },
+  {
+   "id": "tt-vraag-ik-ben-35-jaar",
+   "q": "___? — Ik ben 35 jaar.",
+   "nl": "Hoe oud ben jij?/Hoe oud ben je?/Hoe oud bent u?",
+   "en": "Age → hoe oud?",
+   "sec": "tt-vraag",
+   "say": "Hoe oud ben jij?"
+  },
+  {
+   "id": "tt-vraag-het-gaat-goed-dank-je",
+   "q": "___? — Het gaat goed, dank je.",
+   "nl": "Hoe gaat het?/Hoe gaat het met jou?/Hoe is het?/Hoe is het met jou?/Hoe gaat het met u?",
+   "en": "Hoe gaat het?",
+   "sec": "tt-vraag",
+   "say": "Hoe gaat het?"
+  },
+  {
+   "id": "tt-vraag-ja-ik-heb-twee-kinderen",
+   "q": "___? — Ja, ik heb twee kinderen.",
+   "nl": "Heb jij kinderen?/Heb je kinderen?/Hebt u kinderen?/Heeft u kinderen?",
+   "en": "ja/nee answer → verb first.",
+   "sec": "tt-vraag",
+   "say": "Heb jij kinderen?"
+  },
+  {
+   "id": "tt-vraag-nee-ik-spreek-geen-duits",
+   "q": "___? — Nee, ik spreek geen Duits.",
+   "nl": "Spreek jij Duits?/Spreek je Duits?/Spreekt u Duits?",
+   "en": "ja/nee answer → verb first; jij: no -t.",
+   "sec": "tt-vraag",
+   "say": "Spreek jij Duits?"
+  },
+  {
+   "id": "tt-vraag-vandaag-is-het-woensdag",
+   "q": "___? — Vandaag is het woensdag.",
+   "nl": "Welke dag is het vandaag?/Welke dag is het?/Wat is het vandaag?",
+   "en": "Day → welke dag?",
+   "sec": "tt-vraag",
+   "say": "Welke dag is het vandaag?"
+  },
+  {
+   "id": "tt-tekst-jazz-1",
+   "q": "Het favoriete jazzfestival van Jeroen is in Amsterdam.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Kaartjes voor het North Sea Jazz Festival”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "jazz",
+   "n": 1,
+   "say": "Het favoriete jazzfestival van Jeroen is in Amsterdam."
+  },
+  {
+   "id": "tt-tekst-jazz-2",
+   "q": "Jeroen bestelt zijn kaartjes online.",
+   "nl": "waar",
+   "en": "Waar: check the text “Kaartjes voor het North Sea Jazz Festival”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "jazz",
+   "n": 2,
+   "say": "Jeroen bestelt zijn kaartjes online."
+  },
+  {
+   "id": "tt-tekst-jazz-3",
+   "q": "Het festival duurt van vrijdagmiddag tot en met maandagavond.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Kaartjes voor het North Sea Jazz Festival”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "jazz",
+   "n": 3,
+   "say": "Het festival duurt van vrijdagmiddag tot en met maandagavond."
+  },
+  {
+   "id": "tt-tekst-jazz-4",
+   "q": "Jeroen en Maarten gaan op dezelfde dag naar het festival.",
+   "nl": "waar",
+   "en": "Waar: check the text “Kaartjes voor het North Sea Jazz Festival”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "jazz",
+   "n": 4,
+   "say": "Jeroen en Maarten gaan op dezelfde dag naar het festival."
+  },
+  {
+   "id": "tt-tekst-jazz-5",
+   "q": "De bestelling op de website is niet gelukt.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Kaartjes voor het North Sea Jazz Festival”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "jazz",
+   "n": 5,
+   "say": "De bestelling op de website is niet gelukt."
+  },
+  {
+   "id": "tt-tekst-jazz-6",
+   "q": "Kaartjes voor het festival zijn vaak snel uitverkocht.",
+   "nl": "waar",
+   "en": "Waar: check the text “Kaartjes voor het North Sea Jazz Festival”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "jazz",
+   "n": 6,
+   "say": "Kaartjes voor het festival zijn vaak snel uitverkocht."
+  },
+  {
+   "id": "tt-tekst-jazz-7",
+   "q": "Je kunt met één kaartje naar alle concerten.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Kaartjes voor het North Sea Jazz Festival”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "jazz",
+   "n": 7,
+   "say": "Je kunt met één kaartje naar alle concerten."
+  },
+  {
+   "id": "tt-tekst-afspreken-1",
+   "q": "Hamze werkt in Den Haag.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Hamze en Mees spreken af”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "afspreken",
+   "n": 1,
+   "say": "Hamze werkt in Den Haag."
+  },
+  {
+   "id": "tt-tekst-afspreken-2",
+   "q": "Hamze werkt niet op vrijdag.",
+   "nl": "waar",
+   "en": "Waar: check the text “Hamze en Mees spreken af”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "afspreken",
+   "n": 2,
+   "say": "Hamze werkt niet op vrijdag."
+  },
+  {
+   "id": "tt-tekst-afspreken-3",
+   "q": "Mees woont in Den Haag.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Hamze en Mees spreken af”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "afspreken",
+   "n": 3,
+   "say": "Mees woont in Den Haag."
+  },
+  {
+   "id": "tt-tekst-afspreken-4",
+   "q": "Mees heeft op donderdagavond les.",
+   "nl": "waar",
+   "en": "Waar: check the text “Hamze en Mees spreken af”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "afspreken",
+   "n": 4,
+   "say": "Mees heeft op donderdagavond les."
+  },
+  {
+   "id": "tt-tekst-afspreken-5",
+   "q": "Ze spreken af op donderdag.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Hamze en Mees spreken af”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "afspreken",
+   "n": 5,
+   "say": "Ze spreken af op donderdag."
+  },
+  {
+   "id": "tt-tekst-afspreken-6",
+   "q": "Ze gaan naar een café bij het station.",
+   "nl": "waar",
+   "en": "Waar: check the text “Hamze en Mees spreken af”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "afspreken",
+   "n": 6,
+   "say": "Ze gaan naar een café bij het station."
+  },
+  {
+   "id": "tt-tekst-afspreken-7",
+   "q": "Sanne is de zus van Hamze.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Hamze en Mees spreken af”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "afspreken",
+   "n": 7,
+   "say": "Sanne is de zus van Hamze."
+  },
+  {
+   "id": "tt-tekst-afspreken-8",
+   "q": "Sanne wordt op vrijdag 25 jaar.",
+   "nl": "waar",
+   "en": "Waar: check the text “Hamze en Mees spreken af”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "afspreken",
+   "n": 8,
+   "say": "Sanne wordt op vrijdag 25 jaar."
+  },
+  {
+   "id": "tt-tekst-markt-1",
+   "q": "Lisa en Tom gaan op zaterdag naar de markt.",
+   "nl": "waar",
+   "en": "Waar: check the text “Zaterdag op de markt”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "markt",
+   "n": 1,
+   "say": "Lisa en Tom gaan op zaterdag naar de markt."
+  },
+  {
+   "id": "tt-tekst-markt-2",
+   "q": "Ze gaan met de bus naar de markt.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Zaterdag op de markt”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "markt",
+   "n": 2,
+   "say": "Ze gaan met de bus naar de markt."
+  },
+  {
+   "id": "tt-tekst-markt-3",
+   "q": "De appels kosten twee euro.",
+   "nl": "waar",
+   "en": "Waar: check the text “Zaterdag op de markt”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "markt",
+   "n": 3,
+   "say": "De appels kosten twee euro."
+  },
+  {
+   "id": "tt-tekst-markt-4",
+   "q": "Tom koopt kaas.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Zaterdag op de markt”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "markt",
+   "n": 4,
+   "say": "Tom koopt kaas."
+  },
+  {
+   "id": "tt-tekst-markt-5",
+   "q": "Ze betalen contant.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Zaterdag op de markt”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "markt",
+   "n": 5,
+   "say": "Ze betalen contant."
+  },
+  {
+   "id": "tt-tekst-markt-6",
+   "q": "Om twaalf uur drinken ze koffie.",
+   "nl": "waar",
+   "en": "Waar: check the text “Zaterdag op de markt”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "markt",
+   "n": 6,
+   "say": "Om twaalf uur drinken ze koffie."
+  },
+  {
+   "id": "tt-tekst-markt-7",
+   "q": "Het regent.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Zaterdag op de markt”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "markt",
+   "n": 7,
+   "say": "Het regent."
+  },
+  {
+   "id": "tt-tekst-markt-8",
+   "q": "Op zondag is de markt open.",
+   "nl": "niet waar",
+   "en": "Niet waar: check the text “Zaterdag op de markt”.",
+   "sec": "tt-tekst",
+   "choices": [
+    "waar",
+    "niet waar"
+   ],
+   "text": "markt",
+   "n": 8,
+   "say": "Op zondag is de markt open."
+  },
+  {
+   "id": "tt-voegw-vandaag-ga-ik-met-de-bus-naar-school-mijn-fiets-",
+   "q": "Vandaag ga ik met de bus naar school, ___ mijn fiets is kapot.",
+   "nl": "want",
+   "en": "want = because. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Vandaag ga ik met de bus naar school, want mijn fiets is kapot."
+  },
+  {
+   "id": "tt-voegw-ik-koop-in-de-supermarkt-brood-ik-koop-appels",
+   "q": "Ik koop in de supermarkt brood ___ ik koop appels.",
+   "nl": "en",
+   "en": "en = and. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Ik koop in de supermarkt brood en ik koop appels."
+  },
+  {
+   "id": "tt-voegw-gaan-wij-naar-de-bioscoop-gaan-wij-wandelen",
+   "q": "Gaan wij naar de bioscoop ___ gaan wij wandelen?",
+   "nl": "of",
+   "en": "of = or. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Gaan wij naar de bioscoop of gaan wij wandelen?"
+  },
+  {
+   "id": "tt-voegw-zij-willen-zwemmen-het-zwembad-is-gesloten",
+   "q": "Zij willen zwemmen, ___ het zwembad is gesloten.",
+   "nl": "maar",
+   "en": "maar = but. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Zij willen zwemmen, maar het zwembad is gesloten."
+  },
+  {
+   "id": "tt-voegw-de-sportschool-is-dicht-wij-kunnen-niet-sporten",
+   "q": "De sportschool is dicht, ___ wij kunnen niet sporten.",
+   "nl": "dus",
+   "en": "dus = so, therefore. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "De sportschool is dicht, dus wij kunnen niet sporten."
+  },
+  {
+   "id": "tt-voegw-ik-ben-moe-ik-ga-naar-huis",
+   "q": "Ik ben moe, ___ ik ga naar huis.",
+   "nl": "dus",
+   "en": "dus = so. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Ik ben moe, dus ik ga naar huis."
+  },
+  {
+   "id": "tt-voegw-ik-wil-gaan-fietsen-mijn-band-is-lek",
+   "q": "Ik wil gaan fietsen, ___ mijn band is lek.",
+   "nl": "maar",
+   "en": "maar = but. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Ik wil gaan fietsen, maar mijn band is lek."
+  },
+  {
+   "id": "tt-voegw-eet-je-liever-pizza-eet-je-liever-pasta",
+   "q": "Eet je liever pizza ___ eet je liever pasta?",
+   "nl": "of",
+   "en": "of = or. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Eet je liever pizza of eet je liever pasta?"
+  },
+  {
+   "id": "tt-voegw-hij-woont-in-leiden-hij-werkt-in-den-haag",
+   "q": "Hij woont in Leiden ___ hij werkt in Den Haag.",
+   "nl": "en",
+   "en": "en = and. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Hij woont in Leiden en hij werkt in Den Haag."
+  },
+  {
+   "id": "tt-voegw-ik-drink-geen-koffie-ik-slaap-dan-slecht",
+   "q": "Ik drink geen koffie, ___ ik slaap dan slecht.",
+   "nl": "want",
+   "en": "want = because. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Ik drink geen koffie, want ik slaap dan slecht."
+  },
+  {
+   "id": "tt-voegw-zij-is-ziek-zij-werkt-toch",
+   "q": "Zij is ziek, ___ zij werkt toch.",
+   "nl": "maar",
+   "en": "maar = but. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Zij is ziek, maar zij werkt toch."
+  },
+  {
+   "id": "tt-voegw-het-regent-ik-neem-de-bus",
+   "q": "Het regent, ___ ik neem de bus.",
+   "nl": "dus",
+   "en": "dus = so. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Het regent, dus ik neem de bus."
+  },
+  {
+   "id": "tt-voegw-kom-jij-op-de-fiets-kom-jij-met-de-trein",
+   "q": "Kom jij op de fiets ___ kom jij met de trein?",
+   "nl": "of",
+   "en": "of = or. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Kom jij op de fiets of kom jij met de trein?"
+  },
+  {
+   "id": "tt-voegw-ik-leer-nederlands-ik-woon-in-leiden",
+   "q": "Ik leer Nederlands, ___ ik woon in Leiden.",
+   "nl": "want",
+   "en": "want = because. The word order after it doesn't change: subject, verb, rest.",
+   "sec": "tt-voegw",
+   "choices": [
+    "en",
+    "maar",
+    "want",
+    "of",
+    "dus"
+   ],
+   "say": "Ik leer Nederlands, want ik woon in Leiden."
+  }
+ ],
+ "group": "examen",
+ "texts": {
+  "jazz": {
+   "title": "Kaartjes voor het North Sea Jazz Festival",
+   "src": "Oefentoets 1",
+   "body": "Jeroen houdt van jazzmuziek. Zijn favoriete festival is het North Sea Jazz Festival in Rotterdam. Elk jaar komen veel beroemde artiesten om muziek te maken op het festival.\n\nHet festival begint op vrijdag 11 juli vanaf 13:00 en eindigt op zondag 13 juli om 22:30. Van 23:00 tot 00:00 op zondag 13 juli is er nog een extra concert. Je mag alleen naar het extra concert, wanneer je een extra kaartje koopt. Dit jaar wil Jeroen weer naar het festival gaan, maar hij weet dat de kaartjes snel uitverkocht (sold out) zijn. Op 1 februari kun je online kaartjes kopen van 10:00 tot 17:00. Jeroen klikt snel op de website van het festival. Op zaterdag 12 juli speelt zijn favoriete band. Dus hij wil graag een kaartje kopen voor die dag.\n\nHij vult zijn gegevens in en klikt op “Bestel”. Dan ziet hij het bericht op zijn scherm: “Gefeliciteerd! Uw bestelling is gelukt.” Jeroen is blij! Hij kan niet wachten om naar het festival te gaan.\n\nZijn beste vriend Maarten heeft ook een kaartje voor 12 juli. Dus ze kunnen samen naar het festival gaan.",
+   "gloss": "het kaartje = the ticket · genieten van = to enjoy · de gegevens = details"
+  },
+  "afspreken": {
+   "title": "Hamze en Mees spreken af",
+   "src": "new",
+   "body": "Hamze woont in Leiden. Hij werkt in een koffietentje in de Breestraat, van maandag tot en met donderdag. Op vrijdag is hij vrij. Op dinsdagmiddag ziet hij op straat zijn vriend Mees. Mees is student. Hij studeert in Den Haag, maar hij woont in Leiden.\n\n“Hoi Mees! Dat is lang geleden, zeg! Zullen we iets afspreken?” vraagt Hamze. “Kun jij donderdagavond?”\n\n“Nee, dat lukt niet,” zegt Mees. “Op donderdag heb ik les tot negen uur. Maar vrijdag kan ik wel.”\n\nZe spreken af op vrijdag om half acht in het café bij het station. Mees neemt zijn zus Sanne mee. Sanne is op vrijdag jarig. Ze wordt 25.",
+   "gloss": "het koffietentje = small café · tot en met = up to and including · meenemen = to bring along"
+  },
+  "markt": {
+   "title": "Zaterdag op de markt",
+   "src": "new",
+   "body": "Het is zaterdag. Lisa en haar vriend Tom gaan om tien uur met de fiets naar de markt. Lisa koopt een kilo appels en een halve kilo tomaten. De appels kosten twee euro.\n\nTom wil kaas kopen, maar de kaaskraam is vandaag gesloten. Dus hij koopt brood en zes eieren. Ze betalen met de pinpas, want ze hebben geen contant geld.\n\nOm twaalf uur drinken ze koffie op een terras. Het weer is mooi: het is warm en de zon schijnt. Morgen gaan Lisa en Tom niet naar de markt, want op zondag is de markt dicht.",
+   "gloss": "de kraam = market stall · gesloten = closed · contant geld = cash"
+  }
+ },
+ "exam": {
+  "parts": [
+   [
+    "tt-ww",
+    8
+   ],
+   [
+    "tt-vw",
+    5
+   ],
+   [
+    "tt-prep",
+    6
+   ],
+   [
+    "tt-pers",
+    6
+   ],
+   [
+    "tt-bezit",
+    5
+   ],
+   [
+    "tt-volgorde",
+    5
+   ],
+   [
+    "tt-neg",
+    5
+   ],
+   [
+    "tt-antwoord",
+    4
+   ],
+   [
+    "tt-vraag",
+    4
+   ],
+   [
+    "tt-tekst",
+    "text"
+   ]
+  ]
+ },
+ "guide": [
+  {
+   "sec": "tt-ww",
+   "ask": "Fill in the present tense of the verb in brackets.",
+   "rule": "ik = stam · jij, u, hij/zij/het = stam + t · wij, jullie, zij = infinitief. Irregular: ik ben, jij bent, hij is; ik heb, jij hebt, hij heeft; ik ga, hij gaat; ik kom, hij komt.",
+   "tips": [
+    "jij after the verb loses the t: Waar woon jij? Wat eet jij?",
+    "After wil, kan, moet, mag, zal the second verb stays the infinitive: Wat wil jij vandaag koken?",
+    "A stem that ends in t gets no extra t: hij eet, jij zit, hij heet.",
+    "Spell the stem right: wonen → woon, bestellen → bestel, schrijven → schrijf."
+   ]
+  },
+  {
+   "sec": "tt-vw",
+   "ask": "Fill in the question word that fits the answer.",
+   "rule": "wie (person) · wat (thing) · waar (place) · waar … vandaan (origin) · waar … naartoe (destination) · welk (het-word) / welke (de-word, plural) · hoe · hoe laat (clock time) · hoe oud · hoeveel · wanneer · waarom.",
+   "tips": [
+    "Read the answer first: a time → hoe laat; a day or month → wanneer; a person → wie.",
+    "With a preposition: met wie, op welke dag, in welke maand."
+   ]
+  },
+  {
+   "sec": "tt-prep",
+   "ask": "Fill in in, om or op.",
+   "rule": "om + clock time (om 10.00 uur, om kwart over zeven) · op + day or date (op maandag, op 3 november) · in + month, season, year (in september, in de herfst, in 2027).",
+   "tips": [
+    "in het weekend, in de ochtend; but ’s ochtends without a preposition."
+   ]
+  },
+  {
+   "sec": "tt-pers",
+   "ask": "Fill in the personal pronoun.",
+   "rule": "ik · jij/je · u · hij · zij/ze · het · wij/we · jullie · zij/ze.",
+   "tips": [
+    "Speaking to one person: jij (or u, polite). To two or more: jullie.",
+    "Someone and I → wij. Two other people → zij.",
+    "Weather and time take het: Het is mooi weer. Hoe laat is het?"
+   ]
+  },
+  {
+   "sec": "tt-bezit",
+   "ask": "Fill in the possessive.",
+   "rule": "mijn · jouw/je · uw · zijn (his) · haar (her) · ons/onze · jullie · hun (their).",
+   "tips": [
+    "ons + het-word: ons huis, ons kind. onze + de-word or plural: onze docent, onze ouders.",
+    "van Laura → haar fiets; van Peter → zijn auto; van Anna en Tim → hun dochter."
+   ]
+  },
+  {
+   "sec": "tt-volgorde",
+   "ask": "Put the parts in order, starting with the given word. Don't change the parts.",
+   "rule": "The verb is always the second part. If you start with something other than the subject, the subject comes straight after the verb (inversie): In het park wandelen wij.",
+   "tips": [
+    "Question with a question word: question word, verb, subject: Hoe laat vertrekt de trein?",
+    "Yes/no question: verb first: Gaan jullie om 11.00 naar de sportschool?",
+    "Start the sentence with a capital and end with . or ?"
+   ]
+  },
+  {
+   "sec": "tt-neg",
+   "ask": "Give a negative answer in a full sentence.",
+   "rule": "geen replaces een, or stands before a noun without an article (geen fiets, geen koffie, geen broers, geen Nederlands). Everything else takes niet.",
+   "tips": [
+    "niet goes at the end by default: Ik koop het blauwe boek niet.",
+    "But before a second verb (Ik wil niet wandelen), an adjective (niet lekker) or a preposition (niet in de supermarkt).",
+    "A language takes geen: Hij spreekt geen Nederlands."
+   ]
+  },
+  {
+   "sec": "tt-antwoord",
+   "ask": "Answer the questions in full sentences.",
+   "rule": "Turn the question round: jij → ik, jouw → mijn, and give the verb its ik-form: Waar werk jij? → Ik werk bij de universiteit.",
+   "tips": [
+    "Use om, op and in with times and dates.",
+    "Starting with a time word? Invert: Vandaag is het maandag."
+   ]
+  },
+  {
+   "sec": "tt-vraag",
+   "ask": "Write the question that goes with the answer.",
+   "rule": "Find the information in the answer and pick the question word for it; then the verb, then the subject. Ja or nee in the answer → the verb goes first.",
+   "tips": [
+    "ik in the answer → jij in the question, and the verb loses its t: Waar woon jij?",
+    "A yes to a plan (Ja, goed idee!) answers Zullen we …?"
+   ]
+  },
+  {
+   "sec": "tt-tekst",
+   "ask": "Read a short text and mark statements waar or niet waar.",
+   "rule": "Read the statements first, then find the place in the text. Watch for days, times, places and small words like niet, geen and maar.",
+   "tips": []
+  }
+ ],
+ "review": [
+  {
+   "label": "Woordenschat Hoofdstuk 1 t/m 4",
+   "sel": [
+    "h1",
+    "h2",
+    "h3",
+    "h4"
+   ]
+  },
+  {
+   "label": "Werkwoorden: alle",
+   "sel": [
+    "gr-werkwoorden"
+   ]
+  },
+  {
+   "label": "Vragen stellen en zinsvolgorde",
+   "sel": [
+    "gr-vragen",
+    "gr-volgorde"
+   ]
+  },
+  {
+   "label": "Bezittelijke voornaamwoorden",
+   "sel": [
+    "gr-bezit"
+   ]
+  },
+  {
+   "label": "Extra: en, maar, want, of, dus",
+   "sel": [
+    "gr-toets|tt-voegw"
+   ]
+  },
+  {
+   "label": "Uit de les: afspreken, de weg vragen, fietsen",
+   "sel": [
+    "hles|les6",
+    "hles|les7-weg",
+    "hles|les7-vervoer"
+   ]
+  }
+ ]
+}
